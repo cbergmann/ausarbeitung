@@ -1,0 +1,71 @@
+\documentclass[article,type=msc,colorback,accentcolor=tud9c]{tudthesis}
+\usepackage{ngerman}
+\usepackage[american,ngerman]{babel}
+\usepackage{tabularx} % better tables
+\usepackage{colortbl}
+\usepackage{hyperref}	% urls
+\usepackage{enumitem}
+\usepackage{listings}	% nicer lists
+\usepackage{cleveref}
+
+\newcommand{\getmydate}{%
+  \ifcase\month%
+    \or Januar\or Februar\or M\"arz%
+    \or April\or Mai\or Juni\or Juli%
+    \or August\or September\or Oktober%
+    \or November\or Dezember%
+  \fi\ \number\year%
+}
+
+\definecolor{rowColorHead}{rgb}{0.7,0.7,0.7}
+\definecolor{rowColor1}{rgb}{0.9,0.9,0.9}
+\definecolor{rowColor2}{rgb}{255,255,255}
+
+\begin{document}
+  \thesistitle{Anti-Phishing Education App}%
+    {Design, Implementation and Evaluation}
+  \author{Clemens Bergmann und Gamze Canova}
+  %\birthplace{Darmstadt}
+  \referee{Professor Dr. Melanie Volkamer}{Arne Renkema-Padmos}
+  \department{Fachbereich Informatik}
+  \group{Security, Usability and Society}
+  \dateofexam{\today}{\today}
+  \tuprints{12345}{1234}
+  \makethesistitle
+  \affidavit{C. Bergmann}
+	\affidavit{G. Canova}
+
+ \tableofcontents
+
+	%======================================================
+	% CONTENT
+	%======================================================
+	\cleardoublepage
+	\pagenumbering{arabic}
+	
+	
+	% !!!!!!!!!!! WOERTER VEREINHEITLICHEN: !!!!!!!!!!!
+	%anti-phishing
+	%capitalization
+	%website / web site
+	%...
+		
+	%Abstract:
+	\begin{abstract}	
+    ...
+	\end{abstract}
+	
+	
+	\input{introduction}
+	\input{background}
+	\input{related_work}
+	\input{requirements_and_assumptions}
+	\input{target_group}
+	\input{prestudy}
+	\input{learning_content}
+	\input{approach}
+	\input{evaluation}
+	\input{conclusion}
+
+
+\end{document}

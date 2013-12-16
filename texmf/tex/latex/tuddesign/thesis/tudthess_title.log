@@ -1,0 +1,2275 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2010.8.9)  15 DEC 2013 17:13
+entering extended mode
+**tudthess_title.sty
+("C:\Users\Stephan\Desktop\TUD Corporate Design\texmf\tex\latex\tuddesign\thesis\tudthess_title.sty"
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, german, ngerman, german-x-2009-06-19, ngerm
+an-x-2009-06-19, french, loaded.
+
+LaTeX Warning: You have requested package `',
+               but the package provides `tudthess_title'.
+
+Package: tudthess_title 2010/03/22 0.99 Joe Werner's TUD-Design-Manual package
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \newif\ifTUD@
+                  thesis@phd \TUD@thesis@phdfalse
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.19 \newif\ifTUD@thesis@phd \TUD
+                                 @thesis@phdfalse
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+! Undefined control sequence.
+l.20 \newif\ifTUD@thesis@accepted \TUD
+                                      @thesis@acceptedfalse
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no U in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.22 \newif\ifTUD@thesis@birthplace \TUD
+                                        @thesis@birthplacefalse
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--23
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \newif\ifTUD@
+                  thesis@gender@female \TUD@thesis@gender@femalefalse
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.24 \newif\ifTUD@thesis@gender@female \TUD
+                                           @thesis@gender@femalefalse
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+l.25 \newif\ifTUD@thesis@gender@neuter \TUD
+                                           @thesis@gender@neuterfalse
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.26 \newif\ifTUD@thesis@gender@masculine \TUD
+                                              @thesis@gender@masculinefalse
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   t
+l.31 }
+      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ...f \expandafter \TUD \reserved@b #10
+                                                  t{
+l.31 }
+      
+I'm going to ignore the # sign you just used.
+
+! Argument of \TUD has an extra }.
+<inserted text> 
+                \par 
+l.31 }
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+gender@neuterfalse\TUD @thesis@gender@masculinefalse\TUD @thesis@gend\ETC.
+! Paragraph ended before \TUD was complete.
+<to be read again> 
+                   \par 
+l.31 }
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 24--31
+[]
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 }
+      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   t
+l.36 }
+      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ...f \expandafter \TUD \reserved@b #10
+                                                  t{
+l.36 }
+      
+I'm going to ignore the # sign you just used.
+
+! Argument of \TUD has an extra }.
+<inserted text> 
+                \par 
+l.36 }
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+gender@neutertrue\TUD @thesis@gender@masculinefalse\TUD @thesis@gende\ETC.
+! Paragraph ended before \TUD was complete.
+<to be read again> 
+                   \par 
+l.36 }
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 36--36
+[] 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 }
+      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no @ in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no @ in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+! Missing number, treated as zero.
+<to be read again> 
+                   t
+l.41 }
+      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ...f \expandafter \TUD \reserved@b #10
+                                                  t{
+l.41 }
+      
+I'm going to ignore the # sign you just used.
+
+! Argument of \TUD has an extra }.
+<inserted text> 
+                \par 
+l.41 }
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+gender@neuterfalse\TUD @thesis@gender@masculinetrue\TUD @thesis@gende\ETC.
+! Paragraph ended before \TUD was complete.
+<to be read again> 
+                   \par 
+l.41 }
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 41--41
+[] 
+ []
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\xkeyval\xkeyval.tex"
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+\XKV@depth=\count79
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+
+("C:\Program Files\MiKTeX 2.8\tex\generic\xkeyval\keyval.tex"))
+
+! Package xkeyval Error: xkeyval loaded before \documentclass.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...yval loaded before \protect\documentclass}
+                                                  %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) ("C:\Program Files\MiKTeX 2.8\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\tuddesign\tex\latex\tuddesign\report\tudreprt_title.sty"
+Package: tudreprt_title 2009/09/18 1.11 Clemens von Loewenich's and Joe Werner's TUD-Design package
+
+("C:\Program Files\tuddesign\tex\latex\tuddesign\colours\tudcolours.sty"
+Package: tudcolours 2009/03/12 1.9 Clemens von Loewenich's and Joe Werner's TUD-Design package
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+ ("C:\Program Files\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `override' ignored on input line 216.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count80
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Program Files\tuddesign\tex\latex\tuddesign\colours\tudcolours.cfg"
+File: tudcolours.cfg 2008/12/03
+)
+("C:\Program Files\tuddesign\tex\latex\tuddesign\colours\tudcolours.def"
+File: tudcolours.def 2008/12/03
+))
+("C:\Program Files\tuddesign\tex\latex\tuddesign\report\tudreprt_fonts.sty"
+Package: tudreprt_fonts 2009/00/18 1.11 Clemens von Loewenich's and Joe Werner's TUD-Design package
+
+("C:\Program Files\tuddesign\tex\latex\tuddesign\base\tudfonts.sty"
+Package: tudfonts 2009/09/18 1.12 Clemens von Loewenich's and Joe Werner's TUD-Design package
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+ ("C:\Program Files\MiKTeX 2.8\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+Runaway argument?
+@nnil ifx external@font @empty @latex@error {Font expandafter string ETC.
+! File ended while scanning use of reserved@f.
+<inserted text> 
+                par 
+l.12 \RequirePackage
+                    [euro]{textcomp}
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without textcurrency
+(textcomp)               4 = 5 + texteuro
+(textcomp)               3 = 4 + textohm
+(textcomp)               2 = 3 + textestimated + textcurrency
+(textcomp)               1 = TS1 - textcircled - t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+Package textcomp Info: Changing ? sub-encoding to TS1/4 on input line 72.
+ ("C:\Program Files\MiKTeX 2.8\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\base\fix-cm.sty"
+Package: fix-cm 2006/03/24 v1.1n fixes to LaTeX
+ ("C:\Program Files\MiKTeX 2.8\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 42.
+))
+("C:\Program Files\MiKTeX 2.8\tex\latex\mathdesign\mathdesign.sty"
+Package: mathdesign 2006/01/29 v1.55 Math Design Project
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\mathdesign\mdbch\mdbch.cfg")
+
+! LaTeX Error: Command \scshape already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...cshape}[1]{\fontshape{fsc}\selectfont #1}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\mathdesign\mdbch\mdbch.sty"
+Package: mdbch 2006/01/29 v1.55 bitstream charter + mdbch (Math Design Project)
+
+("C:\Program Files\MiKTeX 2.8\tex\latex\mathdesign\mdfont.def"
+File: mdfont.def 2006/01/29 v1.55 (Math Design Project)
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\mathdesign\mdsffont.def"
+File: mdsffont.def 2006/01/29 v1.55 (Math Design Project)
+)
+("C:\Program Files\MiKTeX 2.8\tex\latex\mathdesign\mdttfont.def"
+File: mdttfont.def 2006/01/29 v1.55 (Math Design Project)
+)
+symmdcal=mathgroup4
+
+! You can't use `relax' after advance.
+<recently read> c@v@normal 
+                           
+l.88 \DeclareSymbolFont{mdcal}{OMS}{mdbch}{m}{n}
+                                                %
+I'm forgetting what you said and not changing anything.
+
+
+! LaTeX Error: Missing begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \DeclareSymbolFont{mdcal}{OMS}{mdbch}{m}{n}
+                                                %
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no  in font nullfont!
+! You can't use `relax' after advance.
+<recently read> c@v@bold 
+                         
+l.88 \DeclareSymbolFont{mdcal}{OMS}{mdbch}{m}{n}
+                                                %
+I'm forgetting what you said and not changing anything.
+
+Missing character: There is no  in font nullfont!
+LaTeX Font Info:    Overwriting symbol font `dcal' in version `old'
+(Font)                  MS/mdbch/m/n --> MS/mdbch/b/n on input line 89.
+symmdscr=mathgroup5
+! You can't use `relax' after advance.
+<recently read> c@v@normal 
+                           
+l.92 \DeclareSymbolFont{mdscr}{OMS}{mdbch}{m}{n}
+                                                %
+I'm forgetting what you said and not changing anything.
+
+Missing character: There is no  in font nullfont!
+! You can't use `relax' after advance.
+<recently read> c@v@bold 
+                         
+l.92 \DeclareSymbolFont{mdscr}{OMS}{mdbch}{m}{n}
+                                                %
+I'm forgetting what you said and not changing anything.
+
+Missing character: There is no  in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 88--93
+[] 
+ []
+
+LaTeX Font Info:    Overwriting symbol font `dscr' in version `old'
+(Font)                  MS/mdbch/m/n --> MS/mdbch/b/n on input line 95.
+LaTeX Font Info:    Overwriting math alphabet `mathfrak' in version `old'
+(Font)                  /xmdeuf/m/n --> /xmdeuf/b/n on input line 102.
+LaTeX Font Info:    Try loading font information for T1+mdbch on input line 111.
+("C:\Program Files\MiKTeX 2.8\tex\latex\mathdesign\mdbch\t1mdbch.fd"
+File: t1mdbch.fd 2006/01/28 Fontinst v1.928 font definitions for T1/mdbch.
+)
+LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 111.
+LaTeX Font Info:    Overwriting symbol font `perators' in version `ormal'
+(Font)                  T1/cmr/m/n --> T1/mdbch/m/n on input line 114.
+LaTeX Font Info:    Overwriting symbol font `etters' in version `ormal'
+(Font)                  ML/cmm/m/it --> ML/mdbch/m/it on input line 115.
+LaTeX Font Info:    Overwriting symbol font `ymbols' in version `ormal'
+(Font)                  MS/cmsy/m/n --> MS/mdbch/m/n on input line 116.
+LaTeX Font Info:    Overwriting symbol font `argesymbols' in version `ormal'
+(Font)                  MX/cmex/m/n --> MX/mdbch/m/n on input line 117.
+LaTeX Font Info:    Overwriting symbol font `perators' in version `old'
+(Font)                  T1/cmr/bx/n --> T1/mdbch/b/n on input line 119.
+LaTeX Font Info:    Overwriting symbol font `etters' in version `old'
+(Font)                  ML/cmm/b/it --> ML/mdbch/b/it on input line 120.
+LaTeX Font Info:    Overwriting symbol font `ymbols' in version `old'
+(Font)                  MS/cmsy/b/n --> MS/mdbch/b/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `argesymbols' in version `old'
+(Font)                  MX/cmex/m/n --> MX/mdbch/b/n on input line 122.
+
+
+! LaTeX Error: Command `mathrm' not defined as a math alphabet.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...rmal}{\encodingdefault}{\rmdefault}{m}{n}
+                                                  %
+Use DeclareMathAlphabet to define it.
+
+
+! LaTeX Error: Command `mathbf' not defined as a math alphabet.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 ...rmal}{\encodingdefault}{\rmdefault}{b}{n}
+                                                  %
+Use DeclareMathAlphabet to define it.
+
+
+! LaTeX Error: Command `mathit' not defined as a math alphabet.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 ...mal}{\encodingdefault}{\rmdefault}{m}{it}
+                                                  %
+Use DeclareMathAlphabet to define it.
+
+
+! LaTeX Error: Command `mathsf' not defined as a math alphabet.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 ...rmal}{\encodingdefault}{\sfdefault}{m}{n}
+                                                  %
+Use DeclareMathAlphabet to define it.
+
+
+! LaTeX Error: Command `mathtt' not defined as a math alphabet.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 ...rmal}{\encodingdefault}{\ttdefault}{m}{n}
+                                                  %
+Use DeclareMathAlphabet to define it.
+
+LaTeX Font Info:    Overwriting math alphabet `mathcal' in version `ormal'
+(Font)                  MS/mdbch/m/n --> MS/mdbch/m/n on input line 132.
+
+! LaTeX Error: Command `mathrm' not defined as a math alphabet.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 ...old} {\encodingdefault}{\rmdefault}{b}{n}
+                                                  %
+Use DeclareMathAlphabet to define it.
+
+
+! LaTeX Error: Command `mathbf' not defined as a math alphabet.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 ...old} {\encodingdefault}{\rmdefault}{b}{n}
+                                                  %
+Use DeclareMathAlphabet to define it.
+
+
+! LaTeX Error: Command `mathit' not defined as a math alphabet.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.139 ...ld} {\encodingdefault}{\rmdefault}{b}{it}
+                                                  %
+Use DeclareMathAlphabet to define it.
+
+
+! LaTeX Error: Command `mathsf' not defined as a math alphabet.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 ...old} {\encodingdefault}{\sfdefault}{b}{n}
+                                                  %
+Use DeclareMathAlphabet to define it.
+
+
+! LaTeX Error: Command `mathtt' not defined as a math alphabet.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 ...old} {\encodingdefault}{\ttdefault}{b}{n}
+                                                  %
+Use DeclareMathAlphabet to define it.
+
+
+! LaTeX Error: Not a command name: `widetilde '.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 ...{\widetilde}{\mathord}{largesymbols}{"65}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Not a command name: `widehat '.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154 ...nt{\widehat}{\mathord}{largesymbols}{"62}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Not a command name: `widetriangle '.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 ...idetriangle}{\mathord}{largesymbols}{"E6}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Not a command name: `wideparen '.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 ...{\wideparen}{\mathord}{largesymbols}{"F3}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   llbracket 
+l.167 ...llbracket}{\mathopen} {largesymbols}{"B9}
+                                                  {largesymbols}{"83}
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> llbracket 
+                          
+l.167 ...llbracket}{\mathopen} {largesymbols}{"B9}
+                                                  {largesymbols}{"83}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   llbracket 
+l.167 ...n} {largesymbols}{"B9}{largesymbols}{"83}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> llbracket 
+                          
+l.167 ...n} {largesymbols}{"B9}{largesymbols}{"83}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   rrbracket 
+l.168 ...rrbracket}{\mathclose}{largesymbols}{"BA}
+                                                  {largesymbols}{"8D}
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> rrbracket 
+                          
+l.168 ...rrbracket}{\mathclose}{largesymbols}{"BA}
+                                                  {largesymbols}{"8D}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   rrbracket 
+l.168 ...se}{largesymbols}{"BA}{largesymbols}{"8D}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> rrbracket 
+                          
+l.168 ...se}{largesymbols}{"BA}{largesymbols}{"8D}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   lwave 
+l.174 ...er{\lwave}{\mathopen} {largesymbols}{"D0}
+                                                  {largesymbols}{"D0}
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> lwave 
+                      
+l.174 ...er{\lwave}{\mathopen} {largesymbols}{"D0}
+                                                  {largesymbols}{"D0}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   lwave 
+l.174 ...n} {largesymbols}{"D0}{largesymbols}{"D0}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> lwave 
+                      
+l.174 ...n} {largesymbols}{"D0}{largesymbols}{"D0}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   rwave 
+l.175 ...er{\rwave}{\mathclose}{largesymbols}{"D0}
+                                                  {largesymbols}{"D0}
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> rwave 
+                      
+l.175 ...er{\rwave}{\mathclose}{largesymbols}{"D0}
+                                                  {largesymbols}{"D0}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   rwave 
+l.175 ...se}{largesymbols}{"D0}{largesymbols}{"D0}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> rwave 
+                      
+l.175 ...se}{largesymbols}{"D0}{largesymbols}{"D0}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   levaw 
+l.177 ...er{\levaw}{\mathopen} {largesymbols}{"D1}
+                                                  {largesymbols}{"D1}
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> levaw 
+                      
+l.177 ...er{\levaw}{\mathopen} {largesymbols}{"D1}
+                                                  {largesymbols}{"D1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   levaw 
+l.177 ...n} {largesymbols}{"D1}{largesymbols}{"D1}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> levaw 
+                      
+l.177 ...n} {largesymbols}{"D1}{largesymbols}{"D1}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   revaw 
+l.178 ...er{\revaw}{\mathclose}{largesymbols}{"D1}
+                                                  {largesymbols}{"D1}
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> revaw 
+                      
+l.178 ...er{\revaw}{\mathclose}{largesymbols}{"D1}
+                                                  {largesymbols}{"D1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   revaw 
+l.178 ...se}{largesymbols}{"D1}{largesymbols}{"D1}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> revaw 
+                      
+l.178 ...se}{largesymbols}{"D1}{largesymbols}{"D1}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+symlettersupright=mathgroup6
+! You can't use `relax' after advance.
+<recently read> c@v@normal 
+                           
+l.189 ...nt{lettersupright}     {OML}{mdbch}{m}{n}
+                                                  
+I'm forgetting what you said and not changing anything.
+
+
+! LaTeX Error: Missing begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 ...nt{lettersupright}     {OML}{mdbch}{m}{n}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `relax' after advance.
+<recently read> c@v@bold 
+                         
+l.189 ...nt{lettersupright}     {OML}{mdbch}{m}{n}
+                                                  
+I'm forgetting what you said and not changing anything.
+
+LaTeX Font Info:    Overwriting symbol font `ettersupright' in version `old'
+(Font)                  ML/mdbch/m/n --> ML/mdbch/b/n on input line 190.
+
+Overfull \hbox (29.60007pt too wide) in paragraph at lines 189--192
+[]T1/mdbch/m/n/10  
+ []
+
+! Improper alphabetic constant.
+<to be read again> 
+                   alphaup 
+l.280 ...{\alphaup}{\mathord}{lettersupright}{"0B}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> alphaup 
+                        
+l.280 ...{\alphaup}{\mathord}{lettersupright}{"0B}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   betaup 
+l.281 ...l{\betaup}{\mathord}{lettersupright}{"0C}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> betaup 
+                       
+l.281 ...l{\betaup}{\mathord}{lettersupright}{"0C}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   gammaup 
+l.282 ...{\gammaup}{\mathord}{lettersupright}{"0D}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> gammaup 
+                        
+l.282 ...{\gammaup}{\mathord}{lettersupright}{"0D}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   deltaup 
+l.283 ...{\deltaup}{\mathord}{lettersupright}{"0E}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> deltaup 
+                        
+l.283 ...{\deltaup}{\mathord}{lettersupright}{"0E}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   epsilonup 
+l.284 ...epsilonup}{\mathord}{lettersupright}{"0F}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> epsilonup 
+                          
+l.284 ...epsilonup}{\mathord}{lettersupright}{"0F}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   zetaup 
+l.285 ...l{\zetaup}{\mathord}{lettersupright}{"10}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> zetaup 
+                       
+l.285 ...l{\zetaup}{\mathord}{lettersupright}{"10}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   etaup 
+l.286 ...ol{\etaup}{\mathord}{lettersupright}{"11}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> etaup 
+                      
+l.286 ...ol{\etaup}{\mathord}{lettersupright}{"11}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   thetaup 
+l.287 ...{\thetaup}{\mathord}{lettersupright}{"12}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> thetaup 
+                        
+l.287 ...{\thetaup}{\mathord}{lettersupright}{"12}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   iotaup 
+l.288 ...l{\iotaup}{\mathord}{lettersupright}{"13}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> iotaup 
+                       
+l.288 ...l{\iotaup}{\mathord}{lettersupright}{"13}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   kappaup 
+l.289 ...{\kappaup}{\mathord}{lettersupright}{"14}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> kappaup 
+                        
+l.289 ...{\kappaup}{\mathord}{lettersupright}{"14}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   lambdaup 
+l.290 ...\lambdaup}{\mathord}{lettersupright}{"15}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> lambdaup 
+                         
+l.290 ...\lambdaup}{\mathord}{lettersupright}{"15}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   muup 
+l.291 ...bol{\muup}{\mathord}{lettersupright}{"16}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> muup 
+                     
+l.291 ...bol{\muup}{\mathord}{lettersupright}{"16}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   nuup 
+l.292 ...bol{\nuup}{\mathord}{lettersupright}{"17}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> nuup 
+                     
+l.292 ...bol{\nuup}{\mathord}{lettersupright}{"17}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   xiup 
+l.293 ...bol{\xiup}{\mathord}{lettersupright}{"18}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> xiup 
+                     
+l.293 ...bol{\xiup}{\mathord}{lettersupright}{"18}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   piup 
+l.294 ...bol{\piup}{\mathord}{lettersupright}{"19}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> piup 
+                     
+l.294 ...bol{\piup}{\mathord}{lettersupright}{"19}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   rhoup 
+l.295 ...ol{\rhoup}{\mathord}{lettersupright}{"1A}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> rhoup 
+                      
+l.295 ...ol{\rhoup}{\mathord}{lettersupright}{"1A}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   sigmaup 
+l.296 ...{\sigmaup}{\mathord}{lettersupright}{"1B}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> sigmaup 
+                        
+l.296 ...{\sigmaup}{\mathord}{lettersupright}{"1B}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   tauup 
+l.297 ...ol{\tauup}{\mathord}{lettersupright}{"1C}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> tauup 
+                      
+l.297 ...ol{\tauup}{\mathord}{lettersupright}{"1C}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   upsilonup 
+l.298 ...upsilonup}{\mathord}{lettersupright}{"1D}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> upsilonup 
+                          
+l.298 ...upsilonup}{\mathord}{lettersupright}{"1D}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   phiup 
+l.299 ...ol{\phiup}{\mathord}{lettersupright}{"1E}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> phiup 
+                      
+l.299 ...ol{\phiup}{\mathord}{lettersupright}{"1E}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   chiup 
+l.300 ...ol{\chiup}{\mathord}{lettersupright}{"1F}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> chiup 
+                      
+l.300 ...ol{\chiup}{\mathord}{lettersupright}{"1F}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   psiup 
+l.301 ...ol{\psiup}{\mathord}{lettersupright}{"20}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> psiup 
+                      
+l.301 ...ol{\psiup}{\mathord}{lettersupright}{"20}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   omegaup 
+l.302 ...{\omegaup}{\mathord}{lettersupright}{"21}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> omegaup 
+                        
+l.302 ...{\omegaup}{\mathord}{lettersupright}{"21}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   varepsilonup 
+l.303 ...epsilonup}{\mathord}{lettersupright}{"22}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> varepsilonup 
+                             
+l.303 ...epsilonup}{\mathord}{lettersupright}{"22}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   varthetaup 
+l.304 ...arthetaup}{\mathord}{lettersupright}{"23}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> varthetaup 
+                           
+l.304 ...arthetaup}{\mathord}{lettersupright}{"23}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   varpiup 
+l.305 ...{\varpiup}{\mathord}{lettersupright}{"24}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> varpiup 
+                        
+l.305 ...{\varpiup}{\mathord}{lettersupright}{"24}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   varrhoup 
+l.306 ...\varrhoup}{\mathord}{lettersupright}{"25}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> varrhoup 
+                         
+l.306 ...\varrhoup}{\mathord}{lettersupright}{"25}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   varsigmaup 
+l.307 ...arsigmaup}{\mathord}{lettersupright}{"26}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> varsigmaup 
+                           
+l.307 ...arsigmaup}{\mathord}{lettersupright}{"26}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   varphiup 
+l.308 ...\varphiup}{\mathord}{lettersupright}{"27}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> varphiup 
+                         
+l.308 ...\varphiup}{\mathord}{lettersupright}{"27}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Gammaup 
+l.309 ...Gammaup}{\mathalpha}{lettersupright}{"00}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Gammaup 
+                        
+l.309 ...Gammaup}{\mathalpha}{lettersupright}{"00}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Deltaup 
+l.310 ...Deltaup}{\mathalpha}{lettersupright}{"01}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Deltaup 
+                        
+l.310 ...Deltaup}{\mathalpha}{lettersupright}{"01}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Thetaup 
+l.311 ...Thetaup}{\mathalpha}{lettersupright}{"02}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Thetaup 
+                        
+l.311 ...Thetaup}{\mathalpha}{lettersupright}{"02}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Lambdaup 
+l.312 ...ambdaup}{\mathalpha}{lettersupright}{"03}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Lambdaup 
+                         
+l.312 ...ambdaup}{\mathalpha}{lettersupright}{"03}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Xiup 
+l.313 ...l{\Xiup}{\mathalpha}{lettersupright}{"04}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Xiup 
+                     
+l.313 ...l{\Xiup}{\mathalpha}{lettersupright}{"04}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Piup 
+l.314 ...l{\Piup}{\mathalpha}{lettersupright}{"05}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Piup 
+                     
+l.314 ...l{\Piup}{\mathalpha}{lettersupright}{"05}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Sigmaup 
+l.315 ...Sigmaup}{\mathalpha}{lettersupright}{"06}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Sigmaup 
+                        
+l.315 ...Sigmaup}{\mathalpha}{lettersupright}{"06}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Upsilonup 
+l.316 ...silonup}{\mathalpha}{lettersupright}{"07}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Upsilonup 
+                          
+l.316 ...silonup}{\mathalpha}{lettersupright}{"07}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Phiup 
+l.317 ...{\Phiup}{\mathalpha}{lettersupright}{"08}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Phiup 
+                      
+l.317 ...{\Phiup}{\mathalpha}{lettersupright}{"08}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Psiup 
+l.318 ...{\Psiup}{\mathalpha}{lettersupright}{"09}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Psiup 
+                      
+l.318 ...{\Psiup}{\mathalpha}{lettersupright}{"09}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   Omegaup 
+l.319 ...Omegaup}{\mathalpha}{lettersupright}{"0A}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> Omegaup 
+                        
+l.319 ...Omegaup}{\mathalpha}{lettersupright}{"0A}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   alphait 
+l.321 ...hSymbol{\alphait}{\mathord}{letters}{"0B}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> alphait 
+                        
+l.321 ...hSymbol{\alphait}{\mathord}{letters}{"0B}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   betait 
+l.322 ...thSymbol{\betait}{\mathord}{letters}{"0C}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> betait 
+                       
+l.322 ...thSymbol{\betait}{\mathord}{letters}{"0C}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   gammait 
+l.323 ...hSymbol{\gammait}{\mathord}{letters}{"0D}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> gammait 
+                        
+l.323 ...hSymbol{\gammait}{\mathord}{letters}{"0D}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   deltait 
+l.324 ...hSymbol{\deltait}{\mathord}{letters}{"0E}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> deltait 
+                        
+l.324 ...hSymbol{\deltait}{\mathord}{letters}{"0E}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   epsilonit 
+l.325 ...ymbol{\epsilonit}{\mathord}{letters}{"0F}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> epsilonit 
+                          
+l.325 ...ymbol{\epsilonit}{\mathord}{letters}{"0F}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   zetait 
+l.326 ...thSymbol{\zetait}{\mathord}{letters}{"10}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> zetait 
+                       
+l.326 ...thSymbol{\zetait}{\mathord}{letters}{"10}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   etait 
+l.327 ...athSymbol{\etait}{\mathord}{letters}{"11}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> etait 
+                      
+l.327 ...athSymbol{\etait}{\mathord}{letters}{"11}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   thetait 
+l.328 ...hSymbol{\thetait}{\mathord}{letters}{"12}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> thetait 
+                        
+l.328 ...hSymbol{\thetait}{\mathord}{letters}{"12}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   iotait 
+l.329 ...thSymbol{\iotait}{\mathord}{letters}{"13}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> iotait 
+                       
+l.329 ...thSymbol{\iotait}{\mathord}{letters}{"13}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Improper alphabetic constant.
+<to be read again> 
+                   kappait 
+l.330 ...hSymbol{\kappait}{\mathord}{letters}{"14}
+                                                  
+A one-character control sequence belongs after a ` mark.
+So I'm essentially inserting \0 here.
+
+! Undefined control sequence.
+<recently read> kappait 
+                        
+l.330 ...hSymbol{\kappait}{\mathord}{letters}{"14}
+                                                  
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 2492 strings out of 495285
+ 37380 string characters out of 3180389
+ 81527 words of memory out of 3000000
+ 5708 multiletter control sequences out of 15000+200000
+ 5707 words of font info for 15 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 50i,0n,39p,280b,1210s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+!  ==> Fatal error occurred, no output PDF file produced!
