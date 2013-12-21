@@ -9,6 +9,8 @@
 \usepackage{cleveref}
 \usepackage{lineno}
 
+\newcounter{dummy} % necessary for correct hyperlinks (to index, bib, etc.)
+
 
 \newcommand{\getmydate}{%
   \ifcase\month%
@@ -52,7 +54,7 @@
 	%capitalization
 	%website / web site
 	%...
-		\linenumbers
+	%	\linenumbers
 
 	%Abstract:
 	\begin{abstract}	
@@ -70,6 +72,8 @@
 	\input{approach}
 	\input{evaluation}
 	\input{conclusion}
-
+	
+	\bibliographystyle{abbrv} % <--- layout of the bib
+	\bibliography{bibliography} % file name of your bib
 
 \end{document}
