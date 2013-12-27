@@ -3,43 +3,60 @@
 %*******************************************
 \label{s:introduction}
 %subject
-This chapter introduces the target of this work, which is to design, implement and evaluate an educational app which is supposed to teach unexperienced people to detect phishing attacks. At first we are going to motivate the benefit of our work and how we envision our approach to achieve our goal. Next, we define our specific objectives and point out the major challenges security education poses. Finally, we provide an overview of the following chapters.
-
-
+This chapter introduces the target of this work, which is to design, implement and evaluate an educational app. The app is supposed to help unexperienced users to detect phishing attacks. At first we are going to motivate the benefit of our work and how we envision our approach to achieve our goal. Next, we define our specific objectives and finally, we provide an overview of the following chapters.
 
 %===========================================
+
+
 \subsection{Motivation}
 %===========================================
+Introductory sentence...
 
 %-------------------------------------------
 \subsubsection{Statistics of Phishing}
 %-------------------------------------------
+Nowadays, a world without Internet is unimaginable for many people. However, it is undeniable that the Internet brings at least as much threats with it as it brings benefits. One major issue of today's digitalized world is phishing, which is also reflected by many statistics of various reports. According to the Anti-Phishing Working Group~(APWG) about 40,000 unique phishing websites are detected each month~\cite{antiphishingtrendreport2013}. Statistics published by Kaspersky Lab, a well-respected provider for IT security solutions, state that from year 2011-2012 to 2012-2013 the number of attacked users increased by about 87\%. While in 2011-2012 the number of users, who were subject to phishing attacks, was 19.9 million, in 2012-2013 the numbers climbed up to 37.3 million. In particular, every day about 100,000 Internet users are victims of phishing attacks, which is twice as many compared to the previous period of 2011-2012. An immense increase can also be observed in the number of unique sources (i.e. IPs) of attacks, which has tripled from 2012 to 2013~\cite{kasperskyreport2013}. The number of target institutions also rose. While in 2011 the APWG counted about 500 target institutions, in the fist quarter of 2013 720 target institutions were identified~\cite{antiphishingglobalreport2013}. Finally, the estimated worldwide costs caused by phishing are about \$1.5 billion for the year 2012~\cite{rsa2013}.
+
 
 %-------------------------------------------
 \subsubsection{Consequences of Phishing}
 %-------------------------------------------
+Falling for a phishing attack has several consequences for the victim as well as for the target company or organization. Phishing is the practice of tricking users to disclose their personal data. That is to say, a possible consequence of falling for a phishing attack is identity theft. With the data unknowingly provided by the victims, the attacker can impersonate his victims. Financial loss is another problem resulting from phishing attacks. Not only users who are subject to phishing attacks can suffer financial loss, but also the institutions, organizations and companies targeted by the phisher can. Financial loss can be the result of users' banking accounts being plundered or increased support costs for the targeted institutions due to their customers who fell for an attack. Moreover, the targeted institutions may sustain a damaged reputation due to phishing attacks. Customers who actually became a victim of such a phishing attack will be displeased about the money or account loss and the resulting efforts they have to make in consequence of such an attack. Furthermore, they will tell other people about this displeasant experience. Finally, these victims will lose their trust in the institution targeted by the phiser. Moreover, they might lose confidence in eCommerce operations and the Internet in general.
 
 %-------------------------------------------
 \subsubsection{Technical Solutions to Counter Phishing}
 %-------------------------------------------
+%Quellen vom diesem dokument: 17065505
+
+Several technical solutions to counter phishing have already been suggested in literature~\cite{purkait2012phishing}. In the following some of these solutions are briefly summarized.
+
+\begin{description}[leftmargin=0cm]
+	\item[Spam filters] Not rarely, the phisher sends out a mass of emails to users which link to fake websites, where the users are lured to disclose their personal data. Consequently, one possible countermeasure to stop phishing is to filter these e-mails before they even reach the receiver. Various approaches for such spam filters do already exist~\cite{bergholz2010new,chandrasekaran2006phishing,fette2007learning}, but also have their drawbacks. First, it is not possible to make sure that all users make use of such spam filters. Second, even if spam filters are used by the majority, one can not make sure that they are updated regurlarly. In addition, phishers are able to adapt to improved technology. Consequently, such filters can not assure 100\% accuracy. On the one hand it is possible that phishing e-mails can make it through these filters. As a result, the user might still fall victim to such an attack. On the other hand there are legitimate e-mails which might not reach the user. This might result in a user's loss of confidence, which in turn can result in the user not making use of the spam filter anymore~\cite{olivo2011obtaining}.
+	\item[Blacklists] Fake websites are a common way for phishers to get at users' data. Thus, another alternative to protect endagered users from phishing attacks is to restrict the access to such phishing websites with the aid of so called blacklists. Here, the browsers hold a list of revealed phishing websites. If a requested URL is contained in such a blacklist the access to this website can be restricted or the user can be alerted about the phishing website. Several blacklisting approaches have been suggested in literature~\cite{ma2009beyond, zhang2008highly}. The major downside of blacklists is that most of them work reactively. That is to say, there is a certain time frame where phishing websites are active without being blacklisted. In this time frame users can access these website without being warned or restricted and thus are vulnerable to fall for the attack. To resolve this problem multiple dynamic and predictive approaches have been proposed to restrict and/or warn the user from accessing phishing websites~\cite{prakash2010phishnet, obied2009fraudulent}. Nevertheless, there is no flawless blacklisting approach, as there are always malicious websites which can bypass such protective systems. Moreover, these systems require a high effort, since a regular and realtime update is inevitable in order to make the system effective~\cite{purkait2012phishing}. Finally, there is the weakest link in the security chain, the users who are very often unsure about what to do when getting such security warnings~\cite{bakhshi2009social}. In case of disregard of these warnings such systems are useless.
+	\item[Visual distinction] A further technical approach against phishing is the visual distinction of phishing websites from legitimate ones. For this purpose it is necessary to identify malicously duplicated websites mainly based on visual similarities~\cite{liu2006antiphishing}. Various solutions can be found in literature to approach this~\cite{chen2009fighting,chen2010detecting,zhang2011textual}. However, there is no foolproof solution. In particular, if approaches rely on visual similarities many of them will fail if the phishing website is not a duplicate of the original site. Moreover, phishers will always be able to adapt to sophisticated solutions in order to bypass these security levels. Finally, as always the human factor plays a huge role here: if users keep misunderstanding or ignoring such visual security indicators such techniques will remain of no use.
+	\item[Takedown] Another possibility to protect users from accessing phishing websites it to take them down~\cite{moore2007examining}. Here, hosting service providers are urged to take down such malicious websites by for example banks, other organizations or specialist takedown companies. In this way, a visitor will not see anything of the phishing website on this particular site and thus will not provide his data to the phisher. The removal of phishing website is an effective solution, since it implicitly solves the problem with the human factor, where users ignore security warnings. However, this approach can not defeat phishing completely, since it is not fast enough~\cite{moore2007examining}. During the uptime of the fraudulent website falling for these attacks remains possible.
+\end{description}
+
+As a conclusion, there are two major issues of technical solutions. First, technical solutions do not assure 100\% accuracy. There is always the potential of false positives and false negatives. Furthermore, attackers will find a way around sophisticated solutions and be able to bypass these somehow. The second major problem with these approaches is the user behavior. As indicated above users tend to overlook or intendedly ignore security warnings. If the user behavior does not change such approaches will remain useless. The main reason why users overlook or ignore such security indicators is that security is not their primary goal. Consequently, they give their attention to other things, for example, shopping, online banking and so on. Another factor for overlooking and ignoring these warnings is the lack of user awareness. Some users are just not aware of how easy it is for even unexperienced attackers to duplicate a website and send out fake e-mails. Even if users are aware that there is a certain degree of threat in the Internet, people tend to think the probability that they will face such an attack is very low and that it will not happen to them, until it happens to them. Thus, an important step towards changing the user behavior is increasing the user awareness.
+
 
 %-------------------------------------------
 \subsubsection{Anti-Phishing Education on the Smartphone}
 %-------------------------------------------
+There are several reasons why we chose to educate users on the smartphone. The main characteristic of a smartphone is that it is enormously smaller than the well-known desktop computers. As a consequence there is much less space in the screen. Many browsers, for example, generally hide their address bars due to the lack of space. With the address bar, the URL and other potential security indicators are hidden. There is also the fact that users often use their smartphones while on the move, for example, when walking, during a train or a bus ride. These circumstances include distractions from the environment which are unavoidable. These distractions obviously will influence the user's attentiveness. As a consequence smartphone users are even more vulnerable to phishing attacks than the traditional desktop user. This is also indicated by a report of 2011, which says that mobile users are three times more likely to access phishing websites than desktop users~\cite{trusteer2011}. Evidently, there is a need for smartphone user protection. Additionally, educating the user on the smartphone provides two major benefits. First, the user can use the app on the move. Thus, the app is accessible outside of the user's desktop environment, where he potentially has better things to do than learning how not to fall for phishing attacks. The app can be used while train or bus rides, while waiting for a friend or while waiting for any other appointment. The app can be used any time as a sideline, so that probably more users would be willing to use it. Finally, to the best of our knowledge there does not exist a smartphone application to educate users about phishing yet. 
 
 %===========================================
 \subsection{Goals}
 %===========================================
 \label{s:goals}
-We begin with stating our primary goals of this thesis and describe them in more depth subsequently. The goals of this thesis are to extend, not replace, the technical solutions by
+We begin with stating our primary goals of this thesis and describe them in more depth subsequently. The major goals of this thesis are to extend, not replace, technical solutions to counter phishing by
 \begin{enumerate}
 	\item Increasing the user awareness
-	\item Educating the user
-	\item ...
+	\item Educating users about phishing 
 \end{enumerate}
 
-Goal description ...
-
+As already indicated in the previous section the lack of user awareness seems to be a major issue concerning the secure user behaviour. For this reason we want to raise the user awareness by showing our app users that faking e-mail senders and content is very easy. Additionally, we want to make them aware that links do not necessarily lead to the target the link displays to the user. This should happen at the beginning of the app so that the user realizes that the threat of the Internet is prevalent and that he needs to learn to protect himself. Furthermore, the user should practically experience these aspects and not only told, since being told will not suffice to motivate the user to go on with the app.
+Increasing the user awareness will not be enough to help the user not to fall for phishing attacks. Besides technical solutions valuable information has to be made available to the user. In particular, we want to qualify our app users to detect phishing URLs so they can distinguish phishing websites from legitimate ones. 
 
 %===========================================
 %\section{Challenges}
@@ -56,11 +73,11 @@ Goal description ...
 
 
 %===========================================
-\subsection{Our Approach}
+%\subsection{Our Approach}
 %===========================================
-In the succeeding, we elaborate on how we are going to approach the challenges mentioned before. The reasoning for our approach follows in Section~\ref{related_work:discussion}.
+%In the succeeding, we elaborate on how we are going to approach the challenges mentioned before. The reasoning for our approach follows in Section~\ref{related_work:discussion}.
 
-...
+%...
 
 
 %===========================================
