@@ -8,33 +8,37 @@ Introducing sentences...
 \subsection{Definition of Phishing}
 %===========================================
 \label{s:phishing_def}
-Our goal is to educate users to detect phishing websites. Since phishing is important in our work, we are going to define our understanding of the term. 
+The goal of this work is helping users to distinguish phishing websites from legitimate ones. Since phishing is important in the scope of this work, we are going to define the term first. The following definition is intendedly kept abstract.
+%if needed look for good source to quote
+%Countermeasure Techniques for Deceptive Phishing Attack 
+%Huajun Huang, Junshan Tan, Lingxi Liu
 
 \begin{center}
-\textit{``Definition of Phishing''}
+\textit{``Phishing is the practice of obtaining confidential information from users and describes a form of identitfy theft. Targeted confidential information includes, but is not limited to user names, passwords, social security numbers, credit card numbers, account information, and other personal information.''}
 \end{center}
 
-The next section dwells on different phishing types. 
-
+There exist several techniques how phishers can steal users' personal data. In the following section we dwell on some of these techniques. 
 
 %-------------------------------------------
 \subsection{Phishing Techniques}
 %-------------------------------------------
 \label{s:phishing_techs}
-In this section we are going to describe the different phishing techniques that are distinguished in literature. Furthermore we state and reason which technique(s) of phishing we focus on in our work.. Phishing techniques include, but are not limited to:
+There are various possibilities how phishers can obtain users' confidential information. In the following we describe phishing techniques that can be distinguished~\cite{emigh2005online}.
+%Online Identity Theft: Phishing Technology, Chokepoints and Countermeasures. ITTC Report on Online Identity Theft Technology and Countermeasures
 %master_thesis/notes/phishing
-\begin{description}[leftmargin=3cm]
-	\item[Deceptive Phishing]
-	\item[Malware Based Phishing] (including keyloggers and screenloggers)			
-	\item[Host File Poisoning]
-	\item[DNS Based Phishing] (Pharming)
-	\item[Man-in-the-Middle Phishing]  	
- 
-\end{description}
-For our research, we focus on deceptive phishing...
-%(eventuell liste oder aufzählung)
 
- 
+\begin{description}[leftmargin=0cm]
+	\item[Deceptive Phishing] In deceptive phishing social engineering plays a decisive role. Here, users are lured to disclose their confidential data directly to the phisher without being aware of it. A typical scenario is the unsuspecting user receiving an e-mail from an institution he trusts. In fact this e-mail is malicious and links to a fake website, where the phisher intends to steal the user's data. Once the phisher obtains the user's data, he is able to impersonate the victim's identity and benefit from this.
+	\item[Malware-Based Phishing] As the term already reveals, malware-based phishing embraces some kind of malicious software running on the user's computer. There are several ways of infecting the user's computer with such malware. Social engineering techniques can be used to convince the user to open malicious e-mail attachments or download malevolent files from a website. Another possibility is to exploit security vulnerabilities. Various technologies can be utilized to get at the users' data. Keyloggers and screenloggers, for example, track users' data input and send relevant information to a phishing server. Another way is to make use of so-called web trojans, which appear when users intend to log in. While the user thinks he is logging in on a website of his trust, the entered information is actually transmitted to the phisher.
+	\item[DNS Based Phishing] This kind of phishing is also referred to as pharming and includes the manipulation of a system's host file or domain name system. These kinds of tampering result in returning a fraudulent IP address for URL requests and thus leading the user to a malicious website, even though the URL of a legitimate website had been entered. As a consequence the unaware user enters his credentials into this fake website and the attacker obtains these and can misuse them.
+	\item[Man-in-the-Middle Phishing] In this form of attack the phisher positions himself between the legitimate website and the user. The user's data input is delivered to the phisher, where he stores the information and then forwards it to the legitimate website. Responses are also forwarded back to the user so that the interference of the phisher does not affect the user's interactions. The gained sensitive information can then be sold or misused in any other way. As everything works as usual for the user, it is very difficult for him to detect such an attack. 
+	\item[Content Injection Phishing] Content injection phishing refers to the practice of embedding additional harmful content into legitimate websites. This content can, for example, be malvolent code to log users' sensitive information and deliver the input to the phishing server. Well-known types of content-injection phishing include, for example, cross-site scripting. Cross-site scripting vulnerabilities result from a web application's usage of content from external sources, such as search terms, auctions or user reviews of a product. This type of data supply can be misused and instead of delivering the expected kind of data malicious scripts can be injected.
+	\item[Search Engine Phishing] Other phishing attempts involve search engines. Here, websites with offers for fake low cost products and/or services are legitimately indexed with search engines. Thus, users reach these websites when using the search engine. These offers, which are often too good to be true, then lure the user to buy those fake products which in turn leads to the disclosure of their sensitive information, such as the credit card number, to the phisher.
+
+\end{description}
+Within the scope of this work we focus on deceptive phishing. Besides the different kinds of techniques of phishing there also exist a number of attack channels a phisher can make use of. The following section deals with these attack channels.
+
+%(eventuell liste oder aufzählung) 
 %EXAMPLE TABLE WHICH MIGHT BE USEFUL :D
 %\begin{table}
 %	\centering
@@ -52,24 +56,21 @@ For our research, we focus on deceptive phishing...
 %	\caption{Description}
 %	\label{table:label}
 %\end{table}
-
-
-
 %-------------------------------------------
 \subsection{Phishing Attack Channels}
 %-------------------------------------------
+Several attack channels that can be used by phishers to reach their victims. This section intends to introduce possible attack channels.
 \label{s:attack_channels}
-\begin{description}[leftmargin=3cm]
-	\item[E-Mail]
-	\item[SMS]  			
-	\item[Instant Messaging]
-	\item[Online Social Networks]
-	\item[Fake Website]
-	\item[VoIP]
-	\item[Malicious Downloads]
+\begin{description}[leftmargin=0cm]
+	\item[E-Mail] E-Mail spoofing is a well-known way of a phisher to reach his victims. These e-mails usually imitate renowned institutions, organizations, companies or banks the recipients trust. They usually contain a text which will deceive the recepient into doing what it says. Usually these e-mails link to a malicious website, whose look and feel is almost identical to the original one. There the user is lured to enter his sensitive data which is captured by the phisher. Other alternatives are embedded forms in the e-mail the user has to fill in. Sometimes users are even asked to directly send back their confidential data.
+	\item[SMS] An alternative to acquire confidential user data is making use of cell phone text messages. As with e-mails, the text message may contain a link to a fake website, where the user is induced to divulge his sensitive information. The user may also be asked to send back the information directly. Another common way is to be asked to call back a telephone number. This number leads to an automated voice response system which is intended to gain the confidential information from the calling user.
+	\item[Instant Messaging] Eher break in and spread links to friends --> glaubwürdig
+	\item[Online Social Networks] Eher break in and spread links to friends --> glaubwürdig
+	\item[VoIP] 
 \end{description}
 
-We focus on fake websites. Usually, the links to fake websites are distributed via e-mails, SMS, instant messengers or online social networks, Thus, our approach automatically covers the attack channels e-mail, sms, instant messaging and online social networks.
+
+We focus on fake websites. attack channel egal. ob über SMS instant, email.. covered alles. Usually, the links to fake websites are distributed via e-mails, SMS, instant messengers or online social networks, Thus, our approach automatically covers the attack channels e-mail, sms, instant messaging and online social networks.
 
 %-------------------------------------------
 \subsection{Variations of Phishing}
