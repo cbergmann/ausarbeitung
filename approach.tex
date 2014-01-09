@@ -3,21 +3,25 @@
 \section{Approach for Our Anti-Phishing Education App}
 %*******************************************
 \label{s:approach}
-This chapter presents our final approach for the Anti-Phishing Education App....
+This chapter presents our final approach for the Anti-Phishing Education App. In the following sections we will elaborate on the app design in detail.
 %===========================================
 \subsection{App Design}
 %===========================================
+We have decided to divide our education app into two main parts. The first part of the education app is intended to increase the user awareness. The second part of the app then covers the actual educational part. The following enumeration summarizes the functions of our twofold app structure.
+
+
 \begin{enumerate}
-	\item Awareness Part
+	\item \textbf{Awareness Part} The first part of the education app is intended to increase the user awareness regarding how easy it is to spoof e-mails and mislead users with such fake messages. This part is supposed to motivate the user to do something to counter the danger of the Internet, in this particular case, against phishing.
 	\begin{enumerate}
-		\item From is not from...
-		\item Linktext unequal actual target URL
+		\item \textbf{Receive Fake E-Mail} We want to illustrate to the user how easy it is to spoof the "from" field of an e-mail as well as the content of this e-mail. For this purpose the user has to send a fake e-mail with an arbitrary sender address of his choice to himself. The user will also have the option to type in a free text. Upon submitting the form the user will receive an e-mail with the e-mail address he had indicated as sender. The free text will also be part of the received e-mail. We believe that the user will be very surprised about how easy even he himself could send a fake e-mail. The user will learn that he cannot fully trust the "from" field and the content of the e-mails he is receiving.
+		\item \textbf{Linktext Unequal Target URL} The awareness part of the app is also supposed to show the user that he cannot trust the texts of a link he is clicking on. To illustrate this, the user is asked to click on a link with the text "https://www.google.de/". Clicking on this link, the user will expect to land on the Google website, what will not happen. In fact, the user is linked back to our app, where he is told that link texts are not trustful as well. 
+	\item \textbf{Fake Website} Finally, the user is told that creating a copy of a website is also very easy. He is told that a reliable way to decide whether a website is a fake or not is to analyze the URL of the website he is visiting. He is also told that this app focuses on exactly this.
 	\end{enumerate}
-	\item Education Part
+	\item \textbf{Educational Part} The second part of the app covers the actual educational part. Here, the user is learning about various spoofing techniques of the attacker.
 	\begin{enumerate}
-		\item Information Material
-		\item Exercise to Information Material
-		\item Repeat 2.1 and 2.2 with increasing difficulty
+		\item \textbf{Information Material} The second part of the app is divided into levels of increasing difficulty. Here the user is first taught how to access and analyze the URL of the web browser. Subsequently, the user learns about the general structure of a URL. This is done in a very simplified way, so that even unexperienced users can follow. In particular, the user is told how to find the second- and top-level domain of a URL. In all succeeding levels the user is introduced to various URL spoofing techniques of a phisher. The learning content of each level can be consulted in \textbf{....(add label ref)}.
+		\item \textbf{Exercise to Information Material} After every introductory material in each level an exercise section is followed. For the "access and analyze URL part", for example, the user is forwarded to a website. There he has to apply all important steps he has learnt in the introductory part. After successful completion of the tasks the user is linked back to the app. For the "find second- and top-level domain" information material the user gets a couple of valid URLs of which he has to identify the second- and top-level domains. All subsequent level exercises are structured as follows: the user is presented a URL. He has to decide whether the presented URL is a phish or a valid URL. If the URL is a phish, and the user has correctly identified the phish, the user has to show the second- and top-level domain. Only if the user correctly identifies the second- and top-level domain he receives the points for this URL, otherwise the answer to this URL is considered wrong, because we assume that the user has just guessed in this case.
+		\item \textbf{Repeat 2.a and 2.b With Increasing Difficulty} There is an increase of difficulty in each level. That is to say, in each level it gets more difficult to distinguish phishing URLs from valid ones. The learning content of each level can be consulted in \textbf{....(add label ref)}.
 	\end{enumerate}
 \end{enumerate}
 
