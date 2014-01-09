@@ -1,0 +1,56 @@
+%*******************************************
+\section{Focus}
+%*******************************************
+\label{s:assumptions}
+Introductory sentences...
+Based on the discussion of the previous section we decided to...... (not only based on previous section)
+
+%===========================================
+\subsection{Coverage}
+%===========================================
+\begin{description}[marginleft=0]
+	\item[Phishing Technique - Deceptive Phishing] move above text here
+	\item[Attack Channel - E-Mail] or all channels with links to websites? move above text here
+	\item[Variation of Phishing - Mass Phishing] move above text here
+	\item[Game and Quiz Based Learning] wenn oben geschrieben, hier auch schreiben.			\item[URL Based Knowledge] The advantages of telling the user what to pay attention to within e-mails are the following: if the user recognizes the phishing e-mail before clicking on a link he does not even get onto a fake website where he could be lured to divulge his credentials. This also would mean, that the user would not be forwarded to a page where a malicious download might be started. On the other hand, these fake e-mails become more and more sophisticated and thus it becomes harder to distinguish them from legitimate ones~\cite{http://office.microsoft.com/en-001/outlook-help/identify-fraudulent-e-mail-and-phishing-schemes-HA001140002.aspx, http://www.spamfighter.com/News-18495-Becoming-More-Difficult-to-Detect-Phishing-Email-Attack-says-Security-Experts.htm}. Additionally, e-mail is not the only attack channel where links to phishing websites can be distributed.  Those links are also spread via instant messaging systems, online social networks, or SMS, where the messages would differ from those in e-mails. Moreover, phishing websites can also be reached by surfing~\cite{kaspersky report}, where the e-mail based knowledge approach would completely fail. For these reasons we decided to focus on communicating URL based knowledge to the user. This way, the disadvantages of e-mail based knowledge are mitigated. Furthermore, we believe that URL based knowledge gives the most reliable hint regarding its "belonging", i.e. whether a URL in fact belongs to a legitimate website or not.
+	\item["After Click" URL Analysis] We have decided to consider the "after click" scenario for the following reasons: Firstly, we cannot hinder users from clicking on links and make them type in the whole URL into the address bar. This is too effortful, especially on smartphones, and thus will not be followed by them. Secondly, many links contain redirects. Such redirects are not recognizable before the click. A further problem the "before click" scenario raises is that the stock e-mail client of Android does not provide the functionality of viewing the destination URL before clicking on it. The only way to have a look at the URL before clicking on it is to make a long press onto the link, copy it into the clipboard, paste it somewhere else and then analyze it. Then, after the analysis the URL has to be sent to the browser. However, as this is also involves too much effort, no user will follow such a suggestion. Finally, even if there are many other e-mail clients which offer viewing the destination URL via long press only, we believe that this should not be communicated to the user for two reasons. Firstly, we do not know how many Android users actually make use of the stock e-mail client, which does not offer this functionality. Secondly, and most importantly, this functionality has the potential to mislead the user. A drawback of the URL destination preview is that the end of it is cut in case the URL is too long. Well-crafted URLs might thus look legitimate even though they are not because the most important part of the URL was cut out. For example, the subdomains of the URL can be long and well-crafted so that a legitimate looking subdomain is exactly at the end of the preview. This will cause the user think, that the subdomain at the end of the preview is the domain of the URL. Ultimately, the user will trust this URL even he should not. For the reasons explained above we have decided to consider the "after click" scenario. This approach suffers the disadvantage that users might click on a link which has a download of malware behind it.  For now, we consider this as future work, as there is no possibility to detect whether there is a download behind a URL before requesting the site.
+%However, this drawback is mitigated by the fact that such downloaded malicious software is %not harmful as long as it is not opened and installed. Thus, the user should be told that %downloads he did not intend should immediately be deleted and should not be opened %under any circumstances.
+% SCHÄDLICHE SW KANN SICH AUCH AUTOMATISCH AUSFÜRHEN / ÖFFNEN VON PDF IN BROWSER IST DANN AUCH SCHON GEFÄHRLICH
+%Add to future work.
+%Falls unverständlich vielleicht ein screenshot mit einem Beispiel ;) das mit well-crafted url
+	\item[Considered Browser] für screenshots benutzen wir Android standard browser, aber kann auf jeden browser übertragen werden. wir haben überlegt, sahcen wie lock icon Blabla einzubauen, aber da immer sehr unterschiedlich haben wir uns dagegen entschieden. um unsere Methode möglichst allg. zu halten-- siehe bitte section blablabla
+	
+TODO: hinzufügen zu warum smartphone: •	Das Erlernte zu Smartphones kann einfach auf PCs übertragen werden. Umgekehrt schwieriger, weil erste Herausforderung: wie kommt man an die wichtigen Teile der URL.
+
+//IDEE: UNSERE ZIELE/COVERAGE VON SCOPE UND BACKGROUND RAUSNEHMEN UND SCHIEBEN IN FOCUS!! OBEN SCHREIBEN: WIRD IN SECTION BLABLA BESCHRIEBEN WAS WIR COVERN UND WARUM. UND HIER NOCH DAZU PACKEN.
+
+
+%===========================================
+\subsection{System Requirements}
+%===========================================
+In the following we are listing the system requirements which need to be met for the final app.
+
+\begin{description}[leftmargin=0cm]
+	\item[Android] We have decided to develop an app for the Android operation system as we believe we have greater freedom here compared to an iOS app. The publication of an iOS app, for example, is connected with more requirements, which is not the case for Android apps~\cite{publishios, publishandroid}.
+	\item[Version] Our original intention was to develop an Android app for version 4.0 and upward. However, during the app development we have encountered that about 24\% of all Android users still have Android 2.3.3 to 2.3.7~\cite{}. For this reason we have decided to modify the code so that these users can also install and use our app. 
+	\item[Android Standard Browser] Android standard browser is kein system requirement - raus. muss irgendwoanders erwähnt werden. (was betrachten wir beim erklären oder so)...
+\end{description}
+
+%===========================================
+\subsection{Assumptions}
+%===========================================
+\begin{description}
+	\item[Secure DNS] ...
+	\item[Secure Smartphone] ...
+	\item[No Before-Click URL Analysis] ...
+	\item[Download URLs Possible] ...
+\end{description}
+
+%===========================================
+\subsection{Limitations of Our Approach}
+%===========================================
+\begin{description}
+	\item[Cross-Site Scripting] ...
+	\item[URL Hiding Techniques] ...
+\end{description}
+
