@@ -25,15 +25,20 @@ We have decided to divide our education app into two main parts. The first part 
 	\end{enumerate}
 \end{enumerate}
 
+The next section deals with the concrete rules of the game.
 %===========================================
 \subsection{Game Rules}
 %===========================================
+The educational part of the app which is followed by the awareness part is divided into several levels. In each level the user is provided with specific informational material. After the information material is consulted by the user, he has to finish the according exercise. The first  and second information materials (introduction 2 and level 1) and exercises that the user receives differ from the ones of the other levels. The first information material and task of the user deals with accessing the address bar of a webbrowser and viewing its URL completetely. To prove that the user has understood how to access the address bar and view the URL he has to do the following: When the user is forwarded to the website to solve the task he has to scroll up to the top of the website to make the generally hidden address bar visible. Afterwards, he has to provide us the information we request about the URL in the address bar. This will show that he has in fact viewed the whole URL. After successful completion the user is linked back to the app and level 1 is started. From this level on, the user has three lives upon start of each level. In level 1 he has to identify the "Who-Section" (second- and top-level domain) of a URL. He has to tap the according part of the displayed URL. In this level wrong answers result in losing points and losing a live. In order not to frustrate the user he cannot get less than 0 points. When the user has no more lives left he has to restart the level. With every correct answer the user gains points.  In level 2 we start introducing URL spoofing techniques and the user has to decide whether a given URL is a phishing URL or a valid one. Here also, the user can lose and win points as well as lose lives. Here again, if the user has no more lives left he has to restart the level. The following Figure~\textbf{FIgure referenzieren} illustrates the game flow and consequences of wrong and correct answers from level 2 and upwards. If the user has correctly decided that a phishing URL is a phish, he has to show us the "Who-Section" to prove that he has understood the concept. In all other cases the user is directly shown the result of his answer. In summary, the user looses points for any wrong answer, but he does not lose a life for every wrong answer. We have decided that rejecting valid URLs is not as severe as accepting phishing URLs. For this reason the punishment for accepting a phishing URL is more severe than the punishment for rejecting a valid URL. All in all, the user loses points and a live in the following cases: the user has falsely accepted a phishing URL or the user has correctly rejected a phishing URL, but could not show us the "Who-Section". In all other cases the user cannot lose lives, but only points.
 
 %===========================================
 \subsection{Leveling Strategy}
 %===========================================
 Three approaches...
+When does the user get to the next level. correct/wrong answers
 
+
+From level 1 upwards the user has a predefined number of correct answers he has to give to complete the level. In addition, he has three lives per level which are represented by hearts. For every correct answer the user gets points. For every wrong answer the user loses points. A correct answer will result in the decremention of the correct answers the user is required to give in this level. Thus, a wrong answer will not modify the remaining number of correct answers the user has to give. 
 %===========================================
 \subsection{Knowledge Transfer Per Level}
 %===========================================
