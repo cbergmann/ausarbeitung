@@ -34,10 +34,9 @@ There are various possibilities how phishers can obtain users' confidential info
 	\item[Man-in-the-Middle Phishing] In this form of attack the phisher positions himself between the legitimate website and the user. The user's data input is delivered to the phisher, where he stores the information and then forwards it to the legitimate website. Responses are also forwarded back to the user so that the interference of the phisher does not affect the user's interactions. The gained sensitive information can then be sold or misused in any other way. As everything works as usual for the user, it is very difficult for him to detect such an attack. 
 	\item[Content Injection Phishing] Content injection phishing refers to the practice of embedding additional harmful content into legitimate websites. This content can, for example, be malvolent code to log users' sensitive information and deliver the input to the phishing server. Well-known types of content-injection phishing include, for example, cross-site scripting. Cross-site scripting vulnerabilities result from a web application's usage of content from external sources, such as search terms, auctions or user reviews of a product. This type of data supply can be misused and instead of delivering the expected kind of data malicious scripts can be injected.
 	\item[Search Engine Phishing] Other phishing attempts involve search engines. Here, websites with offers for fake low cost products and/or services are legitimately indexed with search engines. Thus, users reach these websites when using the search engine. These offers, which are often too good to be true, then lure the user to buy those fake products which in turn leads to the disclosure of their sensitive information, such as the credit card number, to the phisher.
-
 \end{description}
-Within the scope of this work we focus on deceptive phishing. In particular, we target the detection of phishing websites resp. phishing URLs. Besides the different kinds of techniques of phishing there also exist a number of attack channels a phisher can make use of. The following section deals with these attack channels.
 
+Besides the different kinds of techniques of phishing there also exist a number of attack channels a phisher can make use of. The following section deals with these attack channels.
 %(eventuell liste oder aufzählung) 
 %EXAMPLE TABLE WHICH MIGHT BE USEFUL :D
 %\begin{table}
@@ -59,7 +58,7 @@ Within the scope of this work we focus on deceptive phishing. In particular, we 
 %-------------------------------------------
 \subsection{Phishing Attack Channels}
 %-------------------------------------------
-Several attack channels that can be used by phishers to reach their victims. This section intends to introduce possible attack channels~\cite{phishing2010ramazan}.
+Several attack channels that can be used by phishers to reach their victims. This section introduces possible attack channels~\cite{phishing2010ramazan}.
 \label{s:attack_channels}
 \begin{description}[leftmargin=0cm]
 	\item[E-Mail] E-Mail spoofing is a common way of a phisher to reach his victims. These e-mails usually imitate renowned institutions, organizations, companies or banks the recipients trust. They usually contain a text which will deceive the recepient into doing what it says. Usually these e-mails link to a malicious website, whose look and feel is almost identical to the original one. There the user is lured to enter his sensitive data which is captured by the phisher. Other alternatives are embedded forms in the e-mail the user has to fill in. Sometimes users are even asked to directly send back their confidential data.
@@ -68,8 +67,6 @@ Several attack channels that can be used by phishers to reach their victims. Thi
 	\item[Online Social Networks] Using online social networks works as using instant messaging services. However, online social networks provide additional valuable information to the phisher. With the aid of user profiles and pinboard entries etc. he can make his baits even more credible. Consequently, the likelihood for his targets to get phished increases.
 	\item[Voice Phishing] A further possibility for a phisher is to send out spoofed e-mails asking the victim to call back the telephone number indicated in the e-mail. To deceive the user the the phisher as usual claims to be from a legitimate and trustworthy institution or organization. The number in the e-mail commonly leads to a voice response system by which the user is tricked to disclose confidential information. Alternatively, the phisher can directly call the user and lure him into divulging his senstitive information. With Voice-over-IP (VoIP) these kind of attacks are executable easily and inexpensivly. Voice Phishing is also referred to as Vishing.
 \end{description}
-
-In the scope of our work we focus on the detection of spoofed websites resp. phishing URLs. Phishing websites can be reached in several ways. Links to fake websites are usually distributed via e-mails, instant messages or online social networks. However, they can also be spread via SMS or even phone calls. Ultimately, a phishing website can also be reached by just surfing in the Internet. As a consequence, our approach covers all attack channels, as long as the user is tricked to divulging sensitive information via a phishing website.
 
 %-------------------------------------------
 \subsection{Variations of Phishing}
@@ -83,12 +80,12 @@ Do we need this subsection?
 	\item[Whaling] Whaling is a specific form of spear phishing. The target distinguishes whaling from spear phishing. While spear phishing aims at specific individuals or groups within organizations, whaling attacks are after high-level targets, such as senior executives or other leaders in positions of influence.
 \end{description}
 
-We cover in particular mass phishing. However, the URL checking can be applied in case of any variant, as long as the attack includes a website which lures the user to type in his credentials. In the following section we will summarize and reason the scope of phishing we are going to cover in this work.
+ In the following section we will summarize the scope of the term phishing for this work.
 %===========================================
 \subsection{Scope}
 %===========================================
 \label{s:scope}
 In the previous sections we have introduced numerous phishing techniques, attack channels as well as phishing variations. As there are more ways of how phishing can be understood, we have to constrain the scope of the term phishing for this work. In literature most of the time phishing is described as the act of gaining sensitive information with the aid of fake websites which trick unsuspecting users into disclosing their credentials.
 %Das sagt fast jede quelle. aber es sagt keine quelle 80 % aller phsihing dinger sind über fake websiten (vll kaspersky report nachschauen.)
-This type of attack is a form of deceptive phishing. For this reason we have decided to focus on deceptive phishing. As aforementioned, phishing websites can be distributed in several ways, including but not limited to e-mail, SMS or online social networks. As our focus will be set on the analysis of URLs, it does not matter where these links came from. Any attack channel distributing a link to a fake website will be covered by our approach. Finally, there are three variations of phishing we have introduced. Our main focus is the mass phishing attack. However, if any spear phishing or whaling attack should involve fake websites, this would be covered by our approach also.
+This type of attack is a form of deceptive phishing. For this reason we have decided to focus on deceptive phishing. As aforementioned, phishing websites can be distributed in several ways, including but not limited to e-mail, SMS or online social networks. As our focus will be set on the analysis of URLs, it does not matter where these links came from. Any attack channel distributing a link to a fake website will be covered by our approach. Finally, there are three variations of phishing we have introduced. Our main focus is the mass phishing attack. However, if any spear phishing or whaling attack should involve fake websites, this would be covered by our approach as well.
 
