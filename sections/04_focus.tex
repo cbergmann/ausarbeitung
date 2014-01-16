@@ -104,10 +104,14 @@ In addition to the general assumptions we make because of the total inability of
 There are also limitations of our approach that result in the target group for our app.
 The targeted user is not a computer expert and has no time nor interest to analyze the shown webpage throughly before entering data.
 Therefore we don't tell the user about possible attacks that an experienced user might find.
-Also we concentrate on identifying phishing pages by URL but there are techniques where a valid URL contains phishing content.
 \begin{description}
-	\item[Cross-Site Scripting] ...
-	\item[URL Hiding Techniques] ...
+	\item[Cross-Site Scripting]
+	Cross-Site Scripting (XSS) is an a attack where the attacker enters code into a legitimate webpage.
+	For a later viewer of this page this form seems to be legitimate content of the attacked webpage and he might be lured to enter personal data in this area. 
+	Depending on attacked webpage this can not be detected by the user.
+	This is a vulnerability of the attacked webpage and can be prevented by checking user input.
+	Therefore we think that preventing this attack is in the responsibility of the website owner.
+	\item[URL Hiding Techniques]
 	\item[Man-in-the-middle] ...
 \end{description}
 
