@@ -112,6 +112,13 @@ Therefore we don't tell the user about possible attacks that an experienced user
 	This is a vulnerability of the attacked webpage and can be prevented by checking user input.
 	Therefore we think that preventing this attack is in the responsibility of the website owner.
 	\item[URL Hiding Techniques]
-	\item[Man-in-the-middle] ...
+	Most modern mobile phones have small screens.
+	Therefore most browser hide away the URL-bar when the user views a webpage to gain additional screen real estate.
+	The URL-bar is shown only when the user scrolls up beyond the top of the page.
+	There is a possible attack where the attacker prevents the user from scrolling all the way up and instead displays a fake URL-bar with a fake URL.
+	A problem that the attacker must solve is that mobile browser look very diffently and this must be reflected by the fake URL-bar.
+	This problem is not easy to solve and it is today not needed for the attacker to do such sophisticated attacks because enough users fall for the simple attacks. 
+	We think this is the reason that this attack is not yet seen in the wild.
+	Therefore we don't consider this attack. 
 \end{description}
 
