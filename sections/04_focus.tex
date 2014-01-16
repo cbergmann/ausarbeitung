@@ -95,6 +95,12 @@ We have to make some assumptions about the system the user uses. If one or more 
 	This includes local host files and all used DNS servers.
 	\item[Secure Smartphone] Also we have to assume that the system of the user is in a secure state.
 	This means that the attacker is not able to e.g. replace the browser or read the users input.
+	\item[Secure SSL] 
+	For a Man-in-the-middle it is possible to interfere with the send or received data and to collect the user data directly.
+	Therefore we warn the user that he should not enter personal data in non-HTTPS pages.
+	But even in HTTPS environments we can not be sure of the servers identity when SSL is not secure.
+	We are aware that recent events show that there are a multitude of SSL providers which fail to ensure that certificates are only handed to legitimate users or do this on purpose.
+	When SSL is not secure the user has no practical possiblity to detect a Man-in-the-middle attack.		
 \end{description}
 
 %===========================================
