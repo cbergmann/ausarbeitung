@@ -15,13 +15,11 @@ We have decided to divide our education app into two main parts.
  The second part of the app then covers the actual educational part.
  The following enumeration summarizes the functions of our twofold app structure.
 
-
-
 \begin{enumerate}
 	\item \textbf{Awareness Part} The first part of the education app is intended to increase the user awareness regarding how easy it is to spoof e-mails and mislead users with such fake messages.
  This part is supposed to motivate the user to do something to counter the danger of the Internet, in this particular case, against phishing.
 
-	\begin{enumerate}
+\begin{enumerate}
 		\item \textbf{Receive Fake E-Mail} We want to illustrate to the user how easy it is to spoof the ``from'' field of an e-mail as well as the content of this e-mail.
  For this purpose the user has to send a fake e-mail with an arbitrary sender address of his choice to himself.
  The user will also have the option to type in a free text.
@@ -40,12 +38,12 @@ de/''. Clicking on this link, the user will expect to land on the Google website
  He is told that a reliable way to decide whether a website is a fake or not is to analyze the URL of the website he is visiting.
  He is also told that this app focuses on exactly this.
 
-	\end{enumerate}
+\end{enumerate}
 	\item \textbf{Educational Part} The second part of the app covers the actual educational part.
  Here, the user is learning about various spoofing techniques of the attacker.
 
-	\begin{enumerate}
-		\item \textbf{Information Material} The second part of the app is divided into levels of increasing difficulty.
+\begin{enumerate}
+	\item \textbf{Information Material} The second part of the app is divided into levels of increasing difficulty.
  Here the user is first taught how to access and analyze the URL of the web browser.
  Subsequently, the user learns about the general structure of a URL.
  This is done in a very simplified way, so that even unexperienced users can follow.
@@ -65,7 +63,7 @@ de/''. Clicking on this link, the user will expect to land on the Google website
 		\item \textbf{Repeat 2.a and 2.b With Increasing Difficulty} There is an increase of difficulty in each level.
  That is to say, in each level it gets more difficult to distinguish phishing URLs from valid ones, cf.
 ~Section~\ref{s:knowledgetransferperlevel}.
-	\end{enumerate}
+\end{enumerate}
 \end{enumerate}
 
 The next section deals with the concrete rules of the game.
@@ -99,14 +97,12 @@ The educational part of the app which is followed by the awareness part is divid
  We have decided that rejecting valid URLs is not as severe as accepting phishing URLs.
  For this reason the punishment for accepting a phishing URL is more severe than the punishment for rejecting a valid URL.
  All in all, the user loses points and a live in the following cases: the user has falsely accepted a phishing URL or the user has correctly rejected a phishing URL, but could not show us the ``Who-Section''. In all other cases the user cannot lose lives, but only points.
-
 \newline\newline
 The following section deals with our leveling strategy.
 
 \begin{figure}[hHtbp]
 \centering
-\includegraphics[width=1.0\textwidth]{graphix/lose_win_points.
-pdf}
+\includegraphics[width=1.0\textwidth]{graphix/lose_win_points.pdf}
 \caption{Losing points and lives in the game}
 \label{fig:lose_points_life}
 \end{figure}
@@ -218,8 +214,7 @@ e.
 
 \begin{figure}[hHtbp]
 \centering
-\includegraphics[width=0.56\textwidth]{graphix/url_components.
-pdf}
+\includegraphics[width=0.56\textwidth]{graphix/url_components.pdf}
 \caption{URL components that are communicated to the user}
 \label{fig:url_components}
 \end{figure}
