@@ -3,31 +3,91 @@
 %*******************************************
 
 \textbf{TEILE VON DIESEM KAPITEL SCHEINEN NACH MELANIE EHER BACKGROUND ZU SEIN: SCHAUEN}
-In this section we will describe and elaborate on different teaching and learning contents which can potentially be communicated to the user. At the same time we will reason our decision whether to communicate the specific content or not.
+In this section we will describe and elaborate on different teaching and learning contents which can potentially be communicated to the user.
+ At the same time we will reason our decision whether to communicate the specific content or not.
+
 %Documents master_thesis/notes/android_browser bla -> BEGRÜNDUNG WARUM manches nicht sinnvoll ist (diese Sachen vielleicht eher in Appendix vor allem versionsunterschiede)
 %Documents master_thesis/konzepte/android browser elemente UND browser comparison
 %CHECK IF I FORGOT SOMETHING!!!!
 %===========================================
 \subsection{Phishing URLs}
 %===========================================
-As aforementioned, we focus on teaching the user how to analyze a given URL and to decide on it whether it belongs to a legitimate or illegitimate website. In order to distinguish legitimate URLs from phishing URLs it is necessary to analyze existent phishing URLs regarding how the URLs are spoofed in order to deceive the users. For the analysis of phishing URLs we chose the database of PhishTank.
-PhishTank is a free community site where people can submit, verify and view phishing data. It provides an API which makes all PhishTank data accessible. Renowned organizations such as Yahoo, Kaspersky Lab and Mcafee use the data submitted by PhishTank~\cite{phishtank}. A further deciding reason to choose PhishTank as our phishing URL database was that Kaspersky Lab itself recommended us to make use of it for our URL analysis. For the phishing URL analysis we made use of the URL categories which had been identified by the authors of Anti-Phishing Phil~\cite{sheng2007antiphishingphil} as a starting point. To these belong IP address URLs, subdomain URLs as well as similar and deceptive domain URLs. With these given categories we tried to assign the PhishTank URLs to the available categories. When no category suited the URL to be assigned, we generated a new category, to which the URL could then be assigned to. In addition we found various categories mentioned in literature, which we also included to our categories, even if we could not find any explicit example URL in the PhishTank database. In the following the identified URL categories are explained.
+As aforementioned, we focus on teaching the user how to analyze a given URL and to decide on it whether it belongs to a legitimate or illegitimate website.
+ In order to distinguish legitimate URLs from phishing URLs it is necessary to analyze existent phishing URLs regarding how the URLs are spoofed in order to deceive the users.
+ For the analysis of phishing URLs we chose the database of PhishTank.
+
+PhishTank is a free community site where people can submit, verify and view phishing data.
+ It provides an API which makes all PhishTank data accessible.
+ Renowned organizations such as Yahoo, Kaspersky Lab and Mcafee use the data submitted by PhishTank~\cite{phishtank}. A further deciding reason to choose PhishTank as our phishing URL database was that Kaspersky Lab itself recommended us to make use of it for our URL analysis.
+ For the phishing URL analysis we made use of the URL categories which had been identified by the authors of Anti-Phishing Phil~\cite{sheng2007antiphishingphil} as a starting point.
+ To these belong IP address URLs, subdomain URLs as well as similar and deceptive domain URLs.
+ With these given categories we tried to assign the PhishTank URLs to the available categories.
+ When no category suited the URL to be assigned, we generated a new category, to which the URL could then be assigned to.
+ In addition we found various categories mentioned in literature, which we also included to our categories, even if we could not find any explicit example URL in the PhishTank database.
+ In the following the identified URL categories are explained.
+
 
 %...........................................
 \subsubsection{Phishing URL Categorization}
 %...........................................
 \label{s:url_categories}
-URLs are complex and many users do not know how exactly they have to be interpreted. For example, users can be convinced about the authenticity of an URL when it contains the brand name anywhere. Phishers exploit this lack of knowledge in different way. In the following we present the identified spoofing attacks on URLs and state whether they are covered by the app.
+URLs are complex and many users do not know how exactly they have to be interpreted.
+ For example, users can be convinced about the authenticity of an URL when it contains the brand name anywhere.
+ Phishers exploit this lack of knowledge in different way.
+ In the following we present the identified spoofing attacks on URLs and state whether they are covered by the app.
+
 \begin{description}[leftmargin=0cm]
-	\item[Subdomain] Phishers make use of subdomains which are very similar or even identical to the domains of the spoofed target institutions. This makes the users believe that they are on a legitimate website. This form of URL spoofing is covered by our education app.
-	\item[IP Address] Sometimes phishers do not even bother registering any domain at all. In this case, the URL to the phisher's fake website contains an IP address. This form of URL spoofing is covered by our education app.
-	\item[Nonsense Domain] We frequently encountered URLs which had registered quite nonsense as their domain. The domain names ranged from random letters to domain names like ``marketstreetchippy.com''. Sometimes other parts of the URL contained the brand name, but sometimes there was no clue in the URL about to where it is actually leading. This form of URL spoofing is covered by our education app.
-	\item[Trustworthy, But Unrelated Domain] Some URLs are very well-crafted. When reading them they appear meaningful and trustworthy. This is particularly accomplished by making use of domain names which sound very trustworthy, for example, ``account-information.com'', ``secure-login.de'' or ``security-update.com''. If the URL additionally contains the brand name of the target institution somewhere in the URL the user can be perfectly deceived. This form of URL spoofing is covered by our education app.
-	\item[Similar and Deceptive Domains] Another possibility to fool users with a spoofed URL is to use URLs which look like the original ones, but have a slight difference. For example, phishers register domains which resemble the targeted domain, but has a typo. To spoof ``paypal.com'', for instance, the attacker might register ``paypel.com''. Another approach is to use a modification of the original domain. The modified domain contains the brand name in some form. For example, ``facebook-login.com'' can be registered in order to fake ``facebook.com''. Finally, the attacker can scramble letters of the original domain, which can be very hard to detect at first sight. This form of URL spoofing is covered by our education app.
-	\item[Homograph Attack] The homograph attack exploits character resemblance. Here characters are replaced by other characters which look very similar to the replaced one. For example, an attacker might replace a ``w'' within a genuine domain with ``vv'' and register it. An even more advanced way is to replace characters of the genuine domain with characters from other langauge sets, such as Cryllic languages, where the characters will look almost identical~\cite{gabrilovich2002homograph}. The letter case is indistinguishable for the human eye in many cases. For this reason only cases that are distinguishable by the human eye are covered by the educational app.
+	\item[Subdomain] Phishers make use of subdomains which are very similar or even identical to the domains of the spoofed target institutions.
+ This makes the users believe that they are on a legitimate website.
+ This form of URL spoofing is covered by our education app.
+
+	\item[IP Address] Sometimes phishers do not even bother registering any domain at all.
+ In this case, the URL to the phisher's fake website contains an IP address.
+ This form of URL spoofing is covered by our education app.
+
+	\item[Nonsense Domain] We frequently encountered URLs which had registered quite nonsense as their domain.
+ The domain names ranged from random letters to domain names like ``marketstreetchippy.
+com''. Sometimes other parts of the URL contained the brand name, but sometimes there was no clue in the URL about to where it is actually leading.
+ This form of URL spoofing is covered by our education app.
+
+	\item[Trustworthy, But Unrelated Domain] Some URLs are very well-crafted.
+ When reading them they appear meaningful and trustworthy.
+ This is particularly accomplished by making use of domain names which sound very trustworthy, for example, ``account-information.
+com'', ``secure-login.
+de'' or ``security-update.
+com''. If the URL additionally contains the brand name of the target institution somewhere in the URL the user can be perfectly deceived.
+ This form of URL spoofing is covered by our education app.
+
+	\item[Similar and Deceptive Domains] Another possibility to fool users with a spoofed URL is to use URLs which look like the original ones, but have a slight difference.
+ For example, phishers register domains which resemble the targeted domain, but has a typo.
+ To spoof ``paypal.
+com'', for instance, the attacker might register ``paypel.
+com''. Another approach is to use a modification of the original domain.
+ The modified domain contains the brand name in some form.
+ For example, ``facebook-login.
+com'' can be registered in order to fake ``facebook.
+com''. Finally, the attacker can scramble letters of the original domain, which can be very hard to detect at first sight.
+ This form of URL spoofing is covered by our education app.
+
+	\item[Homograph Attack] The homograph attack exploits character resemblance.
+ Here characters are replaced by other characters which look very similar to the replaced one.
+ For example, an attacker might replace a ``w'' within a genuine domain with ``vv'' and register it.
+ An even more advanced way is to replace characters of the genuine domain with characters from other langauge sets, such as Cryllic languages, where the characters will look almost identical~\cite{gabrilovich2002homograph}. The letter case is indistinguishable for the human eye in many cases.
+ For this reason only cases that are distinguishable by the human eye are covered by the educational app.
+
 % DAS WAS DER USER NICHT SEHEN KANN WIRD NATÜRLICH AUCH NICHT GECOVERED WERDEN KÖNNEN
-	\item[Tiny URLs] A tiny URL service is used to convert a long URL into a short one. Due to their shortness tiny URL are very comfortable to use and easy-to-type. There seemed to be a trend of using tiny URLs for phishing in 2009, in particular in instant messaging services. Tiny URLs usually do not give a hint about the target website and users do not tend to be suspicious about receiving such links from a ``friend'' what made the use of it quite popular~\cite{tinyurlpcworld}. Tiny URLs redirect the tiny URL to the actual long URL. As we consider the ``analyze URL after-click'' scenario for the user education, there is no need of the tiny URL to be covered by the app.
-		\item[Cloaked URLs] Other phishers integrate an ``@'' into the URL so that domain names become difficult to understand and the actual destination of a link becomes ``cloaked''\cite{alnajim2009fighting}. For example, the URL http://paypal.com@google.com/ is redirected to http://google.com. As we consider the ``analyze URL after-click'' scenario for the user education, there is no need of the tiny URL to be covered by the app.
+	\item[Tiny URLs] A tiny URL service is used to convert a long URL into a short one.
+ Due to their shortness tiny URL are very comfortable to use and easy-to-type.
+ There seemed to be a trend of using tiny URLs for phishing in 2009, in particular in instant messaging services.
+ Tiny URLs usually do not give a hint about the target website and users do not tend to be suspicious about receiving such links from a ``friend'' what made the use of it quite popular~\cite{tinyurlpcworld}. Tiny URLs redirect the tiny URL to the actual long URL.
+ As we consider the ``analyze URL after-click'' scenario for the user education, there is no need of the tiny URL to be covered by the app.
+
+		\item[Cloaked URLs] Other phishers integrate an ``@'' into the URL so that domain names become difficult to understand and the actual destination of a link becomes ``cloaked''\cite{alnajim2009fighting}. For example, the URL http://paypal.
+com@google.
+com/ is redirected to http://google.
+com.
+ As we consider the ``analyze URL after-click'' scenario for the user education, there is no need of the tiny URL to be covered by the app.
+
 \end{description}
 
 %...........................................
@@ -37,7 +97,8 @@ URLs are complex and many users do not know how exactly they have to be interpre
 %...........................................
 \subsection{Android Elements}
 %...........................................
-Eventuell Titel umbenennen, anders strukturieren...
+Eventuell Titel umbenennen, anders strukturieren.
+..
 \begin{description}
 	\item[Invisible Address Bar] Find URL Bar, Browser
 	\item[Use of Https Within Websites] Browser
@@ -54,7 +115,9 @@ Eventuell Titel umbenennen, anders strukturieren...
 		\item[Https Padlock] Browser
 		\item[Displayed Webaddress on Https Sites] Browser
 		\item[Certificate Verification]
-		\item[Touch Padlock] to see whole URL.. problems: see document...
+		\item[Touch Padlock] to see whole URL.
+. problems: see document.
+..
 \end{description}
 
 %...........................................
@@ -80,5 +143,6 @@ Eventuell Titel umbenennen, anders strukturieren...
 \subsection{Conclusion / Summary}
 %...........................................
 
-Summarize what to communicate to user here...
+Summarize what to communicate to user here.
+..
 
