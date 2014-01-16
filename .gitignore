@@ -1,4 +1,10 @@
-master_thesis.aux
-master_thesis.log
+*.aux
+*.log
 master_thesis.out
-master_thesis.toc
+*.toc
+*.bbl
+*.blg
+*.tex~
+*.fls
+*.fdb_latexmk
+*.synctex.gz
