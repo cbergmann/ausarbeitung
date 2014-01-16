@@ -87,18 +87,27 @@ In the following we are listing the system requirements which need to be met for
 %===========================================
 \subsection{Assumptions}
 %===========================================
+We have to make some assumptions about the system the user uses. If one or more of these are not met the user, disregarding of his skill, is not able to detect when he is target of an attack.
 \begin{description}
-	\item[Secure DNS] ...
-	\item[Secure Smartphone] ...
-	\item[No Before-Click URL Analysis] ...
-	\item[Download URLs Possible] ...
+	\item[Secure DNS] We have to be sure that DNS is not under the control of the attacker.
+	Our approach is to show the user how to identify phishing by analysing the URL of the shown page.
+	This is of no use if the Phisher can control the DNS system of the user.
+	This includes local host files and all used DNS servers.
+	\item[Secure Smartphone] Also we have to assume that the system of the user is in a secure state.
+	This means that the attacker is not able to e.g. replace the browser or read the users input.
 \end{description}
 
 %===========================================
 \subsection{Limitations of Our Approach}
 %===========================================
+In addition to the general assumptions we make because of the total inability of the user to detect phishing if one of these assumptions are not met.
+There are also limitations of our approach that result in the target group for our app.
+The targeted user is not a computer expert and has no time nor interest to analyze the shown webpage throughly before entering data.
+Therefore we don't tell the user about possible attacks that an experienced user might find.
+Also we concentrate on identifying phishing pages by URL but there are techniques where a valid URL contains phishing content.
 \begin{description}
 	\item[Cross-Site Scripting] ...
 	\item[URL Hiding Techniques] ...
+	\item[Man-in-the-middle] ...
 \end{description}
 
