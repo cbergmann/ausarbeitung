@@ -1,4 +1,11 @@
 Bei 01/statistics ist die Formulierung mit 2011-2012 und 2012-2013 irgendwie sperrig. 
+--> ich fand das auch nicht so toll. allerdings haben sie das in dem einen report halt so beschrieben. weiß nicht wie man das anders formulieren kann.
+
 Ich glaub es braucht noch eine Einleitung welche erklärt worum es eigentlich in dieser Master-Arbeit geht.
+--> gehört das ins abstract? 
+
 User HE oder SHE ?
+--> einerseits hast du recht. Andererseits find ich es sehr unleserlich, wenn wir jedes mal, wenn der user erwähnt wird he or she schreiben  :/
+
 Haben wir was zu after-click/verlorene E-Mail Adressen?
+--> ich bin mir unsicher. aber es würde hier hin passen denke ich "After Click" URL Analysis in section focus und subsectoin coverage.
