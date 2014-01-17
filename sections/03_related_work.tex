@@ -56,8 +56,8 @@ The objective of this section is to introduce the different classes of learning 
 The objective of this section is to introduce the different classes of learning media which we could identify in previous work.
 
 \begin{description}[leftmargin=0cm]
-    \item[Simple text] The simplest way of transporting knowledge to the user is to just write text about it.
-    This is the most researched kind of medium and generation over generations of Pedagogues have researched and improved this medium.
+    \item[Simple Text] The simplest way of transferring knowledge to the user is to just write text about it.
+    This is the most researched kind of medium and generations over generations pedagogues have researched and improved this medium.
     Alone in this medium there are multiple genres and subgenres which all might be used to transfer knowledge.
     The main problem is that in modern time many people see the simple text as old fashioned and prefer more interactive learning approaches. 
     
@@ -88,10 +88,64 @@ The objective of this section is to introduce the different classes of learning 
 \subsection{Previous Work}
 %============================================
 \label{s:prev_work}
-Previous work here ... (e.
-g.
- Anti-Phishing Phil and Phyllis)
-%%%ANTI PHISHING LANDING PAGE ALS PREV WORK EXAMPLE EINBAUEN FÜR EMBEDDED LEARNING
+%...............................................................................................................
+\subsubsection{Game and URL Based Approaches}
+%...............................................................................................................
+Anti-Phishing Phil is a game based approach. 
+The three main objectives of this game are the following: 
+(1) learn to detect phishing URLs, (2) learn where to look for indications in browsers for trustworthy/untrustworthy websites, and (3) learn to use search engines to find legitimate websites. 
+The major focus, however, is set on the detection of phishing URLs. 
+The main character of the game is a little fish, named Phil, who has to grow to a big fish by eating worms. 
+These worms can either be good, i.e. real worms, or bad, i.e. fake worms, with which fishers try to hook the fish of the sea. 
+Good worms of the game are associated with URLs of legitimate websites, while bad worms are associated with the URLs of phishing websites. 
+Phil's task is to feed on legitimate URLs only. 
+He must reject phishing URLs to grow to a big and healthy fish. 
+The game consists of four rounds in total, each round endures two minutes. 
+For correct actions Phil is rewarded with a certain amount of points. 
+If Phil falsely rejects a legitimate URL, he is slightly penalized by having the time left decremented for a couple of seconds. 
+However, if Phil eats a phishing URL he is severely penalized by losing one of three lives. 
+In this way, the authors try to simulate the real world effects of their behavior. 
+Each round the focus of deception techniques is shifted and phishing URLs get more difficult to identify. 
+In the first round the users get introduced to IP address URLs. 
+The second round mainly deals with deceptive subdomain URLs, where the brand name occurs in the subdomain. 
+In the third round, the users are taught about similar and deceptive domains. 
+In the last round finally, the user has to deal with all kinds of deceptions he has dealt with so far. 
+The information material provided to the user is delivered by so called training messages. 
+Anti-Phishing Phil features four kinds of training messages. 
+First, the user gets direct feedback during the game, whether the answer he has given is correct or not and why. 
+Second, the user has the possibility to receive help in case he needs it. 
+In this case, Phil's experienced father will give a tip. 
+Third, at the end of each round a score sheet is displayed, which summarizes the user's answers, whether they were correct or wrong, and why they were correct or wrong. 
+Finally, there are anti-phishing tips in-between the rounds. 
+To evaluate the effectiveness of the game the authors conducted a between-subjects experiment with three training conditions: 
+(1) existing training material, e.g. from eBay or Microsoft, (2) anti-phishing tutorials which were created based on the game, and (3) the game itself. 
+Each group had to decide on ten websites (in total 20) about their authenticity before and after the training step. 
+The results showed that the participants in the game condition performed better than those in the other two conditions. 
+All in all, we believe that the approach is a good step towards user education and features many good aspects. 
+In the first place, the game based approach is an attractive incentive. 
+Furthermore, the training messages are kept short and simple. 
+Finally, the training messages, especially of the categories of help during the game and the score sheet after each round are very valuable. 
+Due to time restrictions we could not integrate those kind of messages. 
+However, we believe that this approach has some flaws and thus is not optimal for user education. 
+Even though, using a fish as main character for this game is a funny idea, we do not think that this is an appropriate solution for adults. 
+This is also reflected by the results of our pre-study, cf.~Section~\ref{prestudy}. 
+As aforementioned, the training messages are simple and easy to understand, however, we are afraid that the phrasing is too vague. 
+For example, for IP address URLs the following alert message is displayed to the user: 
+"Don't trust URLs with all numbers in the front". 
+For subdomain attacks the following wording is used "Don't be fooled by the word ebay.com in there, this site belongs to ttps.us". 
+These kind of messages are susceptible to misinterpretation. 
+Another downside we see, which is ultimately related to the vague formulations, is that the user is not concretely explained how he has to parse the URL in order to make healthy decisions on the authenticity of such. 
+Here again he is only told that the most important part of the URL is between the "https://" and "/" and that the name of the website is the text right before the "/". 
+In our point of view this is a vague phrasing and there is a lack of emphasizing the importance of the domain, which we do in our solution. 
+Finally, the game does not cover some spoofing techniques, which are still relevant in our opinion, cf.~Section~\ref{phishing_url_categories}, and thus covered by us. 
+For example, the difference between http and https is not introduced, as well as the fact that https websites can also be phishing websites. 
+Furthermore, the game does not explicitly mention that the domain name, the host or even the entire URL can be part of the path to fool the user. 
+Finally, there are different ways of making use of deceptive domains, which were not explicitly covered in Anti-Phishing Phil. 
+For example homographic attacks which are detectable by the human eye, typos or scrambled letters, which should be distinguished in our opinion, in order to exemplify to the user how mean and hard to detect such URL spoofing techniques can be. 
+There exist further proposals which are very similar to Anti-Phishing Phil~\cite{arachchilage2011designing,arachchilage2012designing}
+
+
+
 
 %============================================
 %\subsection{Open Questions}
