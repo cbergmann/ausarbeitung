@@ -6,7 +6,7 @@
 \label{s:related_work}
 
 This chapter deals with previous work on anti-phishing education.
- We divided the related work we have found in literature into two categories: the \textit{content}, i.e.
+ For better readability and comprehensibility we divided the related work we have found in literature into two categories: the \textit{content}, i.e.
  what the user is taught, and the 
 %WHAT WAS THE USER TOLD$ and the 
 \textit{medium}, i.e. how the user is taught.
@@ -20,8 +20,7 @@ This chapter deals with previous work on anti-phishing education.
 %============================================
 The objective of this section is to introduce the different classes of learning content which we could identify in previous work.
 
-\textbf{ICH BIN MIR UNSICHER OB MELANIE DIESE KLASSIFIZIERUNG GEFIEL.
- VIELLEICHT SOLLTEN WIR TATSCÄHLCIH EINFACH NUR RUNTERZÄHLEN WAS ES SO GIBT UND AUF VOR UND NACHTEILE EINGEHEN}
+
 \begin{description}[leftmargin=0cm]
 	\item[General Knowledge Transfer] Renowned and targeted websites, such as PayPal, eBay or Microsoft provide general and superficial information about phishing~\cite{generalknowledgemicrosoft, generalknowledgepaypal, generalknowledgeebay}.
 	Usually, they deal with questions like what is phishing, how does phishing happen, what the symptoms of phishing are and how to report phishing attempts.
@@ -47,7 +46,7 @@ The objective of this section is to introduce the different classes of learning 
 
 \end{description}
 
-%HIER SCHON NACHTEILE ODER UNTEN BEI EXAMPLES ODER BEIDES?!
+
 
 
 %============================================
@@ -163,8 +162,35 @@ If the user wants to know why his answer was correct or wrong he has to click on
 As aforementioned, teaching users to detect phishing e-mails before even giving them the possibility to land on phishing websites has the advantage that they do not confirm the activeness of their e-mail address, and more importantly do not have the chance to accidentally download malicious software. 
 However, as phishing e-mails become more and more sophisticated, i.e. convincing and credible, and since phishing websites are also reachable via SMS, online social networks or just surfing in the Internet, we did decide against the e-mail based approach. 
 
+%...............................................................................................................
+\subsubsection{General Knowledge Transfer With Embedded Learning}
+%...............................................................................................................
 
-
+There are several proposals in literature for embedded learning~\cite{jannson2011simulating, kumaraguru2009phishguru,alnajim2009antiphishing}. 
+Jansson et al. proposed a solution where simulated phishing e-mails with links to fake websites or malicious download attachments are sent out to users~\cite{jannson2011simulating}. 
+The moment a user falls for a trap of these simulated e-mails he receives a notification to inform him that he could have fallen for a real phishing attempt. 
+Also, the e-mail includes a link to a website with a training program with general information and tips on how to detect phishing and malicious attachments. 
+After consulting the training program the user is asked to complete a questionnaire in order to verify whether he received the messages of the training program. 
+A very similar approach, the so called PhishGuru, is proposed by Kumaraguru~\cite{kumaraguru2009phishguru}. 
+Another possibility is to leave out the step where simulated phishing e-mails are sent to users. 
+Instead real phishing e-mails are made use of. 
+For example, the APWG and Carnegie University's CyLab Usable Privacy and Security Laboratory (CUPS) work on the project "Phishing Education Landing Page"~\cite{apwg2009landingpage}. 
+The moment a user clicks on a link of a real phishing website which has already been taken down, i.e. the moment the user behaves riskily, he is redirected to the anti-phishing landing page.
+There he is told that he had almost become a victim of phishing and provided with educational material to this topic. 
+Finally, there is an approach where the intervention does not happen after clicking on a dangerous link, but while surfing~\cite{alnajim2009antiphishing} instead. 
+When the user lands on a blacklisted phishing website and is about to disclose his sensitive data (i.e. presses the submit button) the system interferes: 
+the user is warned and given tips on how to detect phishing websites (e.g. abstract information on the detection of spoofed URLs). 
+All of these solutions benefit from the so called teachable moment, the moment the users place themselves at risk by either clicking on a link in a (simulated) phishing e-mail or by submitting sensitive information to blacklisted phishing websites. 
+This moment of risk presents a teachable moment for those who almost fell for such a trap. 
+For this reason giving the warnings, hints and training to the user in this moment will most likely result in higher motivation and retention so that the tips are more likely to help avoid similar dangers in future. 
+A downside of these approaches is that they do only give negative feedback to the user. 
+Consequently, the user is not "rewarded" when he rejects to click on a phishing link or to submit data on a phishing website, which is an important thing to do in our view. 
+Moreover, the amount of information provided on such an educational website should be reasonable, i.e. the user should not be flooded with information. 
+Otherwise he will not retain or even consult everything. 
+To overcome these issues, a reasonable consideration for future work might be to combine embedded learning with another approach, for example, playing an educational game. 
+In this way positive feedback can be included and the information can be transferred bit by bit to the user. 
+For example, the website the user is redirected to might contain just the most important information, just enough to motivate the user to click on the provided link to our final app, in case the user is interested in gaining in-depth insight on this topic. 
+For now, we do not follow this approach since the step of sending simulated phishing e-mails to users raises legal issues.
 %============================================
 %\subsection{Open Questions}
 %============================================
