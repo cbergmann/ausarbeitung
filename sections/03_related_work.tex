@@ -87,9 +87,11 @@ The objective of this section is to introduce the different classes of learning 
 \subsection{Previous Work}
 %============================================
 \label{s:prev_work}
-In the previous section we have introduced you to the different classes of learning contents and communication media for better readability and comprehensibility. 
-This section summarizes previous work on anti-phishing education. 
-Furthermore, we point out our contributions which were not covered by previous work.
+In the previous section we have introduced you to the different classes of learning contents and communication media. 
+We have decided for a mixture of the game and quiz based approach to create an incentive for the users. 
+Regarding the content which will be communicated to the user we decided to focus on detecting phishing URLs for the reasons we have mentioned before in Section~\ref{Content Classification}.
+This section summarizes previous work on anti-phishing education and in which way our work is to be distinguished from those. 
+
 %...............................................................................................................
 \subsubsection{Game and URL Based Approaches}
 %...............................................................................................................
@@ -131,6 +133,8 @@ Due to time restrictions we could not integrate those kind of messages.
 However, we believe that this approach has some flaws and thus is not optimal for user education. 
 Even though, using a fish as main character for this game is a funny idea, we do not think that this is an appropriate solution for adults. 
 This is also reflected by the results of our pre-study, cf.~Section~\ref{prestudy}. 
+Therefore, we will not use a fish as our main character. 
+Our approach will rather be a combination of a game, which includes lives and points, and a quiz, where users are required to answer questions directly, without any background story.
 As aforementioned, the training messages are simple and easy to understand, however, we are afraid that the phrasing is too vague. 
 For example, for IP address URLs the following alert message is displayed to the user: 
 "Don't trust URLs with all numbers in the front". 
@@ -211,3 +215,40 @@ The design of these online quizzes are based on the association of phishing with
 That is to say, here again a fish is the main character of the quiz, which we do not find appropriate for adult users. 
 Moreover, the number and variety of the questions asked in these quizzes are very restricted. 
 Even if the examples of the quiz based approaches are not optimal for user education, we think that this approach is the most appropriate one for adults as target group.
+
+%...............................................................................................................
+\subsubsection{Further Game Based Approaches On Other Computer Security Topics}
+%...............................................................................................................
+Besides the proposals for user education on the specific topic of phishing, there exist a variety of other approaches aiming at educating the everyday user on general or other specific topics of computer security.
+Auction Hero, for example, is a simulation game which covers different topics of computer security, amongst other phishing~\cite{chiasson2011auction}. 
+Its aim is to help users make more secure decisions in the Internet by modeling real online life. 
+Real life is simulated by making security a secondary goal of the game, like it usually is the case with end users. 
+The primary goal of the user, who is a trader, is to build and sell robots, and earn enough money and reputation to ultimately become an "Auction Hero". 
+As in reality, the trader has to pay attention to various security risks like weak account passwords, out-dated antivirus software as well as phishing. 
+Phishing, in particular, is dealt with as follows: users receive e-mails within the game, while some of them are legitimate and others are not (for example, an e-mail saying that the user has won an auction for an item he has never bidden on). 
+The e-mails include links to websites where they are asked to enter their in-game login data. 
+An ultimate consequence of disclosing data to a phishing website is that the user will suffer loss of money and reputation. 
+Also, an explanatory warning will be displayed. 
+The user is taught about typical characteristics of phishing, potential consequences of falling for them, and how to deal with phishing attempts. 
+This approach has the major benefit of simulating real life, i.e. it considers security as a secondary goal, and thus provides a realistic context for the user. 
+Additionally, the user does not only learn about phishing, but other security related aspects, such as having strong passwords and keeping antivirus software up-to-date. 
+However, for our work, unfortunately such an extensive approach is out of scope.
+There exist a multitude of further online games and quizzes covering different or general topics of computer security.
+"Mission Laptop Security", for example, is a quiz based approach where the user's mission is to transport a laptop to a specific destination in a secure manner~\cite{laptopsecurity}. 
+During his trip, the user is asked various questions about how to act in different situations. 
+The mission can only be completed if the user gives enough correct answers.
+Another game covers the topic of network security~\cite{wirelesshackers}. 
+Hackers, represented by little red men, are surrounding the user's WLAN area. 
+By clicking on a hacker man a question appears. 
+When the user gives the correct answer, this specific hacker man disappears. 
+When the user gives an incorrect answer all red men come closer to the user's computer in the center of the WLAN area.
+Others have diverged from computer based games and rather suggested a phiysical card game primarily intended to increase the users' awareness of needs and challenges related to computer security in general~\cite{denning2013controlalthack}.
+
+
+
+
+
+
+
+ 
+
