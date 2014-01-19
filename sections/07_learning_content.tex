@@ -18,7 +18,7 @@ As aforementioned, we focus on teaching the user how to analyze a given URL and 
 
 PhishTank is a free community site where people can submit, verify and view phishing data.
  It provides an API which makes all PhishTank data accessible.
- Renowned organizations such as Yahoo, Kaspersky Lab and Mcafee use the data submitted by PhishTank~\cite{phishtank}. A further deciding reason to choose PhishTank as our phishing URL database was that Kaspersky Lab itself recommended us to make use of it for our URL analysis.
+ Organizations such as Yahoo, Kaspersky Lab and Mcafee use the data submitted by PhishTank~\cite{phishtank}. A further deciding reason to choose PhishTank as our phishing URL database was that Kaspersky Lab itself recommended us to make use of it for our URL analysis.
  For the phishing URL analysis we made use of the URL categories which had been identified by the authors of Anti-Phishing Phil~\cite{sheng2007antiphishingphil} as a starting point.
  To these belong IP address URLs, subdomain URLs as well as similar and deceptive domain URLs.
  With these given categories we tried to assign the PhishTank URLs to the available categories.
@@ -38,6 +38,7 @@ URLs are complex and many users do not know how exactly they have to be interpre
 
 \begin{description}[leftmargin=0cm]
 	\item[Subdomain] Phishers make use of subdomains which are very similar or even identical to the domains of the spoofed target institutions.
+ For example, they register a domain "xyz.com" and use "paypal" in their subdomain, resulting in a URL such as "http://www.paypal.xyz.com/webapps/".
  This makes the users believe that they are on a legitimate website.
  This form of URL spoofing is covered by our education app.
 
