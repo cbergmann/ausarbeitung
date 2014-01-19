@@ -154,11 +154,14 @@ Moreover, the padlock with/without favicon combinations appear in different ways
 While a part of the standard browsers installed on various devices and Android versions we have examined only feature a padlock in case of https websites and no favicon at all, others make always use of favicons. 
 In the latter case, if https is used the padlock is either displayed right next to the favicon or overlaps it .
 Due to the variety of possible combinations as well as the deception potential in combination with favicons we decided not to tell the user about the padlock.
-
-		\item[Certificate Verification]
 		\item[Touch Padlock] to see whole URL.
-. problems: see document.
-..
+		\item[Certificate Verification]Tapping on the padlock icon results in an alert dialog where the user can select to view the certificate details ("show certificate").
+Upon selecting this option details about the certificate will be displayed.
+On the hand, while examining Android's standard browser on various devices and versions we have encountered that clicking on the padlock is not always possible. 
+Hence, in these cases a validation of the certificate is not possible as well.
+On the other hand, we consider the validation of certificates as out of scope for this work.
+Therefore, this is an aspect which is not covered by our app.
+
 \end{description}
 
 %...........................................
