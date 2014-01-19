@@ -116,14 +116,24 @@ Specifically, it is necessary to first tap the URL address text and then scroll 
 Without learning these steps a reliable URL checking is not possible. 
 Therefore, these operations steps have to be communicated to the user.
 
-	\item[Show URL Before Click] Many mobile e-mail clients provide the functionality of showing the URL a link leads to when longly touching and holding the link.
+	\item[Show URL Before Click] Many mobile e-mail clients provide the functionality of showing the URL a link leads to when touching and holding the link.
 However, the Android stock e-mail app, for example, does not provide this functionality.
 This operation is generally available in smartphone browsers for links on websites while surfing.
 Yet, one should keep in mind that it might happen that the complete URL cannot be displayed on this preview in case it is too long. 
 Consequently, as discussed in Section~\cite{s:coverage}, deceiving the user with well-crafted, illegitimate URLs becomes possible. 
 In that section we have already extensively discussed the benefits and drawbacks of teaching the user how to preview the destination URL and have decided against it.
 
-	\item[Copy and Paste URL] too much effort, additionally: redirects still possible
+	\item[Copy and Paste URL] Previewing the destination URL raises flaws, such as there is no guarantee that every mobile e-mail client provides this functionality and deception remains possible. 
+An alternative to the preview functionality is the copy and paste functionality.
+When touching and holding a link, additional to the URL preview, the option "copy URL" is available.
+Upon selecting this option the destination URL is copied to the clipboard.
+Now the user may paste the destination URL to any editor or even the address bar itself in order to analyze the it \textit{before} submitting.
+In case the URL was pasted directly into the address bar, left and right scrolling must further be applied for the analysis. 
+Also, the user must be careful not to submit the URL before checking it, otherwise he also just could have clicked on the link and checked the URL afterwards.
+Analyzing the URL in a separate editor would mean to re-paste the URL into the address bar afterwards and then submit it.
+We believe that either of these steps are of too high effort and thus would not be followed by the users.
+Also, the user would not be able to see the "real" target in case there is a redirect included. 
+Hence, this kind of possible operation will not be communicated to the user.
 \end{description}
 
 %...........................................
