@@ -142,9 +142,19 @@ Hence, this kind of possible operation will not be communicated to the user.
 As a matter for fact, there is a major lack of mobile browser security indicators~\cite{amrutkar2012measuring,trusteer2011}. 
 Besides the lack of such indicators there is also the problem of inconsistencies among the mobile as well as desktop browsers.
 This section deals with the security indicators of the Android standard browser which the user might potentially be told about.
-Ultimately, our decision was not to tell anything about these security indicators, since they are too inconsistent even among the standard browser, depending on the device it is installed on.
+Ultimately, our decision was not to tell anything about these security indicators, since they are too inconsistent even among the standard browser, depending on the device and Android version it is installed on.
 \begin{description}
-		\item[Https Padlock] Browser
+		\item[Https Padlock] The padlock in the browser chrome is a security indicator for the usage of https.
+All Android standard browsers on various devices we have examined have a padlock on SSL secured pages.
+Also, one should consider that there are illegitimate as well as legitimate websites where a padlock is part of the web content. 
+Therefore, it is important to teach the users to look for the padlock in the browser chrome to verify that the site they visit is SSL secured, when they enter confidential data.
+However, some browsers additionally make use of so called favicons, small website icons.
+The danger of using such a favicon is that a phisher could use the image of a padlock~\cite{trusteer2011} in order to deceive the user.
+Moreover, the padlock with/without favicon combinations appear in different ways. 
+While a part of the standard browsers installed on various devices and Android versions we have examined only feature a padlock in case of https websites and no favicon at all, others make always use of favicons. 
+In the latter case, if https is used the padlock is either displayed right next to the favicon or overlaps it .
+Due to the variety of possible combinations as well as the deception potential in combination with favicons we decided not to tell the user about the padlock.
+
 		\item[Certificate Verification]
 		\item[Touch Padlock] to see whole URL.
 . problems: see document.
