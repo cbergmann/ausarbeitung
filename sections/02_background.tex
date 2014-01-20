@@ -6,12 +6,11 @@ The objective of this chapter is to provide the required background knowledge fo
  We begin with the definition of phishing and proceed with distinguishing several phishing techniques, attack channels and phishing variations.
 
 %===========================================
-\subsection{Definition of Phishing}
+\subsection{Abstract Definition of Phishing}
 %===========================================
 \label{s:phishing_def}
-The goal of this work is helping users to distinguish phishing websites from legitimate ones.
- Since phishing is important in the scope of this work, we are going to define the term first~\cite{jakobsson2006phishing}.
- 
+The goal of this work is helping users to distinguish phishing websites from legitimate ones. 
+ Since phishing is important in the scope of this work, we are going to define the term first~\cite{jakobsson2006phishing}. In fact, phishing is a term that is used by many people in different contexts. Therefore, the following definition is intendedly kept abstract in order to cover all possible scenarios of phishing. At the end of this chapter we will state our concrete definition of phsihing considered in this work.
 
 \begin{center}
 \textit{``Phishing is the practice of obtaining confidential information from users and describes a form of identitfy theft.
@@ -24,7 +23,7 @@ The goal of this work is helping users to distinguish phishing websites from leg
 %-------------------------------------------
 \label{s:phishing_techs}
 There are various possibilities how phishers can obtain users' confidential information.
- In the following we describe phishing techniques that can be distinguished~\cite{jakobsson2006phishing}.
+ In the following we describe phishing techniques that can be distinguished~\cite{jakobsson2006phishing, phishingtechniques}.
 %Online Identity Theft: Phishing Technology, Chokepoints and Countermeasures.
  ITTC Report on Online Identity Theft Technology and Countermeasures
 %master_thesis/notes/phishing
@@ -96,7 +95,7 @@ There are various possibilities how phishers can obtain users' confidential info
 \subsection{Phishing Attack Channels}
 %-------------------------------------------
 These days several attack channels exist that can be used by phishers to reach their victims.
- This section introduces possible attack channels~\cite{phishing2010ramazan}.
+ This section introduces possible attack channels~\cite{phishing2010ramazan, phishingtechniques}.
 \label{s:attack_channels}
 \begin{description}[leftmargin=0cm]
 	\item[E-Mail] E-Mail spoofing is a common way for a phisher to reach his victims.
@@ -149,7 +148,7 @@ In the course of time different variations of phishing have evolved.
  He tries to formulate the mail so that it might fit most users and accepts that some users might not fall for it.
  The principle of mass attacks is very common and effective, since sending e-mails and setting up websites is almost of no cost and effort nowadays.
  Even if not all phishing e-mails make it through the spam filters or are not opened: sending out a tremendous amount of spoofed e-mails evidently results in a high amount of victims, not in relative, but in absolute numbers.
- There exist estimations of 156 million phishing e-mails being sent out daily.
+ For example, there exist estimations of 156 million phishing e-mails being sent out daily.
  Only 16 million of these e-mails win the fight against spam filters.
  The half of these are opened.
  800,000 users of these 8 million e-mail recipients actually click on the contained link and still 80,000 users take the bait according to the estimations~\cite{takethebait}.  
@@ -157,12 +156,12 @@ In the course of time different variations of phishing have evolved.
  While in mass phishing attacks, spoofed e-mails are sent to millions of random users, spear phishing targets specific individuals resp.
  groups within organizations to acquire sensitive information.
  In order to make a deceptive request more credible and personal, knowledge of the targeted individuals and organizations is used.
- Usually, victims of spear phishing receive e-mails with a malicious attachment and are lured to download it.
+ Usually, victims of spear phishing receive e-mails with a malicious attachment and are lured to download it~\cite{trendlabs2012spear}.
  As sharing documents via e-mail is normal in an organization this does usually not arouse suspicion if the e-mail is from a known person with a legitimate context.
  This makes spear phishing attacks very hard to detect\cite{trendlabs2012spear,statephishinghong}.
 	\item[Whaling] Whaling is a specific form of spear phishing.
  The target distinguishes whaling from spear phishing.
- While spear phishing aims at specific individuals or groups within organizations, whaling attacks are after high-level targets, such as senior executives or other leaders in positions of influence.
+ While spear phishing aims at specific individuals or groups within organizations, whaling attacks are after high-level targets, such as senior executives or other leaders in positions of influence~\cite{whaling}.
 
 \end{description}
 
@@ -184,9 +183,21 @@ This type of attack is the mostly observed one and is a form of deceptive phishi
  Since we set our focus on the analysis of URLs when visiting the website, it does not matter where these links originate from.
  Any attack channel distributing a link to a fake website will be covered by our approach.
  However we, and the user should, know that by mere clicking the link to come to the website some information might already be send to the phisher.
- This includes the validity and activeness of the communication path (Mail-Adress, Phone-Number, OSN-Account) and additional Information (Browser-Information). We have to accept this because checking the link beforehand is not possible in most situations and also very different depending on communication path and used software.
+ This includes the validity and activeness of the communication path (e-mail address, phone number, OSN account) and additional information (browser information). We have to accept this because checking the link beforehand is not possible in most situations and also very different, depending on communication path and used software.
   Finally, there are three variations of phishing we have introduced.
  Our main focus is the mass phishing attack, since this is the common one.
  However, if any spear phishing or whaling attack should involve fake websites, this would be covered by our approach as well.
+Not that we have restricted our understanding of phishing, the next section provides our concrete definition of phishing for the scope of this thesis.
+
+%===========================================
+\subsection{Concrete Definition of Phishing}
+%===========================================
+In the following we present a concrete definition which encompasses our understanding of phishing for the scope of this work:
+
+\begin{center}
+\textit{``Phishing is the practice of obtaining confidential information from users and describes a form of identitfy theft. This attack exploits a user's trust rather than system vulnerabilities. More specifically, the user is fooled into believing that he is communicating with a party he trusts and lured into divulging confidential data. This usually happens through phishing websites which look deceptively similar to the originals. Targeted confidential information includes, but is not limited to, user names, passwords, social security numbers, credit card numbers, account information, and other personal information.
+''}
+\end{center}
+
 
 

@@ -18,7 +18,7 @@ As aforementioned, we focus on teaching the user how to analyze a given URL and 
 
 PhishTank is a free community site where people can submit, verify and view phishing data.
  It provides an API which makes all PhishTank data accessible.
- Renowned organizations such as Yahoo, Kaspersky Lab and Mcafee use the data submitted by PhishTank~\cite{phishtank}. A further deciding reason to choose PhishTank as our phishing URL database was that Kaspersky Lab itself recommended us to make use of it for our URL analysis.
+ Organizations such as Yahoo, Kaspersky Lab and Mcafee use the data submitted by PhishTank~\cite{phishtank}. A further deciding reason to choose PhishTank as our phishing URL database was that Kaspersky Lab itself recommended us to make use of it for our URL analysis.
  For the phishing URL analysis we made use of the URL categories which had been identified by the authors of Anti-Phishing Phil~\cite{sheng2007antiphishingphil} as a starting point.
  To these belong IP address URLs, subdomain URLs as well as similar and deceptive domain URLs.
  With these given categories we tried to assign the PhishTank URLs to the available categories.
@@ -34,29 +34,27 @@ PhishTank is a free community site where people can submit, verify and view phis
 URLs are complex and many users do not know how exactly they have to be interpreted.
  For example, users can be convinced about the authenticity of an URL when it contains the brand name anywhere.
  Phishers exploit this lack of knowledge in different way.
- In the following we present the identified spoofing attacks on URLs and state whether they are covered by the app.
+ In the following we present the identified spoofing attacks on URLs. 
+ All spoofing attacks are covered by the app unless noted otherwise.
 
 \begin{description}[leftmargin=0cm]
 	\item[Subdomain] Phishers make use of subdomains which are very similar or even identical to the domains of the spoofed target institutions.
+ For example, they register a domain  ``xyz.com'' and use ``paypal'' in their subdomain, resulting in a URL such as ``http://www.paypal.xyz.com/webapps/''.
  This makes the users believe that they are on a legitimate website.
- This form of URL spoofing is covered by our education app.
 
 	\item[IP Address] Sometimes phishers do not even bother registering any domain at all.
  In this case, the URL to the phisher's fake website contains an IP address.
- This form of URL spoofing is covered by our education app.
 
 	\item[Nonsense Domain] We frequently encountered URLs which had registered quite nonsense as their domain.
  The domain names ranged from random letters to domain names like ``marketstreetchippy.
 com''. Sometimes other parts of the URL contained the brand name, but sometimes there was no clue in the URL about to where it is actually leading.
- This form of URL spoofing is covered by our education app.
 
 	\item[Trustworthy, But Unrelated Domain] Some URLs are very well-crafted.
  When reading them they appear meaningful and trustworthy.
  This is particularly accomplished by making use of domain names which sound very trustworthy, for example, ``account-information.
 com'', ``secure-login.
 de'' or ``security-update.
-com''. If the URL additionally contains the brand name of the target institution somewhere in the URL the user can be perfectly deceived.
- This form of URL spoofing is covered by our education app.
+com''. If the URL additionally contains the brand name of the target institution somewhere in the URL the user is easily deceived.
 
 	\item[Similar and Deceptive Domains] Another possibility to fool users with a spoofed URL is to use URLs which look like the original ones, but have a slight difference.
  For example, phishers register domains which resemble the targeted domain, but has a typo.
@@ -67,12 +65,12 @@ com''. Another approach is to use a modification of the original domain.
  For example, ``facebook-login.
 com'' can be registered in order to fake ``facebook.
 com''. Finally, the attacker can scramble letters of the original domain, which can be very hard to detect at first sight.
- This form of URL spoofing is covered by our education app.
 
 	\item[Homograph Attack] The homograph attack exploits character resemblance.
  Here characters are replaced by other characters which look very similar to the replaced one.
  For example, an attacker might replace a ``w'' within a genuine domain with ``vv'' and register it.
- An even more advanced way is to replace characters of the genuine domain with characters from other langauge sets, such as Cryllic languages, where the characters will look almost identical~\cite{gabrilovich2002homograph}. The letter case is indistinguishable for the human eye in many cases.
+ An even more advanced way is to replace characters of the genuine domain with characters from other langauge sets, such as Cryllic languages, where the characters will look almost identical~\cite{gabrilovich2002homograph}. The letter case is indistinguishable for the human eye in many cases and is partially a technical issue.
+Here, browser vendors should be encouraged to indicate when there are international characters.
  For this reason only cases that are distinguishable by the human eye are covered by the educational app.
 
 % DAS WAS DER USER NICHT SEHEN KANN WIRD NATÜRLICH AUCH NICHT GECOVERED WERDEN KÖNNEN
@@ -97,26 +95,77 @@ com.
 %...........................................
 \subsection{Smartphone limitation}
 %...........................................
-Eventuell Titel umbenennen, anders strukturieren.
-..
-\begin{description}
-	\item[Invisible Address Bar] Find URL Bar, Browser
-	\item[Analyze Complete URL Via Address Bar] Browser
-	\item[Show URL Before Click] In E-Mail (not always possible), while surfing (long touch)
-	\item[Copy and Paste URL] too much effort, additionally: redirects still possible
+As already discussed in Section~\ref{s:antiphishing_on_smartphone} smartphones have several limitations, such as the small screen size. 
+This section deals with the detection of phishing on the smartphone and the related limitations.
+More particularly, we will briefly explain in which ways URLs can be checked with the smartphone and what kind of problems these operations raise.
+Based on this we decided whether to communicate this kind of URL checking to the user or not.
+
+\begin{description}[leftmargin=0cm]
+	\item[Invisible Address Bar] Due to lack of space most of the smartphone browsers hide the address bar~\cite{amrutkar2012measuring} and use this won space for the web content. 
+By doing this, not only potential security indicators are made invisible, but also the URL that indicates with which website the user is actually interacting.
+In order to make the address bar re-appear the user generally has to scroll to the top of the whole website.
+The fact that the address bar containing the important information of the URL is generally hidden must be communicated to the user.
+Most of the users will probably know that they can access the address bar by scrolling to the top of the website.
+However, for those who might not know how to deal with that an introduction is inevitable.
+
+	\item[Analyze Complete URL Via Address Bar] Finding the address bar will not suffice for a reasonable URL analysis. 
+Here again, the small screen size makes it is impossible to view the complete URL without any further action.
+Specifically, it is necessary to first tap the URL address text and then scroll the pointer to the left and right for the URL analysis.
+Without learning these steps a reliable URL checking is not possible. 
+Therefore, these operations steps have to be communicated to the user.
+
+	\item[Show URL Before Click] Many mobile e-mail clients provide the functionality of showing the URL a link leads to when touching and holding the link.
+However, the Android stock e-mail app, for example, does not provide this functionality.
+This operation is generally available in smartphone browsers for links on websites while surfing.
+Yet, one should keep in mind that it might happen that the complete URL cannot be displayed on this preview in case it is too long. 
+Consequently, as discussed in Section~\cite{s:coverage}, deceiving the user with well-crafted, illegitimate URLs becomes possible. 
+In that section we have already extensively discussed the benefits and drawbacks of teaching the user how to preview the destination URL and have decided against it.
+
+	\item[Copy and Paste URL] Previewing the destination URL raises flaws, such as there is no guarantee that every mobile e-mail client provides this functionality and deception remains possible. 
+An alternative to the preview functionality is the copy and paste functionality.
+When touching and holding a link, additional to the URL preview, the option "copy URL" is available.
+Upon selecting this option the destination URL is copied to the clipboard.
+Now the user may paste the destination URL to any editor or even the address bar itself in order to analyze the it \textit{before} submitting.
+In case the URL was pasted directly into the address bar, left and right scrolling must further be applied for the analysis. 
+Also, the user must be careful not to submit the URL before checking it, otherwise he also just could have clicked on the link and checked the URL afterwards.
+Analyzing the URL in a separate editor would mean to re-paste the URL into the address bar afterwards and then submit it.
+We believe that either of these steps are of too high effort and thus would not be followed by the users.
+Also, the user would not be able to see the "real" target in case there is a redirect included. 
+Hence, this kind of possible operation will not be communicated to the user.
 \end{description}
 
 %...........................................
 \subsection{Browser Security Indicators}
 %...........................................
-
+As a matter for fact, there is a major lack of mobile browser security indicators~\cite{amrutkar2012measuring,trusteer2011}. 
+Besides the lack of such indicators there is also the problem of inconsistencies among the mobile as well as desktop browsers.
+This section deals with the security indicators of the Android standard browser which the user might potentially be told about.
+Ultimately, our decision was not to tell anything about these security indicators, since they are too inconsistent even among the standard browser, depending on the device and Android version it is installed on.
 \begin{description}
-		\item[Https Padlock] Browser
-		\item[Displayed Webaddress on Https Sites] Browser
-		\item[Certificate Verification]
-		\item[Touch Padlock] to see whole URL.
-. problems: see document.
-..
+		\item[Https Padlock] The padlock in the browser chrome is a security indicator for the usage of https.
+All Android standard browsers on various devices we have examined have a padlock on SSL secured pages.
+Also, one should consider that there are illegitimate as well as legitimate websites where a padlock is part of the web content. 
+Therefore, it is important to teach the users to look for the padlock in the browser chrome to verify that the site they visit is SSL secured, when they enter confidential data.
+However, some browsers additionally make use of so called favicons, small website icons.
+The danger of using such a favicon is that a phisher could use the image of a padlock~\cite{trusteer2011} in order to deceive the user.
+Moreover, the padlock with/without favicon combinations appear in different ways. 
+While a part of the standard browsers installed on various devices and Android versions we have examined only feature a padlock in case of https websites and no favicon at all, others make always use of favicons. 
+In the latter case, if https is used the padlock is either displayed right next to the favicon or overlaps it .
+Due to the variety of possible combinations as well as the deception potential in combination with favicons we decided not to tell the user about the padlock.
+		\item[Touch Padlock] Touching the padlock of an SSL secured website leads to an alert dialog with information about the website. 
+One part of this information is the complete URL of the website the user is currently on.
+In this case, it would become possible to view and analyze the complete URL without tapping the address bar and scrolling to the left and right.
+For \textit{some} browsers which additionally make use of favicons, the above described feature is always applicable.
+That means, the alert dialog with the complete URL can also be consulted on websites which do not use https.
+Yet, there are also browsers where neither clicking on a padlock nor on a favicon is possible.
+Hence, we will stick to our approach, where the user is explained how to analyze the URL directly in the address bar.
+		\item[Certificate Verification]Tapping on the padlock icon results in an alert dialog where the user can select to view the certificate details ("show certificate").
+Upon selecting this option details about the certificate will be displayed.
+On the hand, while examining Android's standard browser on various devices and versions we have encountered that clicking on the padlock is not always possible. 
+Hence, in these cases a validation of the certificate is not possible as well.
+On the other hand, we consider the validation of certificates as out of scope for this work.
+Therefore, this is an aspect which is not covered by our app.
+
 \end{description}
 
 %...........................................

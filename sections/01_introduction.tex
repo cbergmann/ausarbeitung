@@ -13,17 +13,19 @@ This chapter introduces the target of this work, which is to design, implement a
 %===========================================
 \subsection{Motivation}
 %===========================================
-Nowadays, a world without Internet is unimaginable for many people.
- However, it is undeniable that with the great benefits of the internet also come great threats.
- One major issue of today's digitalized world is spam in general and phishing in detail.
+Nowadays, a world without Internet is unimaginable for most people in developed countries.
+As an example, 83\% of Germany's population have Internet access~\ref{globalfinance2012internetusage}. 
+However, it is undeniable that with the great benefits of the Internet also come great threats. 
+One major issue of today's digitalized world is spam in general and phishing in detail. 
 
 Phishing is a for of Fraud to lure confidential information from users, cf.
 ~Section~\ref{s:phishing_def}. The goal of the Attacker is to impersonate the User in online systems.
  This can be used to access corporate systems, damage the users reputation or simply steal money from him.
  Usually, phishing happens through fake websites which imitate the original ones.
  On these so called phishing websites the users are asked to enter their personal or account data.
- In this section we elaborate on the importance of countering such phishing attacks with the aid of user education.
- 
+ In this section we elaborate on the importance of countering such phishing attacks with the aid of user education. 
+
+
 
 %-------------------------------------------
 \subsubsection{Consequences of Phishing}
@@ -53,30 +55,39 @@ Phishing is also reflected by many statistics of various reports.
  Every day about 100,000 Internet users are victims of phishing attacks, which is twice as many compared to the previous period of 2011-2012. An immense increase can also be observed in the number of unique sources (i.
 e.
  IPs) of attacks, which has tripled from 2012 to 2013~\cite{kasperskyreport2013}. The amount of target institutions also rose.
- While in 2011 the APWG counted about 500 target institutions, in the fist quarter of 2013 720 target institutions were identified~\cite{antiphishingglobalreport2013}. Finally, \cite{rsa2013} estimates worldwide costs caused by phishing at about \$1.5 billion for the year 2012.
+ While in 2011 the APWG counted about 500 target institutions, in the fist quarter of 2013 720 target institutions were identified~\cite{antiphishingglobalreport2013}. 
+Finally, RSA and ECM estimate worldwide costs caused by phishing at about \$1.5 billion for the year 2012~\cite{rsa2013}.
+
+We are aware that such statistics might be inherently biased~\cite{moore2010hard}. 
+The problem is, there are several ways to inteperet collected data.
+Hence, every party might assess their data with respect to their interests.
+Yet, we believe that the education of end users is an important step towards countering phishing. 
+Ultimately, more reliable and accurate statistcs would required in order to evaluate the effectiveness of all the proposed countermeasures against phishing.
 
 %-------------------------------------------
 \subsubsection{Technical Solutions to Counter Phishing}
 %-------------------------------------------
-%Quellen vom diesem dokument: 17065505
 
-Several technical solutions to counter phishing have already been suggested in literature~\cite{purkait2012phishing}. Unfortunately, those techniques did not seem to suffice, which is also reflected by several phishing stastics, cf.
-~Section~\ref{s:stats}. In the following some of these approaches are briefly summarized.
-
+Several technical solutions to counter phishing have already been suggested in literature~\cite{purkait2012phishing}. 
+As a matter of fact, these approaches are not flawless. 
+In the following some of these approaches are briefly summarized.
 
 \begin{description}[leftmargin=0cm]
 	\item[Spam filters] Commonly, the phisher sends out a tremendous volume of emails to random users which contain links to fake websites.
+According to Dr. Dobb's, for example, every day 500 million phishing e-mails arrive in user inboxes~\cite{drdobb2012email}.
  There the users are lured to disclose their personal data.
  Consequently, one possible countermeasure to stop phishing is to filter these e-mails before they even reach the receiver.
  Various approaches for such spam filters already exist~\cite{bergholz2010new,chandrasekaran2006phishing,fette2007learning}, but spam filters also have their drawbacks.
- First, a spam filter needs to be installed and applied to the users' e-mail accounts.
- When using a E-Mail Service the service provider is in general not allowed to access the users' mail without his permission.
- Therefore spam filters only apply to users that actively enable them.
- Second, even if spam filters are used by the majority, one can not make sure that they are updated regurlarly.
- Moreover, phishers are constantly improving their techniques to circumvent current spam filters.
+ First, spam filters might be abused for an invisible form fo censorship.
+ Second, a spam filter needs to be installed and applied to the users' e-mail accounts.
+ When using an e-mail service the service provider is generally not allowed to access the users' e-mail without their permission.
+ Therefore, spam filters only apply to users that actively enable them.
+ Third, phishers are constantly improving their techniques to circumvent current spam filters.
  Consequently, such filters can not assure 100\% accuracy.
- The strength of the filter controls the amount of false positives and negatives.
- On the one hand it is possible that phishing e-mails can make it through these filters and might harm the user (false negatives). On the other hand there are legitimate e-mails which may not reach the user (false positives). This might result in a user's loss of confidence, which in turn can result in the user not applying the spam filter anymore~\cite{olivo2011obtaining}.
+ Finally, the strength of the filter controls the amount of false positives and negatives.
+ On the one hand it is possible that phishing e-mails can make it through these filters and might harm the user (false negatives). 
+On the other hand there are legitimate e-mails which may not reach the user (false positives). 
+This might result in a user's loss of confidence, which in turn can result in the user not applying the spam filter anymore~\cite{olivo2011obtaining}.
 	\item[Blacklists] Fake websites are a common way for phishers to get at users' data.
  Thus, another alternative to protect potentially endagered users from phishing attacks is to restrict the access to such phishing websites with the aid of so called blacklists.
  Here, the browsers hold a list of revealed phishing websites.
@@ -84,14 +95,15 @@ Several technical solutions to counter phishing have already been suggested in l
  Several blacklisting approaches have been suggested in literature~\cite{ma2009beyond, zhang2008highly}. The major downside of blacklists is that most of them work reactively.
  That is to say, there is a certain time frame where phishing websites are active without being blacklisted.
  In this time frame users can access these website without being warned or restricted and thus are vulnerable to fall for the attack.
- To resolve this problem multiple dynamic and predictive approaches have been proposed to restrict and/or warn the user from accessing phishing websites~\cite{prakash2010phishnet, obied2009fraudulent, balzarotti2012proactive}. Nevertheless, there is no flawless blacklisting approach, as there are always malicious websites which can bypass such protective systems.
- Moreover, these systems require a high effort to maintain, since a regular and realtime update is inevitable in order to make the system effective~\cite{purkait2012phishing}. Furthermore, there is the weakest link in the security chain: the users who are very often unsure about what to do when getting such security warnings~\cite{bakhshi2009social}. As a matter of fact, in case of disregard of these warnings such systems are useless.
+ To resolve this problem multiple dynamic and predictive approaches have been proposed to restrict and/or warn the user from accessing phishing websites~\cite{prakash2010phishnet, obied2009fraudulent, balzarotti2012proactive}. Nevertheless, there is no flawless blacklisting approach, as there are always malicious websites which can bypass such protective systems (false negatives). Also, similar to spam, blacklists may contain false positives, and they can also be abused for censorship.
+ Moreover, these systems require a high effort to maintain, since a regular and realtime update is inevitable in order to make the system effective~\cite{purkait2012phishing}. Furthermore, there is the weakest link in the security chain: the users who are very often unsure about what to do when getting such security warnings~\cite{bakhshi2009social}. As a matter of fact, in case of disregard of these warnings such systems are useless. 
 	\item[Visual distinction] A further technical approach against phishing is the automatic visual distinction of phishing websites from legitimate ones.
- For this purpose it is necessary to identify malicously duplicated websites mainly based on visual similarities~\cite{liu2006antiphishing}. Various solutions can be found in literature to approach this~\cite{chen2009fighting,chen2010detecting,zhang2011textual}. However, there is no foolproof solution.
+ For this purpose it is necessary to identify maliciously duplicated websites mainly based on visual similarities~\cite{liu2006antiphishing}. Various solutions can be found in literature to approach this~\cite{chen2009fighting,chen2010detecting,zhang2011textual}. However, there is no foolproof solution.
  In particular, if approaches mainly rely on visual similarities many of them will fail if the phishing website is not a duplicate of the original site.
- Moreover, phishers will always be able to adapt to sophisticated solutions in order to bypass these security levels.
+ Moreover, phishers will always be able to adapt to sophisticated solutions in order to bypass these security levels. 
+Of course a phisher's adaption to circumvent such solutions must be profitable for him, i.e. it must happen fast enough with reasonable costs.
 
-On the other hand some Website-providers allow the user to customize some visual elements of the website to distinguish it from faked websites.
+On the other hand some website providers allow the user to customize some visual elements of the website to distinguish it from faked websites.
  
 In the end as always the human factor plays a major role here: if users keep misunderstanding or ignoring the provided visual indicators such techniques will remain of no use.
 
@@ -136,7 +148,7 @@ There are several reasons why we chose to educate users on the smartphone.
  Hence, smartphone users are even more vulnerable to phishing attacks than the traditional desktop user.
  This is also indicated by a report of 2011~\cite{trusteer2011}, which says that mobile users are three times more likely to access phishing websites than desktop users.
  This might also be influenced by the fact that mobile mail clients effectively provide no way to check the validity of a incoming mail.
- In addition, given the fact that the majority of the people use a smartphone on a regular basis~\textbf{add to refs(http://www.
+ In addition, given that the majority of the people use a smartphone on a regular basis in Spain, Germany, Italy, France and the UK~\textbf{add to refs(http://www.
 comscoredatamine.
 com/2013/03/smartphones-reach-majority-in-all-eu5-countries/)}, there is a need for the protection of smartphone users.
  Educating the user on the smartphone provides two major benefits.
@@ -166,7 +178,7 @@ The major goals of this thesis is to educate the user about phishing so that he 
 
 \end{enumerate}
 
-As already indicated in the previous section the lack of user awareness seems to be a major issue concerning the security-related user behavior.
+As already indicated in the previous section the lack of a user's security awareness seems to be a major issue concerning his security-related behavior.
  For this reason we want to raise the users' security awareness by demonstrating within our app that faking e-mail senders and content is very easy.
  Additionally, we want to make them aware that links do not necessarily lead to the target website the link displays to the user.
  This should happen at the beginning of the app so that the user realizes that the threat of the Internet is prevalent and that he needs to learn to protect himself.
