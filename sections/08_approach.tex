@@ -260,3 +260,12 @@ We will lay out the general process here and cover interesting parts of it in th
 \item[apply attack]After that we select a random attack from the previously build list and apply it to the URL.
 \item[repeat]There are combinations of base-URL and attack where the attack doe's not alter the URL. Therefore it would be impossible for the user to detect the Attack. In this situation we repeat the process until we find a matching URL.
 \end{description}
+\subsubsection{generate attacks for level}
+\textbf{Was zur historie?}
+The types of URLs the user is presented is dependent on the level. Each level introduces on or more attacks. Which attack is introduced in which level is layed out in section\ref{s:knowledgetransferperlevel}. In general the URLs of each level $n$ are distributed as follows:
+\begin{tabular}{lr}
+Level number&$n$&$n$\\
+Total number of URLs&$u$&$6+2*n$\\
+Number of Phishes&$p$&$u/2$\\
+Number of repeats&$r$&$\floor*{p/2}$
+\end{tabular}
