@@ -263,9 +263,8 @@ We will lay out the general process here and cover interesting parts of it in th
 \subsubsection{generate attacks for level}
 \textbf{Was zur historie?}
 The types of URLs the user is presented is dependent on the level. Each level introduces on or more attacks. Which attack is introduced in which level is layed out in section\ref{s:knowledgetransferperlevel}. In general the URLs of each level $n$ are distributed as follows:
-\begin{tabular}{lr}
-Level number&$n$&$n$\\
-Total number of URLs&$u$&$6+2*n$\\
-Number of Phishes&$p$&$u/2$\\
-Number of repeats&$r$&$\floor*{p/2}$
+\begin{tabular}{llll}
+Total number of URLs&$u$&$6+2*n$&starting with 6 URLs each level has 2 more URLS.\\
+Number of Phishes&$p$&$u/2$&Half of the URLs are phishes.\\
+Number of repeats&$r$&$\left\lfloor p/2 \right\rfloor$&Half of the phishes are repeats.
 \end{tabular}
