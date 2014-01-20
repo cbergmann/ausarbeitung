@@ -190,17 +190,27 @@ We commonly refer to this part as the "awareness part" because it is there to in
 In this part we first introduce the problem.
 Thereafter the user is presented with a form that allows them to enter a sender and a target E-Mail address and a free text.
 When the user submits this form we send out a Mail that has the sender and the receiver that the user entered.
-The body of the mail contains a common introduction and the users free text. It also contains a link that seems to go to a common webpage but instead links back to the app.
+The body of the mail contains a common introduction and the users free text.
+It also contains a link that seems to go to a common webpage but instead links back to the app.
 The template for this mail can be found in Appendix \ref{a:mail}.
 
 \subsection{General Recommended Behavior}
+
+In addition to these facts that we specially address in the app there are some things that we want to tell the user that are helpful when using the internet in general.
 \begin{description}
-	\item[Do Not Click]
-	\item[Do Not Download Attachment]
-	\item[Look at URL]
-	\item[Data Economy]
-	\item[Date Entry Via Https]
-	\item[Use of Https Within Websites] Browser
+	\item[Do Not Download Attachment] Many users download or even open files that they receive via mail rather unchecked.
+	This is related to the problem that they trust the from-field of the Mail.
+	We should tell them that downloading or even opening a unknown file might infect their system.
+	\item[Data Economy] The goal of this app is to prevent that the data of the user is phished.
+	The first step towards this goal is to teach the user to enter his data as rarely as possible.
+	The Idea behind this is not only phishing website might use the users' data in a way that he did not intend. 
+	\item[Date Entry Via Https] We should also tell the user that he should only enter data via HTTPS. 
+	When the user is entering data via HTTP there are basically two problems.
+	First the user can no longer be sure that he really talks to the person he want's to talk to.
+	This is captured by our precodition that DNS is assumed to be secure.
+	Secondly even if he really talks to the legitimate target site he can not be sure that an attacker is not wiretapping the communication.
+	Therefore the data that is send over plain HTTP can be considered lost.	
+	\item[Use of Https Within Websites] ???
 \end{description}
 
 %...........................................
