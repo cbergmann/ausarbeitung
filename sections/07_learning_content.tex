@@ -171,12 +171,26 @@ Therefore, this is an aspect which is not covered by our app.
 %...........................................
 \subsection{E-Mail Spoofing}
 %...........................................
-The first thing we tell the user in the app is that they can not trust in Mail and the sender of them. 
+The first thing we tell the user in the app is that they can not trust in Mail and the sender of them.
+This is exspecially important \cite{divsi2012divsi} found out that 85\% of the internet users use E-Mail to communicate but only 14\% have concerns about security regarding mail communication.
+
+This is a problem because in contrast to public believe e-mail is in no way secured against fraud. There are three main facts that we need to transport to the user:
 \begin{description}
-	\item{From Field} not trustworthy
-	\item{E-Mail Content} in hand of attacker
-	\item{Links in E-Mails} do not necessarily go where it claims to go (not only in e-mail links).
+	\item{From Field} The first misbelife is that the from-field is in some way secured.
+	In reality it must be considered a plaintext field.
+	The problem is that most modern mail-clients used by most users hide this fact away from the user.
+	Therefore we show the user with an example that anyone can send mail from any from-address.
+	\item{E-Mail Content} We also have to show the user that the content of the mail is totally in the control of the sender.
+	Nobody prevents the attacker from sending mails that look exactly like the once send out by a legitimate sender.
+	\item{Links in E-Mails} The third information that most users are not aware of is that Links in general and Mail-Links in detail could link to any page. This means that a Link showing an URL does not need to link to that url.
 \end{description}
+
+To show the user these facts we have introduced the first part of the app.
+We commonly refer to this part as the "awareness part" because it is there to increase the users awareness of the problem of Email spoofing and internet fraud.
+In this part we first introduce the problem.
+Thereafter the user is presented with a form that allows them to enter a sender and a target E-Mail address and a free text.
+When the user submits this form we send out a Mail that has the sender and the receiver that the user entered.
+The body of the mail contains a common introduction and the users free text. It also contains a link that seems to go to a common webpage but instead links back to the app.
 
 \subsection{General Recommended Behavior}
 \begin{description}
