@@ -252,7 +252,11 @@ On some games this set is very small and therefore you are always confronted wit
 As we layed out in Section \ref{s:url_structure} we want to teach the user how to detect phishing URLs in general.
 To accomplish this goal we think that it is essential that the user sees as much different URLs as possible so he can build his own mental model.
 Therefore we decided on generating URLs rather than composing a fixed list.
-The process is the following:
+We will lay out the general process here and cover interesting parts of it in the following sections.
 \begin{description}
-
+\item[generate attacks for level]When starting a new level we generate a list of Attacks that we want to show the user.
+\item[select valid URL]When we want to show a new URL to the user we first select a valid URL from a given set.
+\item[apply generator]Then we apply a generator to the URL that does not invalidate the URL but modifies it.
+\item[apply attack]After that we select a random attack from the previously build list and apply it to the URL.
+\item[repeat]There are combinations of base-URL and attack where the attack doe's not alter the URL. Therefore it would be impossible for the user to detect the Attack. In this situation we repeat the process until we find a matching URL.
 \end{description}
