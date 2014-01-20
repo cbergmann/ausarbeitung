@@ -89,8 +89,10 @@ User motivation
 The educational part of the app which is followed by the awareness part is divided into several levels.
  In each level the user is provided with specific informational material.
  After the information material is consulted by the user, he has to finish the according exercise.
- The first  and second information materials (introduction 2 and level 1) and exercises that the user receives differ from the ones of the other levels.
- The first information material and task of the user deals with accessing the address bar of a webbrowser and viewing its URL completetely.
+The first  and second information materials (introduction 2 and level 1) and exercises that the user receives differ from the ones of the other levels. Here, the users obtain basic knowledge in order to bring them to the same knowledge level for the actual game.
+ 
+\begin{description}[leftmargin=0cm]
+	\item[Basic Knowledge]  The first information material and task of the user deals with accessing the address bar of a webbrowser and viewing its URL completetely.
  To prove that the user has understood how to access the address bar and view the URL he has to do the following: When the user is forwarded to the website to solve the task he has to scroll up to the top of the website to make the generally hidden address bar visible.
  Afterwards, he has to provide us the information we request about the URL in the address bar.
  This will show that he has in fact viewed the whole URL.
@@ -102,7 +104,7 @@ The educational part of the app which is followed by the awareness part is divid
  In order not to frustrate the user he cannot get less than 0 points.
  When the user has no more lives left he has to restart the level.
  With every correct answer the user gains points.
-  In level 2 we start introducing URL spoofing techniques and the user has to decide whether a given URL is a phishing URL or a valid one.
+	\item{Start of Actual Game}  In level 2 we start introducing URL spoofing techniques and the user has to decide whether a given URL is a phishing URL or a valid one.
  Here also, the user can lose and win points as well as lose lives.
  Here again, if the user has no more lives left he has to restart the level.
  The following Figure~\ref{fig:lose_points_life} illustrates the game flow and consequences of wrong and correct answers from level 2 and upwards.
@@ -112,6 +114,8 @@ The educational part of the app which is followed by the awareness part is divid
  We have decided that rejecting valid URLs is not as severe as accepting phishing URLs.
  For this reason the punishment for accepting a phishing URL is more severe than the punishment for rejecting a valid URL.
  All in all, the user loses points and a live in the following cases: the user has falsely accepted a phishing URL or the user has correctly rejected a phishing URL, but could not show us the ``Who-Section''. In all other cases the user cannot lose lives, but only points.
+\end{description}
+ 
 \newline\newline
 The following section deals with our leveling strategy.
 
