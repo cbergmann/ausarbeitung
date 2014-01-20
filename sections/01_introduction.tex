@@ -31,19 +31,28 @@ Phishing is a for of Fraud to lure confidential information from users, cf.
 \subsubsection{Consequences of Phishing}
 %-------------------------------------------
 Falling for a phishing attack has several consequences for the fooled person as well as for the target company or organization.
- Phishing is the practice of tricking users to disclose their personal data.
- That is to say, a possible consequence of falling for a phishing attack is identity theft.
+ In the following some of these consequences are briefly illustrated.
+
+\begin{description}[leftmargin=0cm]
+	\item[Identity Theft] Phishing is the practice of tricking users to disclose their personal data.
+ That is to say, a possible consequence of falling for a phishing attack is identity theft~\cite{jakobsson2006phishing}.
  With the data unknowingly provided by the victims, the attacker can impersonate them on their behalf.
  For example, he can do online shopping or transfer money to his account on behalf of his victims.
  In a corporate scenario the attacker might even gain access to secured systems by attacking an administrator.
  When the attacker has access to these systems he might be able to collect customer data.
  Therefore not only users who are subject to phishing attacks can be affected by the attack, but also the institutions, organizations, companies and also their customers.
- Financial loss can be the result of users' banking accounts being plundered or increased support costs for the targeted institutions due to their customers who fell for an attack.
- Moreover, the targeted institutions may sustain a damaged reputation due to phishing attacks.
- Customers who actually became a victim of such a phishing attack will be displeased about the money or account loss and the resulting efforts they have to make in consequence of such an attack.
+	\item[Financial Loss] Financial loss can be the result of users' banking accounts being plundered or increased support costs for the targeted institutions due to their customers who fell for an attack~\cite{rsa2013, mcafee}.
+	\item[Reputational Damage]  Moreover, the targeted institutions may sustain a damaged reputation caused by customers falling victim for phishing attacks~\cite{mcafee, redcondor}.
+	\item[Displeased Customers]  Customers who actually became a victim of such a phishing attack will be displeased about the money or account loss and the resulting efforts they have to make in consequence of such an attack.
  Furthermore, they will tell other people about this displeasant experience.
- Ultimately, these victims will lose their trust in the institution targeted by the phisher.
+	\item[Loss of Trust]  Ultimately, these victims will lose their trust in the institution targeted by the phisher~\cite{redcondor}.
  Moreover, they might lose confidence in eCommerce operations and the Internet in general.
+\end{description}
+ 
+ 
+
+
+
 
 
 %-------------------------------------------
@@ -96,7 +105,7 @@ This might result in a user's loss of confidence, which in turn can result in th
  That is to say, there is a certain time frame where phishing websites are active without being blacklisted.
  In this time frame users can access these website without being warned or restricted and thus are vulnerable to fall for the attack.
  To resolve this problem multiple dynamic and predictive approaches have been proposed to restrict and/or warn the user from accessing phishing websites~\cite{prakash2010phishnet, obied2009fraudulent, balzarotti2012proactive}. Nevertheless, there is no flawless blacklisting approach, as there are always malicious websites which can bypass such protective systems (false negatives). Also, similar to spam, blacklists may contain false positives, and they can also be abused for censorship.
- Moreover, these systems require a high effort to maintain, since a regular and realtime update is inevitable in order to make the system effective~\cite{purkait2012phishing}. Furthermore, there is the weakest link in the security chain: the users who are very often unsure about what to do when getting such security warnings~\cite{bakhshi2009social}. As a matter of fact, in case of disregard of these warnings such systems are useless. 
+ Moreover, these systems require a high effort to maintain, since a regular and realtime update is inevitable in order to make the system effective~\cite{purkait2012phishing}. Furthermore, there is the weakest link in the security chain: there exist users who are very often unsure about what to do when getting such security warnings~\cite{bakhshi2009social}. As a matter of fact, in case of disregard of these warnings such systems are useless for those who ignore them. 
 	\item[Visual distinction] A further technical approach against phishing is the automatic visual distinction of phishing websites from legitimate ones.
  For this purpose it is necessary to identify maliciously duplicated websites mainly based on visual similarities~\cite{liu2006antiphishing}. Various solutions can be found in literature to approach this~\cite{chen2009fighting,chen2010detecting,zhang2011textual}. However, there is no foolproof solution.
  In particular, if approaches mainly rely on visual similarities many of them will fail if the phishing website is not a duplicate of the original site.
@@ -105,7 +114,7 @@ Of course a phisher's adaption to circumvent such solutions must be profitable f
 
 On the other hand some website providers allow the user to customize some visual elements of the website to distinguish it from faked websites.
  
-In the end as always the human factor plays a major role here: if users keep misunderstanding or ignoring the provided visual indicators such techniques will remain of no use.
+In the end as always the human factor plays a major role here: such techniques will remain of no use for users who keep misunderstanding or ignoring the provided visual indicators.
 
 	\item[Takedown] Commonly, hosting providers are urged to take down revealed malicious websites by certain parties: banks, other organizations or specialized takedown companies, for example~\cite{moore2007examining}. The removal of phishing websites is an effective solution, since it implicitly solves the aforementioned problem, where users ignore security warnings: a removed website cannot trick a user into entering sensitive data.
  However, this approach - similar to the blacklist one - cannot defeat phishing entirely, since it is not fast enough~\cite{moore2007examining}. During the uptime of the fraudulent website falling for it remains a threat.
