@@ -253,9 +253,15 @@ As we layed out in Section \ref{s:url_structure} we want to teach the user how t
 To accomplish this goal we think that it is essential that the user sees as much different URLs as possible so he can build his own mental model.
 Therefore we decided on generating URLs rather than composing a fixed list.
 We will lay out the general process here and cover interesting parts of it in the following sections.
+\subsubsection{Example URLs}
+To present attacked URLs to the user we found int most realistic to take valid URLs and apply attacks on them.
+Therefore we needed a set of valid URLs.
+To build this set we used Alexa\ref{alexa} to find the top 100 domains for german users.
+We then went to each of these sites and by navigating tried to find 6 URLs for each domain.
+We tried to find some short and some long URLs.
 \begin{description}
 \item[generate attacks for level]When starting a new level we generate a list of Attacks that we want to show the user.
-\item[select valid URL]When we want to show a new URL to the user we first select a valid URL from a given set.
+\item[select valid URL]When we want to show a new URL to the user we first randomly select a valid URL from the before mentioned set.
 \item[apply generator]Then we apply a generator to the URL that does not invalidate the URL but modifies it.
 \item[apply attack]After that we select a random attack from the previously build list and apply it to the URL.
 \item[repeat]There are combinations of base-URL and attack where the attack doe's not alter the URL.
@@ -290,9 +296,5 @@ None of them is a phish.
 \end{description}
 
 The generated list of attacks also contains a special attack that does no real attack. This is to simplify the URL generation. When we generated the list of attacks we save it for later reference.
-
-\subsubsection{select valid URL}
-When we want to present the user URL we start by selecting a valid URL from a given set.
-To build this set we used Alexa\ref{alexa} to find the top 100 domains for german users.
-We then went to each of these sites and by navigating tried to find 6 URLs for each domain.
-We tried to find some short and some long URLs.
+\subsubsection{apply generator}
+We were unsure if we still have enough valid URLs so we prepared a way to automatically modify the URLs in such a way that they could still be valid URLs. Some Ideas where to add subdomains or path strings to the URL. Query or fragments are also possible. We later found out that it is currently not needed to implement generators because there are a lot of URLs in our set. If however we will some time in the future find out that these URLs are not enough we have this scheme in place.
