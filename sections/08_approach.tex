@@ -258,11 +258,16 @@ We will lay out the general process here and cover interesting parts of it in th
 \item[select valid URL]When we want to show a new URL to the user we first select a valid URL from a given set.
 \item[apply generator]Then we apply a generator to the URL that does not invalidate the URL but modifies it.
 \item[apply attack]After that we select a random attack from the previously build list and apply it to the URL.
-\item[repeat]There are combinations of base-URL and attack where the attack doe's not alter the URL. Therefore it would be impossible for the user to detect the Attack. In this situation we repeat the process until we find a matching URL.
+\item[repeat]There are combinations of base-URL and attack where the attack doe's not alter the URL.
+Therefore it would be impossible for the user to detect the Attack.
+In this situation we repeat the process until we find a matching URL.
 \end{description}
 \subsubsection{generate attacks for level}
 \textbf{Was zur historie?}
-The types of URLs the user is presented is dependent on the level. Each level introduces on or more attacks. Which attack is introduced in which level is layed out in section\ref{s:knowledgetransferperlevel}. In general the URLs of each level $n$ are distributed as follows:
+The types of URLs the user is presented is dependent on the level.
+Each level introduces on or more attacks.
+Which attack is introduced in which level is layed out in section\ref{s:knowledgetransferperlevel}.
+In general the URLs of each level $n$ are distributed as follows:
 \begin{table}[hHtbp]
 \centering
 \begin{tabular}{llll}
@@ -273,3 +278,11 @@ Number of repeats&$r$&$\left\lfloor p/2 \right\rfloor$&Half of the phishes are r
 \caption{distribution of URLs per level.}
 \label{t:levelurls}
 \end{table}
+
+The repeats are always one attack from each previous level. The rest of the repeats is filled up randomly.
+
+There are two main exception to these rules:
+
+In Level 1 the game is modified in the form that the user is only presented with valid URLs and has to select the domain. To prevent boring the user in this level we only present 5 URLs. None of them is a phish.
+
+The first level that contain repeats is level 3 because level 2 is the first real game level.
