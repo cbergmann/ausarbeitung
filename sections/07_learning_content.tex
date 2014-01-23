@@ -204,23 +204,51 @@ In addition to these facts that we specially address in the app there are some t
 \begin{description}
 	\item[Do Not Download Attachment] Many users download or even open files that they receive via mail rather unchecked.
 	This is related to the problem that they trust the from-field of the Mail.
-	We should tell them that downloading or even opening a unknown file might infect their system.
+	It is crucial to tell them that downloading or even opening a unknown file might infect their system.
+	However, for this work we consider this as out of scope and leave it open for future work.
 	\item[Data Economy] The goal of this app is to prevent that the data of the user is phished.
 	The first step towards this goal is to teach the user to enter his data as rarely as possible.
-	The Idea behind this is not only phishing website might use the users' data in a way that he did not intend. 
+	The idea behind this is not only phishing website might use the users' data in a way that he did not intend. 
+	This is considered out of scope and remains as a problem to be targeted in future work.
 	\item[Date Entry Via Https] We should also tell the user that he should only enter data via HTTPS. 
 	When the user is entering data via HTTP there are basically two problems.
 	First the user can no longer be sure that he really talks to the person he want's to talk to.
 	This is captured by our precodition that DNS is assumed to be secure.
 	Secondly even if he really talks to the legitimate target site he can not be sure that an attacker is not wiretapping the communication.
-	Therefore the data that is send over plain HTTP can be considered lost.	
-	\item[Use of Https Within Websites] ???
+	Therefore the data that is send over plain HTTP can be considered lost.
+	This teaching content will be part of our app, cf.~Section~\ref{s:knowledgetransferperlevel}.	
 \end{description}
 
 %...........................................
-\subsection{Conclusion / Summary}
+\subsection{Conclusion}
 %...........................................
 
-Summarize what to communicate to user here.
-..
+This section briefly summarizes the above described learning contents which will be addressed by our app.
 
+\begin{enumerate}
+	\item Phishing URL categories 
+	\begin{enumerate}
+		\item Subdomain attack
+		\item IP address attack
+		\item Nonsense domain
+		\item Trustworthy sounding, but unrelated domain
+		\item Similar and deceptive domain
+		\item Homograph attack
+	\end{enumerate}
+	\item Invisible address bar
+	\begin{enumerate}
+		\item Access address bar
+		\item Analyze complete URL
+	\end{enumerate}
+	\item E-mail spoofing 
+	\begin{enumerate}
+		\item Do not trust sender
+		\item Do not trust content
+	\end{enumerate}
+	\item Link spoofing
+	\begin{enumerate}
+		\item Target URL of a link is not necessarily the displayed one
+	\end{enumerate}
+	\item Data entry via HTTPS only
+	
+\end{enumerate}
