@@ -7,7 +7,9 @@
 This chapter introduces the target of this work, which is to design, implement and evaluate an educational app.
  The app is supposed to help unexperienced users to detect phishing attacks.
  At first we are going to motivate the benefit of our work and how we envision our approach to achieve our goal.
- Next, we define our specific objectives and finally, we provide an overview of the following chapters.
+Specifically, we will first motivate why countering phishing is necessary by exploring the consequences and statistics of phishing.
+Subsequently, we will reason why there is a need for an anti-phishing education app, instead of, for example, a further technical solution or a computer-based educational approach.
+ Then, we define our specific objectives and finally, we provide an overview of the following chapters.
 
 
 %===========================================
@@ -18,8 +20,8 @@ As an example, 83\% of Germany's population have Internet access~\ref{globalfina
 However, it is undeniable that with the great benefits of the Internet also come great threats. 
 One major issue of today's digitalized world is spam in general and phishing in detail. 
 
-Phishing is a for of Fraud to lure confidential information from users, cf.
-~Section~\ref{s:phishing_def}. The goal of the Attacker is to impersonate the User in online systems.
+Phishing is a form of fraud to lure confidential information from users, cf.
+~Section~\ref{s:phishing_def}. The goal of the attacker is to impersonate the user in online systems.
  This can be used to access corporate systems, damage the users reputation or simply steal money from him.
  Usually, phishing happens through fake websites which imitate the original ones.
  On these so called phishing websites the users are asked to enter their personal or account data.
@@ -59,19 +61,19 @@ Falling for a phishing attack has several consequences for the fooled person as 
 \subsubsection{Statistics of Phishing}
 %-------------------------------------------
 \label{s:stats}
-Phishing is also reflected by many statistics of various reports.
- According to the Anti-Phishing Working Group~(APWG) approximately 40,000 unique phishing websites are detected each month~\cite{antiphishingtrendreport2013}. Statistics published by Kaspersky Lab, a well-respected provider for IT security solutions, state that from year 2011-2012 to 2012-2013 the number of attacked users increased by about 87\%. While in 2011-2012 the number of users, who were subject to phishing attacks, was 19.9 million, in 2012-2013 the numbers climbed up to 37.3 million.
+Phishing is also reflected by many statistics of various reports. 
+ According to the Anti-Phishing Working Group~(APWG) approximately 40,000 unique phishing websites are detected each month~\cite{antiphishingtrendreport2013}. Statistics published by Kaspersky Lab, a well-respected provider for IT security solutions, state that from year 2011-2012 to 2012-2013 the number of attacked users increased by about 87\%. While in 2011-2012 the number of users, who were subject to phishing attacks, was 19.9 million, in 2012-2013 the numbers climbed up to 37.3 million. 
  Every day about 100,000 Internet users are victims of phishing attacks, which is twice as many compared to the previous period of 2011-2012. An immense increase can also be observed in the number of unique sources (i.
-e.
- IPs) of attacks, which has tripled from 2012 to 2013~\cite{kasperskyreport2013}. The amount of target institutions also rose.
+e. 
+ IPs) of attacks, which has tripled from 2012 to 2013~\cite{kasperskyreport2013}. The amount of target institutions also rose. 
  While in 2011 the APWG counted about 500 target institutions, in the fist quarter of 2013 720 target institutions were identified~\cite{antiphishingglobalreport2013}. 
-Finally, RSA and ECM estimate worldwide costs caused by phishing at about \$1.5 billion for the year 2012~\cite{rsa2013}.
-
+Finally, RSA and ECM estimate worldwide costs caused by phishing at about \$1.5 billion for the year 2012~\cite{rsa2013}. 
 We are aware that such statistics might be inherently biased~\cite{moore2010hard}. 
-The problem is, there are several ways to inteperet collected data.
-Hence, every party might assess their data with respect to their interests.
+The problem is, there are several ways to inteperet collected data. 
+Hence, every party might assess their data with respect to their interests. 
 Yet, we believe that the education of end users is an important step towards countering phishing. 
-Ultimately, more reliable and accurate statistcs would required in order to evaluate the effectiveness of all the proposed countermeasures against phishing.
+Ultimately, more reliable and accurate statistcs would required in order to evaluate the effectiveness of all the proposed countermeasures against phishing. 
+Next, we reason the importance of anti-phishing education in general and specifically the need for a mobile app for this purpose.
 
 %-------------------------------------------
 \subsubsection{Technical Solutions to Counter Phishing}
