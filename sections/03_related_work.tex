@@ -4,20 +4,22 @@
 \section{Related Work}
 %*******************************************
 \label{s:related_work}
-In the previous section we have introduced you to the different classes of learning contents and communication media. 
-We have decided for a mixture of the game and quiz based approach to create an incentive for the users. 
-Regarding the content which will be communicated to the user we decided to focus on detecting phishing URLs for the reasons we have mentioned before in Section~\ref{s:content_classification}.
-This section summarizes previous work on anti-phishing education and in which way our work is to be distinguished from those. 
+In the previous section we have introduced the different classes of learning contents and communication media. 
+Furthermore, we have decided to go for the game/quiz based approach while focusing on URL based knowledge. 
+This section summarizes concrete examples of previous work on anti-phishing education.
+For each class we have previously introduced at least one example is illustrated. 
+We especially elaborate on the game and URL based approach as this is the path we take. 
+Moreover, we state in which way our work is to be distinguished from previous work. 
 
 %...............................................................................................................
 \subsection{Game and URL Based Approaches}
 %...............................................................................................................
-Anti-Phishing Phil is a game based approach~\cite{sheng2007antiphishingphil}. 
-The three main objectives of this game are the following: 
+Anti-Phishing Phil~\cite{sheng2007antiphishingphil} is a game based approach. 
+The three objectives of this game are the following: 
 (1) learn to detect phishing URLs, (2) learn where to look for indications in browsers for trustworthy/untrustworthy websites, and (3) learn to use search engines to find legitimate websites. 
 The major focus, however, is set on the detection of phishing URLs. 
 The main character of the game is a little fish, named Phil, who has to grow to a big fish by eating worms. 
-These worms can either be good, i.e. real worms, or bad, i.e. fake worms, with which fishers try to hook the fish of the sea. 
+These worms can either be good, i.e. real worms, or bad, i.e. fake worms, with which fishers try to hook the fish off the sea. 
 Good worms of the game are associated with URLs of legitimate websites, while bad worms are associated with the URLs of phishing websites. 
 Phil's task is to feed on legitimate URLs only. 
 He must reject phishing URLs to grow to a big and healthy fish. 
@@ -25,7 +27,8 @@ The game consists of four rounds in total, each round endures two minutes.
 For correct actions Phil is rewarded with a certain amount of points. 
 If Phil falsely rejects a legitimate URL, he is slightly penalized by having the time left decremented for a couple of seconds. 
 However, if Phil eats a phishing URL he is severely penalized by losing one of three lives. 
-In this way, the authors try to simulate the real world effects of their behavior. 
+In this way, the authors try to simulate the extent of the real world effects of their behavior, i.e.
+in reality rejecting a valid URL is not as bad as trusting a phishing URL.
 Each round the focus of deception techniques is shifted and phishing URLs get more difficult to identify. 
 In the first round the users get introduced to IP address URLs. 
 The second round mainly deals with deceptive subdomain URLs, where the brand name occurs in the subdomain. 
@@ -37,80 +40,80 @@ First, the user gets direct feedback during the game, whether the answer he has 
 Second, the user has the possibility to receive help in case he needs it. 
 In this case, Phil's experienced father will give a tip. 
 Third, at the end of each round a score sheet is displayed, which summarizes the user's answers, whether they were correct or wrong, and why they were correct or wrong. 
-Finally, there are anti-phishing tips in-between the rounds. 
-To evaluate the effectiveness of the game the authors conducted a between-subjects experiment with three training conditions: 
+Finally, there are anti-phishing tips in-between the rounds. \newline
+To evaluate the effectiveness of the game the authors conducted a between-subjects experiment with three training conditions, represented by three groups: 
 (1) existing training material, e.g. from eBay or Microsoft, (2) anti-phishing tutorials which were created based on the game, and (3) the game itself. 
 Each group had to decide on ten websites (in total 20) about their authenticity before and after the training step. 
 The results showed that the participants in the game condition performed better than those in the other two conditions. 
 All in all, we believe that the approach is a good step towards user education and features many good aspects. 
-In the first place, the game based approach is an attractive incentive. 
+In the first place, the game based approach is an attractive incentive for the user to be educated. 
 Furthermore, the training messages are kept short and simple. 
-Finally, the training messages, especially of the categories of help during the game and the score sheet after each round are very valuable. 
-Due to time restrictions we could not integrate those kind of messages. 
-However, we believe that this approach has some flaws and thus is not optimal for user education. 
-Even though, using a fish as main character for this game is a funny idea, we do not think that this is an appropriate solution for adults. 
-This is also reflected by the results of our pre-study, cf.~Section~\ref{s:prestudy}. 
+Finally, the training messages, especially the ones of help during the game and the score sheet after each round are very valuable. 
+Due to time restrictions we cannot integrate those kind of messages. \newline
+On the other hand, we believe that this approach has some flaws and thus is not optimal for user education. 
+Even though using a fish as main character for this game is a funny idea, we do not think that this is an appropriate solution for adults. 
+This is also reflected by the results of our phishing survey, cf.~Section~\ref{s:prestudy}. 
 Therefore, we will not use a fish as our main character. 
 Our approach will rather be a combination of a game, which includes lives and points, and a quiz, where users are required to answer questions directly, without any background story.
 As aforementioned, the training messages are simple and easy to understand, however, we are afraid that the phrasing is too vague. 
-For example, for IP address URLs the following alert message is displayed to the user: 
+For example, for IP address URLs Anti-Phishing Phil displays the following alert message to the user: 
 "Don't trust URLs with all numbers in the front". 
 For subdomain attacks the following wording is used "Don't be fooled by the word ebay.com in there, this site belongs to ttps.us". 
 These kind of messages are susceptible to misinterpretation. 
 Another downside we see, which is ultimately related to the vague formulations, is that the user is not concretely explained how he has to parse the URL in order to make healthy decisions on the authenticity of such. 
 Here again he is only told that the most important part of the URL is between the "https://" and "/" and that the name of the website is the text right before the "/". 
-In our point of view this is a vague phrasing and there is a lack of emphasizing the importance of the domain, which we do in our solution. 
-Finally, the game does not cover some spoofing techniques, which are still relevant in our opinion, cf.~Section~\ref{s:url_categories}, and thus covered by us. 
+In our point of view this is a imprecise phrasing and there is a lack of emphasizing the importance of the domain, which we do in our solution. 
+Finally, the game does not cover some spoofing techniques, which are still relevant in our opinion and thus is covered by us (cf.~Section~\ref{s:url_categories}). 
 For example, the difference between http and https is not introduced, as well as the fact that https websites can also be phishing websites. 
 Furthermore, the game does not explicitly mention that the domain name, the host or even the entire URL can be part of the path to fool the user. 
-Finally, there are different ways of making use of deceptive domains, which were not explicitly covered in Anti-Phishing Phil. 
-For example homographic attacks which are detectable by the human eye, typos or scrambled letters, which should be distinguished in our opinion, in order to exemplify to the user how mean and hard to detect such URL spoofing techniques can be. 
-There exist further proposals which are very similar to Anti-Phishing Phil~\cite{arachchilage2011designing,arachchilage2012designing}
+Finally, there are different ways of making use of deceptive domains, which were not explicitly covered by Anti-Phishing Phil. 
+For example, homograph attacks (cf.~Section~\ref{s:url_categories}), typos and scrambled letters should be distinguished in order to exemplify how mean and hard to detect such URL spoofing techniques can be. \newline
+More work has been done in this area. However, most approaches are similar to Anti-Phishing Phil~\cite{arachchilage2011designing,arachchilage2012designing}.
 
 %...............................................................................................................
 \subsection{Game/Quiz and E-Mail Based Approaches}
 %...............................................................................................................
 Anti-Phishing Phyllis~\cite{antiphishingphyllis} is a game based approach and focuses on teaching the user to detect a variety of phishing traps in e-mails. 
-These include, for example, fake links, attractive offers, urgent requests or malicious attachments. 
+These include, for example, fake links, attractive offers, urgent requests, or malicious attachments. 
 The main character of this game is a fish named Phyllis. 
 Phyllis has to decide whether potential traps (marked with red bubbles) in an e-mail he is shown are real phishing traps or are harmless by disarming or ignoring them. 
 The playing user gets hints during the game and direct feedback on his actions. 
-SonicWALL provides an IQ test on phishing e-mails~\cite{sonicwall}. 
+Another quiz and e-mail based approach is provided SonicWALL~\cite{sonicwall}. 
 The user is shown e-mails consecutively and has to decide whether the displayed e-mail is legitimate or not. 
 The user does not receive direct feedback on his decisions. 
 At the end he receives an overview of the answers he has given and whether they were correct. 
 If the user wants to know why his answer was correct or wrong he has to click on a link to get this information. 
-As aforementioned, teaching users to detect phishing e-mails before even giving them the possibility to land on phishing websites has the advantage that they do not confirm the activeness of their e-mail address, and more importantly do not have the chance to accidentally download malicious software. 
-However, as phishing e-mails become more and more sophisticated, i.e. convincing and credible, and since phishing websites are also reachable via SMS, online social networks or just surfing in the Internet, we did decide against the e-mail based approach. 
+As aforementioned, teaching users to detect phishing e-mails before even giving them the possibility to land on phishing websites has the advantage that they do not confirm the activeness of their e-mail address, and more importantly, do not have the chance to accidentally download malicious software. 
+However, as phishing e-mails become more and more sophisticated, i.e. convincing and credible, and since phishing websites are also reachable via other communication channels, such as SMS, online social networks or just surfing in the Internet, we decided against the e-mail based approach. 
 
 %...............................................................................................................
 \subsection{General Knowledge Transfer With Embedded Learning}
 %...............................................................................................................
 
 There are several proposals in literature for embedded learning~\cite{jannson2011simulating, kumaraguru2009phishguru,alnajim2009antiphishing}. 
-Jansson et al. proposed a solution where simulated phishing e-mails with links to fake websites or malicious download attachments are sent out to users~\cite{jannson2011simulating}. 
-The moment a user falls for a trap of these simulated e-mails he receives a notification to inform him that he could have fallen for a real phishing attempt. 
+One of these is a solution proposed by Jansson et al. where simulated phishing e-mails with links to fake websites or malicious download attachments are sent out to users~\cite{jannson2011simulating}. 
+The moment a user falls for a trap of these simulated e-mails he receives a notification informing him that he could have fallen for a real phishing attempt. 
 Also, the e-mail includes a link to a website with a training program with general information and tips on how to detect phishing and malicious attachments. 
-After consulting the training program the user is asked to complete a questionnaire in order to verify whether he received the messages of the training program. 
-A very similar approach, the so called PhishGuru, is proposed by Kumaraguru~\cite{kumaraguru2009phishguru}. 
+After consulting the training program the user is asked to complete a questionnaire in order to verify whether he understood the content of the training program. 
+A very similar approach, the so called PhishGuru~\cite{kumaraguru2009phishguru}, is proposed by Kumaraguru. 
 Another possibility is to leave out the step where simulated phishing e-mails are sent to users. 
-Instead real phishing e-mails are made use of. 
+Instead actual phishing e-mails are utilized. 
 For example, the APWG and Carnegie University's CyLab Usable Privacy and Security Laboratory (CUPS) work on the project "Phishing Education Landing Page"~\cite{apwg2009landingpage}. 
 The moment a user clicks on a link of a real phishing website which has already been taken down, i.e. the moment the user behaves riskily, he is redirected to the anti-phishing landing page.
 There he is told that he had almost become a victim of phishing and provided with educational material to this topic. 
-Finally, there is an approach where the intervention does not happen after clicking on a dangerous link, but while surfing~\cite{alnajim2009antiphishing} instead. 
+Finally, there is an approach where the intervention does not happen after clicking on a dangerous link, but while surfing~\cite{alnajim2009antiphishing}. 
 When the user lands on a blacklisted phishing website and is about to disclose his sensitive data (i.e. presses the submit button) the system interferes: 
 the user is warned and given tips on how to detect phishing websites (e.g. abstract information on the detection of spoofed URLs). 
 All of these solutions benefit from the so called teachable moment, the moment the users place themselves at risk by either clicking on a link in a (simulated) phishing e-mail or by submitting sensitive information to blacklisted phishing websites. 
 This moment of risk presents a teachable moment for those who almost fell for such a trap. 
-For this reason giving the warnings, hints and training to the user in this moment will most likely result in higher motivation and retention so that the tips are more likely to help avoid similar dangers in future. 
+For this reason giving the warnings, hints, and training to the user in this moment will most likely result in higher motivation and retention so that the tips are more likely to help avoid similar dangers in future. 
 A downside of these approaches is that they do only give negative feedback to the user. 
 Consequently, the user is not "rewarded" when he rejects to click on a phishing link or to submit data on a phishing website, which is an important thing to do in our view. 
 Moreover, the amount of information provided on such an educational website should be reasonable, i.e. the user should not be flooded with information. 
 Otherwise he will not retain or even consult everything. 
 To overcome these issues, a reasonable consideration for future work might be to combine embedded learning with another approach, for example, playing an educational game. 
 In this way positive feedback can be included and the information can be transferred bit by bit to the user. 
-For example, the website the user is redirected to might contain just the most important information, just enough to motivate the user to click on the provided link to our final app, in case the user is interested in gaining in-depth insight on this topic. 
+For example, the website the user is redirected to might contain just the most important information, just enough to motivate the user to click on the provided link to an educational game, for instance our app, in case the user is interested in gaining in-depth insight on this topic. 
 For now, we do not follow this approach since the step of sending simulated phishing e-mails to users raises legal issues.
 
 %...............................................................................................................
@@ -128,7 +131,7 @@ However, adding time pressure to our approach, i.e. simulating a real life situa
 \subsection{General Knowledge Transfer With Quizzes}
 %...............................................................................................................
 There exist online quizzes where the user is asked general questions to the topic of phishing~\cite{icicibank,onguardonline}. 
-The design of these online quizzes are based on the association of phishing with fishing. 
+The design of these online quizzes is based on the association of phishing with fishing. 
 That is to say, here again a fish is the main character of the quiz, which we do not find appropriate for adult users. 
 Moreover, the number and variety of the questions asked in these quizzes are very restricted. 
 Even if the examples of the quiz based approaches are not optimal for user education, we think that this approach is the most appropriate one for adults as target group.
@@ -137,29 +140,29 @@ Even if the examples of the quiz based approaches are not optimal for user educa
 \subsection{Further Game Based Approaches On Other Computer Security Topics}
 %...............................................................................................................
 Besides the proposals for user education on the specific topic of phishing, there exist a variety of other approaches aiming at educating the everyday user on general or other specific topics of computer security.
-Auction Hero, for example, is a simulation game which covers different topics of computer security, amongst other phishing~\cite{chiasson2011auction}. 
-Its aim is to help users make more secure decisions in the Internet by modeling real online life. 
+Auction Hero~\cite{chiasson2011auction}, for example, is a simulation game which covers different topics of computer security, amongst other phishing. 
+Its aim is to help users make more secure decisions in the Internet by modeling their regular Internet behavior. 
 Real life is simulated by making security a secondary goal of the game, like it usually is the case with end users. 
 The primary goal of the user, who is a trader, is to build and sell robots, and earn enough money and reputation to ultimately become an "Auction Hero". 
-As in reality, the trader has to pay attention to various security risks like weak account passwords, out-dated antivirus software as well as phishing. 
-Phishing, in particular, is dealt with as follows: users receive e-mails within the game, while some of them are legitimate and others are not (for example, an e-mail saying that the user has won an auction for an item he has never bidden on). 
-The e-mails include links to websites where they are asked to enter their in-game login data. 
+As in reality, the trader has to pay attention to various security risks, such as weak account passwords, out-dated antivirus software as well as phishing. 
+Phishing, in particular, is dealt with as follows: the playing user receives e-mails within the game. While some of them are legitimate others are not (for example, an e-mail saying that the user has won an auction for an item on which he has never bidden). 
+The e-mails include links to websites where the user is asked to enter his in-game login data. 
 An ultimate consequence of disclosing data to a phishing website is that the user will suffer loss of money and reputation. 
 Also, an explanatory warning will be displayed. 
 The user is taught about typical characteristics of phishing, potential consequences of falling for them, and how to deal with phishing attempts. 
-This approach has the major benefit of simulating real life, i.e. it considers security as a secondary goal, and thus provides a realistic context for the user. 
+This approach has the major benefit of simulating actual online behavior and thus provides a realistic context for the user. 
 Additionally, the user does not only learn about phishing, but other security related aspects, such as having strong passwords and keeping antivirus software up-to-date. 
 However, for our work, unfortunately such an extensive approach is out of scope.
-There exist a multitude of further online games and quizzes covering different or general topics of computer security.
+There exists a variety of other online games and quizzes covering miscellaneous topics of computer security.
 "Mission Laptop Security", for example, is a quiz based approach where the user's mission is to transport a laptop to a specific destination in a secure manner~\cite{laptopsecurity}. 
-During his trip, the user is asked various questions about how to act in different situations. 
+During his trip, the user is asked several questions about how to act in different situations. 
 The mission can only be completed if the user gives enough correct answers.
 Another game covers the topic of network security~\cite{wirelesshackers}. 
 Hackers, represented by little red men, are surrounding the user's WLAN area. 
 By clicking on a hacker man a question appears. 
 When the user gives the correct answer, this specific hacker man disappears. 
 When the user gives an incorrect answer all red men come closer to the user's computer in the center of the WLAN area.
-Others have diverged from computer based games and rather suggested a phiysical card game primarily intended to increase the users' awareness of needs and challenges related to computer security in general~\cite{denning2013controlalthack}.
+Others have diverged from computer based games and rather suggested a physical card game primarily intended to increase the users' awareness of needs and challenges related to computer security in general~\cite{denning2013controlalthack}.
 
 
 
