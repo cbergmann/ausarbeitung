@@ -94,9 +94,7 @@ User motivation
 	\item[Leveling]
 \end{description}
 
-%===========================================
-\subsection{Pilot Study}
-%===========================================
+
 %===========================================
 \subsection{Game Rules}
 %===========================================
@@ -255,8 +253,187 @@ e.
 \centering
 \includegraphics[width=1.0\textwidth]{graphix/level_teaching_goals.pdf}
 \caption{Teaching goals of the app}
-\label{fig:url_components}
+\label{fig:level_teaching_goals}
 \end{figure}
+
+
+%===========================================
+\subsection{Use of Learning Principles and Game Techniques}
+%===========================================
+Our app is a learning game which purposes to introduce information on the topic of phishing and how to detect it.
+With the app we want to improve understanding for this topic and help users be less vulnerable for falling for such attacks in future.
+This section deals with the principles of learning and game techniques which are reflected in our app design.
+In fact, the laws of learning and game techniques have a strong connection which is the reason why games work for learning purposes~\cite{murphy2011games}.
+%--------------------------------------------------------------------------
+\subsubsection{Principles of Learning}
+%--------------------------------------------------------------------------
+\label{s:learning_principles}
+Edward Thorndike introduced the first three principles of learning: readiness, exercise and effect~\cite{thorndike1932fundamentals, murphy2011games, handbook2008us}. 
+Later the principles of learning were further extended by: primacy, intensity and recency~\cite{murphy2011games, handbook2008us}.
+These principles outline how people learn and which conditions improve their process of learning.
+In the following we will briefly introduce the meaning of these principles~\cite{murphy2011games} and explain how they are reflected in our app.
+
+\begin{description}[leftmargin=0cm]
+	\item[Readiness] The principle of readiness claims that physical, mental as well as emotional preparedness is an important prerequisite for a better learning performance. 
+It also states that motivation is crucial for effective learning. 
+First of all, students must want to learn something, otherwise any additional motivational efforts will be of no use. 
+In order to make students want to learn something it is relevant for them to see a clear reason for learning, i.e. the perceived value of the material is ultimately related to their motivation. 
+Finally, the principle of readiness says that best learning performances are achieved in combination with good physical health.
+The physical and health conditions of our app users are beyond our control.
+For this reason this is an aspect which cannot be reflected in our app.
+The app is targeted at users who are willing to learn something about phishing. 
+Consequently, there is already some kind of motivation in our app users.
+In order to increase this motivation we present clear reasons why the user should continue to play our app.
+This is happening in the awareness part, where the user is told what exactly phishing is, how easy it is to phish users, spoof e-mail senders and content, spoof links as well as create exact copies of legitimate websites, cf.~Section~\ref{s:app_design}.
+	\item[Exercise] The use of exercise is composed of two important parts: 
+First, training and repetition help increase learning. 
+Second, feedback is crucial for good learning performance.
+For best learning results, these two parts must be applied together.
+In a nutshell, the learning connection is strengthened by practice, and weakend by disuse~\cite{handbook2008us}.
+After finishing the awareness part, we start with the user education and provide exercises for all of our learning goals (except for the last level), cf.~Section~\ref{s:knowledgetransferperlevel}.
+The learning content is also permanently repeated. 
+For example, in the introduction 2, cf.~Section~\ref{s:knowledgetransferperlevel} the user learns to scroll up to make the address bar re-appear and analyze the URL by right and left scrolling it. 
+The scrolling of the URL is present in levels 2-9.
+Also, the user has to identify the Who-Section in level 1. 
+In addition, the user has to show the Who-Section every time he has detected a phishing URL correctly.
+Finally, every introduced attack of each level n will appear in level n+1 at least once. 
+That is to say, as soon as the user gets to know a new attack, he will keep seeing this attack in the succeeding levels.
+Our app also provides direct feedback to the users' actions. 
+In case of correct answers, the user is rewarded with gained points, with a smiley and a small text that he has done well.
+When the user has made a mistake he is punished with losing points, possible life loss and a sad smiley. Also, told that the answer was wrong, why it was wrong and additionally he gets a reminder text on the applied URL spoofing attack he was not able to recognize.
+To sum it up, we let our app users practice what we taught them and make use of repetitions in combination with direct feedback.
+	\item[Effect] A student who associates his learning with positive feelings will learn more and better than another student who connects his learning with negative feelings. 
+For example, a student who is unsuccessful with initial learning material will associate his experience with unpleasantness, frustration, anger and/or confusion, while a student with early success will have strong positive feelings and thus will be more motivated to have more success in future.
+Therefore, enabling particularly early success and maintaining student motivation with positive feedback and comments is crucial.
+In our app early success is easy to achieve, since we start with easy tasks and obvious attacks which get increasingly difficult in higher levels.
+When the user has given a correct answer he is rewarded with a big smiley face as well as points. 
+Also, the user is shown a medal every time he finishes a level.
+These aspects of the app are intended to increase the users' positive feelings and keep him motivated to go on. 
+However, some improvement of positive comments might be worth considering.
+Currently, the positive texts for a correctly answered text, for finishing a level and icons do not differ. 
+It might be more engaging if such texts and icons differ from time to time in order to increase the positive emotions of the user. 
+For example, texts telling the user that he has done well might slightly vary (for instance, according to the degree of difficulty of the achieved task).
+Also, the screen of finishing a level could vary.
+Here again the degree of difficulty might be considered. 
+According to the level finished, the obtained award could get bigger, the text of the level finished screen more flattering in order to increase the users positive experience.
+	\item[Intensity] This principle says that learning is better encouraged by things that are more intense. 
+For example, people likely to learn more from an exciting and enthusiastic teacher than from a boring and monotone one or from a text book.
+Our app is by nature more intense than a simple text based approach.
+The game creates incentives and intensity.
+Also, the fact that we do not only tell the user that e-mail spoofing and link spoofing is easy but also make him experience it increases the intensity.
+	\item[Primacy] The principle of primacy means that the first thing a student learns makes the strongest impression. 
+For this reason getting rid of bad habits, and replacing incorrect or wrong logic are difficult. 
+This principle is coupled with time. 
+The first things our users learn is: what is phishing as well as how easy e-mail and link spoofing is. 
+For those who already knew these things, the awareness part will not be such a high motivating factor. 
+Yet, we believe this part is indispensable since there are still many people outside who are not aware of the aspects mentioned above. 
+	\item[Recency] The principle of recency states that most recently learnt things are easier to remember. 
+This is a consequence of the reduction of the learning over time. 
+The principle of recency is coupled with time. 
+We are aware that our app is not a game which will be frequently used and thus its users are likely to forget the content they have learnt, for example, a week ago. 
+In order to overcome this problem, so called reminders are included in each new level introduction. 
+There the user has a short summary of what he has learnt so far. 
+Also, we keep confronting the user with attacks from previous levels during the exercise rounds.
+This repetition is, on one hand, intended to strengthen the users knowledge and understanding, on the other hand, it is intended to create a kind of recency so the user does not forget about this kind of attack. 
+In case the user does not detect the attack (a repeated or a new one) he will be reminded what kind of attack had been applied. 
+Furthermore, in this level the user will be confronted with this kind of attack again, until he gives a correct answer to it.
+\end{description}
+Now that we have introduced the fundamental principles of learning and associated these with our app, we proceed with the introduction of game techniques and how they are related to the learning principles as well as to our app. 
+As already mentioned, there are strong connections between learning principles and game techniques. 
+Therefore, we will try not to focus on redundant aspects, but rather on additional aspects which need to be considered in game design. 
+%--------------------------------------------------------------------------
+\subsubsection{Game Techniques}
+%--------------------------------------------------------------------------
+Basic game techniques are: flow, feedback, simplicity, immersion and engagement, choice and involvement, practice as well as fun~\cite{murphy2011games}.
+As some terms already reveal, these principles are strongly connected to the basic principles of learning.
+In the following we will elaborate on these game techniques by stating their relation to the according learning principle, mentioning  additional aspects to consider and how these are mirrored in our app.
+
+\begin{description}[leftmargin=0cm]
+	\item[Flow] Flow is the key point of games. It is ``the state in which people are so involved in an activity that nothing else seems to matter; the experience itself is so enjoyable that people will do it even at great cost, for the sheer sake of doing it''~\cite{csikszentmihalyi1990flow}.
+Sometimes flow is also referred to as 'engagement'~\cite{murphy2011games} and relates to a person's overall well-being~\cite{seligman2012flourish}. 
+Flow relates to motivation~\cite{csikszentmihalyi1990flow, csikszentmihalyi1997finding}. Motivation in turn is a crucial part of readiness, cf-~Section~\ref{s:learning_principles}.
+In essence, there are four requirements for flow~\cite{csikszentmihalyi1990flow, csikszentmihalyi1997finding, schell2008art}.
+	\begin{enumerate}
+		\item \textbf{Clear Tasks} With clear tasks the user is able to understand what he needs to do. 
+The tasks which need to be completed by the users of our app are never complex and they are always clearly told what they need to do next. 
+		\item \textbf{Feedback} With feedback the user should always be kept up-to-date about his progression towards the goals he is asked to achieve. 
+He also should get immediate feedback on whether his actions are good or not. 
+Our app covers these aspects, cf.~Section~\ref{s:learning_principles}.
+		\item \textbf{Balanced, Attainable Goals} The user should be confronted with challenging tasks, but at the same time these tasks should also be achievable. 
+Especially in the beginning our app users are confronted with very simple tasks.
+For some users they even might be too easy which may result in a loss of interest.
+However, these tasks are important basics which are necessary for successful detection of phishing attacks on the smartphone. 
+Therefore, for future work especially the first two tasks (access address bar and analyze the complete URL) could be re-designed so that they also keep users which have already knowledge in this area.
+Currently, the users can just skip the introductory part of this part and directly complete the task.
+Besides, as the users' skills will naturally improve, their tasks get more difficult and challenging with increasing levels, but will remain achievable.
+		\item \textbf{Concentration} The user should not be distracted with, for example, complex interfaces. 
+He should rather be able to fully concentrate on the game. 
+Our app has a very simple user interface with the most necessary elements. 
+There are no special effects, advertisement or other elements which might distract the user from playing the game with full concentration.
+The only intrusive and interruptive elements are our introductory sections. 
+However, these are inevitable for the communication of the learning content.
+	\end{enumerate}
+	\item[Feedback] Feedback is important which is also reflected by the fact that it is a crucial part of the learning principle 'exercise', cf.~Section~\ref{s:learning_principles}, as well as a requirement for flow.
+Stated simply, feedback is how a user perceives progress~\cite{csikszentmihalyi1990flow, csikszentmihalyi1997finding}.
+For the completion of even simple tasks feedback is indispensable.
+Feedback can be in form of a scoring system, comparative statistics or failure outcomes and provides the user information about his progression and performance.
+Games make use of a so called feedback loop~\cite{goetz2011harnessing}:
+
+\begin{enumerate}
+	\item \textbf{Measure Behavior} Our app assesses whether the answer of the user to a given task is correct.
+	\item \textbf{Relay Measurement to User} The user is told whether his answer is correct or not.
+	\item \textbf{Realize Some Sort of Outcome} The outcome of the users' actions and answers are accordingly defined, cf.~Section~\ref{s:game_rules}. 
+For example, the user loses a life in case he did not detect a phishing URL.
+	\item \textbf{Provide Opportunities for Alternate Action} 
+The user has the chance to do better in the next tasks.
+\end{enumerate}
+	\item[Simplicity] The real world is a complex construct.
+However, games should simplify the real world so that there only remain rules and goals.
+In this way the players can fully concentrate on their tasks and how they can achieve them~\cite{csikszentmihalyi1997finding}.
+Hence, simplicity helps users to achieve flow and thus increased motivation. 
+This, in turn, leads to improved learning, cf.~Section~\ref{s:learning_principles}.
+Simplicity involves, for example, the user interface, the game goals, feedback loops, rules and instructions.
+The structure of our app is kept simple and consistent.
+Therefore, it should be easy to understand.
+Our user interface is kept to the necessary minimum and the goal of the game is clear: detect phishing URLs.
+	\item[Immersion and Engagement] Immersion involves a passive activity. 
+The term is used, for example, to describe a person who shows strong interest for a story~\cite{mcmahan2003immersion}. 
+In contrast to immersion, engagement involves active actions, such as trying to solve a problem or puzzle.
+Games commonly use both, immersion and engagement.
+To achieve immersion game designers make use of stories, visual and audio techniques, attractive graphics or animations~\cite{schell2008art}.
+Simultaneously, the user is engaged with choices, problems, or puzzles which have to be solved.
+The combination of immersion and engagement has the potential of creating an intense game experience~\cite{murphy2011games}.
+These two aspects of game techniques are strongly linked to the learning principle of intensity.
+By challenging the user with various tasks to solve we meet the requirement for achieving engagement. 
+However, immersion is an aspect we have not considered yet in the scope of this thesis.
+In order to achieve an intense game experience, this aspect might be worth considering for future work.
+	\item[Choice and Involvement]
+Games consist of choices and involvement. 
+There is a link between choice and positive feelings (cf.~principle~of~effect~in~Section~\ref{s:learning_principles}, i.e. choice is important for a person's overall well-being~\cite{seligman2012flourish, schwartz2009paradox}.
+However, the downside of choices is the so called paradox of choice which states that choice is beneficial, but too many choices can cause more bad than good~\cite{schwartz2009paradox}.
+The problem is, when the users are confronted with too many choices they get overwhelmed, since the decision thus the task to solve becomes too complex.
+We believe that our app does not face the problem of this paradox since the decisions the user has to take are limited to the questions:
+is the following URL a phish, and show us the Who-Section.
+Still, the user has to make decisions and is consequently involved in the game.
+	\item[Practice] This technique is directly related to the learning principle of exercise, cf.~Section~\ref{s:learning_principles}. 
+Users practice and repeat several steps of games extensively so that they eventually gain mastery and the difficulty of their challenges can increase~cite{murphy2011games,schell2008art}. 
+Our app offers practices as well as repetition, cf.~Section~\ref{s:learning_principles}.
+	\item[Fun] Fun is an important aspect of game design and yet the definition of it is not clearcut in literature~\cite{murphy2011games, schell2008art,koster2010theory}.
+Based on several definitions found in literature Curtiss Murphy introduced the following definition of fun: \textit{``Fun is the positive feelings that occur before, during, and after a compelling flow experience.''}~\cite{murphy2011games}.
+Positive feelings include, but are not limited to, engagement, enjoyment, pleasure, entertainment, satisfaction, control and triumph. 
+Fun is related to the learning principle of effect and its positive feelings.
+How we achieve the principle of effect and positive feelings in our app is described in Section~\ref{s:learning_principles}.
+Yet, fun is something which emerges from several game techniques, such as, flow, immersion and engagement, practice to achieve mastery, and choices, which all lead to positive emotions.
+Fun is an aspect of our app which could be considered more deeply in future work. 
+Especially, the areas of creating positive feelings and including immersion in order to make the users' game experience more intense and fun are aspects which might be looked at.
+\end{description}
+
+%===========================================
+\subsection{Development}
+%===========================================
+%===========================================
+\subsection{Pilot Study}
+%===========================================
 %===========================================
 \subsection{URL Generation}
 %===========================================
