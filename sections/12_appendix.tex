@@ -31,7 +31,7 @@ As we layed out in Section \ref{s:url_structure} we want to teach the user how t
 To accomplish this goal we think that it is essential that the user sees as much different URLs as possible so he can build his own mental model.
 Therefore we decided on generating URLs rather than composing a fixed list.
 We will lay out the general process here and cover interesting parts of it in the following sections.
-\subsubsection{Example URLs}
+\subsection{Example URLs}
 To present attacked URLs to the user we found int most realistic to take valid URLs and apply attacks on them.
 Therefore we needed a set of valid URLs.
 To build this set we used Alexa\ref{alexa} to find the top 100 domains for german users.
@@ -44,7 +44,7 @@ We tried to find some short and some long URLs.
 \item[apply attack]After that we select a random attack from the previously build list and apply it to the URL.
 \item[repeat]In some situations we need to try again.
 \end{description}
-\subsubsection{generate attacks for level}
+\subsection{generate attacks for level}
 \textbf{Was zur historie?}
 The types of URLs the user is presented is dependent on the level.
 Each level introduces on or more attacks.
@@ -72,11 +72,11 @@ None of them is a phish.
 \end{description}
 
 The generated list of attacks also contains a special attack that does no real attack. This is to simplify the URL generation. When we generated the list of attacks we save it for later reference.
-\subsubsection{Apply Generator}
+\subsection{Apply Generator}
 We were unsure if we still have enough valid URLs so we prepared a way to automatically modify the URLs in such a way that they could still be valid URLs. Some Ideas where to add subdomains or path strings to the URL. Query or fragments are also possible. We later found out that it is currently not needed to implement generators because there are a lot of URLs in our set. If however we will some time in the future find out that these URLs are not enough we have this scheme in place.
-\subsubsection{Apply Attack}
+\subsection{Apply Attack}
 After we generated a valid URL we chose a random attack from the previously build set of attacks and apply it to the URL. With this we also store which attack we currently applied. This is important when the user is failing this round. In this situation we will simply readd this attack to the set of attacks.
-\subsubsection{Repeat}
+\subsection{Repeat}
 There are combinations of base-URL and attack where the attack doe's not alter the URL.
 Therefore it would be impossible for the user to detect the Attack and he will be confused and might stop using the app.
 In this situation we repeat the whole URL generation process until we find a matching URL.
