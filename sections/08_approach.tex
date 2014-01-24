@@ -49,7 +49,7 @@ de/''. Clicking on this link, the user will expect to land on the Google website
  This is done in a very simplified way, so that even unexperienced users can follow.
  In particular, the user is told how to find the second- and top-level domain of a URL.
  In all succeeding levels the user is introduced to various URL spoofing techniques of a phisher.
- The learning content of each level can be consulted in~Section~\ref{s:knowledgetransferperlevel}.
+ The learning content of each level can be consulted in~Section~\autoref{s:knowledgetransferperlevel}.
 		\item \textbf{Exercise to Information Material} After every introductory material in each level an exercise section is followed.
  For the ``access and analyze URL part'', for example, the user is forwarded to a website.
  There he has to apply all important steps he has learnt in the introductory part.
@@ -62,7 +62,7 @@ de/''. Clicking on this link, the user will expect to land on the Google website
 
 		\item \textbf{Repeat 2.a and 2.b With Increasing Difficulty} There is an increase of difficulty in each level.
  That is to say, in each level it gets more difficult to distinguish phishing URLs from valid ones, cf.
-~Section~\ref{s:knowledgetransferperlevel}.
+~Section~\autoref{s:knowledgetransferperlevel}.
 \end{enumerate}
 \end{enumerate}
 
@@ -81,7 +81,7 @@ First it is important for the player to get a feeling for the process he makes i
 It also provides the user with fixed points in the game where he can restart or pause and play on later.
 To us it gives the ability to structure the game in a repeating cycle that the user learns.
 This way if the user plays multiple levels in a row he can skip the repeat parts easily but if he has paused he can read it.
-The details of the leveling Strategy can be found in Section \ref{a:mail}
+The details of the leveling Strategy can be found in Section \autoref{a:mail}
 \end{description}
 User motivation
 
@@ -120,7 +120,7 @@ The first  and second information materials (introduction 2 and level 1) and exe
 	\item[Start of Actual Game]  In level 2 we start introducing URL spoofing techniques and the user has to decide whether a given URL is a phishing URL or a valid one.
  Here also, the user can lose and win points as well as lose lives.
  Here again, if the user has no more lives left he has to restart the level.
- The following Figure~\ref{fig:lose_points_life} illustrates the game flow and consequences of wrong and correct answers from level 2 and upwards.
+ The following Figure~\autoref{fig:lose_points_life} illustrates the game flow and consequences of wrong and correct answers from level 2 and upwards.
  If the user has correctly decided that a phishing URL is a phish, he has to show us the ``Who-Section'' to prove that he has understood the concept.
  In all other cases the user is directly shown the result of his answer.
  In summary, the user looses points for any wrong answer, but he does not lose a life for every wrong answer.
@@ -171,7 +171,7 @@ During the app development we have tried out several leveling strategies.
  To additionally incentivize the users we have included three lives per level.
  The lives are supposed to prevent a user playing eternally, without ever passing the current level.
  When the user loses all of his lives, cf.
-~Figure~\ref{fig:lose_points_life}, this is an indication that he did not understand what the level is about.
+~Figure~\autoref{fig:lose_points_life}, this is an indication that he did not understand what the level is about.
  Consequently, he has to restart the level by being forwarded to the introductory part of the current level.
  This is our final leveling strategy for the app.
 
@@ -183,11 +183,11 @@ During the app development we have tried out several leveling strategies.
 %===========================================
 \label{s:knowledgetransferperlevel}
 This section summarizes the learning objectives of each level.
- Note that we generally do not use technical terms like URL, domain, subdomain, protocol or the like. Figure~\ref{fig:level_teaching_goals} illustrates and exemplifies the level flow of our app.
+ Note that we generally do not use technical terms like URL, domain, subdomain, protocol or the like. Figure~\autoref{fig:level_teaching_goals} illustrates and exemplifies the level flow of our app.
 
 
 \begin{description}[leftmargin=0cm]
-	\item[Introduction 1] This part is the awareness part described in Section~\ref{s:app_design}. Here, the user learns how easy e-mail spoofing is.
+	\item[Introduction 1] This part is the awareness part described in Section~\autoref{s:app_design}. Here, the user learns how easy e-mail spoofing is.
  Additionally, the user is informed about the simplicity of setting up fake websites and that he should not trust the texts of the links he is clicking on.
 
 	\item[Introduction 2] In this part the user is explained how he can access the URL of a web browser and how exactly he has to look at the whole URL.
@@ -197,7 +197,7 @@ This section summarizes the learning objectives of each level.
 
 	\item[Level 1] The actual game starts with level 1, where the user learns about the structure of a URL.
  First of all, the user gets an overview of the single components of a URL.
- To make the comprehension of these components easier to understand we used an analogy which is summarized in Figure~\ref{fig:url_components} with an example URL.
+ To make the comprehension of these components easier to understand we used an analogy which is summarized in Figure~\autoref{fig:url_components} with an example URL.
  We told the user that he has to imagine that the website he is visiting is his dialog partner.
  The user is told that the section between ``http(s)://'' and the third slash ``/'', i.
 e.
@@ -208,11 +208,11 @@ e.
  The protocol part is introduced as ``Security Level'' of the dialog with the partner and the path part of a URL, i.
 e.
  the part after the third slash ``/'', is introduced as the topic of the conversation with the dialog partner.
- When marking parts of a URL we consistently used the according colour of Figure~\ref{fig:url_components}. The main objective of the level 1 exercise is to be able to identify the second- and top-level domain of a URL.
+ When marking parts of a URL we consistently used the according colour of Figure~\autoref{fig:url_components}. The main objective of the level 1 exercise is to be able to identify the second- and top-level domain of a URL.
 
 	\item[Level 2] With level two we start introducing the spoofing tricks of a phisher.
  We considered the subdomain attack, cf.
-~Section~\ref{s:url_categories}, as a good starting point to introduce the phisher as the user has just learnt about the importance of the ``Who-Section'' (top-level and second-level domain) in level 1.
+~Section~\autoref{s:url_categories}, as a good starting point to introduce the phisher as the user has just learnt about the importance of the ``Who-Section'' (top-level and second-level domain) in level 1.
 	\item[Level 3] In level 3 the user is first told what an IP address is.
  To facilitate the comprehensibility, we used the analogy of house addresses.
  The user is explained that like addressing our houses with street names and numbers, computers in the Internet are addressed by so called IP addresses.
@@ -220,16 +220,16 @@ e.
  Finally, the user is warned against URLs with IP addresses in the host part.
 
 	\item[Level 4] In this level we deal with nonsense in the second-level domain, cf.
-~Section~\ref{s:url_categories}.
+~Section~\autoref{s:url_categories}.
 	\item[Level 5] In this level we deal with second-level domain names which sound trustworthy, but are in fact unrelated to the company name, cf.
-~Section~\ref{s:url_categories}.
+~Section~\autoref{s:url_categories}.
 	\item[Level 6] Here misleading and deceiving names in the second-level domain of a URL are covered.
  This includes typos, scrambled letters or other similar and deceptive names in the second-level domain, cf.
-~Section~\ref{s:url_categories}.
+~Section~\autoref{s:url_categories}.
 	\item[Level 7] In this level we focus on homographic attacks, where the user is able to visually distinguish a fake second-level domain from the original one, cf.
-~Section~\ref{s:url_categories}.
+~Section~\autoref{s:url_categories}.
 	\item[Level 8] In this level the user is introduced to an attack where the brand name of the visited website or even the whole legitimate URL is placed in the path of a fake URL, cf.
-~Section~\ref{s:url_categories}.
+~Section~\autoref{s:url_categories}.
 	\item[Level 9] Here we introduce the difference between the usage of http:// and https://. In particular, the user is told that the usage of https:// means that his conversation with the website is encrypted and that the dialog partner indicated in the ``Who-Section'' is authenticated.
  As an analogy we say that the https:// represents a higher security level.
  This means, the conversation cannot be eavesdroppbed by a third party and the dialog partner indictated in the ``Who-Section'' has proved his identity to a trusted third party.
@@ -286,15 +286,15 @@ For this reason this is an aspect which cannot be reflected in our app.
 The app is targeted at users who are willing to learn something about phishing. 
 Consequently, there is already some kind of motivation in our app users.
 In order to increase this motivation we present clear reasons why the user should continue to play our app.
-This is happening in the awareness part, where the user is told what exactly phishing is, how easy it is to phish users, spoof e-mail senders and content, spoof links as well as create exact copies of legitimate websites, cf.~Section~\ref{s:app_design}.
+This is happening in the awareness part, where the user is told what exactly phishing is, how easy it is to phish users, spoof e-mail senders and content, spoof links as well as create exact copies of legitimate websites, cf.~Section~\autoref{s:app_design}.
 	\item[Exercise] The use of exercise is composed of two important parts: 
 First, training and repetition help increase learning. 
 Second, feedback is crucial for good learning performance.
 For best learning results, these two parts must be applied together.
 In a nutshell, the learning connection is strengthened by practice, and weakend by disuse~\cite{handbook2008us}.
-After finishing the awareness part, we start with the user education and provide exercises for all of our learning goals (except for the last level), cf.~Section~\ref{s:knowledgetransferperlevel}.
+After finishing the awareness part, we start with the user education and provide exercises for all of our learning goals (except for the last level), cf.~Section~\autoref{s:knowledgetransferperlevel}.
 The learning content is also permanently repeated. 
-For example, in the introduction 2, cf.~Section~\ref{s:knowledgetransferperlevel} the user learns to scroll up to make the address bar re-appear and analyze the URL by right and left scrolling it. 
+For example, in the introduction 2, cf.~Section~\autoref{s:knowledgetransferperlevel} the user learns to scroll up to make the address bar re-appear and analyze the URL by right and left scrolling it. 
 The scrolling of the URL is present in levels 2-9.
 Also, the user has to identify the Who-Section in level 1. 
 In addition, the user has to show the Who-Section every time he has detected a phishing URL correctly.
@@ -353,14 +353,14 @@ In the following we will elaborate on these game techniques by stating their rel
 \begin{description}[leftmargin=0cm]
 	\item[Flow] Flow is the key point of games. It is ``the state in which people are so involved in an activity that nothing else seems to matter; the experience itself is so enjoyable that people will do it even at great cost, for the sheer sake of doing it''~\cite{csikszentmihalyi1990flow}.
 Sometimes flow is also referred to as 'engagement'~\cite{murphy2011games} and relates to a person's overall well-being~\cite{seligman2012flourish}. 
-Flow relates to motivation~\cite{csikszentmihalyi1990flow, csikszentmihalyi1997finding}. Motivation in turn is a crucial part of readiness, cf-~Section~\ref{s:learning_principles}.
+Flow relates to motivation~\cite{csikszentmihalyi1990flow, csikszentmihalyi1997finding}. Motivation in turn is a crucial part of readiness, cf-~Section~\autoref{s:learning_principles}.
 In essence, there are four requirements for flow~\cite{csikszentmihalyi1990flow, csikszentmihalyi1997finding, schell2008art}.
 	\begin{enumerate}
 		\item \textbf{Clear Tasks} With clear tasks the user is able to understand what he needs to do. 
 The tasks which need to be completed by the users of our app are never complex and they are always clearly told what they need to do next. 
 		\item \textbf{Feedback} With feedback the user should always be kept up-to-date about his progression towards the goals he is asked to achieve. 
 He also should get immediate feedback on whether his actions are good or not. 
-Our app covers these aspects, cf.~Section~\ref{s:learning_principles}.
+Our app covers these aspects, cf.~Section~\autoref{s:learning_principles}.
 		\item \textbf{Balanced, Attainable Goals} The user should be confronted with challenging tasks, but at the same time these tasks should also be achievable. 
 Especially in the beginning our app users are confronted with very simple tasks.
 For some users they even might be too easy which may result in a loss of interest.
@@ -375,7 +375,7 @@ There are no special effects, advertisement or other elements which might distra
 The only intrusive and interruptive elements are our introductory sections. 
 However, these are inevitable for the communication of the learning content.
 	\end{enumerate}
-	\item[Feedback] Feedback is important which is also reflected by the fact that it is a crucial part of the learning principle 'exercise', cf.~Section~\ref{s:learning_principles}, as well as a requirement for flow.
+	\item[Feedback] Feedback is important which is also reflected by the fact that it is a crucial part of the learning principle 'exercise', cf.~Section~\autoref{s:learning_principles}, as well as a requirement for flow.
 Stated simply, feedback is how a user perceives progress~\cite{csikszentmihalyi1990flow, csikszentmihalyi1997finding}.
 For the completion of even simple tasks feedback is indispensable.
 Feedback can be in form of a scoring system, comparative statistics or failure outcomes and provides the user information about his progression and performance.
@@ -384,7 +384,7 @@ Games make use of a so called feedback loop~\cite{goetz2011harnessing}:
 \begin{enumerate}
 	\item \textbf{Measure Behavior} Our app assesses whether the answer of the user to a given task is correct.
 	\item \textbf{Relay Measurement to User} The user is told whether his answer is correct or not.
-	\item \textbf{Realize Some Sort of Outcome} The outcome of the users' actions and answers are accordingly defined, cf.~Section~\ref{s:game_rules}. 
+	\item \textbf{Realize Some Sort of Outcome} The outcome of the users' actions and answers are accordingly defined, cf.~Section~\autoref{s:game_rules}. 
 For example, the user loses a life in case he did not detect a phishing URL.
 	\item \textbf{Provide Opportunities for Alternate Action} 
 The user has the chance to do better in the next tasks.
@@ -393,7 +393,7 @@ The user has the chance to do better in the next tasks.
 However, games should simplify the real world so that there only remain rules and goals.
 In this way the players can fully concentrate on their tasks and how they can achieve them~\cite{csikszentmihalyi1997finding}.
 Hence, simplicity helps users to achieve flow and thus increased motivation. 
-This, in turn, leads to improved learning, cf.~Section~\ref{s:learning_principles}.
+This, in turn, leads to improved learning, cf.~Section~\autoref{s:learning_principles}.
 Simplicity involves, for example, the user interface, the game goals, feedback loops, rules and instructions.
 The structure of our app is kept simple and consistent.
 Therefore, it should be easy to understand.
@@ -411,20 +411,20 @@ However, immersion is an aspect we have not considered yet in the scope of this 
 In order to achieve an intense game experience, this aspect might be worth considering for future work.
 	\item[Choice and Involvement]
 Games consist of choices and involvement. 
-There is a link between choice and positive feelings (cf.~principle~of~effect~in~Section~\ref{s:learning_principles}, i.e. choice is important for a person's overall well-being~\cite{seligman2012flourish, schwartz2009paradox}.
+There is a link between choice and positive feelings (cf.~principle~of~effect~in~Section~\autoref{s:learning_principles}, i.e. choice is important for a person's overall well-being~\cite{seligman2012flourish, schwartz2009paradox}.
 However, the downside of choices is the so called paradox of choice which states that choice is beneficial, but too many choices can cause more bad than good~\cite{schwartz2009paradox}.
 The problem is, when the users are confronted with too many choices they get overwhelmed, since the decision thus the task to solve becomes too complex.
 We believe that our app does not face the problem of this paradox since the decisions the user has to take are limited to the questions:
 is the following URL a phish, and show us the Who-Section.
 Still, the user has to make decisions and is consequently involved in the game.
-	\item[Practice] This technique is directly related to the learning principle of exercise, cf.~Section~\ref{s:learning_principles}. 
+	\item[Practice] This technique is directly related to the learning principle of exercise, cf.~Section~\autoref{s:learning_principles}. 
 Users practice and repeat several steps of games extensively so that they eventually gain mastery and the difficulty of their challenges can increase\~cite{murphy2011games,schell2008art}. 
-Our app offers practices as well as repetition, cf.~Section~\ref{s:learning_principles}.
+Our app offers practices as well as repetition, cf.~Section~\autoref{s:learning_principles}.
 	\item[Fun] Fun is an important aspect of game design and yet the definition of it is not clearcut in literature~\cite{murphy2011games, schell2008art,koster2010theory}.
 Based on several definitions found in literature Curtiss Murphy introduced the following definition of fun: \textit{``Fun is the positive feelings that occur before, during, and after a compelling flow experience''}~\cite{murphy2011games}.
 Positive feelings include, but are not limited to, engagement, enjoyment, pleasure, entertainment, satisfaction, control and triumph. 
 Fun is related to the learning principle of effect and its positive feelings.
-How we achieve the principle of effect and positive feelings in our app is described in Section~\ref{s:learning_principles}.
+How we achieve the principle of effect and positive feelings in our app is described in Section~\autoref{s:learning_principles}.
 Yet, fun is something which emerges from several game techniques, such as, flow, immersion and engagement, practice to achieve mastery, and choices, which all lead to positive emotions.
 Fun is an aspect of our app which could be considered more deeply in future work. 
 Especially, the areas of creating positive feelings and including immersion in order to make the users' game experience more intense and fun are aspects which might be looked at.
