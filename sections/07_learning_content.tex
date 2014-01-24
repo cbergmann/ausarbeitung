@@ -70,9 +70,13 @@ Also, the user would not be able to see the "real" target in case there is a red
 Hence, this kind of possible operation will not be communicated to the user.
 \end{description}
 
-\subsection{URL structure}
+\subsection{URL Structure}
 \label{s:url_structure}
-Hier muss hin warum wir ihm die URL Struktur erklären.
+The URL is a complex construct. 
+In order to correctly analyze a URL and decide whether it is a spoofed or not it is necessary to understand the structure of it. 
+An attacker use brands which are familiar to the user in any part of a URL in order to deceive him. 
+Therefore, especially, the identification of the domain in a given URL is a key aspect which must be aimed at with the app. 
+We will teach the user about the most important parts of a URL, the protocol (http vs. https), the host with its domain and the path (we do not distinguish the directory, filename or query parameters of the URL path).
 
 \subsection{Phishing URLs}
 %===========================================
