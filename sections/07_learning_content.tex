@@ -5,10 +5,75 @@
 In this section we will describe and elaborate on different teaching and learning contents which can potentially be communicated to the user.
  At the same time we will reason our decision whether to communicate the specific content or not.
 
-%Documents master_thesis/notes/android_browser bla -> BEGRÜNDUNG WARUM manches nicht sinnvoll ist (diese Sachen vielleicht eher in Appendix vor allem versionsunterschiede)
-%Documents master_thesis/konzepte/android browser elemente UND browser comparison
-%CHECK IF I FORGOT SOMETHING!!!!
-%===========================================
+\subsection{E-Mail Spoofing}
+%...........................................
+The first thing we tell the user in the app is that they can not trust in Mail and the sender of them.
+This is exspecially important \cite{divsi2012divsi} found out that 85\% of the internet users use E-Mail to communicate but only 14\% have concerns about security regarding mail communication.
+
+This is a problem because in contrast to public believe e-mail is in no way secured against fraud. There are three main facts that we need to transport to the user:
+\begin{description}[leftmargin=0cm]
+	\item[From Field] The first misbelife is that the from-field is in some way secured.
+	In reality it must be considered a plaintext field.
+	The problem is that most modern mail-clients used by most users hide this fact away from the user.
+	Therefore we show the user with an example that anyone can send mail from any from-address.
+	\item[E-Mail Content] We also have to show the user that the content of the mail is totally in the control of the sender.
+	Nobody prevents the attacker from sending mails that look exactly like the once send out by a legitimate sender.
+	\item[Links in E-Mails] The third information that most users are not aware of is that Links in general and Mail-Links in detail could link to any page. This means that a Link showing an URL does not need to link to that url.
+\end{description}
+To show the user these facts we have introduced the first part of the app.
+We commonly refer to this part as the "awareness part" because it is there to increase the users awareness of the problem of Email spoofing and internet fraud.
+In this part we first introduce the problem.
+Thereafter the user is presented with a form that allows them to enter a sender and a target E-Mail address and a free text.
+When the user submits this form we send out a Mail that has the sender and the receiver that the user entered.
+The body of the mail contains a common introduction and the users free text.
+It also contains a link that seems to go to a common webpage but instead links back to the app.
+The template for this mail can be found in Appendix \autoref{a:mail}.
+
+\subsection{Smartphone limitation}
+%...........................................
+As already discussed in Section~\autoref{s:antiphishing_on_smartphone} smartphones have several limitations, such as the small screen size. 
+This section deals with the detection of phishing on the smartphone and the related limitations.
+More particularly, we will briefly explain in which ways URLs can be checked with the smartphone and what kind of problems these operations raise.
+Based on this we decided whether to communicate this kind of URL checking to the user or not.
+
+\begin{description}[leftmargin=0cm]
+	\item[Invisible Address Bar] Due to lack of space most of the smartphone browsers hide the address bar~\cite{amrutkar2012measuring} and use this won space for the web content. 
+By doing this, not only potential security indicators are made invisible, but also the URL that indicates with which website the user is actually interacting.
+In order to make the address bar re-appear the user generally has to scroll to the top of the whole website.
+The fact that the address bar containing the important information of the URL is generally hidden must be communicated to the user.
+Most of the users will probably know that they can access the address bar by scrolling to the top of the website.
+However, for those who might not know how to deal with that an introduction is inevitable.
+
+	\item[Analyze Complete URL Via Address Bar] Finding the address bar will not suffice for a reasonable URL analysis. 
+Here again, the small screen size makes it is impossible to view the complete URL without any further action.
+Specifically, it is necessary to first tap the URL address text and then scroll the pointer to the left and right for the URL analysis.
+Without learning these steps a reliable URL checking is not possible. 
+Therefore, these operations steps have to be communicated to the user.
+
+	\item[Show URL Before Click] Many mobile e-mail clients provide the functionality of showing the URL a link leads to when touching and holding the link.
+However, the Android stock e-mail app, for example, does not provide this functionality.
+This operation is generally available in smartphone browsers for links on websites while surfing.
+Yet, one should keep in mind that it might happen that the complete URL cannot be displayed on this preview in case it is too long. 
+Consequently, as discussed in Section~\autoref{s:coverage}, deceiving the user with well-crafted, illegitimate URLs becomes possible. 
+In that section we have already extensively discussed the benefits and drawbacks of teaching the user how to preview the destination URL and have decided against it.
+
+	\item[Copy and Paste URL] Previewing the destination URL raises flaws, such as there is no guarantee that every mobile e-mail client provides this functionality and deception remains possible. 
+An alternative to the preview functionality is the copy and paste functionality.
+When touching and holding a link, additional to the URL preview, the option "copy URL" is available.
+Upon selecting this option the destination URL is copied to the clipboard.
+Now the user may paste the destination URL to any editor or even the address bar itself in order to analyze the it \textit{before} submitting.
+In case the URL was pasted directly into the address bar, left and right scrolling must further be applied for the analysis. 
+Also, the user must be careful not to submit the URL before checking it, otherwise he also just could have clicked on the link and checked the URL afterwards.
+Analyzing the URL in a separate editor would mean to re-paste the URL into the address bar afterwards and then submit it.
+We believe that either of these steps are of too high effort and thus would not be followed by the users.
+Also, the user would not be able to see the "real" target in case there is a redirect included. 
+Hence, this kind of possible operation will not be communicated to the user.
+\end{description}
+
+\subsection{URL structure}
+\label{s:url_structure}
+Hier muss hin warum wir ihm die URL Struktur erklären.
+
 \subsection{Phishing URLs}
 %===========================================
 As aforementioned, we focus on teaching the user how to analyze a given URL and to decide on it whether it belongs to a legitimate or illegitimate website.
@@ -91,46 +156,25 @@ com.
 \subsubsection{Problems and Challenges With The Categorization}
 %...........................................
 
-%...........................................
-\subsection{Smartphone limitation}
-%...........................................
-As already discussed in Section~\ref{s:antiphishing_on_smartphone} smartphones have several limitations, such as the small screen size. 
-This section deals with the detection of phishing on the smartphone and the related limitations.
-More particularly, we will briefly explain in which ways URLs can be checked with the smartphone and what kind of problems these operations raise.
-Based on this we decided whether to communicate this kind of URL checking to the user or not.
+\subsection{General Recommended Behavior}
 
+In addition to these facts that we specially address in the app there are some things that we want to tell the user that are helpful when using the internet in general.
 \begin{description}[leftmargin=0cm]
-	\item[Invisible Address Bar] Due to lack of space most of the smartphone browsers hide the address bar~\cite{amrutkar2012measuring} and use this won space for the web content. 
-By doing this, not only potential security indicators are made invisible, but also the URL that indicates with which website the user is actually interacting.
-In order to make the address bar re-appear the user generally has to scroll to the top of the whole website.
-The fact that the address bar containing the important information of the URL is generally hidden must be communicated to the user.
-Most of the users will probably know that they can access the address bar by scrolling to the top of the website.
-However, for those who might not know how to deal with that an introduction is inevitable.
-
-	\item[Analyze Complete URL Via Address Bar] Finding the address bar will not suffice for a reasonable URL analysis. 
-Here again, the small screen size makes it is impossible to view the complete URL without any further action.
-Specifically, it is necessary to first tap the URL address text and then scroll the pointer to the left and right for the URL analysis.
-Without learning these steps a reliable URL checking is not possible. 
-Therefore, these operations steps have to be communicated to the user.
-
-	\item[Show URL Before Click] Many mobile e-mail clients provide the functionality of showing the URL a link leads to when touching and holding the link.
-However, the Android stock e-mail app, for example, does not provide this functionality.
-This operation is generally available in smartphone browsers for links on websites while surfing.
-Yet, one should keep in mind that it might happen that the complete URL cannot be displayed on this preview in case it is too long. 
-Consequently, as discussed in Section~\ref{s:coverage}, deceiving the user with well-crafted, illegitimate URLs becomes possible. 
-In that section we have already extensively discussed the benefits and drawbacks of teaching the user how to preview the destination URL and have decided against it.
-
-	\item[Copy and Paste URL] Previewing the destination URL raises flaws, such as there is no guarantee that every mobile e-mail client provides this functionality and deception remains possible. 
-An alternative to the preview functionality is the copy and paste functionality.
-When touching and holding a link, additional to the URL preview, the option "copy URL" is available.
-Upon selecting this option the destination URL is copied to the clipboard.
-Now the user may paste the destination URL to any editor or even the address bar itself in order to analyze the it \textit{before} submitting.
-In case the URL was pasted directly into the address bar, left and right scrolling must further be applied for the analysis. 
-Also, the user must be careful not to submit the URL before checking it, otherwise he also just could have clicked on the link and checked the URL afterwards.
-Analyzing the URL in a separate editor would mean to re-paste the URL into the address bar afterwards and then submit it.
-We believe that either of these steps are of too high effort and thus would not be followed by the users.
-Also, the user would not be able to see the "real" target in case there is a redirect included. 
-Hence, this kind of possible operation will not be communicated to the user.
+	\item[Do Not Download Attachment] Many users download or even open files that they receive via mail rather unchecked.
+	This is related to the problem that they trust the from-field of the Mail.
+	It is crucial to tell them that downloading or even opening a unknown file might infect their system.
+	However, for this work we consider this as out of scope and leave it open for future work.
+	\item[Data Economy] The goal of this app is to prevent that the data of the user is phished.
+	The first step towards this goal is to teach the user to enter his data as rarely as possible.
+	The idea behind this is not only phishing website might use the users' data in a way that he did not intend. 
+	This is considered out of scope and remains as a problem to be targeted in future work.
+	\item[Date Entry Via Https] We should also tell the user that he should only enter data via HTTPS. 
+	When the user is entering data via HTTP there are basically two problems.
+	First the user can no longer be sure that he really talks to the person he want's to talk to.
+	This is captured by our precodition that DNS is assumed to be secure.
+	Secondly even if he really talks to the legitimate target site he can not be sure that an attacker is not wiretapping the communication.
+	Therefore the data that is send over plain HTTP can be considered lost.
+	This teaching content will be part of our app, cf.~Section~\autoref{s:knowledgetransferperlevel}.	
 \end{description}
 
 %...........................................
@@ -168,55 +212,7 @@ Therefore, this is an aspect which is not covered by our app.
 \end{description}
 
 %...........................................
-\subsection{E-Mail Spoofing}
-%...........................................
-The first thing we tell the user in the app is that they can not trust in Mail and the sender of them.
-This is exspecially important \cite{divsi2012divsi} found out that 85\% of the internet users use E-Mail to communicate but only 14\% have concerns about security regarding mail communication.
 
-This is a problem because in contrast to public believe e-mail is in no way secured against fraud. There are three main facts that we need to transport to the user:
-\begin{description}[leftmargin=0cm]
-	\item[From Field] The first misbelife is that the from-field is in some way secured.
-	In reality it must be considered a plaintext field.
-	The problem is that most modern mail-clients used by most users hide this fact away from the user.
-	Therefore we show the user with an example that anyone can send mail from any from-address.
-	\item[E-Mail Content] We also have to show the user that the content of the mail is totally in the control of the sender.
-	Nobody prevents the attacker from sending mails that look exactly like the once send out by a legitimate sender.
-	\item[Links in E-Mails[ The third information that most users are not aware of is that Links in general and Mail-Links in detail could link to any page. This means that a Link showing an URL does not need to link to that url.
-\end{description}
-
-To show the user these facts we have introduced the first part of the app.
-We commonly refer to this part as the "awareness part" because it is there to increase the users awareness of the problem of Email spoofing and internet fraud.
-In this part we first introduce the problem.
-Thereafter the user is presented with a form that allows them to enter a sender and a target E-Mail address and a free text.
-When the user submits this form we send out a Mail that has the sender and the receiver that the user entered.
-The body of the mail contains a common introduction and the users free text.
-It also contains a link that seems to go to a common webpage but instead links back to the app.
-The template for this mail can be found in Appendix \ref{a:mail}.
-
-\subsection{URL structure}
-\label{s:url_structure}
-Hier muss hin warum wir ihm die URL Struktur erklären.
-
-\subsection{General Recommended Behavior}
-
-In addition to these facts that we specially address in the app there are some things that we want to tell the user that are helpful when using the internet in general.
-\begin{description}[leftmargin=0cm]
-	\item[Do Not Download Attachment] Many users download or even open files that they receive via mail rather unchecked.
-	This is related to the problem that they trust the from-field of the Mail.
-	It is crucial to tell them that downloading or even opening a unknown file might infect their system.
-	However, for this work we consider this as out of scope and leave it open for future work.
-	\item[Data Economy] The goal of this app is to prevent that the data of the user is phished.
-	The first step towards this goal is to teach the user to enter his data as rarely as possible.
-	The idea behind this is not only phishing website might use the users' data in a way that he did not intend. 
-	This is considered out of scope and remains as a problem to be targeted in future work.
-	\item[Date Entry Via Https] We should also tell the user that he should only enter data via HTTPS. 
-	When the user is entering data via HTTP there are basically two problems.
-	First the user can no longer be sure that he really talks to the person he want's to talk to.
-	This is captured by our precodition that DNS is assumed to be secure.
-	Secondly even if he really talks to the legitimate target site he can not be sure that an attacker is not wiretapping the communication.
-	Therefore the data that is send over plain HTTP can be considered lost.
-	This teaching content will be part of our app, cf.~Section~\ref{s:knowledgetransferperlevel}.	
-\end{description}
 
 %...........................................
 \subsection{Conclusion}
@@ -225,7 +221,19 @@ In addition to these facts that we specially address in the app there are some t
 This section briefly summarizes the above described learning contents which will be addressed by our app.
 
 \begin{enumerate}
-	\item Phishing URL categories 
+	\item E-mail spoofing 
+	\begin{enumerate}
+		\item Do not trust sender
+		\item Do not trust content
+		\item Target URL of a link is not necessarily the displayed one
+	\end{enumerate}
+	\item Invisible address bar
+	\begin{enumerate}
+		\item Access address bar
+		\item View complete URL
+	\end{enumerate}
+	\item URL structure
+	\item Phishing URL categories
 	\begin{enumerate}
 		\item Subdomain attack
 		\item IP address attack
@@ -234,20 +242,9 @@ This section briefly summarizes the above described learning contents which will
 		\item Similar and deceptive domain
 		\item Homograph attack
 	\end{enumerate}
-	\item Invisible address bar
+	\item General Recommended Behavior
 	\begin{enumerate}
-		\item Access address bar
-		\item Analyze complete URL
+		\item Data entry via HTTPS only
 	\end{enumerate}
-	\item E-mail spoofing 
-	\begin{enumerate}
-		\item Do not trust sender
-		\item Do not trust content
-	\end{enumerate}
-	\item Link spoofing
-	\begin{enumerate}
-		\item Target URL of a link is not necessarily the displayed one
-	\end{enumerate}
-	\item Data entry via HTTPS only
 	
 \end{enumerate}
