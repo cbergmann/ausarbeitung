@@ -153,8 +153,52 @@ com.
 \end{description}
 
 %...........................................
-\subsubsection{Problems and Challenges With The Categorization}
+\subsubsection{Problems With URLs}
 %...........................................
+There arise two major problems with the detection of phishing attacks based on the URL which are stated below. 
+The succeeding sections elaborate on these problems and outline how we handle these problems.
+
+\begin{enumerate}
+	\item Some legitimate URLs feature characteristics of phishing URLs.
+	\item We cannot assure that the users know all website vendors of our URLs (whether legitimate or phish).
+\end{enumerate}
+
+\paragraph{Legitimate But Phishy Looking URLs}
+We wanted to find out to what extent phishing URL categories apply to authentic websites.
+For this purpose we browsed the web and looked at legitimate websites, too. 
+In detail, we visited and clicked through websites of the top 50 banks~\cite{bankrank} and top 50 online shops in Germany~\cite{onlineshoprank}. 
+While surfing on these websites we have recognized that it occasionally may happen that a legitimate URL features the characteristic of a phishing URL. 
+This is particularly the case for the category of similar and deceptive domains. 
+There exist sites of vendors which make use of similar domains, instead of never changing the domain and using, for example, subdomains. 
+An example is the website of the Commerzbank. 
+When surfing on Commerzbank's website the domain is ``commerzbank.de''. 
+As soon as the user is on the online banking part of the website the domain changes to ``commerzbanking.de''. 
+The same happens on a PayPal website. 
+The regular website features the domain ``paypal.com''.
+However, paypal also has a site, where the domain is ``paypal-viewpoints.com''
+By our definition, ``commerzbanking.de'' and  ``paypal-viewpoints.com'' would be a phishing website. 
+
+We have decided to address this problem by adding a section of final remarks to the app. 
+In this section we tell the user that there might be domains which are similar to domains they are familiar with and not necessarily are phishes. 
+We still strongly recommend the user to directly contact the vendor before submitting data to such websites. 
+The reason why we do not address this problem in the according level is that we do not want to degrade the user's attention by telling him that similar domains might still be legitimate. 
+We do not consider it an issue that the user is told about this later in the app, since it is better to reject a legitimate URL than trusting a phishing URL. 
+
+\paragraph{Unknown Website Vendors}
+Even our efforts of mainly making use of URLs from widely known website vendors there is still the issue of the  possibility that a user does not know all vendors and thus the respective URL. 
+One approach to address this problem is that the user has to indicate which websites he knows with the aid of a long check box, for example. 
+We decided against this approach for two reasons: 
+First, if a user does only know two website vendors, the list of available URLs will be quite short. 
+In such a case the game experience would degrade significantly. 
+Second, and more importantly, we cannot expect the users to go through a large list of vendors and let them decide whether they know them or not. 
+This kind of configuration would substantially decrease the usability of our app. 
+Currently, we have to let the user learn new vendors. 
+This should not be a big issue. 
+By making mistakes and/or giving correct answers to unknown URLs, i.e. domains, the user will eventually learn whether a given domain is legitimate or not. 
+For future work, one might consider to add a ``I don't know'' button. 
+In this case the user would virtually skip this URL and be explained whether it is a phish or not and why it is so.
+
+
 
 \subsection{General Recommended Behavior}
 
