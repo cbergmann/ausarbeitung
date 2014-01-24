@@ -80,7 +80,7 @@ In the following we are listing the system requirements which need to be met for
 \subsection{Assumptions}
 %===========================================
 We have to make some assumptions about the system the user uses. If one or more of these are not met the user, disregarding of his skill, is not able to detect when he is target of an attack.
-\begin{description}
+\begin{description}[leftmargin=0cm]
 	\item[Secure DNS] We have to be sure that DNS is not under the control of the attacker.
 	Our approach is to show the user how to identify phishing by analysing the URL of the shown page.
 	This is of no use if the Phisher can control the DNS system of the user.
@@ -102,7 +102,7 @@ In addition to the general assumptions we make because of the total inability of
 There are also limitations of our approach that result in the target group for our app.
 The targeted user is not a computer expert and has no time nor interest to analyze the shown webpage throughly before entering data.
 Therefore we don't tell the user about possible attacks that an experienced user might find.
-\begin{description}
+\begin{description}[leftmargin=0cm]
 	\item[Cross-Site Scripting]
 	Cross-Site Scripting (XSS) is an a attack where the attacker enters code into a legitimate webpage.
 	For a later viewer of this page this form seems to be legitimate content of the attacked webpage and he might be lured to enter personal data in this area. 
