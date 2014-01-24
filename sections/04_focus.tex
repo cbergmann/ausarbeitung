@@ -56,12 +56,6 @@ Finally, the limitations of our work are stated.
  This approach suffers the disadvantage that users might click on a link which has a download of malware behind it.
  Also the visit of the linked phishing website might show the phisher that the used Mail-Address is valid and active and this can result in further attacks on this Mail address. Also the mere request and display of the phishing webpage might provide additional information to the phisher or even expose the user to attacks.
   For now, we consider this as future work, as there is no possibility to detect the real target of a link before clicking it.
-
-%However, this drawback is mitigated by the fact that such downloaded malicious software is %not harmful as long as it is not opened and installed. Thus, the user should be told that %downloads he did not intend should immediately be deleted and should not be opened %under any circumstances.
-
-% SCHÄDLICHE SW KANN SICH AUCH AUTOMATISCH AUSFÜRHEN / ÖFFNEN VON PDF IN BROWSER IST DANN AUCH SCHON GEFÄHRLICH
-%Add to future work.
-%Falls unverständlich vielleicht ein screenshot mit einem Beispiel ;) das mit well-crafted url
 	\item[Considered Browser] As a matter of fact, the user is only communicated general browser skills which can be transferred to any other browser.
 Nevertheless, when the user gets browser screenshots, for example, we made use of the Android standard browser to be sure that most users are familiar with the pictures they are shown.
 \end{description}	
@@ -73,11 +67,11 @@ In the following we are listing the system requirements which need to be met for
 
 
 \begin{description}[leftmargin=0cm]
-	\item[Android] Today the mobile phone market is split between two major competitors. Android(81.0\%) and iOS(12.9\%). (Cite: http://www.idc.com/getdoc.jsp?containerId=prUS24442013)
+	\item[Android] Today the mobile phone market is split between two major competitors. Android~(81.0\%) and iOS~(12.9\%)~\cite{androidiosmarketshare}. 
 	We have decided to develop an app for the Android operation system as there are more users and we believe we have greater freedom here compared to an iOS app. 
  The publication of an iOS app, for example, is connected with more requirements, which is not the case for Android apps~\cite{publishios, publishandroid}. This allows us to implement and test an android app more quickly and cost effective then on iOS. 
 	\item[Version] Our original intention was to develop an Android app for version 4.0 and upward.
- However, during the app development we have encountered that about 24\% of all Android users still have Android 2.3.3 to 2.3.7~\cite{}. For this reason we have decided to modify the code so that these users can also install and use our app.
+ However, during the app development we have encountered that about 24\% of all Android users still have Android 2.3.3 to 2.3.7~\cite{versionsandroid}. For this reason we have decided to modify the code so that these users can also install and use our app.
  
 %	\item[Android Standard Browser] Android standard browser is kein system requirement - raus. muss irgendwoanders erwähnt werden. (was betrachten wir beim erklären oder so)...
 \end{description}
@@ -86,7 +80,7 @@ In the following we are listing the system requirements which need to be met for
 \subsection{Assumptions}
 %===========================================
 We have to make some assumptions about the system the user uses. If one or more of these are not met the user, disregarding of his skill, is not able to detect when he is target of an attack.
-\begin{description}
+\begin{description}[leftmargin=0cm]
 	\item[Secure DNS] We have to be sure that DNS is not under the control of the attacker.
 	Our approach is to show the user how to identify phishing by analysing the URL of the shown page.
 	This is of no use if the Phisher can control the DNS system of the user.
@@ -108,7 +102,7 @@ In addition to the general assumptions we make because of the total inability of
 There are also limitations of our approach that result in the target group for our app.
 The targeted user is not a computer expert and has no time nor interest to analyze the shown webpage throughly before entering data.
 Therefore we don't tell the user about possible attacks that an experienced user might find.
-\begin{description}
+\begin{description}[leftmargin=0cm]
 	\item[Cross-Site Scripting]
 	Cross-Site Scripting (XSS) is an a attack where the attacker enters code into a legitimate webpage.
 	For a later viewer of this page this form seems to be legitimate content of the attacked webpage and he might be lured to enter personal data in this area. 

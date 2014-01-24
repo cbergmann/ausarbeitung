@@ -1,0 +1,127 @@
+
+%===========================================
+\section{Development}
+%===========================================
+This chapter deals with the development process of our app.
+We do not provide in-depth insight to our source code. 
+Instead we give a brief overview of our approach for the development of a user friendly and understandable app.
+%===========================================
+\subsection{Mock Up}
+%===========================================
+After we have decided about the work flow and structure of our app we built a mock up in order to get a more concrete idea of what needs to be implemented and to reveal flaws in our thought process.
+Also, we showed it to a couple of friends and relatives so we could expose aspects we have not yet thought about.
+All in all, the work flow and structure of the mock up was quite understandable.
+However, the first texts explaining how to access the address bar and about the structure of a URL seemed to be incomprehensible.
+As a consequence, we adjusted these texts in the app (only thos of the first three levels) and showed them to other friends and relatives who seemed to understand the descriptions.
+Based on these initial texts we wrote all remaining texts without including it into the app yet.
+The next section deals with the elaboration of these texts.
+%===========================================
+\subsection{Pilot Study of App Texts}
+%===========================================
+The app texts were written down in a Google Docs document.
+After finishing the texts for each step of the app flow our supervisor, a professor of pedagogy at TU Darmstadt as well as another schoolteacher reviewed our texts and gave their feedback to it.
+As we achieved the version with which we were satisfied we applied a small user study on the created texts. 
+For time reasons we decided to go for the low cost method of guerilla user testing~\cite{guerillagovuk, guerillauxbooth}.
+This approach enables to quickly assess the effectivity of a design, in our case our app texts.
+Guerilla user tests are rather loosely structured and do not include participant recruitment.
+The testers are rather approached, in our case, we approached relatives and friends. 
+The outcome of such studies are rather qualitative, i.e. extensive and detailed insights is achieved.
+A downside of guerilla testing is that the approached participants might not belong to the defined target group with respect to their expertise or skills. 
+Since we knew our participants we are confident that they matched target audience. 
+In detail, our approach for the guerilla user test was as follows:
+
+\begin{enumerate}
+	\item\textbf{Prepare Texts} Our aim for this user test was to imitate the use of a smartphone as best as possible.
+	For this reason the app texts in the Google document were formatted into short lines, so that the text appearance resembled that of a smartphone screen.
+	Furthermore, we printed out the texts and cut the sheets into small rectangles.
+	\item\textbf{Think Aloud} We asked the participants to think aloud during the test. 
+	We told them that there are no stupid questions or comments and that they help most with just saying what goes through their mind.
+	We made notes of their remarks.
+	\item\textbf{User Test with In-Between Exercises} The actual user test mainly consisted of reading our app texts and thinking aloud about these.
+	We included a little simulation of our exercise parts in order to validate whether the users comprehended the texts or not.
+	For example, for each introduced attack we included a small list of URLs on which the users had to decide whether they were phishing URLs or not.
+	\item\textbf{Final Comments} After going through the texts the users were asked to give general feedback about their impression of the texts. 
+	We further asked them about some aspects we were not quite sure about at the beginning. 
+	For example, we asked them whether the usage of the terms link or web address confused them.
+\end{enumerate}
+
+Our guerilla user tests showed that our texts are understandable.
+According to our participants the main downside of the texts was their length. 
+Yet, this can be neglected since the users had to read our complete texts (instead of for example just playing 1-2 levels at once). 
+Furthermore, they remarked that the introduction on how to access the whole address bar and analyze the complete URL is unnecessary. 
+For some users this might apply. 
+However, it is possible that there are users who do not know this. 
+For those, who already know how to access the address bar and analyze the complete URL we added a button which directly links to the exercise. 
+In case the user had overestimated himself, he will be forwarded back to the app, where the introductory text can be consulted. 
+Finally, the reminder texts received some criticism for their frequent re-appearance at the beginning of each level. 
+This can also be neglected since we assume that our app users will not constantly play this game. 
+Also, when playing the app this screen can easily be skipped as exhibits a recognition value achieved by the title ``reminder''. 
+Still, we decided for a minor reorganization of the reminder view. 
+Before the user tests the reminders mainly referred to the URL structuring they have learnt so far. 
+We thought it is also important to remind the users of possible attacks. 
+Therefore, the reminder concerning the URL structure was kept to a minimum with the aid of a graphic. 
+Additionally, for each attack in previous levels one sentence and one example was added. 
+
+So far we dealt with the texts of the app. 
+The following section elaborates on how our app generates URLs on which the users have to decide whether they are phishing URLs or not.
+
+
+%===========================================
+\subsection{URL Generation}
+%===========================================
+While playing the app the user is presented with URLs that he has to categorize as phish or valid.
+While reviewing the previous works and games in this area we found that many of them use a fixed set of examples.
+On some games this set is very small and therefore you are always confronted with the same URLs.
+As we layed out in Section \ref{s:url_structure} we want to teach the user how to detect phishing URLs in general.
+To accomplish this goal we think that it is essential that the user sees as much different URLs as possible so he can build his own mental model.
+Therefore we decided on generating URLs rather than composing a fixed list.
+We will lay out the general process here and cover interesting parts of it in the following sections.
+\subsubsection{Example URLs}
+To present attacked URLs to the user we found int most realistic to take valid URLs and apply attacks on them.
+Therefore we needed a set of valid URLs.
+To build this set we used Alexa\ref{alexa} to find the top 100 domains for german users.
+We then went to each of these sites and by navigating tried to find 6 URLs for each domain.
+We tried to find some short and some long URLs.
+\begin{description}[leftmargin=0cm]
+\item[generate attacks for level]When starting a new level we generate a list of Attacks that we want to show the user.
+\item[select valid URL]When we want to show a new URL to the user we first randomly select a valid URL from the before mentioned set.
+\item[apply generator]Then we apply a generator to the URL that does not invalidate the URL but modifies it.
+\item[apply attack]After that we select a random attack from the previously build list and apply it to the URL.
+\item[repeat]In some situations we need to try again.
+\end{description}
+\subsubsection{generate attacks for level}
+\textbf{Was zur historie?}
+The types of URLs the user is presented is dependent on the level.
+Each level introduces on or more attacks.
+Which attack is introduced in which level is layed out in section\ref{s:knowledgetransferperlevel}.
+In general the URLs of each level $n$ are distributed as follows:
+\begin{table}[hHtbp]
+\centering
+\begin{tabular}{llll}
+Total number of URLs&$u$&$6+2*n$&starting with 6 URLs each level has 2 more URLS.\\
+Number of Phishes&$p$&$u/2$&Half of the URLs are phishes.\\
+Number of repeats&$r$&$\left\lfloor p/2 \right\rfloor$&Half of the phishes are repeats.
+\end{tabular}
+\caption{distribution of URLs per level.}
+\label{t:levelurls}
+\end{table}
+
+The repeats are always one attack from each previous level. The rest of the repeats is filled up randomly.
+
+There are two main exception to these rules:
+\begin{description}[leftmargin=0cm]
+\item[Level 1] In Level 1 the game is modified in the form that the user is only presented with valid URLs and has to select the domain.
+To prevent boring the user in this level we only present 5 URLs.
+None of them is a phish.
+\item[Level 1+2] The first level that contain repeats is level 3 because level 2 is the first real game level.
+\end{description}
+
+The generated list of attacks also contains a special attack that does no real attack. This is to simplify the URL generation. When we generated the list of attacks we save it for later reference.
+\subsubsection{Apply Generator}
+We were unsure if we still have enough valid URLs so we prepared a way to automatically modify the URLs in such a way that they could still be valid URLs. Some Ideas where to add subdomains or path strings to the URL. Query or fragments are also possible. We later found out that it is currently not needed to implement generators because there are a lot of URLs in our set. If however we will some time in the future find out that these URLs are not enough we have this scheme in place.
+\subsubsection{Apply Attack}
+After we generated a valid URL we chose a random attack from the previously build set of attacks and apply it to the URL. With this we also store which attack we currently applied. This is important when the user is failing this round. In this situation we will simply readd this attack to the set of attacks.
+\subsubsection{Repeat}
+There are combinations of base-URL and attack where the attack doe's not alter the URL.
+Therefore it would be impossible for the user to detect the Attack and he will be confused and might stop using the app.
+In this situation we repeat the whole URL generation process until we find a matching URL.
