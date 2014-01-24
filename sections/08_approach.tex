@@ -97,7 +97,7 @@ For many people this is a major motivation point.
 These people want to be better then others.
 To motivate these people we introduce two leaderboards:
 \begin{description}
-\item[test]test
+\item[Total points] First there is a leaderboard that shows how many points you 
 \end{description}
 \item[Achievements] Finally often games have a kind of leaderboard.
 This means a area where you can 
@@ -181,6 +181,8 @@ During the app development we have tried out several leveling strategies.
  That is to say, among the shown URLs in every level there is a certain amount of phishes the user has to detect in order to pass the level.
  With this approach however, there is still the possibility for a user to repeat early, and thus easy, levels and possibly gain more points than users playing later, and thus more difficult, levels.
  To prohibit this, in increasing levels the users gains and loses increasing points accordingly.
+ The points per correct answer increase such that it does not pay of to play lower levels. The points for each answer $p$ in each level $n$ is mudified by the formular:
+ $$p*1.5^n$$
  In this way, a user repeating early levels is not able to catch up other users of higher levels.
  This strategy solved the problems of our first strategy, however it also brought a new one.
  The strategy of passing the level when a certain amount of phishes are detected has the following flaw: always rejecting a URL will eventually result in passing the level (if the user also correctly identifies the ``Who-Section'' when required). The user will not gain a lot of points with this strategy, however he will eventually win, which is suboptimal for a game.
@@ -193,6 +195,7 @@ During the app development we have tried out several leveling strategies.
  When the user loses all of his lives, cf.
 ~Figure~\autoref{fig:lose_points_life}, this is an indication that he did not understand what the level is about.
  Consequently, he has to restart the level by being forwarded to the introductory part of the current level.
+ The points are assigned exactly as before.
  This is our final leveling strategy for the app.
 
 \end{description}
