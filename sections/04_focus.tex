@@ -47,85 +47,83 @@ On the other hand, the before click scenario has severe downsides:
 Here, the only way to preview the URL to apply a long press to the link, copy it into the clipboard, paste it somewhere else and then view it. 
 Then, after the analysis the URL has to be sent to the browser.
 As this is involves too much effort, no user will follow such a suggestion.
-	\item \textbf{Deception With URL Preview} There are other e-mail clients which provide the option of previewing the destination URL of a link.
+	\item \textbf{Deception With URL Preview} There are other e-mail clients which provide options to display the destination URL of a link.
 Yet, we believe that this should not be communicated to the user for two reasons.
-First, we do not know how many Android users actually make use of the stock e-mail client, which does not offer the preview option.
+First, we are elaborating on a general approach that does not rely on third party e-mail clients besides the default one, which is pre-installed and comes with the device itself.
 Second, and most importantly, this functionality has the potential to mislead the user.
 A severe downside of the URL preview is that the end of the preview is cut in case the URL is too long.
  Well-crafted URLs might thus look legitimate even though they are not because the most important part of the URL, i.e. the actual domain, was cut out.
  For example, the subdomains of the URL can be long and well-crafted so that a legitimate looking subdomain is exactly at the end of the preview.
- This will result in the user thinking that the subdomain at the end of the preview is the domain of the URL.
+ This will cause the user to think that the subdomain at the end of the preview is the domain of the URL.
  Ultimately, the user will trust this URL even he should not.
 	\item \textbf{Users Like Clicking} Clicking on links is practical and convenient. As a matter of fact, users like clicking on links. Hence, we cannot hinder users from clicking on links.
 \end{enumerate}
 
 The after click scenario does not exhibit all these drawbacks which is why we chose to follow this approach.
-Still, this scenario might suffer from potential malicious downloads and providing information to the phisher (before click benefits).
+On the other hand, this scenario might suffer from potential malicious downloads and providing information to the phisher (benefits of before click scenario).
 If a user confirms his e-mail address to the phisher by clicking on a link, further attacks towards this e-mail address are likely to follow.
 Also, the pure request and displaying of a phishing website might provide additional information to the phisher or even expose the user to attacks.
-For now, we consider this as future work, as there is no possibility to detect the real target of a link before clicking it.
+For now, we consider this as future work, as there is no possibility in our target scenario to detect the real target of a link before clicking on it.
 
-	\item[Considered Browser] As a matter of fact, the user is only communicated general browser skills which can be transferred to any other browser.
+	\item[Considered Browser] As a matter of fact, the user is only taught general browser skills, which can be transferred to any other browser.
 Nevertheless, when the user gets browser screenshots, for example, we made use of the Android standard browser to be sure that most users are familiar with the pictures they are shown.
 \end{description}	
 
 %===========================================
 \subsection{System Requirements}
 %===========================================
-In the following we are listing the system requirements which need to be met for the final app.
+In the following we list the system requirements which need to be met to install and play with the final app.
 
 
 \begin{description}[leftmargin=0cm]
 	\item[Android] Today the mobile phone market is split between two major competitors. Android~(81.0\%) and iOS~(12.9\%)~\cite{androidiosmarketshare}. 
 	We have decided to develop an app for the Android operation system as there are more users and we believe we have greater freedom here compared to an iOS app. 
- The publication of an iOS app, for example, is connected with more requirements, which is not the case for Android apps~\cite{publishios, publishandroid}. This allows us to implement and test an android app more quickly and cost effective then on iOS. 
-	\item[Version] Our original intention was to develop an Android app for version 4.0 and upward.
+ 	Additionally, Android is an open operating system and imposes fewer requirements and barriers that allow us a quick development and publication of our app~\cite{publishios, publishandroid}. 
+	\item[Version] Our initial intention was to develop an Android app for version 4.0 and upward.
  However, during the app development we have encountered that about 24\% of all Android users still have Android 2.3.3 to 2.3.7~\cite{versionsandroid}. For this reason we have decided to modify the code so that these users can also install and use our app.
  
-%	\item[Android Standard Browser] Android standard browser is kein system requirement - raus. muss irgendwoanders erwähnt werden. (was betrachten wir beim erklären oder so)...
 \end{description}
 
 %===========================================
 \subsection{Assumptions}
 %===========================================
-We have to make some assumptions about the system the user uses. If one or more of these are not met the user, disregarding of his skill, is not able to detect when he is target of an attack.
+We have to make some assumptions about the user's system. 
+If one or more of these are not met the user, disregarding of his skills, might not able to detect when he is a target of an attack.
 \begin{description}[leftmargin=0cm]
-	\item[Secure DNS] We have to be sure that DNS is not under the control of the attacker.
-	Our approach is to show the user how to identify phishing by analysing the URL of the shown page.
-	This is of no use if the Phisher can control the DNS system of the user.
-	This includes local host files and all used DNS servers.
-	\item[Secure Smartphone] Also we have to assume that the system of the user is in a secure state.
-	This means that the attacker is not able to e.g. replace the browser or read the users input.
+	\item[Secure DNS] We have to assume that DNS is not under the control of the attacker.
+	Our approach is to show the user how to identify phishing attempts by analyzing the URL of the shown page.
+	In fact, this is of no use if the phisher can control the DNS system of the user.
+	Therefore, we assume local host files and all used DNS servers as untouched by the attacker.
+	\item[Secure Smartphone] We imply that the user's system is in a secure state.
+	This means that the attacker is not able to, for example, replace the browser or read the user's input.
 	\item[Secure SSL] 
-	For a Man-in-the-middle it is possible to interfere with the send or received data and to collect the user data directly.
-	Therefore we warn the user that he should not enter personal data in non-HTTPS pages.
-	But even in HTTPS environments we can not be sure of the servers identity when SSL is not secure.
-	We are aware that recent events show that there are a multitude of SSL providers which fail to ensure that certificates are only handed to legitimate users or do this on purpose.
-	When SSL is not secure the user has no practical possiblity to detect a Man-in-the-middle attack.		
+	For a man-in-the-middle it is possible to intercept sent or received data and to collect the user data directly without notice.
+	Therefore, we warn the user against entering personal data on non-HTTPS pages.
+	But even in HTTPS environments we can not be sure of the server's identity if SSL is not secure.
+	We are aware of events showing that there are a multitude of SSL providers which - intentionally or not - fail to award certificates to legitimate users only.
+	When the certificates cannot be trusted, SSL cannot be considered as secure and, ultimately, the user has no practical possiblity to detect a man-in-the-middle attack.		
 \end{description}
 
 %===========================================
 \subsection{Limitations of Our Approach}
 %===========================================
-In addition to the general assumptions we make because of the total inability of the user to detect phishing if one of these assumptions are not met.
-There are also limitations of our approach that result in the target group for our app.
-The targeted user is not a computer expert and has no time nor interest to analyze the shown webpage throughly before entering data.
-Therefore we don't tell the user about possible attacks that an experienced user might find.
+In addition to the general assumptions pointed out in the previous section, there are limitations of our approach resulting from the chosen target group for our app.
+As described in \autoref{s:target_group}, users from our target audience are no computer experts and have neither time nor are they willing to analyze the shown website thoroughly before entering data.
+Therefore, we do not intend to tell the users about possible attacks that only experienced user might find.
 \begin{description}[leftmargin=0cm]
 	\item[Cross-Site Scripting]
-	Cross-Site Scripting (XSS) is an a attack where the attacker enters code into a legitimate webpage.
+	Cross-Site Scripting (XSS) is an attack where the attacker enters code, such as a form, into a legitimate webpage.
 	For a later viewer of this page this form seems to be legitimate content of the attacked webpage and he might be lured to enter personal data in this area. 
-	Depending on attacked webpage this can not be detected by the user.
+	Depending on attacked webpage this cannot be detected by the user.
 	This is a vulnerability of the attacked webpage and can be prevented by checking user input.
-	Therefore we think that preventing this attack is in the responsibility of the website owner.
+	Therefore, we think that preventing this attack is in the responsibility of the website owner.
 	\item[URL Hiding Techniques]
 	Most modern mobile phones have small screens.
-	Therefore most browser hide away the URL-bar when the user views a webpage to gain additional screen real estate.
-	The URL-bar is shown only when the user scrolls up beyond the top of the page.
-	There is a possible attack where the attacker prevents the user from scrolling all the way up and instead displays a fake URL-bar with a fake URL.
-	A problem that the attacker must solve is that mobile browser look very diffently and this must be reflected by the fake URL-bar.
-	This problem is not easy to solve and it is today not needed for the attacker to do such sophisticated attacks because enough users fall for the simple attacks. 
-	We think this is the reason that this attack is not yet seen in the wild.
-	Therefore we don't consider this attack. 
+	Therefore, most browser hide away the URL bar to increase the viewport when the user browses webpages.
+	The URL bar is shown only when the user scrolls up beyond the top of the webpage.
+	There is a possible attack where the attacker prevents the user from scrolling all the way up and instead displays a fake URL bar with a fake URL.
+	A problem that the attacker faces is that mobile browsers look very diffently and this must be reflected by the fake URL bar - a tedious and difficult task.
+	Moreover, attackers do not need such sophisticated attacks because enough users fall for the simple attacks these days. 
+	We think this is the reason why this kind of attack has not yet been observed in the wild and the reason why we do not consider it as well.
 \end{description}
 
