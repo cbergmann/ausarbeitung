@@ -89,6 +89,7 @@ In the following we will elaborate on how we are going to measure the statements
 \subsection{Results and Analysis}
 %===========================================
 \subsubsection{interpretation problems}
+\label{s:intprobs}
 
 \subsubsection{Analysis of our hypotheses}
 \label{s:hypanalysis}
@@ -121,7 +122,7 @@ In the following we will elaborate on how we are going to measure the statements
 
 \begin{description}
 \item[Hypothesis 1]
-\autoref{fig:hyp1results} shows the reslts of our study according to hypothesis 1. One can clearly see that the majority of the users identified more URLS correctly after using the app than before. While most participants correctly identified 8 out of 16, i.e. 50\%, websites before they played the app, the majority gave correct answers to 22 out of 24 websites afterwards, i.e. 91.67\%. One could argue that this increase is based on the fact that the examples are mainly the same. \autoref{fig:hyp1resultsanew} however shows that the user also got most of the new URLs right. Therefore we assume that we can furthermore ignore this learning effect. 
+\autoref{fig:hyp1results} shows the results of our study according to hypothesis 1. One can clearly see that the majority of the users identified more URLS correctly after using the app than before. While most participants correctly identified 8 out of 16, i.e. 50\%, websites before they played the app, the majority gave correct answers to 22 out of 24 websites afterwards, i.e. 91.67\%. One could argue that this increase is based on the fact that the examples are mainly the same. \autoref{fig:hyp1resultsanew} however shows that the user also got most of the new URLs right. Therefore we assume that we can furthermore ignore this learning effect. 
 \item[Hypothesis 2]
 \autoref{fig:hyp2results} shows how many users marked the URL as their main source of decision.
 Most of the users already based most of their decisions on the URL before.
@@ -134,7 +135,23 @@ Also our app empathizes the importance of the URL by putting the main focus on i
 We have decided against doing statistical test on this hypothesis.
 We believe it will most likely be rejected because the change from before to after is not very high.
 \item[Hypothesis 3]
-
+There is a general problem with the question in the websites-before-survey.
+We were not able to clearly ask the user to mark the Domain when it was the base of their decision because we would have then primed them to look at the URL or even the Domain.
+This would have influenced the results of Hypothesis 2.
+Therefore a user might mark the whole URL even if his decision was based only a small part (e.g. the Domain) of the URL.
+We where aware of this problem beforehand but saw no other option than to formulate the question in such an open form.
+Because of this we can not clearly identify what their main source of decision was in the before survey.
+Afterwards the user knew that we wanted them to mark the domain.
+This can be interpreted as a change of question even if the literal question did not change.
+Therefore we can not apply any statistical tests on this Hypothesis.
+Nevertheless none of the users marked the domain in most cases beforehand, i.e. 7 domains out of 16 URLs where marked at most by only one user.
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{graphix/markings.pdf}
+\caption{Marked parts of the screenshot before and after.}
+\label{fig:markings}
+\end{figure}
+\autoref{fig:markings} shows the distribution of the marked areas before and after. One can clearly see that afterwards most of the users marked the domain. However we are not able to compare that to the before values because of the changed question.
 \item[Hypothesis 4]
 \end{description}
 
