@@ -46,7 +46,7 @@ de/''. Clicking on this link, the user will expect to land on the Google website
 	\item \textbf{Information Material} The second part of the app is divided into levels of increasing difficulty.
  Here the user is first taught how to access and analyze the URL of the web browser.
  Subsequently, the user learns about the general structure of a URL.
- This is done in a very simplified way, so that even unexperienced users can follow.
+ We tried to explain these facts as simply as possible to allow even unexperienced users to follow.
  In particular, the user is told how to find the second- and top-level domain of a URL.
  In all succeeding levels the user is introduced to various URL spoofing techniques of a phisher.
  The learning content of each level can be consulted in \autoref{s:knowledgetransferperlevel}.
@@ -130,7 +130,7 @@ The first  and second information materials (introduction 2 and level 1) and exe
  In order not to frustrate the user he cannot get less than 0 points.
  When the user has no more lives left he has to restart the level.
  With every correct answer the user gains points.
-	\item[Start of Actual Game]  In level 2 we start introducing URL spoofing techniques and the user has to decide whether a given URL is a phishing URL or a valid one.
+	\item[Actual Game]  In level 2 we start introducing URL spoofing techniques and the user has to decide whether a given URL is a phishing URL or a valid one.
  Here also, the user can lose and win points as well as lose lives.
  Here again, if the user has no more lives left he has to restart the level.
 \autoref{fig:lose_points_life} illustrates the game flow and consequences of wrong and correct answers from level 2 and upwards.
@@ -157,7 +157,6 @@ The following section deals with our leveling strategy.
 During the app development we have tried out several leveling strategies.
  This section is intended to introduce the leveling strategies we have considered for the app.
 
-
 \begin{description}[leftmargin=0cm]
 	\item[Leveling Based on Achieved Points] Our very first leveling strategy was based on the achieved points per level.
  Each level the user had to achieve at least 100 points to pass the current level and unlock the next one.
@@ -180,7 +179,7 @@ During the app development we have tried out several leveling strategies.
  This strategy solved the problems of our first strategy, however it also brought a new one.
  The strategy of passing the level when a certain amount of phishes are detected has the following flaw: always rejecting a URL will eventually result in passing the level (if the user also correctly identifies the ``Who-Section'' when required). The user will not gain a lot of points with this strategy, however he will eventually win, which is suboptimal for a game.
   
-	\item[Leveling Based on Correct Answers] To solve the problem of our second leveling approach we have extended the leveling passing to correct answers.
+	\item[Leveling Based on Correct Answers] To solve this problem of our second leveling approach we have extended the leveling passing to correct answers.
  Instead of detecting a certain amount of phishes per level, the user has to give correct answers to a predefined amount of phishing URLs as well as a predefined amount of valid URLs in order to pass the level.
  Only and only if the user has answered the predefined number of valid and phishing URLs the level is completed.
  To additionally incentivize the users we have included three lives per level.
@@ -189,9 +188,7 @@ During the app development we have tried out several leveling strategies.
  Consequently, he has to restart the level by being forwarded to the introductory part of the current level.
  The points are assigned exactly as before.
  This is our final leveling strategy for the app.
-
 \end{description}
-
 
 %===========================================
 \subsection{Teaching Goals Per Level}
