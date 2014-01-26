@@ -31,10 +31,15 @@
 \usepackage{subfigure}
 \usepackage{pdfpages}
 
-\newcommand{\subfigureautorefname}{\figureautorefname}
-\renewcommand{\subsectionautorefname}{\sectionautorefname}
-\renewcommand{\subsubsectionautorefname}{\sectionautorefname}
-\newcommand{\subsubsubsectionautorefname}{\sectionautorefname}
+\addto\extrasamerican{%  
+  \def\subfigureautorefname{\figureautorefname}
+  \def\subsectionautorefname{\sectionautorefname}
+  \def\subsubsectionautorefname{\sectionautorefname}
+  \def\subsubsubsectionautorefname{\sectionautorefname}
+}
+
+
+
 
 \graphicspath{{graphix/}}
 
