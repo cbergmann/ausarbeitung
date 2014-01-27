@@ -100,12 +100,12 @@ Next, the gift certificate is raffled.
 \subsection{Hypotheses}
 %===========================================
 In order to evaluate the effectiveness and usability of our app we have formulated below mentioned hypotheses and measurements.
-The exact procedure of our measurement is described in \autoref{s:measurement}.
-
+As aforementioned, users are asked to encircle the area of the screenshot which was the primary reason for their decision.
+The coding of these markings, which are relevant for our measurement, can be consulted in \autoref{s:markings}.
 
 \begin{enumerate}
 	\item \textbf{Hypothesis 1 - Mistakes} After playing the app, the users make significantly less mistakes when deciding whether a website is a phish or not.
-	\item Measurement: Correct answers in ``Website-Survery After'' $>>$ correct answers in ``Website-Survery Before''
+	\item Measurement: Correctly identified websites in ``Website-Survery After'' (phish or no phish) $>>$ correctly identified websites in ``Website-Survery Before''
 	\item \textbf{Hypothesis 2 - URL Based Decision} After playing the app, the users base their primary decision on whether a website is a phishing website or not significantly more often based on the URL compared to before playing the app.
 	\item Measurement: Number of URL markings in ``Website-Survery After'' $>>$ number of URL markings in ``Website-Survery Before''
 	\item \textbf{Hypothesis 3 - URL Comprehension} After playing the app the user understands the importance of the domain of a URL as the only criteria to detect phishing websites.
@@ -115,11 +115,23 @@ The exact procedure of our measurement is described in \autoref{s:measurement}.
 \end{enumerate}
 
 %===========================================
-\subsection{Measurement}
+\subsection{Coding of Markings}
 %===========================================
-\label{s:measurement}
+\label{s:markings}
+In the previous section we stated our hypotheses and how we decided to measure them.
+Here, we provide an overview of our coding for possible responses in the website-surveys.
+These codings are relevant for the measurement of our hypotheses.
 
-
+\begin{description}[leftmargin=0cm]
+	\item[None] Occasionally, participants did not mark or encircle anything of the screenshot. In our raw data this is coded as none.
+	\item[Favicon or Padlock] The marking of a favicon or padlock is trivially coded accordingly.
+	\item[Content] If anything else than the URL itself, a part of the URL, a favicon, or a padlock is marked then this is coded as content.
+	\item[Scheme] If the scheme or a part of the scheme in a URL is marked, this is coded as scheme.
+	\item[Host] Marking the host results in an according coding.
+	\item[Domain] In case a participant marks a domain or the substring of a domain this is coded as domain or domain substring accordingly.
+For the measurement of hypothesis 3, domain as well as domain substring markings are considered domains.
+	\item[URL] All other markings are coded as URL and measured as such.
+\end{description}
 
 
 %===========================================
