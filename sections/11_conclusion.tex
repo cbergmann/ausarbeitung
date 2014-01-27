@@ -1,4 +1,5 @@
 %*******************************************
+
 \section{Conclusion}
 %*******************************************
 \label{s:conclusion}
@@ -8,18 +9,108 @@ This chapter provides a short summary of what we achieved in the scope of this t
 %===========================================
 \subsection{Conclusion}
 %===========================================
+The objectives of this thesis were twofold.
+First, we aimed at increasing users' security awareness so this may hopefully result in a change in their security-related behavior.
+Second, we focused on the education of users with regard to the detection of phishing URLs. 
+Our app is supposed to educate the user such that he obtains the required capability of correctly parsing URLs and identifying phishing websites.
+This capability will hopefully help him to protect himself against phishing.
 
-The objectives of this thesis.
-.. 
+To achieve these goals we developed an anti-phishing education quiz based game.
+Our app targets the awareness increase by actively let the user spoof an e-mail and exemplifying him that a link does not necessarily lead to the target that it displays.
+By letting the users practically experience this, we hope to increase the intensity of their learning experience (cf.~Principle~of~Intensity in \autoref{s:learning_principles}) resulting in a better and higher learning performance and motivation. We are aware that this part of the app might not be interesting and motivating for some users.
+This is especially reflected by the answers to our question in the survey-after.
+There we ask whether this part motivated them to continue playing the app. 
+The answers to this question are rather dispersed and thus result in an average value of 3.611 out of maximal 5 which would indicate that the user absolutely agrees.
+Yet we think it is an important part of the app since there still seem to be users who are not aware of the facts taught in this part (the median is 4 out of 5).
 
-%===========================================
-\subsection{Findings}
-%===========================================
-%===========================================
-\subsection{Recommendations}
-%===========================================
+After motivating the user with practical examples and increasing his security awareness the actual game starts.
+The game itself consists of levels with introductory parts followed by practical exercises the user has to solve in order to show he has understood the learning content.
+Initially, in introduction 2 (access address bar and view complete URL) and level 1 (URL basics and domain identificationzich), basic knowledge is covered which is required for the succeeding levels and especially for the detection of phishing URLs on the smartphone in general.
+In particular, introduction 2 might be not challenging enough for some users as they are already well-skilled regarding smartphone functionalities.
+Yet, this introduction and exercise is indispensable as there might be users who do not know this.
+
+In levels 2-9 the user is introduced to various attacks a phisher might apply.
+These attacks get increasingly sophisticated and harder to detect with higher levels.
+Finally, in level 10 the user gets further final remarks, such as the discussion about legitimate URLs which might appear phishy but in fact are not or some input to extended validation certificates and a link for further information.
+We strived for an app with introductory texts that are simple and easy to comprehend.
+\textbf{(reference to evaluation results).Maybe some more results of evaluation, The results of our evaluation show that our goals ... were achieved.}
+
+Our participants clearly gave more correct answers (is a given website a phish or not) after playing the app compared to before.
+Before playing the app most users identified 50\% of the 16 websites correctly.
+After playing the app the majority of the participants gave correct answers to 91.67\% of the 24 websites.
+We assume the learning effects are negligible as the distribution of the correctly answered new URLs is almost identical to the old one (cf. \autoref{fig:hyp1resultsanew} and \autoref{fig:hyp1resultsaold}).
+\textbf{something about the statistical test}
+
+The results of our second hypothesis exposed that the users already knew it was important to look at the URL before playing the app.
+Yet, they obviously did not know where exactly too look at as their result in correct identifcations show.
+Even if there were many participants who looked at the URL already before playing the app there is a significant difference in the following aspect:
+Before playing the app only 3 (17.65\%) users always marked the URL.
+In contrast to that, after playing the app most, i.e. 14 of 16 users (82.35\%), always marked the URL.
+Evidently, our app was able to emphasize their believe in basing their decision on the URL rather than the content or anything else.
+
+Our third hypothesis was a bit questionable.
+The problem here is the following: after playing the app we virtually changed the question aksing the user to mark the area of their primary reason for their decision.
+With the app we primed them to mark the domain clearly.
+Before using the app the users might have meant the domain, but just did not clearly marked it because they did not know what exactly we wanted from them.
+Still, we analyzed our results on this question and found out that more people base their decision on the domain after playing the app.
+
+...
+
+All in all, we can say that our app has a positive effect on users.
+The question to ask here is, however, will this app actually help users change their behavior in the Internet and make them look at the URL even if it is only occasionally.
+This is an aspect, which we were not able to address within the scope of this work.
+Furthermore, the study conducted cannot show how the users, for example, retain the lessons learnt.
+Such considerations remain open for future work.
+
+.. what else?
+
+Wir haben gemerkt, dass einige user bei den BEFORE Urls oft auf das padlock bzw. http und https geguckt haben. Dadurch haben sie auch phishing adressen  vertraut..
+
+Aus diesem grund wäre es sinnvoll das http und https:// level vorzuziehen (was wir erstmal nicht machen, weil texte nch nicht gut) um solche pitfalls zu vermeiden/entgegenzuwirken.
+
 %===========================================
 \subsection{Future Work}
 %===========================================
 This section deals with a prospect on future work for our Anti-Phishing Education App.
- In particular, we present ideas that might be beneficial and which we were not able to realize due to time and resource limitations.
+ In particular, we present ideas that might be beneficial and which we were not able to address and realize due to time and resource limitations.
+
+\begin{description}
+	\item[Comparative Study] A comparative study might be interesting, as the authors of Anti-Phishing Phil~\cite{sheng2007antiphishingphil} did it.
+	They conducted a study with three different conditions,  a group that consulted general tutorials from the Internet, a  group who learnt from tutorials based on Anti-Phishing Phil and another group who played Anti-Phishing Phil itself.
+	An interesting comparison to consider might be our app with Anti-Phishing Phil or any other anti-phishing app and general tutorials.
+	\item[Study on Retention] For time reasons knowledge retention is an aspect we could not address in our study.
+	Yet, we think it is important to consider this in future work.
+	The question to ask here is how well users retain the knowledge they obtain from our app compared to other sources, for instance.
+	\item[Embedded Training] In \autoref{s:related_work} we argued that exploiting the teachable moment might result in good motivation for a user to do something about his lack of knowledge regarding phishing and possibly result in better retention.
+	Yet, a drawback of embedded training is that its landing pages are not able to provide detailed and extensive information on the topic since users would be discouraged and leave the page.
+	Providing detailed and extensive information can be addressed by a game playfully.
+	Therefore, an idea is to combine embedded learning with an educational game.
+	Here the user would be forwarded to the landing page with the most important information in case he falls for a simulated phishing attack.
+	On this page the user can be provided with the most important information and a link to an educational app, for example ours, where he can optionally get more detailed information.
+	With the game the knowledge can be obtained step by step by playing the game.
+However, there remains the problem of raised legal issues.
+	\item[Malicious Downloads] With our app we did not target the possibility of downloading malicious software when a user clicks on such a link.
+	However, we think this is an aspect which should also be targeted in future work since malicious software can also cause harm.
+	For example, the user could be told at some point that he should never open downloaded files he did not intend to download.
+	Instead he should immediately delete them.
+	\item[Certificate Validation] We do not address the validation of certificates with our app. We also do not tell the user, for example, that he should at least not do banking in case a certificate is broken.
+	Such general suggestions might also be considered for future work.
+	\item[Data Economy] Another relevant aspect we did not cover in our app is data economy.
+	We tell the user to type in their data only into websites they are sure about their legitimacy.
+	However, we do not tell the user to think about the specific data they are asked to enter.
+	Users should re-think whether the required information is actually needed.
+	This should also be trained by for example asking the user ``A lottery site is asking for your data. Which data would you provide?''. As this approach would require a complete different UI this type of learning content remains for future work.
+	\item[Consequences] Initially, our idea was to display the consequences for falling to a specific phishing URL (matching a certain website category). For time reasons, we had to delay this for future work.
+	We still think that this kind of information is relevant for the user as it illustrates him on which websites he should especially take care, for example, on banking websites.
+	\item[Increase Immersion] Immersion is an important game element (cf. \autoref{s:game_techniques}).
+	We believe our app has space for more immersion. 
+	For example, an appealing story around our quiz game could be added in order to mesmerize the user.
+	\item[Increase Effect] In \autoref{s:learning_principles} we have introduced the Principle of Effect, specifically, the law of positive feelings. 
+	We believe the user's positive feelings can be increased by providing more variable feedback, instead of saying the same sentence for the same outcomes.
+	For example, the praises and compliments when a user does well could vary depending on the degree of difficulty.
+	Also, the final screens for finishing a level can vary.
+\end{description}
+
+ 
+More playful (by adding immersion, good/nice background story and varying feedback, according to achieved tasks for example)
+See in text what remains for future work
