@@ -168,7 +168,8 @@ The succeeding sections elaborate on these problems and outline how we handle th
 	\item We cannot assure that the users know all website vendors of our URLs (whether legitimate or phish).
 \end{enumerate}
 
-\paragraph{Legitimate But Phishy Looking URLs}
+\begin{description}
+	\item[Legitimate But Phishy Looking URLs] 
 We wanted to find out to what extent phishing URL categories apply to authentic websites.
 For this purpose we browsed the web and looked at legitimate websites, too. 
 In detail, we visited and clicked through websites of the top 50 banks~\cite{bankrank} and top 50 online shops in Germany~\cite{onlineshoprank}. 
@@ -189,8 +190,7 @@ We still strongly recommend the user to directly contact the vendor before submi
 The reason why we do not address this problem in the according level is that we do not want to degrade the user's attention by telling him that similar domains might still be legitimate. 
 We do not consider it an issue that the user is told about this later in the app, since it is better to reject a legitimate URL than trusting a phishing URL. 
 
-\paragraph{Unknown Website Vendors}
-Even our efforts of mainly making use of URLs from widely known website vendors there is still the issue of the  possibility that a user does not know all vendors and thus the respective URL. 
+\item[Unknown Website Vendors] Even our efforts of mainly making use of URLs from widely known website vendors there is still the issue of the  possibility that a user does not know all vendors and thus the respective URL. 
 One approach to address this problem is that the user has to indicate which websites he knows with the aid of a long check box, for example. 
 We decided against this approach for two reasons: 
 First, if a user does only know two website vendors, the list of available URLs will be quite short. 
@@ -202,7 +202,7 @@ This should not be a big issue.
 By making mistakes and/or giving correct answers to unknown URLs, i.e. domains, the user will eventually learn whether a given domain is legitimate or not. 
 For future work, one might consider to add a ``I don't know'' button. 
 In this case the user would virtually skip this URL and be explained whether it is a phish or not and why it is so.
-
+\end{description}
 
 
 \subsection{General Recommended Behavior}

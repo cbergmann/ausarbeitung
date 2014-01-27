@@ -16,11 +16,11 @@ We have decided to divide our education app into two main parts.
  The following enumeration summarizes the functions of our twofold app structure.
 
 \begin{enumerate}
-	\item \textbf{Awareness Part} The first part of the education app is intended to increase the user awareness regarding how easy it is to spoof e-mails and mislead users with such fake messages.
+	\item \textit{Awareness Part} The first part of the education app is intended to increase the user awareness regarding how easy it is to spoof e-mails and mislead users with such fake messages.
  This part is supposed to motivate the user to do something to counter the danger of the Internet, in this particular case, against phishing.
 
 \begin{enumerate}
-		\item \textbf{Receive Fake E-Mail} We want to illustrate to the user how easy it is to spoof the ``from'' field of an e-mail as well as the content of this e-mail.
+		\item \textit{Receive Fake E-Mail} We want to illustrate to the user how easy it is to spoof the ``from'' field of an e-mail as well as the content of this e-mail.
  For this purpose the user has to send a fake e-mail with an arbitrary sender address of his choice to himself.
  The user will also have the option to type in a free text.
  Upon submitting the form the user will receive an e-mail with the e-mail address he had indicated as sender.
@@ -28,29 +28,29 @@ We have decided to divide our education app into two main parts.
  We believe that the user will be very surprised about how easy even he himself could send a fake e-mail.
  The user will learn that he cannot fully trust the ``from'' field and the content of the e-mails he is receiving.
 
-		\item \textbf{Linktext Unequal Target URL} The awareness part of the app is also supposed to show the user that he cannot trust the texts of a link he is clicking on.
+		\item \textit{Linktext Unequal Target URL} The awareness part of the app is also supposed to show the user that he cannot trust the texts of a link he is clicking on.
  To illustrate this, the user is asked to click on a link with the text ``https://www.
 google.
 de/''. Clicking on this link, the user will expect to land on the Google website, what will not happen.
  In fact, the user is linked back to our app, where he is told that link texts are not trustful as well.
  
-	\item \textbf{Fake Website} Finally, the user is told that creating a copy of a website is also very easy.
+	\item \textit{Fake Website} Finally, the user is told that creating a copy of a website is also very easy.
  He is told that a reliable way to decide whether a website is a fake or not is to analyze the URL of the website he is visiting.
  He is also told that this app focuses on exactly this.
 
 \end{enumerate}
-	\item \textbf{Educational Part} The second part of the app covers the actual educational part.
+	\item \textit{Educational Part} The second part of the app covers the actual educational part.
  Here, the user is learning about various spoofing techniques of the attacker.
 
 \begin{enumerate}
-	\item \textbf{Information Material} The second part of the app is divided into levels of increasing difficulty.
+	\item \textit{Information Material} The second part of the app is divided into levels of increasing difficulty.
  Here the user is first taught how to access and analyze the URL of the web browser.
  Subsequently, the user learns about the general structure of a URL.
  We tried to explain these facts as simply as possible to allow even unexperienced users to follow.
  In particular, the user is told how to find the second- and top-level domain of a URL.
  In all succeeding levels the user is introduced to various URL spoofing techniques of a phisher.
  The learning content of each level can be consulted in \autoref{s:knowledgetransferperlevel}.
-		\item \textbf{Exercise to Information Material} After every introductory material in each level an exercise section is followed.
+		\item \textit{Exercise to Information Material} After every introductory material in each level an exercise section is followed.
  For the ``access and analyze URL part'', for example, the user is forwarded to a website.
  There he has to apply all important steps he has learnt in the introductory part.
  After successful completion of the tasks the user is linked back to the app.
@@ -60,7 +60,7 @@ de/''. Clicking on this link, the user will expect to land on the Google website
  If the URL is a phish, and the user has correctly identified the phish, the user has to show the second- and top-level domain.
  Only if the user correctly identifies the second- and top-level domain he receives the points for this URL, otherwise the answer to this URL is considered wrong, because we assume that the user has just guessed in this case.
 
-		\item \textbf{Repeat 2.a and 2.b With Increasing Difficulty} There is an increase of difficulty in each level.
+		\item \textit{Repeat 2.a and 2.b With Increasing Difficulty} There is an increase of difficulty in each level.
  That is to say, in each level it gets more difficult to distinguish phishing URLs from valid ones, cf. \autoref{s:knowledgetransferperlevel}.
 \end{enumerate}
 \end{enumerate}
@@ -363,19 +363,19 @@ Sometimes flow is also referred to as 'engagement'~\cite{murphy2011games} and re
 Flow relates to motivation~\cite{csikszentmihalyi1990flow, csikszentmihalyi1997finding}. Motivation in turn is a crucial part of readiness, cf. \autoref{s:learning_principles}.
 In essence, there are four requirements for flow~\cite{csikszentmihalyi1990flow, csikszentmihalyi1997finding, schell2008art}.
 	\begin{enumerate}
-		\item \textbf{Clear Tasks} With clear tasks the user is able to understand what he needs to do. 
+		\item \textit{Clear Tasks} With clear tasks the user is able to understand what he needs to do. 
 The tasks which need to be completed by the users of our app are never complex and they are always clearly told what they need to do next. 
-		\item \textbf{Feedback} With feedback the user should always be kept up-to-date about his progression towards the goals he is asked to achieve. 
+		\item \textit{Feedback} With feedback the user should always be kept up-to-date about his progression towards the goals he is asked to achieve. 
 He also should get immediate feedback on whether his actions are good or not. 
 Our app covers these aspects, cf. \autoref{s:learning_principles}.
-		\item \textbf{Balanced, Attainable Goals} The user should be confronted with challenging tasks, but at the same time these tasks should also be achievable. 
+		\item \textit{Balanced, Attainable Goals} The user should be confronted with challenging tasks, but at the same time these tasks should also be achievable. 
 Especially in the beginning our app users are confronted with very simple tasks.
 For some users they even might be too easy which may result in a loss of interest.
 However, these tasks are important basics which are necessary for successful detection of phishing attacks on the smartphone. 
 Therefore, for future work especially the first two tasks (access address bar and analyze the complete URL) could be re-designed so that they also keep users which have already knowledge in this area.
 Currently, the users can just skip the introductory part of this part and directly complete the task.
 Besides, as the users' skills will naturally improve, their tasks get more difficult and challenging with increasing levels, but will remain achievable.
-		\item \textbf{Concentration} The user should not be distracted with, for example, complex interfaces. 
+		\item \textit{Concentration} The user should not be distracted with, for example, complex interfaces. 
 He should rather be able to fully concentrate on the game. 
 Our app has a very simple user interface with the most necessary elements. 
 There are no special effects, advertisement or other elements which might distract the user from playing the game with full concentration.
@@ -389,11 +389,11 @@ Feedback can be in form of a scoring system, comparative statistics or failure o
 Games make use of a so called feedback loop~\cite{goetz2011harnessing}:
 
 \begin{enumerate}
-	\item \textbf{Measure Behavior} Our app assesses whether the answer of the user to a given task is correct.
-	\item \textbf{Relay Measurement to User} The user is told whether his answer is correct or not.
-	\item \textbf{Realize Some Sort of Outcome} The outcome of the users' actions and answers are accordingly defined, cf. \autoref{s:game_rules}. 
+	\item \textit{Measure Behavior} Our app assesses whether the answer of the user to a given task is correct.
+	\item \textit{Relay Measurement to User} The user is told whether his answer is correct or not.
+	\item \textit{Realize Some Sort of Outcome} The outcome of the users' actions and answers are accordingly defined, cf. \autoref{s:game_rules}. 
 For example, the user loses a life in case he did not detect a phishing URL.
-	\item \textbf{Provide Opportunities for Alternate Action} 
+	\item \textit{Provide Opportunities for Alternate Action} 
 The user has the chance to do better in the next tasks.
 \end{enumerate}
 	\item[Simplicity] The real world is a complex construct.

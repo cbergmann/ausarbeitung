@@ -35,19 +35,19 @@ Additional we had a look at the phishing URLs provided by PhishTank. The majorit
 Analyzing the URL before clicking on it brings several benefits:
 
 \begin{enumerate}
-	\item \textbf{No Malicious Download} If a spoofed URL is detected before clicking on a link the potential download of  malicious software can be avoided. 
-	\item \textbf{No Phisher Obtains No Information} Recognizing the spoofed URL before visiting the website prevents the phisher from obtaining any information of the user. Such information include, for example, the activeness and validity of the user's e-mail address. 
+	\item \textit{No Malicious Download} If a spoofed URL is detected before clicking on a link the potential download of  malicious software can be avoided. 
+	\item \textit{No Phisher Obtains No Information} Recognizing the spoofed URL before visiting the website prevents the phisher from obtaining any information of the user. Such information include, for example, the activeness and validity of the user's e-mail address. 
 \end{enumerate}
 
 On the other hand, the before click scenario has severe downsides:
 
 \begin{enumerate}
-	\item \textbf{Redirects Not Recognizable} Many links contain redirects. Such redirects, which can be malicious, are not recognizable before the click.
-	\item \textbf{Unavailability of URL Preview Functionality} The stock e-mail client of Android does not provide the functionality of previewing the destination URL. 
+	\item \textit{Redirects Not Recognizable} Many links contain redirects. Such redirects, which can be malicious, are not recognizable before the click.
+	\item \textit{Unavailability of URL Preview Functionality} The stock e-mail client of Android does not provide the functionality of previewing the destination URL. 
 Here, the only way to preview the URL to apply a long press to the link, copy it into the clipboard, paste it somewhere else and then view it. 
 Then, after the analysis the URL has to be sent to the browser.
 As this is involves too much effort, no user will follow such a suggestion.
-	\item \textbf{Deception With URL Preview} There are other e-mail clients which provide options to display the destination URL of a link.
+	\item \textit{Deception With URL Preview} There are other e-mail clients which provide options to display the destination URL of a link.
 Yet, we believe that this should not be communicated to the user for two reasons.
 First, we are elaborating on a general approach that does not rely on third party e-mail clients besides the default one, which is pre-installed and comes with the device itself.
 Second, and most importantly, this functionality has the potential to mislead the user.
@@ -56,7 +56,7 @@ A severe downside of the URL preview is that the end of the preview is cut in ca
  For example, the subdomains of the URL can be long and well-crafted so that a legitimate looking subdomain is exactly at the end of the preview.
  This will cause the user to think that the subdomain at the end of the preview is the domain of the URL.
  Ultimately, the user will trust this URL even he should not.
-	\item \textbf{Users Like Clicking} Clicking on links is practical and convenient. As a matter of fact, users like clicking on links. Hence, we cannot hinder users from clicking on links.
+	\item \textit{Users Like Clicking} Clicking on links is practical and convenient. As a matter of fact, users like clicking on links. Hence, we cannot hinder users from clicking on links.
 \end{enumerate}
 
 The after click scenario does not exhibit all these drawbacks which is why we chose to follow this approach.
