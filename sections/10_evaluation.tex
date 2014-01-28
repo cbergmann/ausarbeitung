@@ -452,16 +452,22 @@ This section further explores these results.
 	In fact, this user has performed worse by the terms of our definition of correctness.
 	The user had correctly identified 75\% of the URLs before playing the app.
 	Afterwards, he only had a score of 54.17\%.
-	The problem here was that level 9 deals with the difference of http and https websites and that we did not expect the users to achive a level higher than 8.
-	Therefore, we did not consider http and https in our assessment.
-	Users were asked to decide whether a website is a phish or not disregarding the usage of https.
-	The user who has achieved level 9 however was explained the difference of http and https, additionally, he was asked to reject http sites in general for this game.
-	Hence, this user responded to the website-survey after respectively: the participant generally rejected http sites whether they were phishing or not and thus the user performed worse afterwards by the terms of our definition of correct.
+	The problem here was that level 9 deals with the difference of HTTP and HTTPS websites and that we did not expect the users to achive a level higher than 8.
+	Therefore, we did not consider HTTP and HTTPS in our assessment.
+	Users were asked to decide whether a website is a phish or not disregarding the usage of HTTPS.
+	The user who has achieved level 9 however was explained the difference of HTTP and HTTPS, additionally, he was asked to reject HTTP sites in general for this game.
+	Hence, this user responded to the website-survey after respectively: the participant generally rejected HTTP sites whether they were phishing or not and thus the user performed worse afterwards by the terms of our definition of correct.
+	\item[HTTPS and Padlock] When assessing the before website-surveys we had the impression that many participants where aware that they should look for either HTTPS or the padlock.
+	Yet, they seemed not to be aware of the fact that the use of HTTPS does not necessarily mean that the website is trustworthy in general.
+	In fact, there may be phishing websites using HTTPS.
+	These participants fell for such websites in our survey and are likely to fail to such attacks in reality.
+	Therefore, we think it is important to move the level which is dealing with HTTPS to an earlier level since we cannot be sure whether an app user of ours plays until level 9.
+	This aspect should definitely be covered in future work in our opinion.
+	
 
 \end{description}
 
 
-%TODO: Future Work: HTTPS vorziehen zahlen nicht nötig
 %TODO: Confidence of answers
 
 
@@ -584,7 +590,7 @@ In addition to testing the hypotheses we got overall positive feedback from the 
 Most of them had the feeling that they learned something from the app and some of them already contacted us asking about the release date of the app because they wanted to give it to relatives.
 
 Despite this there are still some improvements that should be considered when someone tries to develop a next Version of the app.
-First of all we think that the part talking about HTTP and HTTPS should be moved to a earlier Level.
+First of all we think that the part talking about HTTP and HTTPS should be moved to an earlier level.
 We saw many users that marked the scheme or the padlock in the URLs.
 This seems to be more important for the user than the URL because we had several users that fell for a phish and marked the scheme or padlock as reasoning.
 As we assume that the user need some time to play though the whole game in real world we think that it is important to clear that misunderstanding earlier.
