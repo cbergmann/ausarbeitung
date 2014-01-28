@@ -2,10 +2,9 @@
 \section{Phishing Survey}
 %*******************************************
 \label{s:survey}
-Before elaborating on the app design we ran a phishing survey.
+Before elaborating on the app design we ran a phishing survey of which we illustrate the main objectives in this chapter.
  To the best of our knowledge there do not exist other surveys which resemble ours and additionally were conducted in Germany.
- This chapter deals with the main objectives of the survey.
- Furthermore, it provides details and finally presents the results and evaluates the questionnaire.
+ Furthermore, it provides details regarding the contents of the survey and finally presents the results and evaluates the questionnaire and how they have influenced our further app elaborations.
 
 
 %============================================
@@ -49,7 +48,7 @@ In the following we present the structure of our questionnaire and the function 
 	\item \textit{Anti-Phishing App} This section asks the user for his preferences regarding an anti-phishing education app.
  With the aid of a Likert scale he is requested to assess, for example, whether the would like having a game with a fish, whether he finds a text-based approach appropriate, or whether he would have fun with a question-answer (quiz) game.
 
-	\item \textit{Further Survey Progress} In this part of the survey the user can provide us his e-mail address in case he wants to get information about the further progress of the survey or if he would like to test the app.
+	\item \textit{Further Survey Progress} In this part of the survey the user can provide his e-mail address in case he wants to get information about the further progress of the survey or if he would like to test the app.
 
 \end{enumerate}
 
@@ -69,12 +68,12 @@ In total 251 persons participated in our survey.
 
 \end{description}
 
-\subsubsection{Filtering for Evaluation}
+\subsubsection{Select Targeted Participants for Evaluation}
 
 \autoref{table:prestudy_filter} summarizes what kind of answers we used in order to exclude participants from the survey who do not fit into our target group.
 \begin{table}[hHtbp]
 \centering
-    \begin{tabular}{ | p{5cm} | p{10cm} |}
+    \begin{tabular}{ | p{4.5cm} | p{10cm} |}
     \hline\textbf{Question} & \textbf{Filtering}  \\  \hline
 		\hline\  Age & We consider all adults ranging from 18 - 65 years.
  \\
@@ -120,7 +119,7 @@ In total 251 persons participated in our survey.
 \end{table}
 
 In the succeeding section we present and evaluate the results of the study.
- With the filtering above we had 169 remaining participants who were considered for the evaluation.
+ With the filtering above we had 169 remaining participants matching our target group and thus were considered for the evaluation.
 
 %============================================
 \subsection{Results and Evaluation}
@@ -154,14 +153,14 @@ The study yielded interesting results which should be considered when designing 
  88.76\% of the smartphone owners use their e-mail application on the smartphone, which is still a high percentage.
  As we have previously mentioned in \autoref{s:attack_channels}, e-mail is a common attack channel for phishing attempts.
  Consequently, all users of e-mail applications, including webmail, on mobile phones are potentially endangered by phishing attacks.
- The same applies to participants using browsers.
- A common way to trick users to disclose their confidential information is the use of fake websites.
- These websites can be reached by clicking on a link in an e-mail, SMS, in online social network, or instant messaging systems as well as by simply surfing on the Internet.
+ The same threat of phishing applies to participants using browsers.
+% A common way to trick users to disclose their confidential information is the use of fake websites.
+% These websites can be reached by clicking on a link in an e-mail, SMS, in online social network, or instant messaging systems as well as by simply surfing on the Internet.
  About 80\% of all considered participants make use of desktop or smartphone browsers.
  Furthermore, it is conspicuous that banking is far less used on smartphones compared to desktop computers.
  While about 74.56\% of the participants make use of online banking on the desktop computer, only 26.63\% use it on their smartphones, which is still a quarter of the participants.
-	The question to ask here is if these users utilize the browser for online banking or if they use apps provided by their bank.
- Regardless of the answer to this question, these users might be more likely to react to phishing e-mails on their smartphone, which claim to come from their bank, compared to other users who manage their financial arrangements on a desktop computer and thus are less likely to access a phishing website, cf. \autoref{s:antiphishing_on_smartphone}. To sum it up, all the listed categories of applications are used by the participants, on their smartphones as well as on their desktop computers.
+	The question to ask here is if these users utilize the browser for online banking or if they use dedicated apps provided by their bank.
+ Regardless of the answer to this particular question, these users might be more likely to react to phishing e-mails on their smartphone, which claim to come from their bank, compared to other users who manage their financial arrangements on a desktop computer and thus are less likely to access a phishing website, cf. \autoref{s:antiphishing_on_smartphone}. To sum it up, all the listed categories of applications are used by the participants, on their smartphones as well as on their desktop computers.
  For this reason, all of these application categories should be reflected in the choice of the example URLs for the final app.
  For future work, one could argue to put the focus on URLs from specific categories (also those which were not considered for the study), depending on the usage distribution.
 
@@ -198,7 +197,7 @@ The study yielded interesting results which should be considered when designing 
  The users agree (97.04\%) that especially the e-mail service is endangered by phishing.
  Also they see the browser (70.41\%), online banking (83.43\%) as well as social networks (74.56\%) as endangered.
  Still about 40\% consider various media (audio and video) services as well as online games as endangered.
- These services are in fact not targeted as often as other services on the Internet, however they are potential targets and should be communicated to the user, for example, with the aid of the choice of the URLs to decide on.
+ These services are in fact not targeted as often as other services on the Internet, however they are potential targets and should be communicated to the user with the aid of the choice of the URLs to decide on, for example.
 
 	\item[Data endangered by phishing] \autoref{fig:endangered_data} outlines the results of this question and illustrates that the participants agree that any of the listed kinds of data is potentially endangered by phishing attacks.
  90.53\% of the participants expressed that login data is endangered by phishing.
