@@ -544,6 +544,11 @@ All other participants received the spoofed e-mail.
 Phishing URLs are of the following kind in this level: ``http://www.ebay.de.phisher.com/login''.
 We had done this intentionally, however maybe the app could in fact start with for example nonsense attacks or just reduce the number of samples in this level.
 
+Also some users suggested us to visually distinct new learning content from repetition so overflying the information part becomes easier. 
+We had already tried that by displaying a warning sign every time a new attack was introduced.
+However, after this sign there still was some repetition occasionally.
+Therefore, the emphasis of new and relevant learning content in the lesson parts should be improved in future work.
+
 Another participant noted that the repeating sentences ``Very good. You are now a bit safer'', for example, when the user correctly identified a phish, were kind of repetitive and not motivating enough. This is ultimately related to our issue with the Law~of~Effect in \autoref{s:learning_principles}.
 There we stated that the texts and icons of the app should vary according to the user's performance and the degree of difficulty in order to achieve higher and better positive feelings.
 This is an additional point which is worth to consider for future work.
@@ -571,7 +576,23 @@ To make the app's outer appearance more appealing design aspects could be consid
 Comprehensibility is of major importance for our app. Each level starts with a lesson on a certain way phishers make use of in order to delude people. These lessons aim to educate the user by describing those phishing attempts. Hence, it is of utter importance that our explanations are both thorough as well as comprehensible. After we had conducted user tests and included their corresponding valuable feedback (cf.\autoref{s:pilot_study}) and also received good feedback from the final study (cf.~\autoref{s:further_exploration}), we now want to assess the comprehensibility of our texts with the aid of a statistical method. Several approaches to assess the readability of a given text exist~\cite{Gun,citeulike:7369187}. These approaches consider, among other details, the average word and sentence length and therefore are language dependent and usually are designed for the English language. However, the Flesch-Reading-Ease~\cite{citeulike:7369187} is a legibility metric that outputs a numeric indication for the readability of the input text and was also adjusted to operate with the German language by Toni Amstad~\cite{amstad1978verstaendlich}. The readability of a German text is computed as follows, where $\operatorname{ASL}$ represents the average sentence length and $\operatorname{ASW}$ the average number of syllables per word:
 $$\operatorname{FRE_{German}} = 180-\operatorname{ASL}-(58.5\times\operatorname{ASW}$$
 Several auxiliary tools exist that take a regular text as their input and return a legibility index as their output~\cite{leichtlesbar, stilversprechend,fleschindexde}. All of these tools delivered different scores because they obviously had varying algorithms to determine syllables, sentences and even word boundaries.
-Therefore, we approached as follows: First, we took the explanation part of each level as the input for all of the three tools. Second, we extracted the amount of sentences, words, and syllables from the returned values, as depicted in~\autoref{TABELLE}. We did not rely on the returned legibility indexes, because the tools seemed to use slightly different formulas. Third, with the extracted information we were able to compute the German FRE index ourselves in a consistent way through all of the three tools. Ultimately, we derived a final index value of 62 by averaging the resulting index values of each tool. Given a scale from 0 to 100, where an index of up to 30 indicates an academic level and 90 and above is considered easy to understand, an index of 62 is considered as reasonably comprehensive for teenagers~\cite{amstad1978verstandlich}. Regarding our target group, this is a good result and confirms the comprehensibility of our explanations also statistically.
+Therefore, we approached as follows: First, we took the explanation part of each level as the input for all of the three tools. Second, we extracted the amount of sentences, words, and syllables from the returned values, as depicted in~\autoref{table:legibillity_index}. We did not rely on the returned legibility indexes, because the tools seemed to use slightly different formulas. Third, with the extracted information we were able to compute the German FRE index ourselves in a consistent way through all of the three tools. Ultimately, we derived a final index value of 62 by averaging the resulting index values of each tool. Given a scale from 0 to 100, where an index of up to 30 indicates an academic level and 90 and above is considered easy to understand, an index of 62 is considered as reasonably comprehensive for teenagers~\cite{amstad1978verstandlich}. Regarding our target group, this is a good result and confirms the comprehensibility of our explanations also statistically.
+
+\begin{table}[hHtbp]
+\centering
+
+    \begin{tabular}{| 1 | 1 | 1 | 1 |}
+    \hline
+     &\textbf{Leichtlesbar.ch} &\textbf{Stilversprechend.de} &\textbf{Fleschindex.de}\\ \hline
+    \textbf{# Sentences} 	&426	 &604	 &400   \\ \hline
+    \textbf{# Words} 		&4616	  &4760 	&4762 \\ \hline
+    \textbf{# Syllables} 	&8305  	&8658 	&9235 \\ \hline
+    \textbf{Legibility Index} &64  	&66 	 	&55 \\ \hline
+    \end{tabular}
+    \caption{Sentences, words and syllables of our texts outputted by different tools~\cite{leichtlesbar, stilversprechend,fleschindexde}}
+    \label{table:legibillity_index}
+    
+\end{table}
 %===========================================
 \subsection{Discussion}
 %===========================================
