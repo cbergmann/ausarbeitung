@@ -92,7 +92,8 @@ Next, the gift certificate is raffled.
 
 
 \begin{figure}[hHtbp]
-\includegraphics[width=0.8\textwidth]{study_structure.pdf}%
+\centering
+\includegraphics[height=0.9\textwidth]{study_structure.pdf}%
 \caption{Our study structure}%
 \label{fig:study_structure}%
 \end{figure}
@@ -174,27 +175,27 @@ Afterwards, we illustrate you the challenges we had to face when interpreting th
 \begin{description}[leftmargin=0cm]
 	\item[Marking Interpretation Examples] As aforementioned, we categorized the possible markings of users into favicon, padlock, content, scheme, host, domain (substring), and URL in general.
 \autoref{fig:content} and \autoref{fig:padlock}, for example, illustrate samples where the content or the padlock of a website was marked.
-\autoref{fig:m_domain} and \autoref{m_domain_substring} depict examples where the markings were interpreted as domain and domain substring.
+\autoref{fig:m_domain} and \autoref{fig:m_domain_substring} depict examples where the markings were interpreted as domain and domain substring.
 A sample where the host is marked is illustrated in \autoref{fig:m_host}.
-And finally, \autoref{m_url_02} shows an example of a marking (subdomain) which is coded as URL in general. 
+And finally, \autoref{fig:m_url_02} shows an example of a marking (subdomain) which is coded as URL in general. 
 
 	\item[Interpretation Problem Examples] While assessing and digitalizing our data we had to face some interpretation problems which we exemplify in the following.
 In such cases we had no choice but trying to interpret the samples as objectively as possible.
-\autoref{m_content_or_host}, for instance, shows a marking where the circle includes the content (youtube logo) as well as the host. 
+\autoref{fig:m_content_or_host}, for instance, shows a marking where the circle includes the content (youtube logo) as well as the host. 
 For this sample, we decided to code this marking as host.
-The next examples in \autoref{m_domain_or_not} shows a marking where a subdomain and the domain is marked. 
+The next examples in \autoref{fig:m_domain_or_not} shows a marking where a subdomain and the domain is marked. 
 When we faced examples like this we decided to code it as domain in case a subdomain is only partially marked, so that there is an indication that the user just did not make his markings clear enough.
 If the subdomain is obviously marked intendedly, i.e. clearly inside the circle, this kind of sample is coded as URL.
 In this case we see that the subdomain is inside the circle, for this reason we coded this sample as URL.
 A sample we came across often is a participant making two markings, even though we explicitly asked to mark only one area.
 In these cases we decided as follows: in case a marking is obviously striking due to a thicker circle, for instance, the more emphasized area is chosen for coding.
 Should both markings be kind of equal, we joint the markings and decided based on that.
-In \autoref{m_url} a participant marked the scheme and the host separately. 
+In \autoref{fig:m_url} a participant marked the scheme and the host separately. 
 We cannot observe any emphasis on one of the markings.
 Therefore, we chose to code this sample as URL.
 Finally, there were samples where the user correctly identified a phishing website.
 However, instead of marking the domain as reason, what we expected from the participants, some users marked the attacked part instead.
-\autoref{m_attack_recognized} illustrates such an example.
+\autoref{fig:m_attack_recognized} illustrates such an example.
 In fact, this reason is justified. 
 Yet, we had to code such samples as URL since there is no clear way of defining the code for recognizing the attacked part of a URL.
 \end{description}
