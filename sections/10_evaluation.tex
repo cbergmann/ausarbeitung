@@ -17,9 +17,10 @@ To reach potential participants we proceeded as follows:
 
 \begin{description}[leftmargin=0cm]
 \item[Flyer]  We prepared a flyer with the most important information. 
-In this flyer we told the user that an learning app about Internet security in general will be tested. 
+In this flyer we told the user that a learning app about Internet security in general will be tested. 
 We did not mention the specific topic of phishing because we did not want potential participants to read up about it in advance.
-%todo: ethical questionable? nein weil aufgeklärt am anfang der Studie.
+One might question our approach of not telling the user what exactly the study is about.
+However, we do not consider this an issue since the user was told about the exact topic at the beginning of the study.
 Copies of this flyer were hung on blackboards of student dorms and some other buildings at the university.
 \item[E-Mail to Professors] We additionally distributed the flyer to a number of professors in our university and asked them to forward it to their students and/or teaching stuff.
 We did not forward the flyer to computer science professors or the like since their students and stuff most likely does not match our target group.
@@ -34,6 +35,9 @@ Note that we had to split the user study into groups of 4 participants each due 
 Moreover, our flyer originally said that the best participant of each group would win the gift certificate.
 However, we recognized that the winning chance might not be equal for every participant, for example, due to varying expertise or other possible technical problems, such as app crashes.
 For this reason we asked the participants at the beginnig of each study whether it was okay for them to raffle the gift certificate instead.
+Here again it is ethically questionable to award only one of the participants with a gift certificate while others might come away empty-handed.
+To address this problem we decided to offer cookies and other kinds of sweets.
+Additionally, the participant who performed best was awarded with a ``Golden Anti-Phish Certificate'', all other participants received a ``Silver Anti-Phish Certificate''.
 
 %===========================================
 \subsection{Study Design}
@@ -46,7 +50,6 @@ A major drawback of the withing-subject design, however, is the learning effect.
 We are not able to clearly distinguish whether a behavior change after playing the app is a result of the app intervention or whether the paricipants just have overthought their decisions on questions they had replied to before.
 Yet, our results showed that this learning effect can more or less be ignored (cf. \autoref{s:hypanalysis}).
 \autoref{fig:study_structure} illustrates the structure of our study, which we explain in the following: 
-%todo: ethical discussion: nur einer gewinnt ein Gutschein.
 \begin{enumerate}
 	\item \textit{Informed Consent} Before starting the user study the participants have to sign an informed consent.
 This form briefly explains what the study is about and clarifies that the participant is not obliged to finish the study.
@@ -100,6 +103,12 @@ Next, the gift certificate is raffled.
 \end{figure}
 
 \subsubsection{Limitations}
+We have decided to conduct a study which compares the users' performance before and after playing our educational app.
+Our study design has some limitations we were not able to address for several reasons.
+This section discusses these limitations.
+
+\begin{description}[leftmargin=0cm]
+\end{description}
 %TODO:Limitiations
 %Keine Wiederholg nach längerer Zeit
 %Verhaltensänderung wegen Studiensituation
@@ -132,16 +141,16 @@ In the previous section we stated our hypotheses and how we decided to measure t
 Here, we provide an overview of our coding for possible markings in the website-surveys.
 These codings are relevant for the measurement of our hypothesis 3.
 
-\begin{description}[leftmargin=0cm]
-	\item[None] Occasionally, participants did not mark or encircle anything of the screenshot. In our raw data this is coded as none.
-	\item[Favicon or Padlock] The marking of a favicon or padlock is trivially coded accordingly.
-	\item[Content] If anything else than the URL itself, a part of the URL, a favicon, or a padlock is marked then this is coded as content.
-	\item[Scheme] If the scheme or a part of the scheme in a URL is marked, this is coded as scheme.
-	\item[Host] Marking the host results in an according coding.
-	\item[Domain] In case a participant marks a domain or the substring of a domain this is coded as domain or domain substring accordingly.
+\begin{enumerate}[leftmargin=0cm]
+	\item\textit{None} Occasionally, participants did not mark or encircle anything of the screenshot. In our raw data this is coded as none.
+	\item\textit{Favicon or Padlock} The marking of a favicon or padlock is trivially coded accordingly.
+	\item\textit{Content} If anything else than the URL itself, a part of the URL, a favicon, or a padlock is marked then this is coded as content.
+	\item\textit{Scheme} If the scheme or a part of the scheme in a URL is marked, this is coded as scheme.
+	\item\textit{Host} Marking the host results in an according coding.
+	\item\textit{Domain} In case a participant marks a domain or the substring of a domain this is coded as domain or domain substring accordingly.
 For the measurement of hypothesis 3, domain as well as domain substring markings are considered domains.
-	\item[URL] All other markings are coded as URL and measured as such.
-\end{description}
+	\item\textit{URL} All other markings are coded as URL and measured as such.
+\end{enumerate}
 
 
 %===========================================
@@ -316,7 +325,7 @@ Yet, we had to code such samples as URL since there is no clear way of defining 
 \label{fig:hyp3results}
 \end{figure}
 
-\begin{description}
+\begin{description}[leftmargin=0cm]
 \item[Hypothesis 1]
 \autoref{fig:hyp1results} shows the results of our study according to hypothesis 1. One can clearly see that the majority of the users identified more URLS correctly after using the app than before. While most participants correctly identified 8 out of 16, i.e. 50\%, websites before they played the app, the majority gave correct answers to 22 out of 24 websites afterwards, i.e. 91.67\%. One could argue that this increase is based on the fact that the examples are mainly the same. \autoref{fig:hyp1resultsanew} however shows that the user also got most of the new URLs right. Therefore we assume that we can furthermore ignore this learning effect.
 %TODO:wilcoxon 
