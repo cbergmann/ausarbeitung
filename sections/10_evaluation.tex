@@ -348,7 +348,7 @@ In fact, wer had to sort out two part two users for the results and analyses of 
 
 \begin{figure}
 \centering
-\subfigure[Before]{\includegraphics[width=0.45\textwidth]{hyp3b.pdf}}
+\subfigure[Before]{\label{fig:domain_before}\includegraphics[width=0.45\textwidth]{hyp3b.pdf}}
 \subfigure[After]{\includegraphics[width=0.45\textwidth]{hyp3a.pdf}}
 \caption{Domain marked}
 \label{fig:hyp3results}
@@ -380,24 +380,32 @@ Also our app empathizes the importance of the URL by putting the main focus on i
 We have decided against doing statistical test on this hypothesis.
 We believe it will most likely be rejected because the change from before to after is not very high.
 \item[Hypothesis 3]
-There is a general problem with the question in the websites-before-survey.
-We were not able to clearly ask the user to mark the Domain when it was the base of their decision because we would have then primed them to look at the URL or even the Domain.
-This would have influenced the results of Hypothesis 2.
-Therefore a user might mark the whole URL even if his decision was based only a small part (e.g. the Domain) of the URL.
-We where aware of this problem beforehand but saw no other option than to formulate the question in such an open form.
-Because of this we can not clearly identify what their main source of decision was in the before survey.
-Afterwards the user knew that we wanted them to mark the domain.
+There is a general problem with one question in the websites-surveys.
+In the before survey we were not able to clearly ask the user to mark the domain when it was the base of his decision because we would have then primed them towards looking at the URL or even at the domain.
+This would have influenced the results of hypothesis 2.
+Since we could not formulate this question clearly, a user might have marked the whole URL even if his decision was based only on a small part (e.g. the domain) of the URL.
+Consequently, we were not able to clearly identify what the users' main source of decision was in the before survey.
+We were aware of this problem beforehand but saw no other option than formulating the question in such an open form.
+Afterwards, the user knew that they were expected to mark the domain.
 This can be interpreted as a change of question even if the literal question did not change.
-Therefore we can not apply any statistical tests on this hypothesis.
-Nevertheless none of the users marked the domain in most cases beforehand, i.e. 7 domains out of 16 URLs where marked at most by only one user.
-%TODO:Host marked instead of domain
+Therefore, we cannot apply any statistical tests on this hypothesis.
+Yet, we want to have a look at the results.
+None of the users marked the domain in most cases beforehand, in particular, 7 domains out of 16 URLs where marked at most by only one user, cf. \autoref{fig:domain_before}.
 \begin{figure}
 \centering
 \includegraphics[width=0.45\textwidth]{markings.pdf}
-\caption{Marked parts of the screenshot before and after.}
+\caption{Marked parts of the screenshot before and after}
 \label{fig:markings}
 \end{figure}
-\autoref{fig:markings} shows the distribution of the marked areas before and after. One can clearly see that afterwards most of the users marked the domain. However we are not able to compare that to the before values because of the changed question.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.45\textwidth]{legitimate_markings_after.png}
+\caption{Marked URL parts of legitimate URLs}
+\label{fig:legitimate_markings_after}
+\end{figure}
+\autoref{fig:markings} shows the distribution of the marked areas before and after playing our app. Obviously, afterwards most of the users marked the domain. However we are not able to compare that to the before values because of the changed question.
+Another interesting observation is that quite a number of participants marked the complete host (instead of the domain) in case of legitimate URLs, cf.~\autoref{fig:legitimate_markings_after}. One explanation for this might be that we did not ask the user to mark the domain of legitimate URLs except in level 1.
 \item[Hypothesis 4]
 According to the answers that the users gave in the After survey SUS section (\autoref{s:after_survey}) we calculated a SUS of 83.1. This is above 68 which means that we can consider our app above average usable.
 \end{description}
