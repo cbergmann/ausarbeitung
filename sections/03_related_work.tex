@@ -4,18 +4,23 @@
 \section{Related Work}
 %*******************************************
 \label{s:related_work}
-In the previous section we have introduced the different classes of learning contents and communication media. 
+In the previous section we introduced the different classes of learning contents and communication media. 
 Furthermore, we have decided to go for the game/quiz based approach while focusing on URL based knowledge. 
 This section summarizes concrete examples of previous work on anti-phishing education.
-For each class we have previously introduced at least one example is illustrated. 
+For each class we previously introduced at least one example is illustrated. 
 We especially elaborate on the game and URL based approach as this is the path we take. 
 Moreover, we state in which way our work is to be expands on previous work. 
 
 %...............................................................................................................
 \subsection{Game and URL Based Approaches}
 %...............................................................................................................
-Anti-Phishing Phil~\cite{sheng2007antiphishingphil} is a game based approach. 
-The three objectives of this game are the following: 
+Several work has been done in this area~\cite{arachchilage2011designing,arachchilage2012designing}. 
+However, most approaches are similar to Anti-Phishing Phil~\cite{sheng2007antiphishingphil} the approach we focus on in this section.
+Anti-Phishing Phil is a game based approach focusing on URL based knowledge. 
+We will extensively discuss this game since the approach we envision resembles Anti-Phishing Phil the most.
+
+\begin{description}[leftmargin=0cm]
+	\item[Game Design and Rules] The three objectives of this game are the following: 
 (1) learn to detect phishing URLs, (2) learn where to look for indications in browsers for trustworthy/untrustworthy websites, and (3) learn to use search engines to find legitimate websites. 
 The major focus, however, is set on the detection of phishing URLs. 
 The main character of the game is a little fish, named Phil, who has to grow to a big fish by eating worms. 
@@ -40,16 +45,18 @@ First, the user gets direct feedback during the game, whether the answer he has 
 Second, the user has the possibility to receive help in case he needs it. 
 In this case, Phil's experienced father will give a tip. 
 Third, at the end of each round a score sheet is displayed, which summarizes the user's answers, whether they were correct or wrong, and why they were correct or wrong. 
-Finally, there are anti-phishing tips in-between the rounds. \newline
-To evaluate the effectiveness of the game the authors conducted a between-subjects experiment with three training conditions, represented by three groups: 
+Finally, there are anti-phishing tips in-between the rounds.
+\item[Game Evaluation] To evaluate the effectiveness of the game the authors conducted a between-subjects experiment with three training conditions, represented by three groups: 
 (1) existing training material, e.g. from eBay or Microsoft, (2) anti-phishing tutorials which were created based on the game, and (3) the game itself. 
 Each group had to decide on ten websites (in total 20) about their authenticity before and after the training step. 
 The results showed that the participants in the game condition performed better than those in the other two conditions. 
+\item[Positive Sides] 
 All in all, we believe that the approach is a good step towards user education and features many good aspects. 
 In the first place, the game based approach is an attractive incentive for the user to be educated. 
 Furthermore, the training messages are kept short and simple. 
 Finally, the training messages, especially the ones of help during the game and the score sheet after each round are very valuable. 
-Due to time restrictions we cannot integrate those kind of messages. \newline
+Due to time restrictions we cannot integrate those kind of messages. 
+\item[Downsides and Our Contributions] 
 On the other hand, we believe that this approach has some flaws and thus is not optimal for user education. 
 Even though using a fish as main character for this game is a funny idea, we do not think that this is an appropriate solution for adults. 
 This is also reflected by the results of our phishing survey, cf. \autoref{s:survey}. 
@@ -63,12 +70,13 @@ These kind of messages are susceptible to misinterpretation.
 Another downside we see, which is ultimately related to the vague formulations, is that the user is not concretely explained how he has to parse the URL in order to make healthy decisions on the authenticity of such. 
 Here again he is only told that the most important part of the URL is between the "https://" and "/" and that the name of the website is the text right before the "/". 
 In our point of view this is a imprecise phrasing and there is a lack of emphasizing the importance of the domain, which we do in our solution. 
-Finally, the game does not cover some spoofing techniques, which are still relevant in our opinion and thus is covered by us (cf. \autoref{s:url_categories}). 
+Finally, the game does not cover some spoofing techniques, which are still relevant in our opinion and thus are covered by us (cf. \autoref{s:url_categories}). 
 For example, the difference between http and https is not introduced, as well as the fact that https websites can also be phishing websites. 
 Furthermore, the game does not explicitly mention that the domain name, the host or even the entire URL can be part of the path to fool the user. 
 Finally, there are different ways of making use of deceptive domains, which were not explicitly covered by Anti-Phishing Phil. 
 For example, homograph attacks (cf. \autoref{s:url_categories}), typos and scrambled letters should be distinguished in order to exemplify how mean and hard to detect such URL spoofing techniques can be. \newline
-More work has been done in this area. However, most approaches are similar to Anti-Phishing Phil~\cite{arachchilage2011designing,arachchilage2012designing}.
+\end{description}
+
 
 %...............................................................................................................
 \subsection{Game/Quiz and E-Mail Based Approaches}
