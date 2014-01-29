@@ -159,7 +159,7 @@ In the previous section we stated our hypotheses and how we decided to measure t
 Here, we provide an overview of our coding for possible markings in the website-surveys.
 These codings are relevant for the measurement of our hypothesis 3.
 
-\begin{enumerate}[leftmargin=0cm]
+\begin{enumerate}
 	\item\textit{None} Occasionally, participants did not mark or encircle anything of the screenshot. In our raw data this is coded as none.
 	\item\textit{Favicon or Padlock} The marking of a favicon or padlock is trivially coded accordingly.
 	\item\textit{Content} If anything else than the URL itself, a part of the URL, a favicon, or a padlock is marked then this is coded as content.
@@ -359,11 +359,11 @@ In fact, wer had to sort out two part two users for the results and analyses of 
 \autoref{fig:hyp1results} shows the results of our study according to hypothesis 1. One can clearly see that the majority of the users identified more URLs correctly after using the app than before. While most participants correctly identified 8 out of 16, i.e. 50\%, websites before they played the app, the majority gave correct answers to 22 out of 24 websites afterwards, i.e. 91.67\%. One could argue that this increase is based on the fact that the examples are mainly the same in the website-survey after, i.e. the reason for their better performance is based on learning effects. \autoref{fig:hyp1resultsanew} however shows that the user also gave correct answers to most of the new URLs. Therefore, we assume the learning effects are negligible.
 In order to affirm our hypothesis we decided to apply the onesided Wilcoxon signed-rank test~\cite{wilcoxon1945individual} with our 16 samples from the website-survey before and the same 16 samples from the website-survey after.
 Since we consider the learning effects negligible, we do not apply an alternative test against the 24 after URLs.
-Our null hypothesis is $H_{0} = x_{1} >= x_{2}$ and the alternative hypothesis $H_{1}: x_{1} < x_{2}$, where x$_{1}$ represents the number of URLs which were correctly answered before playing the app and x$_{2}$ represents the number of URLs which were correctly identified after playing the app.
+Our null hypothesis is $H_{0}: x_{1} >= x_{2}$ and the alternative hypothesis $H_{1}: x_{1} < x_{2}$, where x$_{1}$ represents the number of URLs which were correctly answered before playing the app and x$_{2}$ represents the number of URLs which were correctly identified after playing the app.
 We computed the positive and negative rank-sums of $W_{+} = 141.5$ and $W_{-} = 11.5$.
 The test statistic $w$ is the minimum of $W_{+}$ and $W_{-}$, hence $w = 11.5$.
 As we chose $\alpha = 5\%$ as significance level and had 17 participants this results in a critical value of $41$.
-As our test value $w = 11.5 < 41$ the nullhypothesis can be rejected and thus the alternative $H_{1}$ is accepted.
+As our test value $w = 11.5 < 41$ the null hypothesis can be rejected and thus the alternative $H_{1}$ is accepted.
 Consequently, after playing the app the participants gave more correct answers than before.
 We are aware that we cannot fully rule out the possibility that there might be kind of learning effect.
 Yet, we are confident that these results cannot entirely be reduced to learning effects.
@@ -573,8 +573,9 @@ To make the app's outer appearance more appealing design aspects could be consid
 %--------------------------------------------------------
 \subsubsection{Legibility Index}
 %--------------------------------------------------------
+\label{s:legibility_index}
 Comprehensibility is of major importance for our app. Each level starts with a lesson on a certain way phishers make use of in order to delude people. These lessons aim to educate the user by describing those phishing attempts. Hence, it is of utter importance that our explanations are both thorough as well as comprehensible. After we had conducted user tests and included their corresponding valuable feedback (cf.\autoref{s:pilot_study}) and also received good feedback from the final study (cf.~\autoref{s:further_exploration}), we now want to assess the comprehensibility of our texts with the aid of a statistical method. Several approaches to assess the readability of a given text exist~\cite{Gun,citeulike:7369187}. These approaches consider, among other details, the average word and sentence length and therefore are language dependent and usually are designed for the English language. However, the Flesch-Reading-Ease~\cite{citeulike:7369187} is a legibility metric that outputs a numeric indication for the readability of the input text and was also adjusted to operate with the German language by Toni Amstad~\cite{amstad1978verstaendlich}. The readability of a German text is computed as follows, where $\operatorname{ASL}$ represents the average sentence length and $\operatorname{ASW}$ the average number of syllables per word:
-$$\operatorname{FRE_{German}} = 180-\operatorname{ASL}-(58.5\times\operatorname{ASW}$$
+$$\operatorname{FRE_{German}} = 180-\operatorname{ASL}-(58.5\times\operatorname{ASW})$$
 Several auxiliary tools exist that take a regular text as their input and return a legibility index as their output~\cite{leichtlesbar, stilversprechend,fleschindexde}. All of these tools delivered different scores because they obviously had varying algorithms to determine syllables, sentences and even word boundaries.
 Therefore, we approached as follows: First, we took the explanation part of each level as the input for all of the three tools. Second, we extracted the amount of sentences, words, and syllables from the returned values, as depicted in~\autoref{table:legibillity_index}. We did not rely on the returned legibility indexes, because the tools seemed to use slightly different formulas. Third, with the extracted information we were able to compute the German FRE index ourselves in a consistent way through all of the three tools. Ultimately, we derived a final index value of 62 by averaging the resulting index values of each tool. Given a scale from 0 to 100, where an index of up to 30 indicates an academic level and 90 and above is considered easy to understand, an index of 62 is considered as reasonably comprehensive for teenagers~\cite{amstad1978verstandlich}. Regarding our target group, this is a good result and confirms the comprehensibility of our explanations also statistically.
 
