@@ -79,7 +79,7 @@ As a matter of fact, these techniques are not flawless.
 In the following some common approaches are briefly summarized.
 
 \begin{description}[leftmargin=0cm]
-	\item[Spam filters] Commonly, the phisher sends out a tremendous volume of emails to random users which contain links to fake websites.
+	\item[Spam filters] Commonly, the phisher sends out a tremendous volume of e-mails to random users which contain links to fake websites.
 According to Dr. Dobb's, for example, every day 500 million phishing e-mails arrive in user inboxes~\cite{drdobb2012email}.
  There the users are lured to disclose their personal data.
  Consequently, one possible countermeasure to stop phishing is to filter these e-mails before they even reach the receiver.
@@ -166,20 +166,37 @@ There are several reasons why we chose to educate users on the smartphone.
  As a consequence there is less space on the screen.
  Many browsers, for example, generally hide their address bars due to the lack of space.
  With the address bar, the URL and other potential security indicators are hidden.
+The release of iOS7 featured a key step towards better transparency for the user.
+The Safari browser displays the host (except for ``www'' and ``m'') instead of the website title or the URL itself.
+This might make phishing attacks more difficult to succeed, assumed that users look at and assess this part.
+Additionally, in portrait mode the host is displayed even when scrolling down the page, i.e. this relevant information is always visible.
+An interesting question to ask here is whether and how many will follow such an approach.
+Currently, Android does not support such a functionality. 
+Yet, displaying the host instead of the complete URL or the title is not sufficient to help users detect phishing.
+There is still a need for URL parsing comprehension for these purposes.
 	\item[Distraction Caused by Mobility] There is also the fact that users often use their smartphones while on the move, for example, when walking or  during a train or a bus ride.
  These circumstances include distractions from the environment which are unavoidable.
  These distractions obviously will influence the user's attentiveness.
  Hence, smartphone users are even more vulnerable to phishing attacks than the traditional desktop user.
  This is also indicated by a report of 2011~\cite{trusteer2011}, which says that mobile users are three times more likely to access phishing websites than desktop users.
- This might also be influenced by the fact that mobile mail clients effectively provide no way to check the validity of a incoming mail.
+ This might also be influenced by the fact that mobile e-mail clients effectively provide no way to check the validity of an incoming e-mail.
+The potential distraction raises the question whether it has an impact on the user's education and retentiveness.
+According to the principles of learning (cf.~\autoref{s:learning_principles}) it most likely has an impact on the learning performance.
+Yet, we believe that our exercise and repetition scheme (cf.~\autoref{s:learning_principles}) helps users to internalize the learning content despite slight distractions.
+For further research it would be interesting to test how significant distractions impact the learning results with our app.
 	\item[High Number of Smartphone Users] In addition, given that the majority of the people use a smartphone on a regular basis in Spain, Germany, Italy, France and the UK~\cite{smartphoneusage}, there is a need for the protection of smartphone users.
 	\item[Benefits of Education on the Smartphone] Educating the user on the smartphone provides two major benefits.
  First, the user can use the app on the move.
  Thus, the app is accessible outside of the user's desktop environment.
  The app can be used during train or bus rides, while waiting for a friend or while waiting for any other appointment.
- The app can be started and continued any time as a sideline or just to bridge time, so that probably more users would be willing to use it.
- Second, it is easy to transfer the knowledge of smartphones to desktop computers as the screen is bigger and the URL is easy to find.
- Transferring knowledge from desktop computers to smartphones, on the other hand, is not that simple.
+ The app can be started and continued any time as a sideline or just to bridge time.
+Despite the fact that we mainly aim at motivated users who want to do something about their unknowingness (cf.~\autoref{s:target_group}) we hope that our mobile app might even reach more users.
+ Second, regarding several aspects we believe it is easier to transfer the knowledge of smartphones to desktop computers.
+For example, the parsing of a URL can be easily transferred from smartphones to desktop computers, as the screen is bigger and the URL is easier to find compared to smartphones.
+ Transferring knowledge from desktop computers to smartphones, on the other hand, raises more complicated issues.
+The parsing of a URL on a desktop computer, for example, cannot be easily transferred to smartphones.
+The user needs to know how to access the generally hidden access bar and how to view the complete URL.
+However, icons or security warnings are probably not easy to transfer in any direction since those differ significantly among devices, versions and browsers.
 \end{description} 
  
 %===========================================
@@ -203,7 +220,8 @@ As already indicated in the previous section the lack of a user's security aware
  Additionally, we want to make them aware that link texts cannot be trusted.
 Specifically, the user should be told that links do not necessarily point to the destination URL or website they display.
  This should happen at the beginning of the app so that the user realizes that the threat of the Internet is prevalent and that he needs to learn to protect himself.
- Furthermore, the user should practically experience these aspects and not only be told, since being told will not suffice to motivate the user to go on with the app (cf. Principle of Intensity in \autoref{s:learning_principles}).
+ Furthermore, we think it might help if the user practically experiences these aspects and is not only told about it.
+The practical experience is more likely to increase their engagement and hopefully lead to better knowledge retention and learning performance (cf. Principle of Intensity in \autoref{s:learning_principles}) 
  Moreover, besides technical solutions and increasing user awareness it is also important to give the user information so that they can detect phishing.
  Therefore, increasing the security awareness is a minor introductory part of the app.
  Our main focus for the app is the education of the user.
