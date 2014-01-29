@@ -3,8 +3,10 @@
 %*******************************************
 \label{s:background}
 The objective of this chapter is to provide the required background knowledge for our further design elaborations. 
-Afer providing some background to phishing in general we introduce the different phishing learning techniques. 
-For better readability and comprehensibility we divided the available techniques into the content, i.e. what exactly is the user told, and the used media, i.e. how is the user told something about this topic.
+We split this chapter into two parts.
+The first part deals with the term phishing in general which includes an encompassing definition of phishing, common phishing techniques, attack channels, variations of phishing, the scope of phishing we consider, followed by our definition of phishing we refer to in this work.
+In the second part we introduce different phishing learning techniques.
+For better readability and comprehensibility we divided the available learning techniques into the content, i.e. what exactly is the user told, and the used media, i.e. how is the user told something about this topic.
 
 
 %===========================================
@@ -21,12 +23,12 @@ Finally, we state our scope with respect to the term of phishing and provide our
 %............................................................................................................
 \label{s:phishing_def}
 The goal of this work is helping users to distinguish phishing websites from legitimate ones. 
- Since phishing is important in the scope of this work, we are going to define the term first~\cite{jakobsson2006phishing}. In fact, phishing is a term that is used by many people in different contexts. Therefore, the following definition is intendedly kept abstract in order to cover all possible scenarios of phishing. At the end of this chapter we will state our concrete definition of phsihing considered in this work.
+ Since phishing is important in the scope of this work, we are going to define the term first. In fact, phishing is a term that is used by many people in different contexts. Therefore, the following definition is intendedly kept abstract in order to cover all possible scenarios of phishing. At the end of this chapter we will state our concrete definition of phishing  considered in this work.
 
 \begin{center}
 \textit{``Phishing is the practice of obtaining confidential information from users and describes a form of identitfy theft.
  Targeted confidential information includes, but is not limited to, user names, passwords, social security numbers, credit card numbers, account information, and other personal information.
-''}
+''}~\cite{jakobsson2006phishing}
 \end{center}
 
 %............................................................................................................
@@ -36,12 +38,12 @@ The goal of this work is helping users to distinguish phishing websites from leg
 There are various possibilities how phishers can obtain users' confidential information.
  In the following we describe phishing techniques that can be distinguished~\cite{jakobsson2006phishing, phishingtechniques}.
 %Online Identity Theft: Phishing Technology, Chokepoints and Countermeasures.
- ITTC Report on Online Identity Theft Technology and Countermeasures
+% ITTC Report on Online Identity Theft Technology and Countermeasures
 %master_thesis/notes/phishing
 
 \begin{description}[leftmargin=0cm]
 	\item[Deceptive Phishing] In deceptive phishing social engineering plays a key role.
- Here, users are lured to disclose their confidential data directly to the phisher without being aware of it.
+ Here, users are deluded into disclosing their confidential data directly to the phisher without being aware of it.
  A typical scenario is the unsuspecting user receiving an e-mail from an institution he trusts.
  In fact, this e-mail is malicious and links to a fake website, where the phisher intends to steal the user's data by capturing the fields the user enters trustfully.
  Once the phisher obtains the user's data, he is able to impersonate the victim's identity and benefit from this.
@@ -56,21 +58,21 @@ There are various possibilities how phishers can obtain users' confidential info
  Another way is to make use of so-called web trojans, which appear when users intend to log in.
  While the user thinks he is logging in on a website of his trust, the entered information is actually transmitted to the phisher.
 
-	\item[DNS Based Phishing] This kind of phishing is also referred to as pharming and includes the manipulation of a system's host file or domain name system.
+	\item[DNS Hijacking] This kind of phishing is also referred to as pharming and includes the manipulation of a system's host file or domain name system.
  These kinds of tampering result in returning a fraudulent IP address for URL requests and thus leading the user to a malicious website, even though the URL of a legitimate website had been entered.
  As a consequence the unaware user enters his credentials into this fake website and the attacker obtains these and can misuse them.
  These attacks are almost impossible to detect for the user.
 
-	\item[Man-in-the-Middle Phishing] In this form of attack the phisher positions himself between the legitimate website and the user.
+	\item[Man-in-the-Middle Attack] In this form of attack the phisher positions himself between the legitimate website and the user.
  The user's data input is delivered to the phisher, where he stores the information and then forwards it to the legitimate website.
  Responses are also forwarded back to the user so that the interference of the phisher does not affect the user's interactions.
  The gained sensitive information can then be sold or misused in any other way.
  As everything works as usual for the user, it is very difficult for him to detect such an attack.
  
-	\item[Content Injection Phishing] Content injection phishing refers to the practice of embedding additional harmful content into legitimate websites.
+	\item[Content Injection] Content injection phishing refers to the practice of embedding additional harmful content into legitimate websites.
  This content can, for example, be malvolent code to log users' sensitive information and deliver the input to the phishing server.
- Well-known types of content injection phishing include, for example, cross-site scripting.
- Cross-site scripting vulnerabilities result from a web application's usage of content from external sources, such as search terms, auctions or user reviews of a product.
+ Well-known types of content injection phishing include, for example, cross-site scripting (XSS).
+XSS vulnerabilities result from a web application's usage of content from external sources, such as search terms, auctions or user reviews of a product.
  This type of data supply can be misused and instead of delivering the expected kind of data malicious scripts can be injected.
 
 	\item[Search Engine Phishing] Other phishing attempts involve search engines.
@@ -105,7 +107,7 @@ There are various possibilities how phishers can obtain users' confidential info
 %............................................................................................................
 \subsubsection{Phishing Attack Channels}
 %............................................................................................................
-These days several attack channels exist that can be exploited by phishers to reach their victims.
+Several attack channels exist that can be exploited by phishers to reach their victims.
  This section introduces possible attack channels~\cite{phishing2010ramazan, phishingtechniques}.
 \label{s:attack_channels}
 \begin{description}[leftmargin=0cm]
@@ -201,8 +203,8 @@ Now that we have restricted our understanding of phishing, the next section prov
 In the following we present a concrete definition which encompasses our understanding of phishing for the scope of this work:
 
 \begin{center}
-\textit{``Phishing is the practice of obtaining confidential information from users and describes a form of identitfy theft. This attack exploits a user's trust rather than system vulnerabilities. More specifically, the user is fooled into believing that he is communicating with a party he trusts and lured into divulging confidential data. This usually happens through phishing websites which look deceptively similar to the originals. Targeted confidential information includes, but is not limited to, user names, passwords, social security numbers, credit card numbers, account information, and other personal information.
-''}
+\textit{``Phishing is the practice of obtaining confidential information from users and describes a form of identitfy theft. This attack exploits a user's trust rather than system vulnerabilities. More specifically, the user is fooled into believing that he is communicating with a party he trusts and lured into divulging confidential data. This usually happens through phishing websites which look deceptively similar to the originals. Targeted confidential information includes, but is not limited to, user names, passwords, social security numbers, credit card numbers, account information.
+''}~\cite{jakobsson2006phishing}
 \end{center}
 
 %===========================================
@@ -235,10 +237,10 @@ The objective of this section is to introduce the different classes of learning 
  Indications for a phishing e-mail can be impersonal salutation, requesting personal and confidential information as well as exerting pressure and threatening the user with, for example, account closure.
  The benefit of detecting phishing attempts before even clicking on a link in an e-mail is that the user would not confirm the existence and active usage of his e-mail address to the phisher.
  More importantly, the user would not unknowingly download malicious software.
- The problem with the e-mail based approach is that detecting phishing e-mails by looking at their content becomes more and more difficult~\cite{microsoftphishing,spamfighter}. Even if today still many phishing e-mails exhibit the obvious characteristic of having no personal salutation or being urgent and threatening, we observe a growing number of phishing e-mails that do not make these mistakes and it is likely that these obvious hints will not remain in future.
+ The problem with the e-mail based approach is that detecting phishing e-mails by looking at their content becomes more and more difficult~\cite{microsoftphishing,spamfighter}. Even if today  many phishing e-mails exhibit the obvious characteristic of having no personal salutation or being urgent and threatening we observe a growing number of phishing e-mails that do not make these mistakes and it is likely that these obvious hints will not remain in future.
 
 	\item[URL Based Knowledge] Sending spoofed e-mails with links to fake websites is a common trick of phishers.
- On the target website then, the user is lured to disclosing his credentials.
+ On the target website the user is lured to disclosing his credentials.
  Thus, detecting such fake websites is another possibility to protect oneself against phishing.
  Here the user is taught to distinguish phishing URLs from legitimate ones~\cite{sheng2007antiphishingphil, arachchilage2012designing}. 
 Links to phishing websites are not only distributed by phishing e-mails.
@@ -284,7 +286,7 @@ This approach benefits from the so called ``teachable moment''.
 The moment the user realizes that he has almost become a victim to a phishing attack, he will be highly motivated to prevent this happening again and thus be highly receptive for input related to this topic.
  The teachable moment itself will not suffice to make the user stay on and consult the educational page, though.
  For example, there was a study in Germany to assess the effectiveness of CMU/APWG's landing page. 
- During the study they found that people just closed the window immediately after or shortly after landing on the educational page without reading on,  because they thought they were on the wrong website and were not aware that they landed on an educational site.
+ During the study the authours found that people just closed the window immediately after or shortly after landing on the educational page without reading on,  because they thought they were on the wrong website and were not aware that they landed on an educational site.
  Even if with an effective landing page, the missing positive feedback is a major flaw of this strategy in our opinion.
  The user is only notified in case of a mistake and not in case he has successfully discarded the simulated phishing e-mail.
  A further problem is raised with the implementation of such an approach.
