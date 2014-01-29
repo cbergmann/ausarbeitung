@@ -4,36 +4,38 @@
 %*******************************************
 \label{s:conclusion}
 
-This chapter provides a short summary of what we achieved in the scope of this thesis and presents an outlook on future work.
-
+This chapter provides a short summary of what we achieved in the scope of this thesis and some further concluding remarks.
+We also present a short list of recommendations regarding the design of security education games based on the lessons we have learned.
+Finally, we have a short outlook on future work.
 %===========================================
 \subsection{Conclusion}
 %===========================================
 The objectives of this thesis were twofold.
 First, we aimed at increasing users' security awareness so this may hopefully result in a change in their security-related behavior.
 Second, we focused on the education of users with regard to the detection of phishing URLs. 
-Our app is supposed to educate the user such that he obtains the required capability of correctly parsing URLs and identifying phishing websites.
-This capability will hopefully help him to protect himself against phishing.
+Our app is supposed train the user to achieve the required capability of correctly parsing URLs and thus identifying phishing websites.
+This capability will hopefully help him to defend himself against phishing attacks.
 
 To achieve these goals we developed an anti-phishing education quiz based game.
 Our app targets the awareness increase by actively let the user spoof an e-mail and exemplifying him that a link does not necessarily lead to the target that it displays.
 By letting the users practically experience this, we hope to increase the intensity of their learning experience (cf.~Principle~of~Intensity in \autoref{s:learning_principles}) resulting in a better and higher learning performance and motivation. We are aware that this part of the app might not be interesting and motivating for some users.
-This is especially reflected by the answers to our question in the survey-after.
-There we ask whether this part motivated them to continue playing the app. 
+This is especially reflected by the answers to our question in the survey-after, where we ask whether this part motivated them to continue playing the app. 
 The answers to this question are rather dispersed and thus result in an average value of 3.611 out of maximal 5 which would indicate that the user absolutely agrees.
-Yet we think it is an important part of the app since there still seem to be users who are not aware of the facts taught in this part (the median is 4 out of 5).
+Yet we think it is an important part of the app since there still seem to be users who are not aware of the facts that are taught in this part (the median is 4 out of 5).
 
 After motivating the user with practical examples and increasing his security awareness the actual game starts.
 The game itself consists of levels with introductory parts followed by practical exercises the user has to solve in order to show he has understood the learning content.
 Initially, in introduction 2 (access address bar and view complete URL) and level 1 (URL basics and domain identificationzich), basic knowledge is covered which is required for the succeeding levels and especially for the detection of phishing URLs on the smartphone in general.
-In particular, introduction 2 might be not challenging enough for some users as they are already well-skilled regarding smartphone functionalities.
+In particular, introduction 2 might be not challenging enough for some users as they might be already well-skilled regarding smartphone functionalities.
 Yet, this introduction and exercise is indispensable as there might be users who do not know this.
 
 In levels 2-9 the user is introduced to various attacks a phisher might apply.
 These attacks get increasingly sophisticated and harder to detect with higher levels.
-Finally, in level 10 the user gets further final remarks, such as the discussion about legitimate URLs which might appear phishy but in fact are not or some input to extended validation certificates and a link for further information.
-We also added introductory texts that are simple and easy to comprehend.
+Finally, in level 10 the user gets further final remarks, such as the discussion about legitimate URLs which might appear fraudulent but in fact are not, or some input to extended validation certificates and a link for further information.
+We generally aimed at using introductory texts that are simple and easy to comprehend.
+We think we achieved this goal as our participants agreed to this (cf.~\autoref{s:further_exploration}) and the legibility index further confirms it~(cf.~\autoref{s:legibility_index}).
 
+The study outcomes suggest that there is a possitive effect which is likely resulting from our app.
 Our participants clearly gave more correct answers (is a given website a phish or not) after playing the app compared to before.
 Before playing the app most users identified 50\% of the 16 websites correctly.
 After playing the app the majority of the participants gave correct answers to 91.67\% of the 24 websites.
@@ -46,16 +48,16 @@ Before playing the app only 3 (17.65\%) users always marked the URL.
 In contrast to that, after playing the app most, i.e. 14 of 16 users (82.35\%), always marked the URL.
 Evidently, our app was able to emphasize their believe in basing their decision on the URL rather than the content or anything else.
 
-Our third hypothesis was a bit questionable.
-The problem here is the following: after playing the app we virtually changed the question asking the user to mark the area of their primary reason for their decision.
+The measurement of our third hypothesis was questionable.
+The problem is the following: after playing the app we virtually changed the question when asking the user to mark the area of their primary reason for their decision.
 With the app we primed them to mark the domain clearly.
-Before using the app the users might have meant the domain, but just did not clearly marked it because they did not know what exactly we wanted from them.
+Before using the app the users might have meant the domain, but just did not clearly mark it because they did not know what exactly they were expected to mark.
 Still, we analyzed our results on this question and found out that more people base their decision on the domain after playing the app.
 
-All in all, we can say that our app has a positive effect on users.
-The question to ask here is, however, will this app actually help users change their behavior in the Internet and make them look at the URL even if it is only occasionally.
-This is an aspect, which we were not able to address within the scope of this work.
-Furthermore, the study conducted cannot show how the users, for example, retain the lessons learned.
+All in all, we can say that our app has a positive effect on users and that it helps them to better identify phishing URLs.
+However, the question to ask here is will this app actually help users change their behavior in the Internet and make them look at the URL even if it is only occasionally.
+This is an aspect, which we were not able to address within the scope of this work
+Finally, the study conducted cannot show how the users, for example, retain the lessons learned from our app.
 Such considerations remain open for future work.
 
 %===========================================
@@ -131,7 +133,15 @@ However, there remains the problem of raised legal issues.
 	We believe the user's positive feelings can be increased by providing more variable feedback, instead of saying the same sentence for the same outcomes.
 	For example, the praises and compliments when a user does well could vary depending on the degree of difficulty.
 	Also, the final screens for finishing a level can vary.
+	\item[Top-Level Domain Attacks] It might be reasonable to explicitly tell the user, that he should not only look whether the second-level domain is exactly as he expects but also the top-level domain. The app only implicitly states to look at the top- and second-level domain together.
+We recognized that users might misinterpret this (problem of precision).
+Therefore, this addition should be realized for future versions.
+	\item[Performance Dependent App Behavior] Currently the app is quite static.
+More dynamic behavior could be added in future versions.
+For example, the part where the user has to show the domain in case he found a phish might get tedious after some time.
+To approach this problem the app could stop asking for the domain after the user identified the domain correctly 10 times in a row, for example.
+After this point the app could occasionally ask the user to identify the domain and depending on his performance re-introduce it.
 \end{description}
 
  
-\textbf{top level domain atack..}
+
