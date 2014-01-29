@@ -52,10 +52,12 @@ Which attack is introduced in which level is layed out in \autoref{s:knowledgetr
 In general the URLs of each level $n$ are distributed as follows:
 \begin{table}[hHtbp]
 \centering
-\begin{tabular}{llll}
+\begin{tabular}{|llll|}
+\hline
 Total number of URLs&$u$&$6+2*n$&starting with 6 URLs each level has 2 more URLS.\\
 Number of Phishes&$p$&$u/2$&Half of the URLs are phishes.\\
-Number of repeats&$r$&$\left\lfloor p/2 \right\rfloor$&Half of the phishes are repeats.
+Number of repeats&$r$&$\left\lfloor p/2 \right\rfloor$&Half of the phishes are repeats.\\
+\hline
 \end{tabular}
 \caption{distribution of URLs per level.}
 \label{t:levelurls}
@@ -95,7 +97,7 @@ The following pages contain the forms as we used them in the user study. We did 
 \includepdf[pages={1},frame,scale=0.8]{graphix/after_survey.pdf}
 
 \section{Participant Recruitment for User Study}
-\label{s:participant_recruitment}
+\label{s:participant_recruitment_texts}
 \begin{lstlisting}
 Sehr geehrte/r ....,
 
