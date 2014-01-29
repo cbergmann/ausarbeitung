@@ -29,7 +29,7 @@ Finally, the limitations of our work are stated.
 
 	\item[URL Based Knowledge as Learning Content] As argued in \autoref{s:content_classification} we decided to educate the users about phishing based on URLs. 
 We believe that URL based knowledge gives the most reliable hint regarding its ``origin'', i.e. whether a URL in fact belongs to a legitimate website or not.
-Additional we had a look at the phishing URLs provided by PhishTank. The majority of these URLs where not or only loosely related to the attacked website. If the users would be aware of the importance of the URL and where able to interpret it the phishers would put more effort in forging valid-looking URLs. Obviously the are enough user falling for these primitive attacks. Therefore we think that it is important to teach the users how to interpret URLs.
+Additional we had a look at the phishing URLs provided by PhishTank~\cite{phishtank}. The majority of these URLs were not or only loosely related to the attacked website. If the users would be aware of the importance of the URL and were able to interpret it the phishers would put more effort in forging valid-looking URLs. Obviously, there are enough users falling for these primitive attacks. Therefore, we think that it is important to inform the users about the significance of URLs and to teach them how to interpret those.
 
 	\item[After Click URL Analysis] The analysis of a URL can follow before or after clicking on a link (if a link is involved), i.e. with a URL preview option or directly in the address bar. 
 Analyzing the URL before clicking on it brings several benefits:
@@ -46,7 +46,7 @@ On the other hand, the before click scenario has severe downsides:
 	\item \textit{Unavailability of URL Preview Functionality} The stock e-mail client of Android does not provide the functionality of previewing the destination URL. 
 Here, the only way to preview the URL to apply a long press to the link, copy it into the clipboard, paste it somewhere else and then view it. 
 Then, after the analysis the URL has to be sent to the browser.
-As this is involves too much effort, no user will follow such a suggestion.
+As this is involves too much effort, it is likely that no user will follow such a suggestion.
 	\item \textit{Deception With URL Preview} There are other e-mail clients which provide options to display the destination URL of a link.
 Yet, we believe that this should not be communicated to the user for two reasons.
 First, we are elaborating on a general approach that does not rely on third party e-mail clients besides the default one, which is pre-installed and comes with the device itself.
@@ -76,9 +76,9 @@ In the following we list the system requirements which need to be met to install
 
 
 \begin{description}[leftmargin=0cm]
-	\item[Android] Today the mobile phone market is split between two major competitors. Android~(81.0\%) and iOS~(12.9\%)~\cite{androidiosmarketshare}. 
+	\item[Android] Currently the mobile phone market is split between two major competitors. Android~(81.0\%) and iOS~(12.9\%)~\cite{androidiosmarketshare}. 
 	We have decided to develop an app for the Android operation system as there are more users and we believe we have greater freedom here compared to an iOS app. 
- 	Additionally, Android is an open operating system and imposes fewer requirements and barriers that allow us a quick development and publication of our app~\cite{publishios, publishandroid}. 
+ 	Additionally, Android is an open operating system and imposes less requirements and barriers that allow us a quick development and publication of our app~\cite{publishios, publishandroid}. 
 	\item[Version] Our initial intention was to develop an Android app for version 4.0 and upward.
  However, during the app development we have encountered that about 24\% of all Android users still have Android 2.3.3 to 2.3.7~\cite{versionsandroid}. For this reason we have decided to modify the code so that these users can also install and use our app.
 	\item[Samsung Galaxy S3 or S4] Actually, it is not necessarily required to install the app on Samsung Galaxy S3 or S4 devices. 
@@ -97,13 +97,20 @@ If one or more of these are not met the user, disregarding of his skills, might 
 	In fact, this is of no use if the phisher can control the DNS system of the user.
 	Therefore, we assume local host files and all used DNS servers as untouched by the attacker.
 	\item[Secure Smartphone] We imply that the user's system is in a secure state.
-	This means that the attacker is not able to, for example, replace the browser or read the user's input.
+	This means that the attacker is not able to, for example, exploit browser vulnerabilities, replace the browser or read the user's input.
 	\item[Secure SSL] 
 	For a man-in-the-middle it is possible to intercept sent or received data and to collect the user data directly without notice.
 	Therefore, we warn the user against entering personal data on non-HTTPS pages.
 	But even in HTTPS environments we can not be sure of the server's identity if SSL is not secure.
-	We are aware of events showing that there are a multitude of SSL providers which - intentionally or not - fail to award certificates to legitimate users only.
-	When the certificates cannot be trusted, SSL cannot be considered as secure and, ultimately, the user has no practical possiblity to detect a man-in-the-middle attack.		
+	We are aware of events showing that there are a multitude of SSL providers which, intentionally or not, fail to award certificates to legitimate users only.
+	When the certificates cannot be trusted, SSL cannot be considered as secure and, ultimately, the user has no practical possiblity to detect a man-in-the-middle attack.	
+	\item[Malware] 
+	Sending e-mails with malicious attachments or links to malicious downloads are a form of deceptive phishing.
+	In our approach we assume that the attacker does not lure the user into downloading such malicious software, which captures the user's confidential data.
+	We focus on attacks where the user is actively encouraged to provide his sensitive data himself.
+	Yet, we believe that preventing users from being lured into downloading malware is an important aspect.
+	Therefore, in future work one should consider how our approach can be expanded with regard to this problem.
+	
 \end{description}
 
 %===========================================
@@ -116,7 +123,7 @@ Therefore, we do not intend to tell the users about possible attacks that only e
 	\item[Cross-Site Scripting]
 	Cross-Site Scripting (XSS) is an attack where the attacker enters code, such as a form, into a legitimate webpage.
 	For a later viewer of this page this form seems to be legitimate content of the attacked webpage and he might be lured to enter personal data in this area. 
-	Depending on attacked webpage this cannot be detected by the user.
+	Depending on the attacked webpage this cannot be detected by the user.
 	This is a vulnerability of the attacked webpage and can be prevented by checking user input.
 	Therefore, we think that preventing this attack is in the responsibility of the website owner.
 	\item[URL Hiding Techniques]
