@@ -19,7 +19,7 @@ Finally, the limitations of our work are stated.
  Links to fake websites are usually distributed via e-mails, instant messages, or online social networks.
  Moreover, they can be spread via SMS or even phone calls.
  Ultimately, a phishing website can also be reached by just surfing in the Internet.
- By teaching on identifying spoofed URLs, our approach covers all attack channels as long as the user is tricked into divulging sensitive information on a phishing website.
+ By teaching to identify spoofed URLs, our approach covers all attack channels as long as the user is tricked into divulging sensitive information on a phishing website.
 
 	\item[Mass Phishing as Variation of Phishing] We cover mass phishing, as already stated in \autoref{s:phishing_variations}.
  However, the URL checking can be applied in case of any variant, as long as the attack includes a website which lures the user to type in his credentials.
@@ -64,7 +64,7 @@ If a user confirms his e-mail address to the phisher by clicking on a link, furt
 Also, the pure request and displaying of a phishing website might provide additional information to the phisher or even expose the user to attacks.
 For now, we consider this as future work, as there is no possibility in our target scenario to detect the real target of a link before clicking on it.
 
-	\item[Considered Browser] As a matter of fact, the user is only taught general browser skills, which can be transferred to any other browser.
+	\item[Considered Browser] The user is only taught browser skills which can be transferred to any other browser.
 Nevertheless, when the user gets browser screenshots, for example, we made use of the Android standard browser to be sure that most users are familiar with the pictures they are shown.
 \end{description}	
 
@@ -96,6 +96,7 @@ If one or more of these are not met the user, disregarding of his skills, might 
 	Our approach is to show the user how to identify phishing attempts by analyzing the URL of the shown page.
 	In fact, this is of no use if the phisher can control the DNS system of the user.
 	Therefore, we assume local host files and all used DNS servers as untouched by the attacker.
+	There are approaches like DNSSEC which already today secure DNS. We however can not assume that these techniques are widespread.
 	\item[Secure Smartphone] We imply that the user's system is in a secure state.
 	This means that the attacker is not able to, for example, exploit browser vulnerabilities, replace the browser or read the user's input.
 	\item[Secure SSL] 
