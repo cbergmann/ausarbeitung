@@ -96,15 +96,12 @@ If one or more of these are not met the user, disregarding of his skills, might 
 	Our approach is to show the user how to identify phishing attempts by analyzing the URL of the shown page.
 	In fact, this is of no use if the phisher can control the DNS system of the user.
 	Therefore, we assume local host files and all used DNS servers as untouched by the attacker.
-	There are approaches like DNSSEC which already today secure DNS. We however can not assume that these techniques are widespread.
 	\item[Secure Smartphone] We imply that the user's system is in a secure state.
 	This means that the attacker is not able to, for example, exploit browser vulnerabilities, replace the browser or read the user's input.
 	\item[Secure SSL] 
 	For a man-in-the-middle it is possible to intercept sent or received data and to collect the user data directly without notice.
 	Therefore, we warn the user against entering personal data on non-HTTPS pages.
-	But even in HTTPS environments we can not be sure of the server's identity if SSL is not secure.
-	We are aware of events showing that there are a multitude of SSL providers which, intentionally or not, fail to award certificates to legitimate users only.
-	When the certificates cannot be trusted, SSL cannot be considered as secure and, ultimately, the user has no practical possiblity to detect a man-in-the-middle attack.	
+	For this we have to assume that the cryptography used by ssl in general and HTTPS in special is not broken.
 	\item[Malware] 
 	Sending e-mails with malicious attachments or links to malicious downloads are a form of deceptive phishing.
 	In our approach we assume that the attacker does not lure the user into downloading such malicious software, which captures the user's confidential data.
