@@ -6,7 +6,7 @@ The objective of this chapter is to provide the required background knowledge fo
 We split this chapter into two parts.
 The first part deals with the term phishing in general which includes an encompassing definition of phishing, common phishing techniques, attack channels, variations of phishing, the scope of phishing we consider, followed by our definition of phishing we refer to in this work.
 In the second part we introduce different phishing learning techniques.
-For better readability and comprehensibility we divided the available learning techniques into the content, i.e. what exactly is the user told, and the used media, i.e. how is the user told something about this topic.
+For better readability and comprehensibility we divided the available learning techniques into the content, i.e. what specific content is the user told, and the used media, i.e. how is this content communicated to the user.
 
 
 %===========================================
@@ -38,6 +38,7 @@ The goal of this work is helping users to distinguish phishing websites from leg
 \label{s:phishing_techs}
 There are various possibilities how phishers can obtain users' confidential information.
  In the following we describe phishing techniques that can be distinguished~\cite{jakobsson2006phishing, phishingtechniques}.
+ This is important to know in order to determine what we are able to teach to our target group.
 %Online Identity Theft: Phishing Technology, Chokepoints and Countermeasures.
 % ITTC Report on Online Identity Theft Technology and Countermeasures
 %master_thesis/notes/phishing
@@ -70,7 +71,7 @@ There are various possibilities how phishers can obtain users' confidential info
  The gained sensitive information can then be sold or misused in any other way.
  As everything works as usual for the user, it is very difficult for him to detect such an attack.
  
-	\item[Content Injection] Content injection phishing refers to the practice of embedding additional harmful content into legitimate websites.
+	\item[Content Injection/XSS] Content injection phishing refers to the practice of embedding additional harmful content into legitimate websites.
  This content can, for example, be malvolent code to log users' sensitive information and deliver the input to the phishing server.
  Well-known types of content injection phishing include, for example, cross-site scripting (XSS).
 XSS vulnerabilities result from a web application's usage of content from external sources, such as search terms, auctions or user reviews of a product.
@@ -110,11 +111,16 @@ XSS vulnerabilities result from a web application's usage of content from extern
 %............................................................................................................
 Several attack channels exist that can be exploited by phishers to reach their victims.
  This section introduces possible attack channels~\cite{phishing2010ramazan, phishingtechniques}.
+ 
+In general the user receives a message from a phisher which is disguised as a party he trusts.
+The message usually contains a link to a website asking the user for his personal information (e.g. user name and password). As the link seemed to come from a trusted party there might be users who do not expect something harmful behind this and thus enter their data~\cite{phishing2010ramazan}.
+When the phisher acquires the user's credentials he can continue playing this game with the contacts of the newly derived user's account, which has just been compromised.
+ 
 \label{s:attack_channels}
 \begin{description}[leftmargin=0cm]
 	\item[E-Mail] E-Mail spoofing is a common way for a phisher to reach his victims.
  These e-mails usually imitate renowned institutions, organizations, companies or banks the recipients trust.
- They usually contain a text which will deceive the recepient into doing what it says.
+ They usually contain a text which will deceive the recepient into doing what it says. Therefore psychological manipulation techniques e.g. pressure and threat are used.
  Typically a link to a malicious website, whose look and feel is almost identical to the original one, is included.
  On the malicious website the user is lured to enter his sensitive data which is captured by the phisher.
  Other alternatives are embedded forms in an email where a user fills in his data directly instead of being forwarded to a website.
@@ -123,15 +129,11 @@ Several attack channels exist that can be exploited by phishers to reach their v
 	\item[SMS] An alternative to acquire confidential user data is making use of cell phone text messages.
  As with e-mails, the text message may contain a link to a fake website, where the user is induced to divulge his sensitive information.
  The user may also be asked to send back the information directly.
- Another possibility is to be asked to call back a fraudulent telephone number indicated in the text message.
+ Another possibility is to be asked to call back a fraudulent or expensive telephone number indicated in the text message.
  This number usually leads to an automated voice response system which is intended to gain the confidential information from the calling user.
  This form of phishing is also referred to as smishing, derived from the two terms ``SMS'' and ``phishing''.
-	\item[Instant Messaging] In this attack the user receives an instant message from one of his friends.
- However, the user does not know that his friend's account has been compromised by a phisher.
- The message usually contains a link to a website asking the user for his instant messenger account information (user name and password). As the link came from a friend many users do not expect something harmful behind this and thus enter their credentials.
- When the phisher acquires the user's credentials he can continue playing this game with the friends of the newly derived user's instant messaging account, which has just been compromised.
-
-	\item[Online Social Networks] Using online social networks is similar to using instant messaging services.
+ 
+	\item[Instant Messaging and Online Social Networks] The general approach outlined above can also be applied to IM services. Using online social networks is similar to using instant messaging services.
  However, online social networks provide additional valuable information to the phisher.
  With the aid of user profiles and pinboard entries etc.
  he can make his baits even more credible and trustworthy.
