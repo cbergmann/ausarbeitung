@@ -101,11 +101,11 @@ If one or more of these are not met the user, disregarding of his skills, might 
 	\item[Secure SSL] 
 	For a man-in-the-middle it is possible to intercept sent or received data and to collect the user data directly without notice.
 	Therefore, we warn the user against entering personal data on non-HTTPS pages.
-	For this we have to assume that the cryptography used by ssl in general and HTTPS in special is not broken.
+	For this we have to assume that the cryptography used by SSL in general and HTTPS in special is not broken.
 	\item[Malware] 
 	Sending e-mails with malicious attachments or links to malicious downloads are a form of deceptive phishing.
 	In our approach we assume that the attacker does not lure the user into downloading such malicious software, which captures the user's confidential data.
-	We focus on attacks where the user is actively encouraged to provide his sensitive data himself.
+	We focus on attacks where the user is encouraged to actively provide his sensitive data himself.
 	Yet, we believe that preventing users from being lured into downloading malware is an important aspect.
 	Therefore, in future work one should consider how our approach can be expanded with regard to this problem.
 	
@@ -130,7 +130,7 @@ Therefore, we do not intend to tell the users about possible attacks that only e
 	The URL bar is shown only when the user scrolls up beyond the top of the webpage.
 	There is a possible attack where the attacker prevents the user from scrolling all the way up and instead displays a fake URL bar with a fake URL.
 	A problem that the attacker faces is that mobile browsers look very diffently and this must be reflected by the fake URL bar - a tedious and difficult task.
-	Moreover, attackers do not need such sophisticated attacks because enough users fall for the simple attacks these days. 
+	We are aware that this can be exported to a phishing toolkit and used on many phishing pages. However, attackers do not need such sophisticated attacks yet because enough users fall for the simple attacks these days. 
 	We think this is the reason why this kind of attack has not yet been observed in the wild and the reason why we do not consider it as well.
 \end{description}
 
