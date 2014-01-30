@@ -4,84 +4,81 @@
 %*******************************************
 \label{s:introduction}
 %subject
-This chapter introduces the target of this work, which is to design, implement and evaluate an educational app.
- The app is supposed to help unexperienced users detect phishing attacks.
- At first we motivate the benefit of our work and how we envision our approach to achieve our goal.
-Specifically, we first motivate why countering phishing is necessary by exploring the consequences and statistics of phishing.
-Subsequently, we will reason why there is a need for an anti-phishing education app, instead of, for example, a further technical solution or a computer-based educational approach.
- Finally, we define our specific objectives and provide an overview of the following chapters.
-
-
+%This chapter introduces the target of this work, which is to design, implement and evaluate an educational app.
+ %The app is supposed to help unexperienced users detect phishing attacks.
+ %At first we motivate the benefit of our work and how we envision our approach to achieve our goal.
+%Specifically, we first motivate why countering phishing is necessary by exploring the consequences and statistics of phishing.
+%Subsequently, we will reason why there is a need for an anti-phishing education app, instead of, for example, a further technical solution or a computer-based educational approach.
+ %Finally, we define our specific objectives and provide an overview of the following chapters.
 %===========================================
-\subsection{Motivation}
+%\subsection{Motivation}
 %===========================================
 Nowadays, a world without Internet is unimaginable for most people in developed countries.
-As an example, 83\% of Germany's population have Internet access~\cite{globalfinance2012internetusage}. 
+As an example, 83\% of Germany's population has Internet access~\cite{globalfinance2012internetusage}. 
 However, it is undeniable that with the benefits of the Internet also come threats. 
-One major issue of today's digitalized world is spam in general and phishing in detail. 
-
-Phishing is a form of fraud to lure confidential information from users, cf. \autoref{s:phishing_def}. The goal of the attacker is to impersonate the user in online systems.
- This can be used to access corporate systems, damage the users reputation or simply steal money from him.
- Usually, phishing happens through fake websites which imitate the original ones.
- On these so called phishing websites the users are asked to enter confidential data, such as their login or bank account data.
- In this section we elaborate on the importance of countering such phishing attacks with the aid of user education. 
-
-
+One major issue of today's digitalized world is phishing. 
+Phishing is a term which is referred to for various scenarios and techniques resulting in multiple definitions.
+{s:phishing_general} elaborates on the different phishing techniques and scenarios.
+In the scope of this work, however, phishing is a form of fraud which lures users into disclosing confidential information. 
+Usually, phishing happens through fake websites which imitate the original ones.
+On the fraudulent website the users are persuaded to enter their confidential data, such as their login or bank account data.
+The attacker may use the obtained data for various purposes resulting in different consequences which we elaborate on in the following.
 
 %-------------------------------------------
-\subsubsection{Consequences of Phishing}
+\subsection{Consequences of Phishing}
 %-------------------------------------------
 Falling for a phishing attack has several consequences for the fooled person as well as for the target company or organization.
  In the following some of these consequences are briefly illustrated.
 
 \begin{description}[leftmargin=0cm]
-	\item[Identity and Data Theft] Phishing is the practice of tricking users to disclose their personal data.
+	\item[Reputational Damage of Target Organization.] Moreover, the targeted institutions may sustain a damaged reputation caused by customers falling victim for phishing attacks~\cite{mcafee, redcondor}.
+	\item[Identity and Data Theft of Customer and Target Organization.] Phishing is the practice of tricking users to disclose their personal data.
  That is to say, a possible consequence of falling for a phishing attack is identity theft~\cite{jakobsson2006phishing}.
  With the data unknowingly provided by the victims, the attacker can impersonate them on their behalf.
  For example, he can do online shopping or transfer money to his account on behalf of his victims.
  In a corporate scenario the attacker might even gain access to secured systems by attacking an administrator.
  When the attacker has access to these systems he might be able to collect customer data.
  Therefore not only users who are subject to phishing attacks can be affected by the attack, but also the institutions, organizations, companies and also their customers.
-	\item[Financial Loss] Financial loss can be the result of users' banking accounts being plundered or increased support costs for the targeted institutions due to their customers who fell for an attack~\cite{rsa2013, mcafee}.
-	\item[Reputational Damage] Moreover, the targeted institutions may sustain a damaged reputation caused by customers falling victim for phishing attacks~\cite{mcafee, redcondor}.
-	\item[Displeased Customers] Customers who actually became a victim of such a phishing attack will be displeased about the money or account loss and the resulting efforts they have to make in consequence of such an attack.
- Furthermore, they will tell other people about this unpleasant experience.
-	\item[Loss of Trust] Ultimately, these victims will lose their trust in the institution targeted by the phisher~\cite{redcondor}.
+	\item[Financial Loss of Customer and Target Organization.] Financial loss can be the result of users' banking accounts being plundered or increased support costs for the targeted institutions due to their customers who fell for an attack~\cite{rsa2013, mcafee}.
+	\item[Displeased Customers.] Customers who actually became a victim of such a phishing attack will be displeased about the money or account loss and the resulting efforts they have to make in consequence of such an attack.
+ Furthermore, they might tell other people about this unpleasant experience.
+	\item[Loss of Customer Trust.] Ultimately, these victims will lose their trust in the institution targeted by the phisher~\cite{redcondor}.
  Moreover, they might lose confidence in eCommerce operations and the Internet in general.
 \end{description}
  
 %-------------------------------------------
-\subsubsection{Statistics of Phishing}
+\subsection{Statistics of Phishing}
 %-------------------------------------------
 \label{s:stats}
 Phishing is also reflected by many statistics of various reports. 
- According to the Anti-Phishing Working Group~(APWG) approximately 40,000 unique phishing websites are detected each month~\cite{antiphishingtrendreport2013}. Statistics published by Kaspersky Lab, a well-respected provider for IT security solutions, state that from year 2011-2012 to 2012-2013 the number of attacked users increased by about 87\%. While in 2011-2012 the number of users, who were subject to phishing attacks, was 19.9 million, in 2012-2013 the numbers climbed up to 37.3 million. 
- Every day about 100,000 Internet users are victims of phishing attacks, which is twice as many compared to the previous period of 2011-2012. An immense increase can also be observed in the number of unique sources (i.
-e. 
- IPs) of attacks, which has tripled from 2012 to 2013~\cite{kasperskyreport2013}. The amount of target institutions also rose. 
+ According to the Anti-Phishing Working Group~(APWG) approximately 40,000 unique phishing websites are detected each month~\cite{antiphishingtrendreport2013}. Statistics published by Kaspersky Lab, a well-respected provider for IT security solutions, state that from year 2011-2012 to 2012-2013 the number of attacked users increased by about 87\%. While in 2011-2012 the number of users, who were subject to phishing attempts, was 19.9 million, in 2012-2013 the numbers climbed up to 37.3 million. 
+ Every day about 100,000 Internet users are victims of phishing attacks, which is twice as many compared to the previous period of 2011-2012. An immense increase can also be observed in the number of unique sources (i.e. IPs) of attacks, which has tripled from 2012 to 2013~\cite{kasperskyreport2013}. The amount of target institutions also rose. 
  While in 2011 the APWG counted about 500 target institutions, in the fist quarter of 2013 720 target institutions were identified~\cite{antiphishingglobalreport2013}. 
 Finally, RSA and ECM estimate worldwide costs caused by phishing at about \$1.5 billion for the year 2012~\cite{rsa2013}. 
 
-We are aware that such statistics might be inherently biased~\cite{moore2010hard}. 
+Note that according to Moore et al.~\cite{moore2010hard} such statistics might be inherently biased. 
 The problem is, there are several ways to interpret collected data. 
-Hence, every party might assess their data with respect to their interests. 
-Yet, we believe that the education of end users is an important step towards countering phishing. 
-Ultimately, more reliable and accurate statistics would required in order to evaluate the effectiveness of all the proposed countermeasures against phishing. 
-Next, we reason the importance of anti-phishing education in general and specifically the need for a mobile app for this purpose.
-
+Hence, every party might assess their data with respect to their interests resulting in diverse statistics. 
+Diversity can also result from setting different foci.
+Therefore, the reliability of such statistics, including the above mentioned, is questionable. 
+%We cannot know whether the disparity between several statistics is the result of different foci or of personal interest. 
+Regardless of the reliability and accuracy of the above mentioned statistics we believe that the education of end users is an important step towards countering phishing. 
+Ultimately, more reliable and accurate statistics are required in order to evaluate the effectiveness of all the proposed countermeasures against phishing. 
+Next, we discuss the importance of anti-phishing education in general and specifically the need for a mobile app for this purpose.
 %-------------------------------------------
-\subsubsection{Technical Solutions to Counter Phishing}
+\subsection{Technical Solutions to Counter Phishing}
 %-------------------------------------------
 
-Several technical solutions to counter phishing have already been suggested in literature~\cite{purkait2012phishing}. 
+Several technical solutions to counter phishing have already been proposed in literature~\cite{purkait2012phishing}. 
 As a matter of fact, these techniques are not flawless. 
-In the following some common approaches are briefly summarized.
+This section briefly summarizes these techniques.
 
-\begin{description}[leftmargin=0cm]
-	\item[Spam filters] Commonly, the phisher sends out a tremendous volume of emails to random users which contain links to fake websites.
+Commonly, the phisher sends out a tremendous volume of e-mails to random users which contain links to fake websites.
 According to Dr. Dobb's, for example, every day 500 million phishing e-mails arrive in user inboxes~\cite{drdobb2012email}.
  There the users are lured to disclose their personal data.
- Consequently, one possible countermeasure to stop phishing is to filter these e-mails before they even reach the receiver.
+
+\begin{description}[leftmargin=0cm]
+	\item[Spam filters.] One possible countermeasure to phishing is to filter these e-mails before they even reach the receiver.
  Various approaches for such spam filters already exist~\cite{bergholz2010new,chandrasekaran2006phishing,fette2007learning}, but spam filters also have their drawbacks.
  First, spam filters might be abused for an invisible form of censorship.
  Second, a spam filter needs to be installed and applied to the users' e-mail accounts.
@@ -93,71 +90,109 @@ According to Dr. Dobb's, for example, every day 500 million phishing e-mails arr
  On the one hand it is possible that phishing e-mails can make it through these filters and might harm the user (false negatives). 
 On the other hand there are legitimate e-mails which may not reach the user (false positives). 
 This might result in a user's loss of confidence, which in turn can result in the user not applying the spam filter anymore~\cite{olivo2011obtaining}.
-	\item[Blacklists] Fake websites are a common way for phishers to get at users' data.
- Thus, an alternative to protect potentially endangered users from phishing attacks is to restrict the access to such phishing websites with the aid of so called blacklists.
+	\item[Blacklists.] An alternative to protect potentially endangered users from phishing attacks are browsers restricting the access to phishing websites with the aid of so called blacklists.
  Here, the browsers hold a list of revealed phishing websites.
  If a requested URL is contained in such a blacklist the access to this website can be restricted or the user can be warned about the phishing website.
  Several blacklisting approaches have been suggested in literature~\cite{ma2009beyond, zhang2008highly}. The major downside of blacklists is that most of them work reactively.
  That is to say, there is a certain time frame where phishing websites are active without being blacklisted.
  In this time frame users can access these website without being warned or restricted and thus are vulnerable to fall for the attack.
  To resolve this problem multiple dynamic and predictive approaches have been proposed to restrict and/or warn the user from accessing phishing websites~\cite{prakash2010phishnet, obied2009fraudulent, balzarotti2012proactive}. Nevertheless, there is no flawless blacklisting approach, as there are always malicious websites which can bypass such protective systems (false negatives). Also, similar to spam, blacklists may contain false positives, and they can also be abused for censorship.
- Moreover, these systems require a high effort to maintain, since a regular and realtime update is inevitable in order to make the system effective~\cite{purkait2012phishing}. Furthermore, there is the weakest link in the security chain: there exist users who are very often unsure about what to do when getting such security warnings~\cite{bakhshi2009social}. As a matter of fact, in case of disregard of these warnings such systems are unhelpful for those who ignore them. 
-	\item[Visual distinction] A further technical approach against phishing is the automatic visual distinction of phishing websites from legitimate ones.
+ Moreover, these systems require a high effort to maintain, since a regular and realtime update is inevitable in order to make the system effective~\cite{purkait2012phishing}. Furthermore, there is the weakest link in the security chain: there exist users who ignore security warnings and thus susceptible to phishing and other threats.
+A field study conducted by Akhawe et al.~\cite{akhawe2013alice} revealed that 10\% of Mozilla Firefox' and 25\% of Google Chrome's malware and phishing warnings are clicked through, i.e. ignored.
+Users especially seem to ignore Google Chrome's SSL warning (70.2\%). According to the authors this behavior indicates that the user's experience with a security warning has a significant impact on their future behavior.
+ As a matter of fact, in case of disregard of these warnings such systems are unhelpful for those who ignore them. 
+	\item[Visual distinction.] A further technical approach against phishing is the automatic visual distinction of phishing websites from legitimate ones.
  For this purpose it is necessary to identify maliciously duplicated websites mainly based on visual similarities~\cite{liu2006antiphishing}. Various solutions can be found in literature to approach this~\cite{chen2009fighting,chen2010detecting,zhang2011textual}. However, there is no foolproof solution.
  In particular, if approaches mainly rely on visual similarities many of them will fail if the phishing website is not a duplicate of the original site.
  Moreover, phishers will always be able to adapt to sophisticated solutions in order to bypass these security levels. 
 Of course a phisher's adaption to circumvent such solutions must be profitable for him, i.e. it must happen fast enough with reasonable costs.
 On the other hand, some website providers allow the user to customize some visual elements of the website to distinguish it from faked websites.
-In the end as always the human factor plays a major role here: such techniques will remain of no use for users who keep misunderstanding or ignoring the provided visual indicators.
+In the end the techniques are not 100\% accurate, i.e. cannot guarantee protection. 
+Additionally, as always the human factor plays a major role here: such techniques will remain of no use for users who keep misunderstanding or ignoring the provided visual indicators.
 
-	\item[Takedown] Commonly, hosting providers are urged to take down revealed malicious websites by certain parties, for example: banks, other organizations or specialized takedown companies~\cite{moore2007examining}. The removal of phishing websites is an effective solution, since it implicitly solves the aforementioned problem, where users ignore security warnings: a removed website cannot trick a user into entering sensitive data.
- However, this approach, similar to the blacklist one, cannot defeat phishing entirely, since it is not fast enough~\cite{moore2007examining}. During the uptime of the fraudulent website falling for it remains a threat.
-
+	\item[Takedown.] Commonly, hosting providers are urged to take down revealed malicious websites by certain parties, for example: banks, other organizations or specialized takedown companies~\cite{moore2007examining}. The removal of phishing websites is an effective solution, since it implicitly solves the aforementioned problem, where users ignore security warnings: a removed website cannot trick a user into entering sensitive data.
+Website take downs might raise international and legal issues in case multiple jurisdictions are involved.
+The phishing website might be located on a different country than the targeted organization.
+If a takedown company requests the removal from a third country the issue becomes even more complicated.
+However, according to Moore et. al~\cite{mooretakedown} the removal of phishing websites generally follows fairly fast (4-96 hours).
+They state that system administrators are aware of the phishing problem and take such websites down usually without involving police and court.
+Although, the takedown follows fairly fast, it is not fast enough.
+The average life time of a phishing website is 61.69 hours, i.e. 2.5 days~\cite{moore2007examining}.
+Thus, this approach cannot entirely defeat phishing. During the uptime of the fraudulent website falling for it remains a threat.
 \end{description}
 
 In conclusion, there are two major issues of existing techniques.
- First, technical solutions do not assure 100\% accuracy.
+\begin{enumerate}
+	\item\textit{Accuracy of Technical Solutions.} Technical solutions do not assure 100\% accuracy.
  There is always the potential of false positives and false negatives.
  Furthermore, attackers can always invent new, more sophisticated deceptions that bypass current prevention systems.
- The attackers are always first in row, i.e.
- they create a deception technique and once it is captured and resolved by detection systems, they simply create a new technique or adapt the old one so that it is no longer detected.
- The second major problem with these approaches is user behavior.
- As already indicated above users tend to overlook or deliberately ignore security warnings.
- If the user behavior does not change such approaches will remain unhelpful.
+ The attackers are always first in row, i.e. they create a deception technique and once it is captured and resolved by detection systems, they simply create a new technique or adapt the old one so that it is no longer detected.
+	\item\textit{User Behavior and Knowledge.} Another major problem with approaches to combat phishing is user behavior.
+ As indicated above users tend to overlook or deliberately ignore security warnings.
+ If the user behavior does not change such approaches will remain unhelpful for those users.
  The problem is that users primarily use the Internet for purposes such as online shopping, online banking, communicating with relatives and friends etc.
- Aspects related to security are not of their primary interest when being online or they just implicitly assume the system to be secure.
+ Aspects related to security are not of their primary interest when being online.
+%or they just implicitly assume the system to be secure.
  Another factor for overlooking and ignoring these warnings is the lack of security awareness.
  Some users are just not aware of how easy it is for even unexperienced attackers to duplicate a website and send out fake e-mails.
  Even if users are aware that there is a certain degree of threat in the Internet, people tend to think the probability that they will face such an attack is very low and that it will not happen to them, until it actually happens to them or to relatives/friends.
+\end{enumerate}
+ 
  In summary, pure technical solutions cannot guarantee 100\% protection.
- In the end the users themselves fall into the traps of the attackers.
- Thus, in our point of view a further key step against phishing is to change the user behavior by increasing the security awareness of the users and educating them how to protect themselves against such traps.
+ In the end the users themselves fall into the attackers' traps.
+ Thus, in our point of view a further key step against phishing is to change the user behavior by increasing the security awareness of the users and offering them a service for education regarding how to defend themselves against such traps.
+The major question to ask here is whether education will help combat phishing.
+The opinions on this question are divided.
+There exist security researchers and experts who argue that user education is pointless~\cite{useredupointless, bruceschneieronsecuritytraining}.
+Other sources emphasize the need for increased security awareness and education of the users~\cite{usereducebit, usereduscmagazine}.
+It also seems that there exist promising and effective anti-phishing education approaches~\cite{kumaraguru2007protecting, sheng2007antiphishingphil}, yet with the need for further improvement (cf.~\autoref{s:related_work}).
+Ultimately, we believe that user education can complement technical solutions and change user behavior.
+Increased security awareness and knowledge of security issues may first change the user's behavior and attitude towards such technical tools in general.
+The increased awareness might result in taking security warnings and indications seriously (if they have not already done that before).
+Additionally, we offer them the opportunity to learn to defend themselves in case such tools fail.
 
 %-------------------------------------------
-\subsubsection{Anti-Phishing Education on the Smartphone}
+\subsection{Anti-Phishing Education on the Smartphone}
 %-------------------------------------------
 \label{s:antiphishing_on_smartphone}
 There are several reasons why we chose to educate users on the smartphone.
 
 \begin{description}[leftmargin=0cm]
-	\item[Mobility and Size] The main characteristic of a smartphone is that it is mobile and smaller than the well-known desktop computers.
+	\item[Mobility and Size.] The main characteristic of a smartphone is that it is mobile and smaller than the well-known desktop computers.
  As a consequence there is less space on the screen.
  Many browsers, for example, generally hide their address bars due to the lack of space.
  With the address bar, the URL and other potential security indicators are hidden.
-	\item[Distraction Caused by Mobility] There is also the fact that users often use their smartphones while on the move, for example, when walking or  during a train or a bus ride.
+The release of iOS7 featured a key step towards better transparency for the user.
+The Safari browser displays the host (except for ``www'' and ``m'') instead of the website title or the URL itself.
+This might make phishing attacks more difficult to succeed, assumed that users look at and assess this part.
+Additionally, in portrait mode the host is displayed even when scrolling down the page, i.e. this relevant information is always visible.
+An interesting question to ask here is whether and how many will follow such an approach.
+Currently, Android does not support such a functionality. 
+Yet, displaying the host instead of the complete URL or the title is not sufficient to help users detect phishing.
+There is still a need for URL parsing comprehension for these purposes.
+	\item[Distraction Caused by Mobility.] There is also the fact that users often use their smartphones while on the move, for example, when walking or  during a train or a bus ride.
  These circumstances include distractions from the environment which are unavoidable.
  These distractions obviously will influence the user's attentiveness.
  Hence, smartphone users are even more vulnerable to phishing attacks than the traditional desktop user.
  This is also indicated by a report of 2011~\cite{trusteer2011}, which says that mobile users are three times more likely to access phishing websites than desktop users.
- This might also be influenced by the fact that mobile mail clients effectively provide no way to check the validity of a incoming mail.
-	\item[High Number of Smartphone Users] In addition, given that the majority of the people use a smartphone on a regular basis in Spain, Germany, Italy, France and the UK~\cite{smartphoneusage}, there is a need for the protection of smartphone users.
-	\item[Benefits of Education on the Smartphone] Educating the user on the smartphone provides two major benefits.
+ This might also be influenced by the fact that mobile e-mail clients effectively provide no way to check the validity of an incoming e-mail.
+The potential distraction raises the question whether it has an impact on the user's education and retentiveness.
+According to the principles of learning (cf.~\autoref{s:learning_principles}) it most likely has an impact on the learning performance.
+Yet, we believe that our exercise and repetition scheme (cf.~\autoref{s:learning_principles}) helps users to internalize the learning content despite slight distractions.
+For further research it would be interesting to test how significant distractions impact the learning results with our app.
+	\item[High Number of Smartphone Users.] In addition, given that the majority of the people use a smartphone on a regular basis in Spain, Germany, Italy, France and the UK~\cite{smartphoneusage}, there is a need for the protection of smartphone users.
+	\item[Benefits of Education on the Smartphone.] Educating the user on the smartphone provides two major benefits.
  First, the user can use the app on the move.
  Thus, the app is accessible outside of the user's desktop environment.
  The app can be used during train or bus rides, while waiting for a friend or while waiting for any other appointment.
- The app can be started and continued any time as a sideline or just to bridge time, so that probably more users would be willing to use it.
- Second, it is easy to transfer the knowledge of smartphones to desktop computers as the screen is bigger and the URL is easy to find.
- Transferring knowledge from desktop computers to smartphones, on the other hand, is not that simple.
+ The app can be started and continued any time as a sideline or just to bridge time.
+Despite the fact that we mainly aim at motivated users who want to do something about their unknowingness (cf.~\autoref{s:target_group}) we hope that our mobile app might even reach more users.
+ Second, regarding several aspects we believe it is easier to transfer the knowledge of smartphones to desktop computers.
+For example, the parsing of a URL can be easily transferred from smartphones to desktop computers, as the screen is bigger and the URL is easier to find compared to smartphones.
+ Transferring knowledge from desktop computers to smartphones, on the other hand, raises more complicated issues.
+The parsing of a URL on a desktop computer, for example, cannot be easily transferred to smartphones.
+The user needs to know how to access the generally hidden access bar and how to view the complete URL.
+However, icons or security warnings are probably not easy to transfer in any direction since those differ significantly among devices, versions and browsers.
 \end{description} 
  
 %===========================================
@@ -165,7 +200,7 @@ There are several reasons why we chose to educate users on the smartphone.
 %===========================================
 \label{s:goals}
 We begin with stating our primary goals of this thesis and describe them in more depth subsequently.
-The major goals of this thesis is to educate the user about phishing so that he is less likely to fall for fake webpages.
+The major goals of this thesis is to offer a service which educates users about phishing so that he is less likely to fall for fake webpages.
  This is an addition and not an alternative to technical solutions to counter phishing.
  We think that that the following steps are important to achieve this goal.
 
@@ -181,7 +216,8 @@ As already indicated in the previous section the lack of a user's security aware
  Additionally, we want to make them aware that link texts cannot be trusted.
 Specifically, the user should be told that links do not necessarily point to the destination URL or website they display.
  This should happen at the beginning of the app so that the user realizes that the threat of the Internet is prevalent and that he needs to learn to protect himself.
- Furthermore, the user should practically experience these aspects and not only be told, since being told will not suffice to motivate the user to go on with the app (cf. Principle of Intensity in \autoref{s:learning_principles}).
+ Furthermore, we think it might help if the user practically experiences these aspects and is not only told about it.
+The practical experience is more likely to increase their engagement and hopefully lead to better knowledge retention and learning performance (cf. Principle of Intensity in \autoref{s:learning_principles}) 
  Moreover, besides technical solutions and increasing user awareness it is also important to give the user information so that they can detect phishing.
  Therefore, increasing the security awareness is a minor introductory part of the app.
  Our main focus for the app is the education of the user.
