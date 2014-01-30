@@ -75,19 +75,17 @@ Several technical solutions to counter phishing have already been proposed in li
 They protect the user from the enormous amounts of phishing attempts. Nevertheless, these techniques are not flawless. 
 This section briefly summarizes some important examples.
 
-
-
 \begin{description}[leftmargin=0cm]
-	\item[Spam filters.] One possible countermeasure to phishing is to filter these e-mails before they even reach the receiver.
+	\item[Spam filters:] One possible countermeasure to phishing is to filter these e-mails before they even reach the receiver.
  Various approaches for such spam filters already exist~\cite{bergholz2010new,chandrasekaran2006phishing,fette2007learning}, but spam filters also have their drawbacks.
  First, spam filters might be abused for an invisible form of censorship.
  Second, phishers are constantly improving their techniques to circumvent current spam filters.
  Consequently, such filters can not assure 100\% accuracy.
  Finally, the strength of the filter controls the amount of false positives and negatives.
- On the one hand it is possible that phishing e-mails can make it through these filters and might harm the user (false negatives). 
-On the other hand there are legitimate e-mails which may not reach the user (false positives). 
-This might result in a user's loss of confidence, which in turn can result in the user not applying the spam filter anymore~\cite{olivo2011obtaining}.
-	\item[Blacklists.] An alternative to protect potentially endangered users from phishing attacks are browsers restricting the access to phishing websites with the aid of so called blacklists.
+ On the one hand, it is possible that phishing e-mails can make it through these filters and might harm the user (false negatives). 
+On the other hand, there are legitimate e-mails which may not reach the user (false positives). 
+This might result in a user's loss of confidence, which in turn can result in the user not applying the spam filter anymore~\cite{olivo2011obtaining} in the worst case scenario. Ultimately, the user would receive even more phishing e-mails in his inbox.
+	\item[URL Blacklists:] An alternative to protect potentially endangered users from phishing attacks are browsers restricting the access to phishing websites with the aid of so called blacklists.
  Here, the browsers hold a list of revealed phishing websites.
  If a requested URL is contained in such a blacklist the access to this website can be restricted or the user can be warned about the phishing website.
  Several blacklisting approaches have been suggested in literature~\cite{ma2009beyond, zhang2008highly}. The major downside of blacklists is that most of them work reactively.
@@ -98,16 +96,10 @@ This might result in a user's loss of confidence, which in turn can result in th
 A field study conducted by Akhawe et al.~\cite{akhawe2013alice} revealed that 10\% of Mozilla Firefox' and 25\% of Google Chrome's malware and phishing warnings are clicked through, i.e. ignored.
 Users especially seem to ignore Google Chrome's SSL warning (70.2\%). According to the authors this behavior indicates that the user's experience with a security warning has a significant impact on their future behavior.
  As a matter of fact, in case of disregard of these warnings such systems are unhelpful for those who ignore them. 
-	\item[Visual distinction.] A further technical approach against phishing is the automatic visual distinction of phishing websites from legitimate ones.
- For this purpose it is necessary to identify maliciously duplicated websites mainly based on visual similarities~\cite{liu2006antiphishing}. Various solutions can be found in literature to approach this~\cite{chen2009fighting,chen2010detecting,zhang2011textual}. However, there is no foolproof solution.
- In particular, if approaches mainly rely on visual similarities many of them will fail if the phishing website is not a duplicate of the original site.
- Moreover, phishers will always be able to adapt to sophisticated solutions in order to bypass these security levels. 
-Of course a phisher's adaption to circumvent such solutions must be profitable for him, i.e. it must happen fast enough with reasonable costs.
-On the other hand, some website providers allow the user to customize some visual elements of the website to distinguish it from faked websites.
-In the end the techniques are not 100\% accurate, i.e. cannot guarantee protection. 
-Additionally, as always the human factor plays a major role here: such techniques will remain of no use for users who keep misunderstanding or ignoring the provided visual indicators.
+	\item[Visual Distinction:]Some website providers allow the user to customize some visual elements of the website to distinguish it from faked websites\cite{dhamija2005battle}.
+As always the human factor plays a major role here: such techniques will remain of no use for users who keep misunderstanding or ignoring the provided visual indicators. 
 
-	\item[Takedown.] Commonly, hosting providers are urged to take down revealed malicious websites by certain parties, for example: banks, other organizations or specialized takedown companies~\cite{moore2007examining}. The removal of phishing websites is an effective solution, since it implicitly solves the aforementioned problem, where users ignore security warnings: a removed website cannot trick a user into entering sensitive data.
+	\item[Takedown:] Commonly, hosting providers are urged to take down revealed malicious websites by certain parties, for example: banks, other organizations or specialized takedown companies~\cite{moore2007examining}. The removal of phishing websites is an effective solution, since it implicitly solves the aforementioned problem, where users ignore security warnings: a removed website cannot trick a user into entering sensitive data.
 Website take downs might raise international and legal issues in case multiple jurisdictions are involved.
 The phishing website might be located on a different country than the targeted organization.
 If a takedown company requests the removal from a third country the issue becomes even more complicated.
@@ -120,10 +112,10 @@ Thus, this approach cannot entirely defeat phishing. During the uptime of the fr
 
 In conclusion, there are two major issues of existing techniques.
 \begin{enumerate}
-	\item\textit{Accuracy of Technical Solutions.} Technical solutions do not assure 100\% accuracy.
- There is always the potential of false positives and false negatives.
- Furthermore, attackers can always invent new, more sophisticated deceptions that bypass current prevention systems.
- The attackers are always first in row, i.e. they create a deception technique and once it is captured and resolved by detection systems, they simply create a new technique or adapt the old one so that it is no longer detected.
+	\item\textit{Accuracy of Technical Solutions.} First, attackers can always invent new, more sophisticated deceptions that bypass current prevention systems.
+	 The attackers are always first in row, i.e. they create a deception technique and once it is captured and resolved by detection systems, they simply create a new technique or adapt the old one so that it is no longer detected.
+	 Second, there will always be false negatives.
+	 Therefore solutions do not assure 100\% accuracy resulting in the user being left unprotected in some cases.
 	\item\textit{User Behavior and Knowledge.} Another major problem with approaches to combat phishing is user behavior.
  As indicated above users tend to overlook or deliberately ignore security warnings.
  If the user behavior does not change such approaches will remain unhelpful for those users.
