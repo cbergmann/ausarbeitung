@@ -64,7 +64,7 @@ Ultimately, he is told that this will be the focus of the following exercises.
 \end{enumerate}
 \end{enumerate}
 
-In the succeeding section we describes common elements in games that we adapted for our app.
+In the succeeding section we describe common elements in games that we adapted for our app.
 
 %===========================================
 \subsection{Gamification}
@@ -75,68 +75,73 @@ In most modern games we see the following elements which we all implemented:
 \begin{description}[leftmargin=0cm]
 \item[Lives] An often used game element are lives.
 An inherent property of a game is the possibility of loosing the game.
-If you are not able to loose a game you will get no positive feedback from winning the game.
-On the other hand, you do not want your player to loose the whole game when he makes one little mistake.
+If a player is not able to loose a game he will get no positive feedback from winning the game.
+On the other hand, we do not want our player to loose the whole game when he makes one little mistake.
 Therefore, most games have some kind of ``you have N tries''-element, which is commonly referred to as ``lives''.
 We also included such a mechanism in our app.
 The details are layed out in \autoref{s:game_rules}.
-\item[Levels] Also most games have some kind of level system.
-This has multiple purposes.
-First it is important for the player to get a feeling for the process he makes in the game.
-It also provides the user with fixed points in the game where he can restart or pause and play on later.
+\item[Levels] Most games have some kind of level system.
+This serves multiple purposes.
+First, it is important for the player to get a feeling for the progress he makes in the game.
+Second, it provides fixed points in the game where he can restart or pause and continue playing later.
 To us it gives the ability to structure the game in a repeating cycle that the user learns.
-This way if the user plays multiple levels in a row he can skip the repeat parts easily but if he has paused he can read it.
-The details of the leveling Strategy can be found in \autoref{s:leveling}
-\item[Leaderboards] Finally often games have a kind of leaderboard.
-This means a area where you can compare your progress within the game with others of the game.
-For many people this is a major motivation point. 
-These people want to be better then others.
-To motivate these people we introduce two leaderboards:
-\begin{enumerate}
-\item \textit{Total Points} First there is a leaderboard that shows how many points you gained while playing the level. The details of how the points are calculated are shown in \autoref{s:leveling}.
-\item \textit{Detected Phishing URLs} As the points are a relatively opaque number we also introduced another leaderboard. This shows the user that detected most phishes in the app. 
-\end{enumerate}
+This way, if the user plays multiple levels in a row he can skip the repeat parts easily but if he has paused he can read it.
+The details of the leveling strategy can be found in \autoref{s:leveling}
+
 \item[Achievements] There is another type of player.
 This player wants to find everything in a game and is willing to invest time in a level just to finish it perfectly or to find every hidden secret.
-To address this type of player modern games often something called ``achivements''.
-Achievements are special parts of a game that you can unlock if you for example find a special object or play a given level very good. 
-We implemented mainly achivements for finding 5,10,25,50,100 and 500 phishing URLs. 
+To address this type of player modern games offer so called ``achievements''.
+Achievements are special parts of a game that a player can unlock if he, for example, finds a special object or if he plays a given level exceptionally well. 
+We implemented achievements for finding 5, 10, 25, 50, 100 and 500 phishing URLs. 
+
+\item[Leaderboards] Finally, games often have a kind of leaderboard.
+This means an area where one can trace his progress within the game with the one of other players.
+For many people this is a major motivation point. 
+To motivate these people we introduce two leaderboards:
+\begin{enumerate}
+\item \textit{Total Points} First there is a leaderboard that shows how many points the player gained while playing the level. The details of how the points are calculated are described in \autoref{s:leveling}.
+\item \textit{Detected Phishing URLs} We also introduced another leaderboard which shows the user who detected the most phishing URLs in the app. 
+\end{enumerate}
+
 \end{description}
 
 
 
 %===========================================
-\subsection{Game Rules}
+\subsection{Course of the Game}
 \label{s:game_rules}
 %===========================================
-The educational part of the app which is followed by the awareness part is divided into several levels.
- In each level the user is provided with specific informational material.
- After the information material is consulted by the user, he has to finish the according exercise.
-The first  and second information materials (introduction 2 and level 1) and exercises that the user receives differ from the ones of the other levels. Here, the users obtain basic knowledge in order to bring them to the same knowledge level for the actual game.
- 
+The educational part, which follows the awareness part, is divided into several levels.
+This section discusses the course of the game in the educational part.
+ In each level the user is provided with a specific information block.
+ After this lecture part is consulted by the user, he has to finish the corresponding exercise.
+
+The first  and second information blocks (introduction part 2 and level 1) as well as their corresponding exercises differ from the ones of the other levels. Here, the users obtain basic knowledge in order to balance out inequalities concerning the varying previous knowledge of the players, before the actual game begins.
+
 \begin{description}[leftmargin=0cm]
-	\item[Basic Knowledge]  The first information material and task of the user deals with accessing the address bar of a webbrowser and viewing its URL completetely.
- To prove that the user has understood how to access the address bar and view the URL he has to do the following: When the user is forwarded to the website to solve the task he has to scroll up to the top of the website to make the generally hidden address bar visible.
+	\item[Obtaining Basic Knowledge]  The first information block and task of the user deals with accessing the address bar of a webbrowser and viewing its URL completely.
+ To prove that the user has understood how to access the address bar and view the URL he has to do the following: When the user is forwarded to the website to solve the task he has to scroll up to the top of the website to make the usually hidden address bar visible.
  Afterwards, he has to provide us the information we request about the URL in the address bar.
  This will show that he has in fact viewed the whole URL.
- After successful completion the user is linked back to the app and level 1 is started.
- From this level on, the user has three lives upon start of each level.
- In level 1 he has to identify the ``Who-Section'' (second- and top-level domain) of a URL.
+ After successful completion the user is linked back to the app and level 1 begins.
+ From this level on, the user has three lives upon the start of each level (cf. \autoref{app_url_task_3_lives}).
+ In level 1 he has to identify the domain of a URL.
  He has to tap the according part of the displayed URL.
- In this level wrong answers result in losing points and losing a live.
- In order not to frustrate the user he cannot get less than 0 points.
+ In this level wrong answers result in both, losing points and losing a life.
+ However, in order to keep the user motivated he cannot get less than 0 points.
  When the user has no more lives left he has to restart the level.
  With every correct answer the user gains points.
 	\item[Actual Game]  In level 2 we start introducing URL spoofing techniques and the user has to decide whether a given URL is a phishing URL or a valid one.
- Here also, the user can lose and win points as well as lose lives.
+ Similar to level 1, the user can lose and win points as well as lose lives.
  Here again, if the user has no more lives left he has to restart the level.
 \autoref{fig:lose_points_life} illustrates the game flow and consequences of wrong and correct answers from level 2 and upwards.
- If the user has correctly decided that a phishing URL is a phish, he has to show us the ``Who-Section'' to prove that he has understood the concept.
+ If the user has correctly identified a phishing URL, he has to mark the domain to prove that he has understood the concept.
  In all other cases the user is directly shown the result of his answer.
- In summary, the user looses points for any wrong answer, but he does not lose a life for every wrong answer.
- We have decided that rejecting valid URLs is not as severe as accepting phishing URLs.
- For this reason the punishment for accepting a phishing URL is more severe than the punishment for rejecting a valid URL.
- All in all, the user loses points and a live in the following cases: the user has falsely accepted a phishing URL or the user has correctly rejected a phishing URL, but could not show us the ``Who-Section''. In all other cases the user cannot lose lives, but only points.
+ We decided that rejecting valid URLs is not as severe as accepting phishing URLs.
+ For this reason the penalty for accepting a phishing URL is stricter (loss of points and a life) than the one for rejecting a valid URL (loss of points).
+ In summary, the user generally loses points for wrong answers, but he does not lose a life for every wrong answer.
+ All in all, the user loses points and a life in the following cases: the user has falsely accepted a phishing URL or the user has correctly rejected a phishing URL, but could not mark the domain correctly. In all other cases the user cannot lose lives, but only points.
+For correct answers the user is rewarded with earning points and eventually finishing the current level.
 \end{description}
 
 
