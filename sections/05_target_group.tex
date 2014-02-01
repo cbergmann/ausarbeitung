@@ -2,39 +2,42 @@
 \section{Target Group}
 %*******************************************
 \label{s:target_group}
-This chapter deals with the target group we want to reach with our app.
+This chapter deals with the target group we want to address with our app.
 After defining our target audience we briefly explain how it can be projected to the German population.
 
 \subsection{Target Group Definition}
 \label{s:target_group_def}
-In this section we want to describe the targeted users for our app.
-The main condition that must be met is that they can learn something from our app.
-That means they are skilled enough to use the app but at the same time not too skilled already knowing everything that the app tells them.
-In detail this is modeled by the conditions listed below.
+In this section we discuss our target audience.
+The main condition our target users have to meet is that they can learn something from our app.
+This means users who have too much prior knowledge on the topic of phishing will not benefit from our app.
+Thus, these users are not addressed by us.
+In detail our target group can be modeled with the aid of the conditions listed below.
 \begin{description}[leftmargin=0cm]
-\item[Attackability:] The first precondition is that all our users must meet is that they are possible targets for phishing.
-This means they must use the Internet.
-They also should use the Internet often enough and have a common trust in the web so that they are in general willing to enter their personal data \cite{divsi2012divsi}.
-\item[Android Users:] The second precondition is that the users should use an android smartphone.
-Our evaluation shows that the app is also usable by iOS users but they are not the target group because they cannot use the app on a regular basis.
-\item[Language:] The informative parts of our app are texts and they are written in German.
-This means the target user should be able to read German texts.
-\item[Motivation:] The distribution plan for this app is to put it on the Google Play Store and hope that users download and install it.
-Therefore, the target user must be willing to learn something about the Internet. According to a study from the DIVSI \cite{divsi2012divsi}, some Internet users are so sure about their knowledge that they are not willing to learn anything else.
+\item[Attackability:] The first precondition that all of our users have to meet is that they are possible targets for phishing.
+Thus, attackability includes a user's disability to detect phishing.
+Attackability also includes that the users have to use the Internet frequently so that they have a common trust in the web and usually are willing to enter their personal data~\cite{divsi2012divsi}.
+\item[Android Users:] The second precondition is that the users should use an Android smartphone, otherwise they will not be able to use the app on a regular basis.
+\item[Language:] The information blocks of our app consist of German texts.
+Consequently, the target user should be able to read and understand German texts.
+\item[Motivation:] The distribution plan for this app is to publish it on the Google Play Store and hope that users download and install it.
+Therefore, the target users must have a general interest in learning to protect themselves.
+ According to a study by Deutsches Institut f\"{u}r Vertrauen und Sicherheit im Internet (DIVSI)~\cite{divsi2012divsi}, there exist Internet users who are self-confident regarding their knowledge and ability to protect themselves in such a way that they are not willing to learn anything else.
 We will not be able to reach these users.
 \end{description}
 
 For our final user study we aspired to recruit participants who hold these preconditions as far as possible.
 \autoref{s:representativeness} gives a description on this aspect.
 
+Subsequently, we discuss how our target group can be projected to the German population.
+
 \subsection{Projection to Population}
-After we have decided what our target group is, we wanted to make sure that we do not exclude too many of the potential users with these preconditions.
+After defining our target group we now want to make sure that we do not exclude too many potential users.
 In fact, the app can only be useful and successful if a reasonable audience is covered.
-To prove this we looked at an extensive survey done by SINUS-Instituts Heidelberg on behalf of Deutschen Instituts f\"{u}r Vertrauen und Sicherheit im Internet (DIVSI) \cite{divsi2012divsi}.
+To prove this we looked at an extensive survey by DIVSI~\cite{divsi2012divsi}.
 In this survey the authors first looked at 60 persons in detail and found seven types of Internet users that are depicted in \autoref{fig:divsi_milieus}.
-Thereafter, they tried to apply the findings to the whole German population by interviewing 2,000 representative persons.
-\autoref{fig:divsi_kartoffeln} illustrates the percentage share of the seven Internet types in Germany.
-We tried to match our preconditions to these groups. In the following we present our evaluation of each of the groups.
+Thereafter, they tried to apply their findings to the German population by interviewing 2,000 representative persons.
+\autoref{fig:divsi_kartoffeln} illustrates the percentage share of the seven Internet types they identified in Germany.
+We strived to match our preconditions to these Internet types which is described in the following.
 
 \begin{figure}[hHtbp]
 \centering
@@ -44,13 +47,14 @@ We tried to match our preconditions to these groups. In the following we present
 \end{figure}
 
 \begin{description}[leftmargin=0cm]
-\item[Digital Souver\"{a}ne] This group moves naturally on the Internet and is therefore exposed to phishing. They also often use smartphones. We rule them out because they think that they already know the problems of the Internet and hence they would reject a training offer anyways. In fact, this group will likely never download the app.
-\item[Effizienzorientierte Performer] This group matches our preconditions because they are using the Internet as well as smartphones. In contrast to the previous group, they are interested in learning something new and see their own learning as an investment in the future. To target this group we should show that you can learn something from this app.
-\item[Unbek\"{u}mmerte Hedonisten] This group is also native in the digital worlds but in contrast to the before mentioned groups are not aware of the problems and frauds therein. When they are aware of the problems they seek to secure themselves with automated software instead of concerning themselves with it. Therefore, they are not motivated to use our app.
-\item[Postmaterielle Skeptiker] This group is interested in the Internet and uses it frequently. On the other hand they are aware that there are problems and frauds. As they are interested in information on the Internet especially from official sources they might download our app. To target this group we should clearly state that this app is from an university.
-\item[Verantwortungsbedachte Etablierte] This group is online regulary and also uses smartphones. They are especially interested in using protection software and actively search information on the Internet. The users of this group do not think that they could protect themselves from the dangers of the Internet and actively seek to change this. Therefore they most likely will appreciate the app. To target this group we should clearly state that this app helps the user to protect himself.
-\item[Ordnungsfordernde Internet-Laien] These users are using the Internet rarely. Because of this they are particularly careful when using the Internet and normally do not enter personal data. Therefore, it is not likely that they will use the app. Besides, they usually do not have smartphones.
-\item[Internetferne Verunsicherte] These users do not use the Internet. Therefore, they are not exposed to phishing threats.
+\item[Digital Souver\"{a}ne:] This group frequently uses the Internet, and thus is exposed to phishing. Users of this group also usually own a smartphone. However, we have to rule them out because the users of this group are convinced that they already know the problems of the Internet and how to avoid them. Hence, they are unlikely to download our app and  will probably reject any training offer.
+\item[Effizienzorientierte Performer:] This group matches our preconditions.
+Users of this group frequently use the Internet as well as smartphones. In contrast to the previous group, they are interested in learning something new and see their obtained knowledge as an investment in the future. To reach the users of this group we should show that they can learn something from our app.
+\item[Unbek\"{u}mmerte Hedonisten:] This group is also native in the digital world but in contrast to the before mentioned groups, the users of this group are not aware of the problems and frauds therein. In case they are aware of a problem they seek to secure themselves with the aid of automated software instead of dealing with it themselves. Therefore, the users of this group are not likely to be motivated to use our app.
+\item[Postmaterielle Skeptiker:] This group is interested in the Internet and uses it frequently. Its users are aware of the problems and frauds raised by the Internet. As they are interested in information on the Internet, especially from official sources, they might download our app. To reach the users of this group we should clearly state that our app originates from a university.
+\item[Verantwortungsbedachte Etablierte:] This group is regulary online and also uses smartphones. Its users are especially interested in using protection software and actively seek for information on the Internet. They do not believe that they could protect themselves against the dangers of the Internet and actively aspire to change this. Therefore, we believe that this type of Internet users are likely to appreciate our app. To reach the users of this group we should clearly state that this app helps protect themselves.
+\item[Ordnungsfordernde Internet-Laien:] This group uses the Internet rarely. For this reason, the users of this group are particularly careful when using it and usually do not enter personal data. Besides, they usually do not have smartphones. Thus, it is not likely that they will use our app. 
+\item[Internetferne Verunsicherte:] These users do not make use of the Internet at all. Therefore, they are not exposed to phishing threats.
 \end{description}
 
 \begin{figure}[hHtbp]
@@ -60,4 +64,4 @@ We tried to match our preconditions to these groups. In the following we present
 \label{fig:divsi_kartoffeln}
 \end{figure}
 
-In conclusion, we consider \textit{Verantwortungsbedachte Etablierte} (10\%),  \textit{Postmaterielle Skeptiker} (10\%),  \textit{Effizienzorientierte Performer} (14\%). In total these are 34\% of the german population.
+To sum it up, we consider the Internet user types of \textit{Verantwortungsbedachte Etablierte} (10\%),  \textit{Postmaterielle Skeptiker} (10\%), and \textit{Effizienzorientierte Performer} (14\%). In total these groups represent 34\% of the German population.
