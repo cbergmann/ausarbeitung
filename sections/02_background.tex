@@ -192,11 +192,15 @@ We have shown that phishing is a wide area and covering it in a whole will go wa
  In literature most of the time phishing is described as the act of gaining sensitive information with the aid of fake websites which trick unsuspecting users into disclosing their credentials~\cite{sheng2007antiphishingphil, antiphishingtrendreport2013, kasperskyreport2013}.
 This type of attack is the mostly observed one and is a form of deceptive phishing.
  For this reason we have decided to focus on deceptive phishing.
+ 
  As aforementioned, phishing websites can be distributed in several ways, including but not limited to e-mail, SMS, or online social networks.
- Since we set our focus on the analysis of URLs while visiting the website, it does not matter where these links originate from.
- Any attack channel distributing a link to a fake website will be covered by our approach.
+ Additionaly these services might be accessed via multiple Applications (different e-mail Apps, dedicated Apps, Web-browser).
+ If we want to cover all this it would increases the amount of information that we have to tell the user to an extend that we do not think that it will fit into a still easy to use application.
+ E.g. we could tell the user that he can use an mail client that displays mails in plain text but this would only protect him from Links that come in via mail and would force him to use a certain mail application. Additionally it is unlikely that the user will check that each time before he clicks because that will interfere with his workflow.
+ Therefore we set our focus on the analysis of URLs before entering private data such that any attack channel distributing a link to a fake website will be covered by our approach.
  However we, and the user should, know that by mere clicking the link to come to the website some information might already be send to the phisher.
- This includes the validity and activeness of the communication path (e-mail address, phone number, OSN account) and additional information (browser information). We have to accept this because checking the link beforehand is not possible in most situations and also very different, depending on communication path and used software.
+ This includes the validity and activeness of the communication path (e-mail address, phone number, OSN account) and additional information (browser data, used ISP).
+ 
   Finally, there are three variations of phishing we have introduced.
  Our main focus is the mass phishing attack, since this is the common one.
  However, if any spear phishing or whaling attack involves fake websites, this would be covered by our approach as well.
