@@ -55,12 +55,9 @@ A severe downside of the URL preview is that the end of the preview is cut in ca
  For example, the subdomains of the URL can be long and well-crafted so that a legitimate looking subdomain is exactly at the end of the preview.
  This will cause the user to think that the subdomain at the end of the preview is the domain of the URL.
  Ultimately, the user will trust this URL even he should not.
-	\item \textit{Users Like Clicking} Clicking on links is practical and convenient. Due to this users like clicking on links. A study conducted by Karlof et al.~\cite{karlof2009conditioned} revealed that humans tend to develop automatic responses to recurring situations, so called click whirr responses.
-Such click whirr responses include, for instance, filling out forms or following links in e-mails from trusted senders.
-Breaking bad and steady habits is generally a difficult task.
-However, the habit of carelessly filling out forms involves more actions compared to simply clicking on a link.
+\item \textit{Users Click Subconsciously} A study conducted by Karlof et al.~\cite{karlof2009conditioned} revealed that humans tend to develop automatic responses to recurring situations, so called click whirr responses, i.e. repetitively applied actions tend to happen subconsciously. Such click whirr responses include filling out forms or following links in e-mails from trusted senders. Comparing these two, carelessly filling out forms involves more actions than simply clicking on a link.
 Therefore, we believe it is even more difficult to break the habit of clicking on links compared to re-thinking the action of filling out a form.
-Ultimately, we do not believe that we can hinder users from clicking on links, but we hope that we can make them re-think their decision of providing their sensitive data to a potentially malicious website.
+In conclusion, we do not believe that we can hinder users from clicking on links, but we hope that we can make them re-think their decision of providing their sensitive data to a potentially malicious website.
 \end{enumerate}
 
 The after click scenario does not exhibit all these drawbacks which is why we chose to follow this approach.
@@ -81,12 +78,12 @@ In the following we list the system requirements which need to be met to install
 
 
 \begin{description}[leftmargin=0cm]
-	\item[Android] Currently the mobile phone market is split between two major competitors. Android~(81.0\%) and iOS~(12.9\%)~\cite{androidiosmarketshare}. 
+	\item[Android:] Currently the mobile phone market is split between two major competitors. Android~(81.0\%) and iOS~(12.9\%)~\cite{androidiosmarketshare}. 
 	We have decided to develop an app for the Android operation system as there are more users and we believe we have greater freedom here compared to an iOS app. 
  	Additionally, Android is an open operating system and imposes less requirements and barriers that allow us a quick development and publication of our app~\cite{publishios, publishandroid}. 
-	\item[Version] Our initial intention was to develop an Android app for version 4.0 and upward.
+	\item[Version:] Our initial intention was to develop an Android app for version 4.0 and upward.
  However, during the app development we have encountered that about 24\% of all Android users still have Android 2.3.3 to 2.3.7~\cite{versionsandroid}. For this reason we have decided to modify the code so that these users can also install and use our app.
-	\item[Samsung Galaxy S3 or S4] Actually, it is not necessarily required to install the app on Samsung Galaxy S3 or S4 devices. 
+	\item[Samsung Galaxy S3 or S4:] Actually, it is not necessarily required to install the app on Samsung Galaxy S3 or S4 devices. 
 Yet, we did not have the possibility to test our app (design and functionality) on different devices.
 The above mentioned devices are those we tested and used for our final user study.
 \end{description}
@@ -96,25 +93,24 @@ The above mentioned devices are those we tested and used for our final user stud
 \label{s:assumptions}
 %===========================================
 We have to make some assumptions about the user's system. 
-If one or more of these are not met the user, disregarding of his skills, might not able to detect when he is a target of an attack.
+If one or more of these do not hold the user might not be able to detect that he is a target of an attack, disregarding of his skills.
 \begin{description}[leftmargin=0cm]
-	\item[Secure DNS] We have to assume that DNS is not under the control of the attacker.
+	\item[Secure DNS:] We have to assume that DNS is not under the control of the attacker.
 	Our approach is to show the user how to identify phishing attempts by analyzing the URL of the shown page.
 	In fact, this is of no use if the phisher can control the DNS system of the user.
-	Therefore, we assume local host files and all used DNS servers as untouched by the attacker.
-	\item[Secure Smartphone] We imply that the user's system is in a secure state.
+	Therefore, we assume local host files and all used DNS servers as untouched by a potential attacker.
+	\item[Secure Smartphone:] We imply that the user's system is in a secure state.
 	This means that the attacker is not able to, for example, exploit browser vulnerabilities, replace the browser or read the user's input.
-	\item[Secure SSL] 
+	\item[Secure SSL:] 
 	For a man-in-the-middle it is possible to intercept sent or received data and to collect the user data directly without notice.
 	Therefore, we warn the user against entering personal data on non-HTTPS pages.
-	For this we have to assume that the cryptography used by SSL in general and HTTPS in special is not broken.
-	\item[Malware] 
-	Sending e-mails with malicious attachments or links to malicious downloads are a form of deceptive phishing.
+	For this reason, we have to assume that the cryptography used by SSL and HTTPS is not broken.
+	\item[Malware:] 
+	Sending e-mails with malicious attachments or links to malicious downloads is a form of deceptive phishing.
 	In our approach we assume that the attacker does not lure the user into downloading such malicious software, which captures the user's confidential data.
 	We focus on attacks where the user is encouraged to actively provide his sensitive data himself.
 	Yet, we believe that preventing users from being lured into downloading malware is an important aspect.
-	Therefore, in future work one should consider how our approach can be expanded with regard to this problem.
-	
+	Therefore, in the future our approach should be expanded with regard to this problem.
 \end{description}
 
 %===========================================
@@ -126,19 +122,19 @@ Therefore, we do not intend to tell the users about possible attacks that only e
 \begin{description}[leftmargin=0cm]
 	\item[Cross-Site Scripting]
 	Cross-Site Scripting (XSS) is an attack where the attacker enters code, such as a form, into a legitimate webpage.
-	For a later viewer of this page this form seems to be legitimate content of the attacked webpage and he might be lured to enter personal data in this area. 
+	For a later viewer of this page this form seems to be legitimate content of the attacked webpage and he might be deluded into entering personal data in this area. 
 	Depending on the attacked webpage this cannot be detected by the user.
 	This is a vulnerability of the attacked webpage and can be prevented by checking user input.
 	Therefore, we think that preventing this attack is in the responsibility of the website owner.
 	\item[URL Hiding Techniques]
 	Most modern mobile phones have small screens.
 	Therefore, most browser hide away the URL bar to increase the viewport when the user browses webpages.
-	The URL bar is shown only when the user scrolls up beyond the top of the webpage.
-	There is a possible attack where the attacker prevents the user from scrolling all the way up and instead displays a fake URL bar with a fake URL.
-	A problem that the attacker faces is that mobile browsers look very diffently and this must be reflected by the fake URL bar, a tedious and difficult task.
-	We are aware that this can be exported to a phishing toolkit and used on many phishing pages. However, attackers do not need such sophisticated attacks yet, because enough users fall for the simple ones these days. 
+	The URL bar is shown only when the user scrolls up to the top of the webpage.
+	There is a possible attack where the attacker can prevent the user from scrolling all the way up and instead might display a fake URL bar with a valid looking URL.
+	A problem that the attacker has to face is that mobile browsers look very diffently which must be reflected by the fake URL bar, a tedious and difficult task.
+	We are aware that such techniques can be exported to a phishing toolkit, sold and used by many phishers. However, attackers do not need such sophisticated attacks yet, because enough users fall for the simple ones these days. 
 	We think this is the reason why this kind of attack has not yet been observed in the wild and the reason why we do not consider it as well.
 Also, this is an issue which can be addressed with the user interface with approaches similar to the iOS7 Safari browser (cf. \autoref{s:antiphishing_on_smartphone}).
 \end{description}
 
-We do not teach users regarding these types of phishing. However, we plan to design our app so these extensions are easily possible.
+We do not teach users regarding these types of phishing. However, we plan to design our app in such a way that these extensions will be easy to realize.

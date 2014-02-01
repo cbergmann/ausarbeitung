@@ -7,17 +7,18 @@ In this section we describe and elaborate on different teaching and learning con
 
 \subsection{E-Mail Spoofing}
 %...........................................
-The first thing we tell the user in the app is that they cannot trust in e-mails and the sender of them.
-This is especially important, because, according to a study~\cite{divsi2012divsi} by DIVSI, 85\% of the Internet users utilize e-mails for communication but only 14\% have concerns about security regarding it.
-This is a problem because in contrast to public believe e-mail is in no way secured against fraud. There are three main facts that we need to transport to the user:
+The first thing that our app users learn is that neither the sender of an e-mail nor an e-mail's content can be trusted.
+We consider this important because according to a study~\cite{divsi2012divsi} by DIVSI, 85\% of the Internet users utilize e-mails for communication but only 14\% have concerns regarding e-mail security.
+This misconception is also reflected in our phishing survey (cf. \autoref{s:survey}).
+This is a problem because in contrast to public belief e-mail is not secured against fraud. There are three main facts that we need to transfer to the user:
 \begin{description}[leftmargin=0cm]
-	\item[From Field] The first misbelife is that the from-field is in some way secured.
+	\item[From Field:] A major misbelief is that an e-mail's from-field is in some way secured.
 	In reality it must be considered a plaintext field.
 	The problem is that most modern e-mail clients hide this fact away from the user.
 	Therefore we show the user with an example that anyone can send e-mail from any from-address.
-	\item[E-Mail Content] We also have to show the user that the content of the e-mail is totally in the control of the sender.
+	\item[E-Mail Content:] We also have to show the user that the content of the e-mail is totally in the control of the sender.
 	Nobody prevents the attacker from sending e-mails that look exactly like the ones sent out by a legitimate sender.
-	\item[Links in E-Mails] The third information that most users are not aware of is that links in general and e-mail links in detail could point to any page. 
+	\item[Links in E-Mails:] The third information that most users are not aware of is that links in general and e-mail links in detail could point to any page. 
 	This means that the link does not necessarily lead to the denoted url.
 \end{description}
 To show the user these facts we have created the first part of the app.
@@ -194,26 +195,26 @@ This option should be punished in some way in order to prevent the user from pic
 
 
 \subsection{General Recommended Behavior}
-There are general hints and tips for Internet users which are helpful.
+There are general hints and tips for Internet users which can be helpful to protect oneself against phishing.
 The user should be informed about these general recommendations at some point.
 These aspects are explained in the following.
 
 \begin{description}[leftmargin=0cm]
-	\item[Data Entry Via Https] We should also tell the user that he should only enter data via HTTPS. 
-	When the user is entering data via HTTP there are basically two problems.
-	First the user can no longer be sure that he really talks to the person he want's to talk to.
-	This is captured by our precodition that DNS is assumed to be secure.
-	Secondly even if he really talks to the legitimate target site he can not be sure that an attacker is not wiretapping the communication.
-	Therefore the data that is send over plain HTTP can be considered lost.
-	This teaching content will be part of our app, cf. \autoref{s:knowledgetransferperlevel}.	
+	\item[Data Entry Via HTTPS:] 	When the user enters data via HTTP there are basically two problems.
+	First, the user cannot be sure that he actually is communicating with the service provider the website claims to be.
+Second, even if the user actually communicates with the intended communication partner there still might be an attacker wiretapping the communication.
+Therefore, data that is sent via plain HTTP is considered lost. 
+	This teaching content is covered by our app (cf. \autoref{s:knowledgetransferperlevel}).	
 	\item[Do Not Download Attachments] Many users download or even open files that they receive via e-mail rather unchecked.
 	This is related to the problem that they trust the from-field of the e-mail.
-	It is crucial to tell them that downloading or even opening a unknown file might infect their system.
-	However, for this work we consider this as out of scope and leave it open for future work.
-	\item[Data Economy] The goal of this app is to prevent that the data of the user is phished.
-	The first step towards this goal is to teach the user to enter his sensitive data as rarely as possible.
-	The idea behind this that websites, including but not limited to phishing websites, might use the users' data in a way that they did not intend. 
-	This is considered out of scope and remains as a problem to be targeted in future work.
+	It is crucial to tell them that downloading or opening an unknown file might infect their system.
+	As discussed in \autoref{s:assumptions} we assume that users are not tricked into downloading malicious software.
+This aspect has to be considered in further research.
+	\item[Data Economy] The goal of this app is to prevent the users' data from being phished.
+	A further step towards this goal is to teach the user to enter sensitive data as rarely as possible.
+	The idea behind this is that websites, including but not limited to phishing websites, might exploit user data. 
+	For now we put our focus on the detection of phishing URLs.
+Therefore, this aspect remains a problem to be targeted in future work.
 \end{description}
 
 %...........................................

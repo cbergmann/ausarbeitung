@@ -4,31 +4,31 @@
 \label{s:background}
 The objective of this chapter is to provide the required background knowledge for our further design elaborations. 
 We split this chapter into two parts.
-The first part deals with the term phishing in general which includes an encompassing definition of phishing, common phishing techniques, attack channels, variations of phishing, the scope of phishing we consider, followed by our definition of phishing we refer to in this work.
+The first part deals with the term phishing in general which includes common phishing techniques, attack channels, and variations of phishing.
 In the second part we introduce different phishing learning techniques.
-For better readability and comprehensibility we divided the available learning techniques into the content, i.e. what specific content is the user told, and the used media, i.e. how is this content communicated to the user.
+For better readability and comprehensibility we divided the available learning techniques into their content, i.e. what specific content is the user told, and the used media, i.e. how is this content communicated to the user.
 
 
 %===========================================
 \subsection{Phishing in General}
 %===========================================
 \label{s:phishing_general}
-This section elaborates on the topic of Phishing in general.
+This section elaborates on the topic of phishing in general.
 Phishing is a term which is referred to for various scenarios and techniques.
 Consequently, there are different definitions of phishing found in literature.
 Therefore, we start with a definition that entails all types of phishing.
-Subsequently, we introduce different phishing techniques, used communication channels and variations of phishing.
-Finally, we state our scope with respect to the term of phishing and provide our own definition of phishing considered in this work.
+Subsequently, we introduce different phishing techniques, used attack channels and variations of phishing.
+Finally, we state our scope with respect to the term of phishing and provide our own definition of it which we consider in this work.
 %............................................................................................................
 \subsubsection{Abstract Definition of Phishing}
 %............................................................................................................
 \label{s:phishing_def}
-The goal of this work is helping users to distinguish phishing websites from legitimate ones. 
- Since phishing is important in the scope of this work, we are going to define the term first. In fact, phishing is a term that is used by many people in different contexts. Therefore, the following definition is intendedly kept abstract in order to cover all possible scenarios of phishing. At the end of this chapter we will state our concrete definition of phishing  considered in this work.
+The goal of this work is to help users distinguish phishing websites from legitimate ones. 
+ Since phishing is important within the scope of this work, we define the term first. In fact, phishing is a term that is used by many people in different contexts. Therefore, the following definition is deliberately kept abstract in order to cover all possible scenarios of phishing. At the end of this chapter we will state our definition of phishing which we consider in this work.
 
 \begin{center}
 \textit{``Phishing is the practice of obtaining confidential information from users and describes a form of identitfy theft.
- Targeted confidential information includes, but is not limited to, user names, passwords, social security numbers, credit card numbers, account information, and other personal information.
+ Targeted confidential information includes, but is not limited to, user names, passwords, social security numbers, credit card numbers, or account information.
 ''}~\cite{jakobsson2006phishing}
 \end{center}
 
@@ -38,7 +38,7 @@ The goal of this work is helping users to distinguish phishing websites from leg
 \label{s:phishing_techs}
 There are various possibilities how phishers can obtain users' confidential information.
  In the following we describe phishing techniques that can be distinguished~\cite{jakobsson2006phishing, phishingtechniques}.
- This is important to know in order to determine what we are able to teach to our target group.
+ This is important to know in order to determine what we are able to teach our target group.
 %Online Identity Theft: Phishing Technology, Chokepoints and Countermeasures.
 % ITTC Report on Online Identity Theft Technology and Countermeasures
 %master_thesis/notes/phishing
@@ -50,26 +50,26 @@ There are various possibilities how phishers can obtain users' confidential info
  In fact, this e-mail is malicious and links to a fake website, where the phisher intends to steal the user's data by capturing the fields the user enters trustfully.
  Once the phisher obtains the user's data, he is able to impersonate the victim's identity and benefit from this.
 
-	\item[Malware-Based Phishing] As the term already reveals, malware-based phishing embraces some kind of malicious software running on the user's computer.
+	\item[Malware Based Phishing] As the term already reveals, malware-based phishing embraces some kind of malicious software running on the user's computer.
  There are several ways of infecting the user's computer with such malware.
  Social engineering techniques can be used to convince the user to open malicious e-mail attachments or download malevolent files from a website.
  Another possibility is to exploit security vulnerabilities.
  Once the malware resides on the target, various technologies can be utilized to get at the users' data.
  Keyloggers and screenloggers, for example, track users' data input and send relevant information to a phishing server.
- Recent research has shown that mobile phone Operating systems are as vulnerable to such attacks as desktop systems.
+ Recent research has shown that mobile phone operating systems are as vulnerable to such attacks as desktop systems.
  Another way is to make use of so-called web trojans, which appear when users intend to log in.
- While the user thinks he is logging in on a website of his trust, the entered information is actually transmitted to the phisher.
+ While the user thinks he is logging into a website of his trust, the entered information is actually transmitted to the phisher.
 
 \end{description}
 
-These are the two main phishing techniques that influence the public understanding of the term most.
-Despite these, there are other possible attacks that we think could be considered as phishing.
+The above mentioned phishing techniques are the most common ones which influence the public understanding of the term most.
+Despite these, there are other possible attacks that could be considered as phishing.
 
 \begin{description}[leftmargin=0cm]
-	\item[DNS Hijacking] This kind of phishing is also referred to as pharming and includes the manipulation of a system's host file or domain name system.
+	\item[DNS Hijacking] This kind of phishing is also referred to as pharming and includes the manipulation of a system's host file or domain name system (DNS).
  These kinds of tampering result in returning a fraudulent IP address for URL requests and thus leading the user to a malicious website, even though the URL of a legitimate website had been entered.
- As a consequence the unaware user enters his credentials into this fake website and the attacker obtains these and can misuse them.
- These attacks are almost impossible to detect for the user.
+ As a consequence, the unaware user enters his credentials into this fake website and the attacker obtains these which he can misuse.
+ For the user these attacks are almost impossible to detect.
 
 	\item[Man-in-the-Middle Attack] In this form of attack the phisher positions himself between the legitimate website and the user.
  The user's data input is delivered to the phisher, where he stores the information and then forwards it to the legitimate website.
@@ -77,14 +77,14 @@ Despite these, there are other possible attacks that we think could be considere
  The gained sensitive information can then be sold or misused in any other way.
  As everything works as usual for the user, it is very difficult for him to detect such an attack.
  
-	\item[Content Injection/XSS] Content injection phishing refers to the practice of embedding additional harmful content into legitimate websites.
- This content can, for example, be malvolent code to log users' sensitive information and deliver the input to the phishing server.
- Well-known types of content injection phishing include, for example, cross-site scripting (XSS).
+	\item[Content Injection/XSS] Content injection refers to the practice of embedding additional harmful content into legitimate websites.
+ This content can be, for example, malevolent code to log users' sensitive information and deliver the input to the phishing server.
+ Well-known types of content injection include, for example, cross-site scripting (XSS).
 XSS vulnerabilities result from a web application's usage of content from external sources, such as search terms, auctions or user reviews of a product.
  This type of data supply can be misused and instead of delivering the expected kind of data malicious scripts can be injected.
 
 	\item[Search Engine Poisoning] Other phishing attempts involve search engines.
-	With the aid of common Search engine optimization techniques the phisher tries to rank his phishing page above the legitimate webpage. By doing this he might trick users that do not know the valid URL of the legitimate webpage into visiting his phishing page.
+	With the aid of common search engine optimization techniques the phisher aspires to rank his phishing website higher than the legitimate website. By doing this he might trick users who use search engines to access websites into visiting his fraudulent page.
 	
 \end{description}
 
@@ -212,7 +212,7 @@ Now that we have restricted our understanding of phishing, the next section prov
 In the following we present a concrete definition which encompasses our understanding of phishing for the scope of this work:
 
 \begin{center}
-\textit{``Phishing is the practice of obtaining confidential information from users and describes a form of identitfy theft. This attack exploits a user's trust rather than system vulnerabilities. More specifically, the user is fooled into believing that he is communicating with a party he trusts and lured into divulging confidential data. This usually happens through phishing websites which look deceptively similar to the originals. Targeted confidential information includes, but is not limited to, user names, passwords, social security numbers, credit card numbers, account information.
+\textit{``Phishing is the practice of obtaining confidential information from users and describes a form of identitfy theft. This attack exploits a user's trust rather than system vulnerabilities. More specifically, the user is fooled into believing that he is communicating with a party he trusts and lured into divulging confidential data. This usually happens through phishing websites which look deceptively similar to the originals. Targeted confidential information includes, but is not limited to, user names, passwords, social security numbers, credit card numbers, or account information.
 ''}~\cite{jakobsson2006phishing}
 \end{center}
 
