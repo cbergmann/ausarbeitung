@@ -109,7 +109,7 @@ Website takedowns might raise international and legal issues in case multiple ju
 The phishing website might be located in a different country than the targeted organization, or a takedown company might request the removal from a third country.
 However, according to Moore et. al~\cite{mooretakedown} the removal of phishing websites generally follows fairly fast (4-96 hours).
 The authors state that system administrators are aware of the phishing problem and take such websites down, usually without involving the police or court.
-Yet, according to~\cite{moore2007examining} the average life time of a phishing website is still 61.69 hours, i.e. 2.5 days.
+Yet, according to Moore et. al~\cite{moore2007examining} the average life time of a phishing website is still 61.69 hours, i.e. 2.5 days.
 Thus, this approach cannot entirely defeat phishing. During the uptime of the fraudulent website falling for it remains a threat.
 \end{description}
 
@@ -121,7 +121,7 @@ Subsequently, we introduce and reason our proposal focusing on the user himself,
  \label{s:awareness}
 
 The previous section dealt with available technical solutions to counter phishing and illustrated the downsides of these techniques.
-In summary, we could identify two major issues which we discuss in the following.
+In the following we summarize the two major issues of these approaches and motivate the need for additional strategies.
 \begin{enumerate}
 	\item\textit{Accuracy of Technical Solutions:} First, attackers can always invent new, more sophisticated deceptions that bypass current prevention systems.
 	 The attackers are always first in row, i.e. they create a deception technique and once it is captured and resolved by detection systems, they simply create a new technique or adapt the old one so that it is no longer detected.
@@ -138,19 +138,20 @@ Otherwise there is still the chance that users will fall into the attackers' tra
  Some users might just not be aware of how easy it is for even unexperienced attackers to duplicate a website or send out fake e-mails on behalf of trusted companies or persons.
  Even if users are aware that there is a certain degree of threat in the Internet, people tend to believe the probability of facing such an attack is very low and that it will not happen to them, until it actually happens to them or to relatives/friends.
 \end{enumerate}
-
-For these reasons, we believe that an approach which is complementary to technical solutions is required.
-We regard the raising of their security awareness and the offering of a service for education as a further key step against phishing.
-Increased security awareness may change users' behavior and attitude towards taking the warnings of protective tools more seriously.
-The user education can help users defend themselves in cases such technical tools fail.
-
+\newline
+For these reasons, we believe that a complementary approach to technical solutions is required.
+We regard the raising of user security awareness and the offering of a service for education as a further key step against phishing.
+Increased security awareness may change user behavior and attitude towards taking the warnings of protective tools more seriously.
+The user education can help users defend themselves in cases such technical tools fail or also in cases were no tools are available.
 The opinions on whether user education and increased security awareness will help combat phishing are divided among researchers.
 There exist security researchers and experts who argue that user education is pointless~\cite{useredupointless, bruceschneieronsecuritytraining}.
 Other sources emphasize the need for increased security awareness and education of the users~\cite{usereducebit, usereduscmagazine}.
-It also seems that there already exist promising and effective anti-phishing education approaches~\cite{kumaraguru2007protecting, sheng2007antiphishingphil}, yet with the need for further improvements (cf.~\autoref{s:related_work}).
+It also seems that there already exist promising and effective anti-phishing education approaches~\cite{kumaraguru2007protecting, sheng2007antiphishingphil}, yet with the need for further improvements which we discuss in \autoref{s:related_work}.
 
 Ultimately, we believe that technical solutions will never suffice to protect the end user entirely.
 Therefore, there is the need for complementary approaches.
+
+In the following section we explain why we consider the smartphone environment as particularly appropriate to educate users.
 
 %-------------------------------------------
 \subsection{Anti-Phishing Education on the Smartphone}
@@ -165,26 +166,29 @@ We chose to develop an app for the following reasons:
  Many browsers, for example, generally hide their address bars due to the lack of space.
  With the address bar, the URL and other potential security indicators are hidden.
 The release of iOS7 features a key step towards better transparency for the user.
-iOS7's Safari browser displays the host (except for ``www'' and ``m'') instead of the website's title or the URL itself.
+iOS7's Safari browser displays the host instead of the website's title or the URL itself.
 This might make phishing attacks more difficult to succeed, assumed that users look at and assess this area of the browser.
 Additionally, in portrait mode the host is displayed even when scrolling down the page, i.e. this relevant information is always visible.
-An interesting question to ask here is whether and how many will follow such an approach.
+An interesting question to ask here is whether, when and how many browsers will follow such an approach.
 Currently, Android does not support such a functionality. 
-Yet, displaying the host instead of the complete URL or the title is not sufficient to help users detect phishing.
+Yet, displaying the host instead of the complete URL or the title only facilitates users to detect phishing.
 There is still a need for URL parsing comprehension for these purposes.
-	\item[Distraction Caused by Mobility:] There is also the fact that users often use their smartphones while on the move, for example, when walking or  during a train or a bus ride.
- These circumstances include distractions from the environment which are unavoidable.
+	\item[Distraction Caused by Mobility:] Users often use their smartphones while on the move, when walking or during a train or a bus ride, for example.
+ These circumstances imply distractions from the environment.
  These distractions obviously will influence the user's attentiveness.
  Hence, smartphone users might be even more vulnerable to phishing attacks than the traditional desktop user.
- This is also indicated by a report of 2011~\cite{trusteer2011}, which says that mobile users are three times more likely to access phishing websites than desktop users.
- This might also be influenced by the fact that mobile e-mail clients effectively provide no way to check the validity of an incoming e-mail.
+ This is also indicated by Boodaei's report~\cite{trusteer2011}, which says that mobile users are three times more likely to access phishing websites than desktop users.
+ This might also be affected by the fact that mobile e-mail clients effectively provide no way to check the validity of an incoming e-mail.
 The potential distraction raises the question whether it has an impact on the user's education and retentiveness.
 According to the principles of learning (cf.~\autoref{s:learning_principles}) it most likely has an impact on the learning performance.
 Yet, we believe that our exercise and repetition scheme (cf.~\autoref{s:learning_principles}) helps users to internalize the learning content despite potential distractions.
 For further research it would be interesting to test how significantly distractions impact the learning results of our app, though.
-	\item[High Number of Smartphone Users:] In addition, given that the majority of the people use a smartphone on a regular basis in Spain, Germany, Italy, France and the UK~\cite{smartphoneusage}, there is a need for the protection of smartphone users.
-\end{description} 
+	\item[High Number of Smartphone Users:] In addition, given that the majority of the people use a smartphone on a regular basis in Spain, Germany, Italy, France, and the UK~\cite{smartphoneusage}, there is a need for the protection of smartphone users.
+With the smartphones, apps and app games became popular.
+Therefore, we believe a diverting game appears to be a good opportunity for education.
 
+\end{description} 
+\newline
 Overall, educating the user on the smartphone provides two major benefits.
  First, the user can use the app on the move.
  Thus, the app is accessible outside of the user's desktop environment.
