@@ -116,10 +116,6 @@ XSS vulnerabilities result from a web application's usage of content from extern
 Several attack channels exist that can be exploited by phishers to reach their victims.
  This section introduces some possible attack channels~\cite{phishing2010ramazan, phishingtechniques}.
  
-In general the user receives a message from a phisher which is disguised as a party he trusts.
-The message usually contains a link to a website asking the user for his personal information (e.g. user name and password). As the link seemed to come from a trusted party there might be users who do not expect something harmful behind this and thus enter their data~\cite{phishing2010ramazan}.
-When the phisher acquires the user's credentials he can continue playing this game with the contacts of the newly derived user's account, which has just been compromised.
- 
 \label{s:attack_channels}
 \begin{description}[leftmargin=0cm]
 	\item[E-Mail] E-Mail spoofing is a common way for a phisher to reach his victims.
@@ -136,8 +132,11 @@ When the phisher acquires the user's credentials he can continue playing this ga
  Another possibility is to be asked to call back a fraudulent or expensive telephone number indicated in the text message.
  This number usually leads to an automated voice response system which is intended to gain the confidential information from the calling user.
  This form of phishing is also referred to as smishing, derived from the two terms ``SMS'' and ``phishing''.
+
+	\item[Instant Messaging] Spreading links via instant messages is another way for a phisher to reach his victims. Once the phisher has gained access to a victim's account he can pretend to be his victim and lure his contacts into disclosing their data. The phisher can continue this game repeatedly.
+Obviously, this kind of deception can be applied in other attack channels, such as e-mails or online social networks, as well.
  
-	\item[Instant Messaging and Online Social Networks] The general approach outlined above can also be applied to IM services. Using online social networks is similar to using instant messaging services.
+	\item[Online Social Networks] Using online social networks is similar to using instant messaging services.
  However, online social networks provide additional valuable information to the phisher.
  With the aid of user profiles and pinboard entries etc.
  he can make his baits even more credible and trustworthy. For example if the phisher sees in the social network that the user likes playing a specific game. He might impersonate the developer of the game and refer to a severe problem with the users account and ask him to enter his credentials. 
