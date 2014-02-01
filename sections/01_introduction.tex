@@ -3,46 +3,38 @@
 \section{Introduction}
 %*******************************************
 \label{s:introduction}
-%subject
-%This chapter introduces the target of this work, which is to design, implement and evaluate an educational app.
- %The app is supposed to help unexperienced users detect phishing attacks.
- %At first we motivate the benefit of our work and how we envision our approach to achieve our goal.
-%Specifically, we first motivate why countering phishing is necessary by exploring the consequences and statistics of phishing.
-%Subsequently, we will reason why there is a need for an anti-phishing education app, instead of, for example, a further technical solution or a computer-based educational approach.
- %Finally, we define our specific objectives and provide an overview of the following chapters.
-%===========================================
-%\subsection{Motivation}
-%===========================================
+
 Nowadays, a world without Internet is unimaginable for most people in developed countries.
 As an example, 83\% of Germany's population has Internet access~\cite{globalfinance2012internetusage}. 
 However, it is undeniable that with the benefits of the Internet also come threats. 
 One major issue of today's digitalized world is phishing. 
-Phishing is a term which is referred to for various scenarios and techniques resulting in multiple definitions.
+Phishing is a term which is referred to for various scenarios and techniques resulting in multiple possible definitions.
 \autoref{s:phishing_general} elaborates on the different phishing techniques and scenarios.
-In the scope of this work, however, phishing is a form of fraud which lures users into disclosing confidential information. 
+Within the scope of this work, however, phishing is a form of fraud which lures users into disclosing confidential information. 
 Usually, phishing happens through fake websites which imitate the original ones.
-On the fraudulent website the users are persuaded to enter their confidential data, such as their login or bank account data.
+On these fraudulent website the users are persuaded to enter their confidential data, such as their login or bank account data.
 The attacker may use the obtained data for various purposes resulting in different consequences which we elaborate on in the following.
 
 %-------------------------------------------
 \subsection{Consequences of Phishing}
 %-------------------------------------------
-Falling for a phishing attack has several consequences for a fooled person as well as for a target company or organization.
-
+Falling for a phishing attack has several consequences for the fooled person as well as for the target company or organization.
 In the following some of these consequences are briefly illustrated.
 
 \begin{description}[leftmargin=0cm]
-	\item[Identity Theft:] Phishing is the practice of tricking users to disclose their personal data especially login information. The first goal of the attacker is to impersonate the attacked user. That is to say, a possible consequence of falling for a phishing attack is identity theft~\cite{jakobsson2006phishing}. With this information he can e.g. do online shopping or access the corporate infrastructure on behalf of his victims.
+	\item[Identity Theft:] Phishing is the practice of tricking users into disclosing their personal data, especially login information. The main goal of the attacker is to impersonate the attacked party. That is to say, a possible consequence of falling for a phishing attack is identity theft~\cite{jakobsson2006phishing}. With the obtained information the phisher can, for instance, do online shopping or access the corporate infrastructure on behalf of his victims.
 	\item[Data theft:]
-	 In a private environment he might collect the users' contacts or all kind of other sensitive information.
-When the attacker has access to corporate systems he might be able to read and copy customer data or other confidential information.
+	 In a private environment the phisher might collect the user's contacts or all kinds of other sensitive information.
+In case the attacker gains access to corporate systems he might be able to read and copy customer data or other confidential information.
  	\item[Reputational Damage:]
- 	When the phisher gets access to a social network account he might be able to trick \"friends\" of the victim to also fall for the phisher. This will negatively impact the reputation of the victim.
- 	 Moreover, if a customer falls for an attack he might also blame the company for not protecting him appropriately. 
- 	 Ultimately, they might lose confidence in eCommerce operations and the Internet in general.
- 	 On the other hand, if a employee falls for an attack and this news is published this alone will decrease the trust of potential and current customers in the attacked company~\cite{mcafee, redcondor}. 
+ 	When the phisher gets access to a social network account he might be able to deceive ``friends'' of the victim as well. This might have a negative impact on the victim's reputation.
+ 	 Moreover, if a customer falls for an attack he might blame the targeted company for not protecting him appropriately. 
+ 	 Ultimately, this customer might lose confidence in eCommerce operations and the Internet in general.
+
+In another scenario an employee might fall for a phishing trap.
+If such news reports are published this might undermine the trust of potential and current customers in the attacked company~\cite{mcafee, redcondor}. 
 	\item[Financial Loss:]
-	An attacker might access privately or corporately used bank accounts and plunder them. Additionally organizations have to face increased support costs~\cite{rsa2013, mcafee}.
+	An attacker might be able to plunder private or corporate bank accounts. Additionally, organizations have to face increased support costs~\cite{rsa2013, mcafee} caused by the problem of phishing.
 \end{description}
  
 %-------------------------------------------
@@ -60,7 +52,7 @@ The problem is, there are several ways to interpret collected data.
 Hence, every party might assess their data with respect to their interests resulting in diverse statistics. 
 Diversity can also result from setting different foci.
 Therefore, the reliability of such statistics, including the above mentioned, is questionable. 
-Anderson et al.~\cite{anderson2012measuring} try to give a independent view on this topic.
+Anderson et al.~\cite{anderson2012measuring} try to give an independent view on this topic.
 %We cannot know whether the disparity between several statistics is the result of different foci or of personal interest. 
 Regardless of the reliability and accuracy of the above mentioned statistics we believe that the education of end users is an important step towards countering phishing. 
 Ultimately, more reliable and accurate statistics are required in order to evaluate the effectiveness of all the proposed countermeasures against phishing. 
