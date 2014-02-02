@@ -4,44 +4,38 @@
 
 In this section we describe and elaborate on different teaching and learning contents which can potentially be communicated to the user.
  At the same time we reason our decision whether to communicate the specific content or not.
+In \autoref{s:approach} we then precisely explain how the learning contents are reflected in our app.
 
 \subsection{E-Mail Spoofing}
 %...........................................
-The first thing that our app users learn is that neither the sender of an e-mail nor an e-mail's content can be trusted.
-We consider this important because according to a study~\cite{divsi2012divsi} by DIVSI, 85\% of the Internet users utilize e-mails for communication but only 14\% have concerns regarding e-mail security.
+According to a study by DIVSI~\cite{divsi2012divsi}, 85\% of the Internet users utilize e-mails for communication but only 14\% have concerns regarding e-mail security.
 This misconception is also reflected in our phishing survey (cf. \autoref{s:survey}).
-This is a problem because in contrast to public belief e-mail is not secured against fraud. There are three main facts that we need to transfer to the user:
+This is a problem because in contrast to public belief e-mail is not secured against fraud. There are three main facts that need to be delivered to the user:
 \begin{description}[leftmargin=0cm]
 	\item[From Field:] A major misbelief is that an e-mail's from-field is in some way secured.
 	In reality it must be considered a plaintext field.
 	The problem is that most modern e-mail clients hide this fact away from the user.
-	Therefore we show the user with an example that anyone can send e-mail from any from-address.
+	Therefore, we have to explain to the user that anyone can send e-mails from any from address. 
 	\item[E-Mail Content:] We also have to show the user that the content of the e-mail is totally in the control of the sender.
 	Nobody prevents the attacker from sending e-mails that look exactly like the ones sent out by a legitimate sender.
-	\item[Links in E-Mails:] The third information that most users are not aware of is that links in general and e-mail links in detail could point to any page. 
-	This means that the link does not necessarily lead to the denoted url.
+	\item[Links in E-Mails:] The third aspect that most users are not aware of is that e-mail links or links in general could point to any page. 
+	This means that the link does not necessarily lead to the denoted URL.
 \end{description}
-To show the user these facts we have created the first part of the app.
-We commonly refer to this part as the ``awareness part'' because it is intended to increase the users' awareness of the problem of e-mail spoofing and Internet fraud.
-Thereafter, the user is presented with a form that allows him to enter a sender and a target e-mail address and a free text.
-When the user submits this form we send out an e-mail including the sender and the receiver that the user entered.
-The body of the e-mail contains a common introduction and the users free text.
-It also contains a link that seems to go to a common webpage but instead links back to the app.
-The template for this e-mail can be found in \autoref{a:mail}.
+
+The above mentioned learning contents are intended to increase the user's security awareness.
+In \autoref{s:app_design} we describe how exactly we achieve to communicate these teaching contents to the user.
 
 \subsection{Smartphone Limitations}
 %...........................................
 As already discussed in \autoref{s:antiphishing_on_smartphone} smartphones have several limitations, such as the small screen size. 
 This section deals with the detection of phishing on the smartphone and the related limitations.
 More particularly, we will briefly explain in which ways URLs can be checked with the smartphone and what kind of problems these operations raise.
-Based on this we decided whether to communicate this kind of URL checking to the user or not.
+Based on this we decide whether to communicate this kind of URL checking to the user or not.
 
 \begin{description}[leftmargin=0cm]
-	\item[Invisible Address Bar] Due to lack of space most of the smartphone browsers hide the address bar~\cite{amrutkar2012measuring} and use this expanded space for the web content. 
-By doing this, not only potential security indicators are made invisible, but also the URL that indicates with which website the user is actually interacting.
-In order to make the address bar re-appear the user generally has to scroll to the top of the whole website.
-The fact that the address bar containing the important information of the URL is generally hidden must be communicated to the user.
-Most of the users will probably know that they can access the address bar by scrolling to the top of the website.
+	\item[Invisible Address Bar] As discussed in \autoref{s:antiphishing_on_smartphone}, due to the lack of space most of the smartphone browsers hide the address bar, i.e. the URL,~\cite{amrutkar2012measuring} and use this expanded space for the web content. 
+The fact that the address bar, which contains the important information of the website's URL, is generally hidden must be communicated to the user.
+Most of the users will probably know how they can access the address bar of their browser.
 However, for those who might not know how to deal with that an introduction is inevitable.
 
 	\item[Analyze Complete URL Via Address Bar] Finding the address bar will not suffice for a reasonable URL analysis. 
@@ -50,24 +44,10 @@ Specifically, it is necessary to first tap the URL address text and then scroll 
 Without learning these steps a reliable URL checking is not possible. 
 Therefore, these steps have to be communicated to the user.
 
-	\item[Show URL Before Click - Preview] Many mobile e-mail clients provide the functionality of showing the URL a link leads to when touching and holding the link.
-However, the Android stock e-mail app, for example, does not provide this functionality.
-This operation is generally available in smartphone browsers for links on websites while surfing.
-Yet, one should keep in mind that it might happen that the complete URL cannot be displayed on this preview in case it is too long. 
-Consequently, as discussed in \autoref{s:coverage}, deceiving the user with well-crafted, illegitimate URLs becomes possible. 
-There, we already discussed the benefits and drawbacks of teaching the user how to preview the destination URL and our decision against it.
-
-	\item[Show URL Before Click - Copy and Paste] Previewing the destination URL raises flaws, such as there is no guarantee that every mobile e-mail client provides this functionality and deception remains possible. 
-An alternative to the preview functionality is the copy and paste functionality.
-When touching and holding a link the option ``copy URL'' is available additionally to the URL preview.
-Upon selecting this option the destination URL is copied to the clipboard.
-Now the user may paste the copied destination URL to any editor or even the address bar itself in order to analyze it \textit{before} submitting.
-In case the URL was pasted directly into the address bar, left and right scrolling must further be applied for the analysis. 
-%Also, the user must be careful not to submit the URL before checking it, otherwise he also just could have clicked on the link and checked the URL afterwards.
-Analyzing the URL in a separate editor would mean to re-paste the URL into the address bar again before submitting it.
-Since these approaches require several steps before the user may visit the website, we believe that either of those are of too high effort and thus would not be followed by the users.
-Also, the user would not be able to see the ``real'' target in case there is a (possibily malicious) redirect included. 
-Hence, workarounds to show the actual url in advance will not be communicated to the user.
+	\item[Show URL Before Click] In \autoref{s:coverage} we extensively discussed the advantages and disadvantages of the URL analysis before as well as after clicking on a link.
+The reasons why we decided to go for an after click URL analysis can be consulted in that section.
+Hence, functionalities or workarounds related to showing the destination URL before clicking on a link will not be communicated to the user.
+Instead we focus on the URL analysis directly in the browser.
 \end{description}
 
 \subsection{Structure of a URL}

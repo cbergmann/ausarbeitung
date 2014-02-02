@@ -28,6 +28,14 @@ We have decided to divide our education app into two main parts.
  We believe that the user will be very surprised about how easy even he himself could send a fake e-mail.
 Hence, the user learns that he cannot fully trust the ``from'' field and the content of the e-mails he is receiving.
 
+%To show the user these facts we have created the first part of the app.
+%We commonly refer to this part as the ``awareness part'' because it is intended to increase the users' awareness of the problem of e-mail spoofing and Internet fraud.
+%Thereafter, the user is presented with a form that allows him to enter a sender and a target e-mail address and a free text.
+%When the user submits this form we send out an e-mail including the sender and the receiver that the user entered.
+%The body of the e-mail contains a common introduction and the users free text.
+%It also contains a link that seems to go to a common webpage but instead links back to the app.
+%The template for this e-mail can be found in \autoref{a:mail}.
+
 		\item \textit{Link Text Unequal Target URL} The awareness part of the app is also supposed to show the user that he cannot trust the texts of a link he is clicking on.
  To illustrate this, the user is asked to click on a link with the text ``https://www.
 google.de/''. Clicking on this link, the user will expect to land on the Google website, what will not happen.
