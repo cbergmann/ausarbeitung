@@ -12,39 +12,38 @@ Finally, the limitations of our work are stated.
 %===========================================
 \label{s:coverage}
 \begin{description}[leftmargin=0cm]
-	\item[Deceptive Phishing as Phishing Technique] Within the scope of this work we focus on deceptive phishing.
+	\item[Deceptive Phishing as Phishing Technique:] As outlined in \autoref{s:phishing_general}, within the scope of this work we focus on deceptive phishing.
  In particular, we target the detection of phishing websites resp. phishing URLs.
-	\item[Several Attack Channels] As mentioned above, we concentrate on the detection of phishing URLs.
- Phishing websites can be reached in several ways.
- Links to fake websites are usually distributed via e-mails, instant messages, or online social networks.
- Moreover, they can be spread via SMS or even phone calls.
- Ultimately, a phishing website can also be reached by just surfing in the Internet.
- By teaching to identify spoofed URLs, our approach covers all attack channels as long as the user is tricked into divulging sensitive information on a phishing website.
 
-	\item[Mass Phishing as Variation of Phishing] We cover mass phishing, as already stated in \autoref{s:phishing_variations}.
- However, the URL checking can be applied in case of any variant, as long as the attack includes a website which lures the user to type in his credentials.
+	\item[Several Attack Channels:] In order to be independent from the source a link may originate from, we set our focus on the analysis of URLs before entering private data, i.e. on the website itself, such that any attack channel distributing a link to a fake website will be covered by our approach (cf. \autoref{s:phishing_general}).
 
-	\item[Game and Quiz Based Learning as Communication Medium] As discussed in \autoref{s:medium_classification}, we have decided to develop a quiz game to create an incentive for the users and at the same time reach a large audience. 
+	\item[Mass Phishing as Variation of Phishing:] We cover mass phishing, as already stated in \autoref{s:phishing_variations}.
+ However, the URL checking can be applied in case of any variant, as long as the attack includes a website which lures the user into typing in his credentials.
 
-	\item[URL Based Knowledge as Learning Content] As argued in \autoref{s:content_classification} we believe that URL based knowledge gives the most reliable hint regarding its ``origin'', i.e. whether a URL in fact belongs to a legitimate website or not. This will be the focus of the learning content in our app.
+	\item[URL Based Knowledge as Learning Content:] As argued in \autoref{s:content_classification} we believe that URL based knowledge gives the most reliable hint regarding its ``origin'', i.e. whether a URL in fact belongs to a legitimate website or not. This will be the focus of the learning content in our app.
 
-	\item[After Click URL Analysis] The analysis of a URL can follow before or after clicking on a link (if a link is involved), i.e. with a URL preview option or directly in the address bar. 
+	\item[Game and Quiz Based Learning as Communication Medium:] As discussed in \autoref{s:medium_classification}, we decided to develop a quiz game to create an incentive for the users and at the same time reach a large audience. 
+
+	\item[After Click URL Analysis:] The analysis of a URL can follow before or after clicking on a link (if a link is involved), i.e. with a URL preview option or directly in the address bar. 
 Analyzing the URL before clicking on it brings several benefits:
 
 \begin{enumerate}
-	\item \textit{No Malicious Download} If a spoofed URL is detected before clicking on a link the potential download of  malicious software can be avoided. 
-	\item \textit{Phisher Obtains No Information} Recognizing the spoofed URL before visiting the website prevents the phisher from obtaining any information of the user. Such information include, for example, the activeness and validity of the user's e-mail address. 
+	\item \textit{No Malicious Download:} If a spoofed URL is detected before clicking on a link the potential download of  malicious software can be avoided. 
+	\item \textit{Phisher Obtains No Information:} Recognizing the spoofed URL before visiting the website prevents the phisher from obtaining any information of the user. Such information includes, for example, the activeness and validity of the user's e-mail address. 
 \end{enumerate}
 
 On the other hand, the before click scenario has severe downsides:
 
 \begin{enumerate}
-	\item \textit{Redirects Not Recognizable} Many links contain redirects. Such redirects, which can be malicious, are not recognizable before the click.
-	\item \textit{Unavailability of URL Preview Functionality} The stock e-mail client of Android does not provide the functionality of previewing the destination URL. 
-Here, the only way to preview the URL to apply a long press to the link, copy it into the clipboard, paste it somewhere else and then view it. 
+	\item \textit{Redirects Not Recognizable:} Many links contain redirects. Such redirects, which can be malicious, are not recognizable before the click.
+	\item \textit{Unavailability of URL Preview Functionality:} The URL preview functionality is generally available among various browsers. 
+However, the stock e-mail client of Android, for example, does not provide the functionality of previewing the destination URL. 
+Here, the only way to preview the URL is to apply a long press to the link, copy it into the clipboard, paste it somewhere else and then view it. 
 Then, after the analysis the URL has to be sent to the browser.
-As this is involves too much effort, it is likely that no user will follow such a suggestion.
-	\item \textit{Deception With URL Preview} There are other e-mail clients which provide options to display the destination URL of a link.
+As this involves too much effort, it is likely that no user will follow such a suggestion.
+Another possibility would be to force e-mail applications to display plain text in general.
+The problem with this is that this functionality is also highly dependent on the applied e-mail application and covering all possibilities would not feasible.
+	\item \textit{Deception with URL Preview:} Browsers in general and several other e-mail clients provide options to display the destination URL of a link.
 Yet, we believe that this should not be communicated to the user for two reasons.
 First, we are elaborating on a general approach that does not rely on third party e-mail clients besides the default one, which is pre-installed and comes with the device itself.
 Second, and most importantly, this functionality has the potential to mislead the user.
@@ -53,7 +52,7 @@ A severe downside of the URL preview is that the end of the preview is cut in ca
  For example, the subdomains of the URL can be long and well-crafted so that a legitimate looking subdomain is exactly at the end of the preview.
  This will cause the user to think that the subdomain at the end of the preview is the domain of the URL.
  Ultimately, the user will trust this URL even he should not.
-\item \textit{Users Click Subconsciously} A study conducted by Karlof et al.~\cite{karlof2009conditioned} revealed that humans tend to develop automatic responses to recurring situations, so called click whirr responses, i.e. repetitively applied actions tend to happen subconsciously. Such click whirr responses include filling out forms or following links in e-mails from trusted senders. Comparing these two, carelessly filling out forms involves more actions than simply clicking on a link.
+\item \textit{Users Click Subconsciously:} A study conducted by Karlof et al.~\cite{karlof2009conditioned} revealed that humans tend to develop automatic responses to recurring situations, so called click whirr responses, i.e. repetitively applied actions tend to happen subconsciously. Such click whirr responses include filling out forms or following links in e-mails from trusted senders. Comparing these two, carelessly filling out forms involves more actions than simply clicking on a link.
 Therefore, we believe it is even more difficult to break the habit of clicking on links compared to re-thinking the action of filling out a form.
 In conclusion, we do not believe that we can hinder users from clicking on links, but we hope that we can make them re-think their decision of providing their sensitive data to a potentially malicious website.
 \end{enumerate}
@@ -64,7 +63,7 @@ If a user confirms his e-mail address to the phisher by clicking on a link, furt
 Also, the pure request and displaying of a phishing website might provide additional information to the phisher or even expose the user to attacks.
 For now, we consider this as future work, as there is no possibility in our target scenario to detect the real target of a link before clicking on it.
 
-	\item[Considered Browser] The user is only taught browser skills which can be transferred to any other browser.
+	\item[Considered Browser:] The user is only taught browser skills which can be transferred to any other browser.
 Nevertheless, when the user gets browser screenshots, for example, we made use of the Android standard browser to be sure that most users are familiar with the pictures they are shown.
 \end{description}	
 
