@@ -71,18 +71,22 @@ The first and second information blocks (introduction part 2 and level 1) as wel
 	\item[Obtaining Basic Knowledge]  
 The first information block and task of the user (introduction part 2) deals with accessing the address bar of a webbrowser and viewing its URL completely (cf. \autoref{s:knowledgetransferperlevel}).
  After successful completion the user is linked back to the app and level 1 begins.
- From this level on, the user has three lives upon the start of each level (cf. \autoref{app_url_task_3_lives}).
+ From this level on, the user has three lives upon the start of each level (cf. \autoref{fig:app_url_task_3_lives}).
  In level 1 he has to identify the domain of valid URLs (cf. \autoref{s:knowledgetransferperlevel}).
  In this level wrong answers result in both, losing points and losing a life.
  Generally, the can never get less than 0 points in order to keep him motivated.
  When the user has no more lives left he has to restart the current level.
  With every correct answer the user gains points.
 	\item[The Actual Game]  In level 2 we start introducing URL spoofing techniques. 
-All exercises are structured as follows from this point: the user is presented a URL.
-He has to decide whether the presented URL is a phish or a valid URL.
+All exercises which are followed by the introductory blocks are structured as follows from this point: the user is presented a URL.
+The user has to scroll the URL to the very left in order to analyze it completely.
+The scrolling is supposed to simulate the behavior of a browser.
+He has to decide whether the presented URL is a phish or a valid URL, by either clicking on the cross or the check mark respectively.
+The user interface of this challenge part is depicted in \autoref{fig:Screenshot_urltask}.
  Similar to level 1, the user can lose and win points, lose lives and might have to restart a level.
-\autoref{fig:lose_points_life} illustrates the game flow and consequences of wrong and correct answers from level 2 and upwards.
+\autoref{fig:lose_points_life} illustrates the game flow and consequences of wrong and correct answers from level 2-8.
  If the user has correctly identified a phishing URL, he has to mark the domain to prove that he has understood the concept.
+An example view of this proof part is depicted in \autoref{fig:Screenshot_proof}.
  In all other cases the user is directly shown the result of his answer.
  We decided that rejecting valid URLs is not as severe as accepting phishing URLs.
  For this reason the penalty for accepting a phishing URL is stricter (loss of points and a life) than the one for rejecting a valid URL (loss of points).
@@ -90,6 +94,22 @@ He has to decide whether the presented URL is a phish or a valid URL.
  All in all, the user loses points and a life in the following cases: the user has falsely accepted a phishing URL or the user has correctly rejected a phishing URL, but could not mark the domain correctly. In all other cases of wrong answers the user cannot lose lives, but only points.
 For correct answers the user is rewarded with earning points and eventually finishing the current level.
 \end{description}
+
+
+\begin{figure}[hHtbp]
+\centering
+\includegraphics[width=1.0\textwidth]{Screenshot_urltask.png}
+\caption{Example challenge view where the user has to decide phish or no phish}
+\label{fig:Screenshot_urltask}
+\end{figure}
+
+
+\begin{figure}[hHtbp]
+\centering
+\includegraphics[width=1.0\textwidth]{Screenshot_proof.png}
+\caption{Example view where the user has to mark the domain}
+\label{fig:Screenshot_proof}
+\end{figure}
 
 \begin{figure}[hHtbp]
 \centering
@@ -288,7 +308,7 @@ Finally, every introduced attack of each level n will appear in level n+1 at lea
 That is to say, as soon as the user gets to know a new attack, he will keep seeing this attack in the succeeding levels.
 Our app also provides direct feedback to the users' actions. 
 In case of correct answers, the user is rewarded with gained points, with a smiley and a small text that he has done well.
-When the user has made a mistake he is punished with losing points, possible life loss and a sad smiley. Also, told that the answer was wrong, why it was wrong and additionally he gets a reminder text on the applied URL spoofing attack he was not able to recognize.
+When the user has made a mistake he is punished with losing points, possible life loss and a sad smiley. Also, the user is told that the answer was wrong, why it was wrong and additionally he gets a reminder text on the applied URL spoofing attack he was not able to recognize.
 To sum it up, we let our app users practice what we taught them and make use of repetitions in combination with direct feedback.
 	\item[Effect] A student who associates his learning with positive feelings will learn more and better than another student who connects his learning with negative feelings. 
 For example, a student who is unsuccessful with initial learning material will associate his experience with unpleasantness, frustration, anger and/or confusion, while a student with early success will have strong positive feelings and thus will be more motivated to have more success in future.
@@ -319,7 +339,8 @@ Yet, we believe this part is indispensable since there are still many people out
 This is a consequence of the reduction of the learning over time. 
 The principle of recency is coupled with time. 
 We are aware that our app is not a game which will be frequently used and thus its users are likely to forget the content they have learnt, for example, a week ago. 
-In order to overcome this problem, so called reminders are included in each new level introduction. 
+In order to overcome this problem, so called reminders are included in each new level introduction.
+An example view of these reminders is depicted in \autoref{fig:Screenshot_intro2.png}. 
 There the user has a short summary of what he has learnt so far. 
 Also, we keep confronting the user with attacks from previous levels during the exercise rounds.
 This repetition is, on one hand, intended to strengthen the users knowledge and understanding, on the other hand, it is intended to create a kind of recency so the user does not forget about this kind of attack. 
