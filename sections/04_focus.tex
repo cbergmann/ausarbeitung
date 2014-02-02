@@ -56,7 +56,6 @@ A severe downside of the URL preview is that the end of the preview is cut in ca
 Therefore, we believe it is even more difficult to break the habit of clicking on links compared to re-thinking the action of filling out a form.
 In conclusion, we do not believe that we can hinder users from clicking on links, but we hope that we can make them re-think their decision of providing their sensitive data to a potentially malicious website.
 \end{enumerate}
-
 The after click scenario does not exhibit all these drawbacks which is why we chose to follow this approach.
 On the other hand, this scenario might suffer from potential malicious downloads and providing information to the phisher (benefits of before click scenario).
 If a user confirms his e-mail address to the phisher by clicking on a link, further attacks towards this e-mail address are likely to follow.
@@ -120,13 +119,13 @@ In addition to the general assumptions pointed out in the previous section, ther
 As described in \autoref{s:target_group}, users from our target audience are no computer experts and have neither time nor are they willing to analyze the shown website thoroughly before entering data.
 Therefore, we do not intend to tell the users about possible attacks that only experienced user might find.
 \begin{description}[leftmargin=0cm]
-	\item[Cross-Site Scripting]
+	\item[Cross-Site Scripting:]
 	Cross-Site Scripting (XSS) is an attack where the attacker enters code, such as a form, into a legitimate webpage.
 	For a later viewer of this page this form seems to be legitimate content of the attacked webpage and he might be deluded into entering personal data in this area. 
 	Depending on the attacked webpage this cannot be detected by the user.
 	This is a vulnerability of the attacked webpage and can be prevented by checking user input.
 	Therefore, we think that preventing this attack is in the responsibility of the website owner.
-	\item[URL Hiding Techniques]
+	\item[URL Hiding Techniques:]
 	As outlined in \autoref{s:antiphishing_on_smartphone} most address bars in smartphones are generally hidden and reappear only in case the user scrolls up to the top of the website.
 	There is a possible attack where the attacker can prevent the user from scrolling all the way up and instead might display a fake address bar with a valid looking URL.
 	A problem that the attacker has to face is that mobile browsers look very diffently which must be reflected by the fake address bar, a tedious and difficult task.

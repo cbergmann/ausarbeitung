@@ -21,7 +21,6 @@ This is a problem because in contrast to public belief e-mail is not secured aga
 	\item[Links in E-Mails:] The third aspect that most users are not aware of is that e-mail links or links in general could point to any page. 
 	This means that the link does not necessarily lead to the denoted URL.
 \end{description}
-
 The above mentioned learning contents are intended to increase the user's security awareness.
 In \autoref{s:app_design} we describe how exactly we achieve to communicate these teaching contents to the user.
 
@@ -33,18 +32,18 @@ More particularly, we will briefly explain in which ways URLs can be checked wit
 Based on this we decide whether to communicate this kind of URL checking to the user or not.
 
 \begin{description}[leftmargin=0cm]
-	\item[Invisible Address Bar] As discussed in \autoref{s:antiphishing_on_smartphone}, due to the lack of space most of the smartphone browsers hide the address bar, i.e. the URL,~\cite{amrutkar2012measuring} and use this expanded space for the web content. 
+	\item[Invisible Address Bar:] As discussed in \autoref{s:antiphishing_on_smartphone}, due to the lack of space most of the smartphone browsers hide the address bar, i.e. the URL,~\cite{amrutkar2012measuring} and use this expanded space for the web content. 
 The fact that the address bar, which contains the important information of the website's URL, is generally hidden must be communicated to the user.
 Most of the users will probably know how they can access the address bar of their browser.
 However, for those who might not know how to deal with that an introduction is inevitable.
 
-	\item[Analyze Complete URL Via Address Bar] Finding the address bar will not suffice for a reasonable URL analysis. 
+	\item[Analyze Complete URL Via Address Bar:] Finding the address bar will not suffice for a reasonable URL analysis. 
 Here again, the small screen size makes it is impossible to view the complete URL without any further action.
 Specifically, it is necessary to first tap the URL address text and then scroll the pointer to the left and right for the URL analysis.
 Without learning these steps a reliable URL checking is not possible. 
 Therefore, these steps have to be communicated to the user.
 
-	\item[Show URL Before Click] In \autoref{s:coverage} we extensively discussed the advantages and disadvantages of the URL analysis before as well as after clicking on a link.
+	\item[Show URL Before Click:] In \autoref{s:coverage} we extensively discussed the advantages and disadvantages of the URL analysis before as well as after clicking on a link.
 The reasons why we decided to go for an after click URL analysis can be consulted in that section.
 Hence, functionalities or workarounds related to showing the destination URL before clicking on a link will not be communicated to the user.
 Instead we focus on the URL analysis directly in the browser.
@@ -86,28 +85,28 @@ URLs are complex and many users do not know how exactly they have to be interpre
  All spoofing attacks are covered by the app unless noted otherwise.
 
 \begin{description}[leftmargin=0cm]
-	\item[Subdomain] Phishers make use of subdomains which are very similar or even identical to the domains of the targeted institutions.
+	\item[Subdomains:] Phishers make use of subdomains which are very similar or even identical to the domains of the targeted institutions.
  For example, they register a domain  ``xyz.com'' and use ``paypal'' in their subdomain, resulting in a URL such as ``http://www.paypal.xyz.com/webapps/''.
  This makes the users believe that they are on a legitimate website.
 
-	\item[IP Address] Sometimes phishers do not even bother registering any domain at all.
+	\item[IP Addresses:] Sometimes phishers do not even bother registering any domain at all.
  In this case, the host area of the URL contains an IP address.
 
-	\item[Nonsense Domain] We frequently encountered URLs which had registered random names or strings as their domain.
+	\item[Nonsense Domains:] We frequently encountered URLs which had registered random names or strings as their domain.
  The domain names ranged from random letters to domain names like ``marketstreetchippy.com''. In order to deceive the users some of these URLs contained a well-known brand name in other parts of the URL.
 Yet, there were a number of examples where this was not the case, i.e. without viewing the content of the website one would have no idea where the URL points to.
 
-	\item[Trustworthy, but Unrelated Domain] Some URLs are very well-crafted.
+	\item[Trustworthy, but Unrelated Domains:] Some URLs are very well-crafted.
  When reading them they appear meaningful and trustworthy.
  This is particularly accomplished by registering domain names which sound reliable, for example, ``account-information.com'', ``secure-login.de'', or ``security-update.com''. If the URL additionally contains the brand name of the targeted institution somewhere in the URL the user can be easily deceived.
 
-	\item[Similar and Deceptive Domains] Another possibility to fool users with a spoofed URL is to use URLs which look like the original ones, but have a slight difference.
+	\item[Similar and Deceptive Domains:] Another possibility to fool users with a spoofed URL is to use URLs which look like the original ones, but have a slight difference.
  For example, phishers register domains which resemble the targeted domain, but have a typo.
  To spoof ``paypal.com'', for instance, the attacker might register ``paypel.com''. Another approach is to use a modification of the original domain.
  The modified domain contains the brand name in some form.
  For example, ``facebook-login.com'' can be registered in order to fake ``facebook.com''. Finally, the attacker can scramble letters of the original domain, which can be very hard to detect at first sight.
 
-	\item[Homograph Attack] The homograph attack exploits character resemblance.
+	\item[Homograph Attacks:] The homograph attack exploits character resemblance.
  Here, characters are replaced by other characters which look very similar to the replaced one.
  For example, an attacker might replace a ``w'' within a genuine domain with ``vv'' and register it.
  An even more advanced way is to replace characters of the genuine domain with characters from other character sets, such as Cyrillic languages, where the characters will look almost identical~\cite{gabrilovich2002homograph}. The latter case is indistinguishable for the human eye in many cases and is partially a technical issue.
@@ -115,13 +114,13 @@ Here, browser vendors should be encouraged to indicate when international charac
  For this reason, only cases that are distinguishable by the human eye are covered by the educational app.
 
 % DAS WAS DER USER NICHT SEHEN KANN WIRD NATÜRLICH AUCH NICHT GECOVERED WERDEN KÖNNEN
-	\item[Tiny URLs] A tiny URL service is used to convert a long URL into a short one.
+	\item[Tiny URLs:] A tiny URL service is used to convert a long URL into a short one.
  Due to their shortness tiny URLs are very comfortable to use and easy-to-type.
  There seemed to be a trend of using tiny URLs for phishing in 2009, in particular in instant messaging services~\cite{tinyurlpcworld}.
  Tiny URLs usually do not give a hint about the target website and users do not tend to be suspicious about receiving such links from a ``friend'' what made the use of them for the purpose of phishing quite popular. Tiny URLs redirect the shortened URL to the actual one.
  As we consider the ``analyze URL after click'' scenario for the user education, there is no need of the tiny URL to be covered by the app.
 
-		\item[Cloaked URLs] Other phishers integrate an ``@'' into the URL so that domain names become difficult to understand and the actual destination of a link becomes ``cloaked''~\cite{alnajim2009fighting}. For example, the URL ``http://paypal.com@google.com/'' is redirected to ``http://google.com''. 
+		\item[Cloaked URLs:] Other phishers integrate an ``@'' into the URL so that domain names become difficult to understand and the actual destination of a link becomes ``cloaked''~\cite{alnajim2009fighting}. For example, the URL ``http://paypal.com@google.com/'' is redirected to ``http://google.com''. 
 As we consider the ``analyze URL after click'' scenario for the user education, there is no need of the cloaked URL to be covered by the app.
 
 \end{description}
@@ -140,7 +139,7 @@ There arise two major problems with the detection of phishing attacks based on t
 This section elaborates on these problems and outlines how we approach to handle these issues.
 
 \begin{description}[leftmargin=0cm]
-	\item[Legitimate, but Fraudulent Looking URLs] 
+	\item[Legitimate, but Fraudulent Looking URLs:] 
 We wanted to find out to what extent our determined phishing URL categories from \autoref{s:url_categories} apply to authentic websites.
 For this purpose, we browsed the web and looked at the top 50 banks~\cite{bankrank} and top 50 online shops~\cite{onlineshoprank} in Germany. 
 While surfing on these websites we recognized that it occasionally happens that a legitimate URL features the characteristic of a phishing URL. 
@@ -159,7 +158,7 @@ We still strongly recommend the user to directly contact the vendor before submi
 The reason why we do not address this problem in the according level is that we do not want to degrade the user's attention by telling him that similar domains might still be legitimate. 
 We do not consider it an issue that the user is told about this later in the app, since it is better to reject a legitimate URL than trusting a phishing URL. 
 
-\item[Unknown Website Vendors] Despite our efforts of mainly making use of URLs from widely known website vendors there is still the possibility that a user does not know all vendors and thus the respective URL. 
+\item[Unknown Website Vendors:] Despite our efforts of mainly making use of URLs from widely known website vendors there is still the possibility that a user does not know all vendors and thus the respective URL. 
 One approach to address this problem is that the user has to indicate which websites he knows with the aid of a long list of check boxes, for example. 
 We decided against this approach for two reasons: 
 First, if a user only knows a few website vendors, the list of available URLs to be drawn from would be quite short. 
@@ -185,12 +184,12 @@ These aspects are explained in the following.
 Second, even if the user actually communicates with the intended communication partner there still might be an attacker wiretapping the communication.
 Therefore, data that is sent via plain HTTP is considered lost. 
 	This teaching content is covered by our app (cf. \autoref{s:knowledgetransferperlevel}).	
-	\item[Do Not Download Attachments] Many users download or even open files that they receive via e-mail rather unchecked.
+	\item[Do Not Download Attachments:] Many users download or even open files that they receive via e-mail rather unchecked.
 	This is related to the problem that they trust the from field of the e-mail.
 	It is crucial to tell them that downloading or opening an unknown file might infect their system.
 	As discussed in \autoref{s:assumptions} we assume that users are not tricked into downloading malicious software.
 This aspect remains open for further research.
-	\item[Data Economy] The goal of this app is to prevent the users' data from being phished.
+	\item[Data Economy:] The goal of this app is to prevent the users' data from being phished.
 	A further step towards this goal is to teach the user to enter sensitive data as rarely as possible.
 	The idea behind this is that websites, including but not limited to, phishing websites, might exploit user data. 
 	For now we put our focus on the detection of phishing URLs.
