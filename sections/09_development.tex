@@ -2,38 +2,36 @@
 %===========================================
 \section{Development Process}
 %===========================================
-This chapter deals with the development process of our app.
+This chapter summarizes important steps concerning the development process of our app.
 We do not provide in-depth insight to our source code. 
 Instead we give a brief overview of our approach for the development of a user friendly and understandable app.
 %===========================================
 \subsection{Mock Up}
 %===========================================
-After we have decided about the work flow and structure of our app we built a mock up in order to get a more concrete idea of what needs to be implemented and to reveal flaws in our thought process.
-Also, we showed it to a couple of friends and relatives so we could expose aspects we have not yet thought about.
-All in all, the work flow and structure of the mock up was quite understandable.
-However, the first texts explaining how to access the address bar and about the structure of a URL seemed to be incomprehensible.
-As a consequence, we adjusted these texts in the app (only thos of the first three levels) and showed them to other friends and relatives who seemed to understand the descriptions.
+After we decided about the work flow and structure of our app we built a mock up in order to get a more concrete idea of what needs to be implemented and to reveal flaws in our thought process.
+We showed it to friends and relatives so we could expose aspects we have not yet thought about.
+The first texts explaining how to access the address bar and the structure of a URL seemed to be difficult to understand.
+As a consequence, we adjusted these texts in the app (only those of the first three levels) and showed them to other friends and relatives who seemed to understand the descriptions.
 Based on these initial texts we wrote all remaining texts without including it into the app yet.
-The next section deals with the elaboration of these texts.
+The next section describes the elaboration process of these texts.
 %===========================================
 \subsection{Pilot Study of App Texts}
 %===========================================
 \label{s:pilot_study}
-The app texts were written down in a Google Docs document.
-After finishing the texts for each step of the app flow our supervisor, a professor of pedagogy at TU Darmstadt as well as another schoolteacher reviewed our texts and gave their feedback to it.
-As we achieved the version with which we were satisfied we applied a small user study on the created texts. 
-For time reasons we decided to go for the low cost method of guerilla user testing~\cite{guerillagovuk, guerillauxbooth}.
+After finishing the texts for each step of the app flow (the texts were not directly included into the app) our supervisor, a professor of pedagogy at TU Darmstadt as well as another highschool teacher of German reviewed them.
+Once we achieved the version with which we were satisfied we applied a user study on it. 
+For time reasons, we decided to go for the low cost method of guerilla user testing~\cite{guerillagovuk, guerillauxbooth}.
 This approach enables to quickly assess the effectivity of a design, in our case our app texts.
-Guerilla user tests are rather loosely structured and do not include participant recruitment.
-The testers are rather approached, in our case, we approached relatives and friends. 
-The outcome of such studies are rather qualitative, i.e. extensive and detailed insights is achieved.
+Guerilla user tests is rather loosely structured and do not include participant recruitment.
+The testers are rather approached, in our case, we asked relatives and friends. 
+The outcome of such studies is rather qualitative, i.e. extensive and detailed insights are achieved.
 A downside of guerilla testing is that the approached participants might not belong to the defined target group with respect to their expertise or skills. 
-Since we knew our participants we are confident that they matched target audience. 
+Since we knew our participants we addressed only those who matched our target audience. 
 In detail, our approach for the guerilla user test was as follows:
 
 \begin{enumerate}
 	\item\textit{Prepare Texts} Our aim for this user test was to imitate the use of a smartphone as best as possible.
-	For this reason the app texts in the Google document were formatted into short lines, so that the text appearance resembled that of a smartphone screen.
+	For this reason, the app texts were formatted into short lines, so that the text appearance resembled that of a smartphone screen.
 	Furthermore, we printed out the texts and cut the sheets into small rectangles.
 	\item\textit{Think Aloud} We asked the participants to think aloud during the test. 
 	We told them that there are no stupid questions or comments and that they help most with just saying what goes through their mind.
@@ -41,34 +39,32 @@ In detail, our approach for the guerilla user test was as follows:
 	\item\textit{User Test with In-Between Exercises} The actual user test mainly consisted of reading our app texts and thinking aloud about these.
 	We included a little simulation of our exercise parts in order to validate whether the users comprehended the texts or not.
 	For example, for each introduced attack we included a small list of URLs on which the users had to decide whether they were phishing URLs or not.
-	\item\textit{Final Comments} After going through the texts the users were asked to give general feedback about their impression of the texts. 
+	\item\textit{Final Comments} After going through the texts the users were asked to provide their general impression.
 	We further asked them about some aspects we were not quite sure about at the beginning. 
-	For example, we asked them whether the usage of the terms link or web address confused them.
+	For example, we asked them whether the usage of the terms ``link'' or ``web address'' confused them, which was not the case.
 \end{enumerate}
-
 Our guerilla user tests showed that our texts are understandable.
 According to our participants the main downside of the texts was their length. 
 Yet, this can be neglected since the users had to read our complete texts (instead of for example just playing 1-2 levels at once). 
 Furthermore, they remarked that the introduction on how to access the whole address bar and analyze the complete URL is unnecessary. 
 For some users this might apply. 
 However, it is possible that there are users who do not know this. 
-For those, who already know how to access the address bar and analyze the complete URL we added a button which directly links to the exercise. 
+For those who already know how to access the address bar and analyze the complete URL we added a button which directly links to the exercise. 
 In case the user had overestimated himself, he will be forwarded back to the app, where the introductory text can be consulted. 
-Finally, the reminder texts received some criticism for their frequent re-appearance at the beginning of each level. 
-This can also be neglected since we assume that our app users will not constantly play this game. 
-Also, when playing the app this screen can easily be skipped as exhibits a recognition value achieved by the title ``reminder''. 
-Still, we decided for a minor reorganization of the reminder view. 
+Finally, the provided brief summary of already passed lessons (reminder texts) received some criticism for their frequent re-appearance at the beginning of each level. 
+This can also be neglected since we assume that our app users will not constantly play this game and in our view repetitive serving of the major lessons learnt is helpful to internalize them (cf. Principle of Exercise in \autoref{s:learning_principles}). 
+Also, when playing the app this screen can easily be skipped as it exhibits a recognition value achieved by the title ``reminder''. 
+Moreover, we decided for a minor reorganization of the reminder view. 
 Before the user tests the reminders mainly referred to the URL structuring they have learnt so far. 
 We thought it is also important to remind the users of possible attacks. 
 Therefore, the reminder concerning the URL structure was kept to a minimum with the aid of a graphic. 
-Additionally, for each attack in previous levels one sentence and one example was added. 
+Plus, for each attack in previous levels one sentence and one example was added. 
 
 \subsection{Implementation and Testing}
-In parallel to formulating and testing our app texts we developed the basic structure and logic of our app.
-After conducting and assessing the guerilla user tests with our texts and integrating the feedback we started to merge the texts with our app.
-We developed and tested the app simultanously.
+In parallel to formulating and validating our app texts we developed the basic structure and logic of our app.
+After conducting and assessing the guerilla user tests of our texts and integrating the feedback, we started to include them into our app.
+We both developed and tested the app simultanously.
 Occasionally, we showed the app to friends and relatives in order to get some feedback on aspects we might have missed.
 In this way, our app was formed incrementally. 
-We do not intend to provide in-depth implementation details in this work as there is no need for this.
-The only implementation detail that might be of interest is how our app generates URLs on which the users have to decide whether they are phishing URLs or not. 
-Our URL generation approach can be consulted in \autoref{s:url_generation}.
+We do not intend to provide implementation details in this work.
+The only exception is the algorithm used to generate the URLs on which the users have to decide whether they are phishing URLs or not. This approach can be consulted in \autoref{s:url_generation}.
