@@ -21,67 +21,74 @@
 \end{lstlisting}
 
 %===========================================
-\section{URL Generation}
+\section{URL Generation Process}
 \label{s:url_generation}
 %===========================================
-While playing the app the user is presented with URLs that he has to categorize as phish or valid.
-While reviewing the previous works and games in this area we found that many of them use a fixed set of examples.
-On some games this set is very small and therefore you are always confronted with the same URLs.
-As we layed out in \autoref{s:url_structure} we want to teach the user how to detect phishing URLs in general.
-To accomplish this goal we think that it is essential that the user sees as much different URLs as possible so he can build his own mental model.
-Therefore we decided on generating URLs rather than composing a fixed list.
-We will lay out the general process here and cover interesting parts of it in the following sections.
-\subsection{Example URLs}
-To present attacked URLs to the user we found int most realistic to take valid URLs and apply attacks on them.
-Therefore we needed a set of valid URLs.
-To build this set we used Alexa~\cite{alexa} to find the top 100 domains for german users.
-We then went to each of these sites and by navigating tried to find 6 URLs for each domain.
-We tried to find some short and some long URLs.
+When playing the app (level 2-9) the user has to categorize a given URL as a phish or valid URL.
+We decided against a fixed set of examples for the URLs because depending on the set size it might happen that a user keeps being confronted with the same URLs.
+We believe it is essential for the user to be faced with as many different URL examples as possible.
+Therefore, we decided to generate the URLs rather than composing a fixed list.
+Next, we lay out the URL generation process and cover further interesting aspects of the URL generation in the subsequent sections.
+\subsection{Derive Phishing URLs from Valid Example URLs}
+To present attacked URLs to the user we found it most realistic to take valid URLs and apply the covered attacks to them.
+For this purpose, we needed a set of valid URLs.
+To build this set we used Alexa~\cite{alexa} to select various domains from the top 100 website vendors of Germany.
+Then, we visited each of these websites, navigated through them and picked about 3-6 URLs for each domain we had previously selected.
+We strived to balance the number of short and long URLs.
+Given a list of valid URLs an attack can be applied whenever required.
+In the following we discuss how this is accomplished in our implementation.
 \begin{description}[leftmargin=0cm]
-\item[Generate Attacks for Level]When starting a new level we generate a list of Attacks that we want to show the user.
-\item[Select Valid URL]When we want to show a new URL to the user we first randomly select a valid URL from the before mentioned set.
-\item[Apply Generator]Then we apply a generator to the URL that does not invalidate the URL but modifies it.
-\item[Apply Attack]After that we select a random attack from the previously build list and apply it to the URL.
-\item[Repeat]In some situations we need to try again.
+\item[Generate a List of Attacks for Each Level:] When starting a new level we generate a list of attacks with which the user needs to be confronted.
+\item[Select a Valid URL:] Whenever a new URL is to be shown to the user we first randomly select a valid URL from the aforementioned set.
+\item[Modify Valid URLs with a Generator:] Then we apply a generator to the URL that does not invalidate the URL but modifies it (cf. \autoref{s:apply_generator}).
+\item[Apply an Attack:] After that we select a random attack from the previously built list and apply it to the selected valid URL.
+\item[Repeat in Case Attack was not Possible:] In some cases applying a specific attack to a given URL is not possible. For example, in homograph attacks the replacement of an ``i'' with another letter in a URL which does not contain an ``i'' will fail. In these situations we have to retry.
 \end{description}
-\subsection{Generate Attacks for Level}
+
+\subsection{Number of Phishes and Repetitions per Level}
 %\textbf{Was zur historie?}
-The types of URLs the user is presented is dependent on the level.
-Each level introduces on or more attacks.
-Which attack is introduced in which level is layed out in \autoref{s:knowledgetransferperlevel}.
-In general the URLs of each level $n$ are distributed as follows:
+The types of spoofed URLs the user is faced with depends on the level.
+Each level introduces one ore more attacks.
+The introduced attacks of each level are layed out in \autoref{s:knowledgetransferperlevel}.
+In general, the URLs of each level $n$ are distributed as follows:
 \begin{table}[hHtbp]
 \centering
 \begin{tabular}{|llll|}
 \hline
-Total number of URLs&$u$&$6+2*n$&starting with 6 URLs each level has 2 more URLS.\\
-Number of Phishes&$p$&$u/2$&Half of the URLs are phishes.\\
-Number of repeats&$r$&$\left\lfloor p/2 \right\rfloor$&Half of the phishes are repeats.\\
+Total number of URLs&$u$&$6+2*n$&Starting with 6 URLs each level has 2 more URLS.\\
+Number of phishes&$p$&$u/2$&Half of the URLs are phishes.\\
+Number of repetitions&$r$&$\left\lfloor p/2 \right\rfloor$&Half of the phishes are repetitions.\\
 \hline
 \end{tabular}
 \caption{distribution of URLs per level.}
 \label{t:levelurls}
 \end{table}
-
-The repeats are always one attack from each previous level. The rest of the repeats is filled up randomly.
-
+Repetitions are also included into the list of attacks to be applied which is created upon start of each level.
+The list of repetitions is filled up as follows: every level has exact one attack repetetion for each previous level. The rest of the repetitions is filled up randomly. This way, we assure that at least one example of each previous level is represented by the attack repetitions. All remaining phishes are new attacks.
 There are two main exception to these rules:
 \begin{description}[leftmargin=0cm]
-\item[Level 1] In Level 1 the game is modified in the form that the user is only presented with valid URLs and has to select the domain.
-To prevent boring the user in this level we only present 5 URLs.
+\item[Level 1:] In level 1 the user is only confronted with valid URLs and has to select the domain.
+To prevent the user from getting bored we only present 5 URLs in this level.
 None of them is a phish.
-\item[Level 1+2] The first level that contain repeats is level 3 because level 2 is the first real game level.
+\item[Level 1+2:] The first level that contains repetitions is level 3 because level 2 introduces the very first spoofing attack. Consequently, level 1 and level 2 do not have repetitions.
 \end{description}
 
-The generated list of attacks also contains a special attack that does no real attack. This is to simplify the URL generation. When we generated the list of attacks we save it for later reference.
-\subsection{Apply Generator}
-We were unsure if we still have enough valid URLs so we prepared a way to automatically modify the URLs in such a way that they could still be valid URLs. Some Ideas where to add subdomains or path strings to the URL. Query or fragments are also possible. We later found out that it is currently not needed to implement generators because there are a lot of URLs in our set. If however we will some time in the future find out that these URLs are not enough we have this scheme in place.
-\subsection{Apply Attack}
-After we generated a valid URL we chose a random attack from the previously build set of attacks and apply it to the URL. With this we also store which attack we currently applied. This is important when the user is failing this round. In this situation we will simply readd this attack to the set of attacks.
-\subsection{Repeat}
-There are combinations of base-URL and attack where the attack doe's not alter the URL.
-Therefore it would be impossible for the user to detect the Attack and he will be confused and might stop using the app.
-In this situation we repeat the whole URL generation process until we find a matching URL.
+%The generated list of attacks also contains a special attack that does no real attack. This is to %simplify the URL generation. When we generated the list of attacks we save it for later reference.
+
+\subsection{Modify Valid URLs with a Generator}
+\label{s:apply_generator}
+We were unsure whether we had collected sufficient valid URLs.
+ For this reasons, we prepared a way to automatically modify the URLs in such a way that they remained valid URLs. 
+Some ideas were to add subdomains or path strings to the URL. Queries or fragments would also  be possible. 
+Later we found out that it was currently not required to implement such generators since our set contained enough URL examples. 
+Yet, if we should realize in future that these URLs are not enough we have this scheme in place.
+\subsection{Re-Apply an Attack in Case of Wrong User Answer}
+After generating a valid URL we choose a random attack from the previously built set of attacks and apply it to the URL. We also store which attack we currently apply. This is important in case  the user fails to give a correct answer to the current URL. In this situation we will simply readd this attack to the set of attacks.
+This way, we assure that the attack, which the user failed to identify, is repeated later in this level.
+%\subsection{Repeat in Case Attack was not Possible}
+%There are combinations of base-URL and attack where the attack doe's not alter the URL.
+%Therefore it would be impossible for the user to detect the Attack and he will be confused and %might stop using the app.
+%In this situation we repeat the whole URL generation process until we find a matching URL.
 
 \section{Survey Form}
 \label{s:presurvey_form}
