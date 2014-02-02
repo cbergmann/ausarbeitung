@@ -29,8 +29,7 @@ The body of the e-mail contains a common introduction and the user's text of cho
 Hence, the user learns that he cannot fully trust the ``from field'' and the content of the e-mails he is receiving.
 The template for this e-mail can be found in \autoref{a:mail}.
 		\item \textit{Link Text Unequal Target URL:} The awareness part of the app is also supposed to show the user that he cannot trust the texts of a link he is clicking on.
- To illustrate this, the user is asked to click on a link with the text ``https://www.
-google.de/''. Clicking on this link, the user will expect to land on the Google website, what will not happen.
+ To illustrate this, the user is asked to click on a link with the text ``https://www.google.de/''. Clicking on this link, the user will expect to land on the Google website, what will not happen.
  In fact, the user is linked back to our app, where he is told that link texts are not trustful as well.
  
 	\item \textit{Fake Website:} Finally, the user is told that creating a copy of a website is also very easy.
@@ -43,27 +42,108 @@ Ultimately, he is told that this will be the focus of the following exercises.
 
 \begin{enumerate}
 	\item \textit{Learning Part:} The second part of the app is divided into levels of increasing difficulty.
- The user is first taught how to access and analyze the URL of the web browser.
- Subsequently, the user learns about the general structure of a URL.
- We tried to explain these facts as simply as possible to allow even unexperienced users to follow.
- In particular, the user is told how to find the second- and top-level domain of a URL.
- In all succeeding levels the user is introduced to various URL spoofing techniques of a phisher.
- The learning content of each level is described in \autoref{s:knowledgetransferperlevel}.
-		\item \textit{Exercise} After every introductory material on each level, an exercise section follows.
- For the ``access and analyze URL part'', for example, the user is forwarded to a website.
- There he has to apply all important steps he has learnt in the introductory part.
- After successful completion of the tasks, the user is linked back to the app.
- For the ``find domain'' information material the user gets a couple of valid URLs of which he has to identify the domain.
- All subsequent level exercises are structured as follows: the user is presented a URL.
- He has to decide whether the presented URL is a phish or a valid URL.
- If the URL is a phish, and the user has correctly identified the phish, the user has to show the domain.
-% Only if the user correctly identifies the second- and top-level domain he receives the points for %this URL, otherwise the answer to this URL is considered wrong, because we assume that the %user has just guessed in this case.
+The users are first introduced to the lessons to be learnt for the current level.
+These lessons are generally delivered with simple text.
+Sometimes screenshots or graphics are included.
+ The learning contents of each level are described in \autoref{s:knowledgetransferperlevel}.
+		\item \textit{Exercise} After every introductory block on each level, an according exercise section follows (cf. \autoref{s:knowledgetransferperlevel}).
+ 
+ %For the ``find domain'' information material the user gets a couple of valid URLs of which he has to identify the domain.
+ %All subsequent level exercises are structured as follows: the user is presented a URL.
+ %He has to decide whether the presented URL is a phish or a valid URL.
+ %If the URL is a phish, and the user has correctly identified the phish, the user has to show the domain.
+% Only if the user correctly identifies the second- and top-level domain he receives the points for %this URL, otherwise the answer to this URL is considered wrong, because we assume that the %user %has just guessed in this case.
 
 		\item \textit{Increasing Difficulty:} There is an increase of difficulty for each succeeding level.
- That is to say, in each level it gets more difficult to distinguish phishing URLs from valid ones, cf. \autoref{s:knowledgetransferperlevel}.
+ That is to say, in each level the tasks become more difficult to accomplish (cf. \autoref{s:knowledgetransferperlevel}).
 \end{enumerate}
 \end{enumerate}
-In the succeeding section we describe common elements in games that we adapted for our app.
+In the succeeding section we describe the achieved teaching goals per level.
+
+%===========================================
+\subsection{Teaching Goals per Level}
+%===========================================
+\label{s:knowledgetransferperlevel}
+This section summarizes the learning objectives of each level.
+ Note that we generally do not use technical terms like URL, domain, subdomain, protocol, or the like. 
+That way, we avoid overwhelming users who might not be able to cope with these technical terms.
+\autoref{fig:level_teaching_goals} provides an overview of the level flow in general.
+
+
+\begin{description}[leftmargin=0cm]
+	\item[Introduction 1] This part is the awareness part described in \autoref{s:app_design}. Here, the user learns how easy e-mail spoofing is.
+ Additionally, the user is informed about the simplicity of setting up fake websites and that he should not trust the texts of the links he is clicking on.
+
+	\item[Introduction 2] In this part the user is explained how he can access the URL of a web browser and how exactly he has to look at the complete URL.
+ In particular, the user is told that he has to scroll up the whole website to make the generally hidden address bar re-appear.
+ Then he has to tap the text field of the address bar and scroll to the start of the URL.
+These descriptions are supported with screenshots.
+For the exercise the user is forwarded to a website.
+There he has to apply all important steps he just learnt in the introductory block.
+After successful completion of the tasks, the user is linked back to the app.
+ At the end of the exercise the user is told that he always should analyze the URL like this, because all other displayed URLs or links might be a fake, too.
+
+	\item[Level 1] The actual game starts with level 1, where the user learns about the structure of a URL.
+ First of all, the user gets an overview of the single components of a URL.
+ To make the comprehension of these components easier to understand we used an analogy which is summarized in \autoref{fig:url_components} with an example URL.
+ We told the user that he has to imagine that the website he is visiting is his dialog partner.
+ The user is told that the section between ``http(s)://'' and the third slash ``/'', i.
+e.
+ the hostname, reveals information about his dialog partner.
+ In particular, we explain that he has to read this part from right to left.
+ The top-level and second-level domain is introduced as ``Who-Section'' (company + location of company), from which the user knows who he is actually talking to.
+ All succeeding parts in this area are to be considered as ``departments'' of the company of ther user's dialog partner.
+ The protocol part is introduced as ``Security Level'' of the dialog with the partner and the path part of a URL, i.
+e.
+ the part after the third slash ``/'', is introduced as the topic of the conversation with the dialog partner.
+ When marking parts of a URL we consistently used the according colour of \autoref{fig:url_components}. The main objective of the level 1 exercise is to be able to identify the second- and top-level domain of a URL.
+
+	\item[Level 2] With level two we start introducing the spoofing tricks of a phisher.
+ We considered the subdomain attack, cf. \autoref{s:url_categories}, as a good starting point to introduce the phisher as the user has just learnt about the importance of the ``Who-Section'' (top-level and second-level domain) in level 1.
+	\item[Level 3] In level 3 the user is first told what an IP address is.
+ To facilitate the comprehensibility, we used the analogy of house addresses.
+ The user is explained that like addressing our houses with street names and numbers, computers in the Internet are addressed by so called IP addresses.
+ The IP address itself is defined as a 4-place sequence of numbers, separated by dots.
+ Finally, the user is warned against URLs with IP addresses in the host part.
+
+	\item[Level 4] In this level we deal with nonsense in the second-level domain, cf. \autoref{s:url_categories}.
+	\item[Level 5] In this level we deal with second-level domain names which sound trustworthy, but are in fact unrelated to the company name, cf. \autoref{s:url_categories}.
+	\item[Level 6] Here misleading and deceiving names in the second-level domain of a URL are covered.
+ This includes typos, scrambled letters or other similar and deceptive names in the second-level domain, cf. \autoref{s:url_categories}.
+	\item[Level 7] In this level we focus on homographic attacks, where the user is able to visually distinguish a fake second-level domain from the original one, cf. \autoref{s:url_categories}.
+	\item[Level 8] In this level the user is introduced to an attack where the brand name of the visited website or even the whole legitimate URL is placed in the path of a fake URL, cf. \autoref{s:url_categories}.
+	\item[Level 9] Here we introduce the difference between the usage of http:// and https://. In particular, the user is told that the usage of https:// means that his conversation with the website is encrypted and that the dialog partner indicated in the ``Who-Section'' is authenticated.
+ As an analogy we say that the https:// represents a higher security level.
+ This means, the conversation cannot be eavesdroppbed by a third party and the dialog partner indictated in the ``Who-Section'' has proved his identity to a trusted third party.
+ With http:// this security level is not established.
+
+	\item[Level 10] This level does not include an exercise.
+ It mainly serves as a section with some important additional input for the user.
+ Specifically, we tell the user two things: First, we explain to him that he might encounter URLs which actually look very phishy.
+ In such a case, we suggest him to directly contact the company and ask for the authenticity of the specific website.
+ Furthermore, we introduce extended validation certificates.
+ We provide the user with a link to further information to this subject.
+
+\end{description}
+
+\begin{figure}[hHtbp]
+\centering
+\includegraphics[width=0.56\textwidth]{url_components.pdf}
+\caption{URL components that are communicated to the user}
+\label{fig:url_components}
+\end{figure}
+
+\begin{figure}[hHtbp]
+\centering
+\includegraphics[width=1.0\textwidth]{graphix/level_teaching_goals.pdf}
+\caption{Teaching goals per level}
+\label{fig:level_teaching_goals}
+\end{figure}
+
+
+
+
+
 
 %===========================================
 \subsection{Gamification}
@@ -181,83 +261,6 @@ Finally, we describe the strategy we chose to use.
  The points are assigned exactly as before.
  This is our final leveling strategy for the app.
 \end{description}
-
-%===========================================
-\subsection{Teaching Goals per Level}
-%===========================================
-\label{s:knowledgetransferperlevel}
-This section summarizes the learning objectives of each level.
- Note that we generally do not use technical terms like URL, domain, subdomain, protocol, or the like. 
-That way, we avoid overwhelming users who might not be able to cope with these technical terms.
-\autoref{fig:level_teaching_goals} provides an overview of the level flow.
-
-
-\begin{description}[leftmargin=0cm]
-	\item[Introduction 1] This part is the awareness part described in \autoref{s:app_design}. Here, the user learns how easy e-mail spoofing is.
- Additionally, the user is informed about the simplicity of setting up fake websites and that he should not trust the texts of the links he is clicking on.
-
-	\item[Introduction 2] In this part the user is explained how he can access the URL of a web browser and how exactly he has to look at the whole URL.
- In particular, the user is told that he has to scroll up the whole website to make the generally hidden address bar re-appear.
- Then he has to tap the text field of the address bar and scroll to the start of the URL.
- At the end of the exercise for this the user is told that he always has to analyze the URL like this, because all other displayed URLs or links might be fake too.
-
-	\item[Level 1] The actual game starts with level 1, where the user learns about the structure of a URL.
- First of all, the user gets an overview of the single components of a URL.
- To make the comprehension of these components easier to understand we used an analogy which is summarized in \autoref{fig:url_components} with an example URL.
- We told the user that he has to imagine that the website he is visiting is his dialog partner.
- The user is told that the section between ``http(s)://'' and the third slash ``/'', i.
-e.
- the hostname, reveals information about his dialog partner.
- In particular, we explain that he has to read this part from right to left.
- The top-level and second-level domain is introduced as ``Who-Section'' (company + location of company), from which the user knows who he is actually talking to.
- All succeeding parts in this area are to be considered as ``departments'' of the company of ther user's dialog partner.
- The protocol part is introduced as ``Security Level'' of the dialog with the partner and the path part of a URL, i.
-e.
- the part after the third slash ``/'', is introduced as the topic of the conversation with the dialog partner.
- When marking parts of a URL we consistently used the according colour of \autoref{fig:url_components}. The main objective of the level 1 exercise is to be able to identify the second- and top-level domain of a URL.
-
-	\item[Level 2] With level two we start introducing the spoofing tricks of a phisher.
- We considered the subdomain attack, cf. \autoref{s:url_categories}, as a good starting point to introduce the phisher as the user has just learnt about the importance of the ``Who-Section'' (top-level and second-level domain) in level 1.
-	\item[Level 3] In level 3 the user is first told what an IP address is.
- To facilitate the comprehensibility, we used the analogy of house addresses.
- The user is explained that like addressing our houses with street names and numbers, computers in the Internet are addressed by so called IP addresses.
- The IP address itself is defined as a 4-place sequence of numbers, separated by dots.
- Finally, the user is warned against URLs with IP addresses in the host part.
-
-	\item[Level 4] In this level we deal with nonsense in the second-level domain, cf. \autoref{s:url_categories}.
-	\item[Level 5] In this level we deal with second-level domain names which sound trustworthy, but are in fact unrelated to the company name, cf. \autoref{s:url_categories}.
-	\item[Level 6] Here misleading and deceiving names in the second-level domain of a URL are covered.
- This includes typos, scrambled letters or other similar and deceptive names in the second-level domain, cf. \autoref{s:url_categories}.
-	\item[Level 7] In this level we focus on homographic attacks, where the user is able to visually distinguish a fake second-level domain from the original one, cf. \autoref{s:url_categories}.
-	\item[Level 8] In this level the user is introduced to an attack where the brand name of the visited website or even the whole legitimate URL is placed in the path of a fake URL, cf. \autoref{s:url_categories}.
-	\item[Level 9] Here we introduce the difference between the usage of http:// and https://. In particular, the user is told that the usage of https:// means that his conversation with the website is encrypted and that the dialog partner indicated in the ``Who-Section'' is authenticated.
- As an analogy we say that the https:// represents a higher security level.
- This means, the conversation cannot be eavesdroppbed by a third party and the dialog partner indictated in the ``Who-Section'' has proved his identity to a trusted third party.
- With http:// this security level is not established.
-
-	\item[Level 10] This level does not include an exercise.
- It mainly serves as a section with some important additional input for the user.
- Specifically, we tell the user two things: First, we explain to him that he might encounter URLs which actually look very phishy.
- In such a case, we suggest him to directly contact the company and ask for the authenticity of the specific website.
- Furthermore, we introduce extended validation certificates.
- We provide the user with a link to further information to this subject.
-
-\end{description}
-
-\begin{figure}[hHtbp]
-\centering
-\includegraphics[width=0.56\textwidth]{url_components.pdf}
-\caption{URL components that are communicated to the user}
-\label{fig:url_components}
-\end{figure}
-
-\begin{figure}[hHtbp]
-\centering
-\includegraphics[width=1.0\textwidth]{graphix/level_teaching_goals.pdf}
-\caption{Teaching goals per level}
-\label{fig:level_teaching_goals}
-\end{figure}
-
 
 %===========================================
 \subsection{Use of Learning Principles and Game Techniques}
