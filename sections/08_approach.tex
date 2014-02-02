@@ -128,7 +128,7 @@ The first  and second information blocks (introduction part 2 and level 1) as we
  However, in order to keep the user motivated he cannot get less than 0 points.
  When the user has no more lives left he has to restart the level.
  With every correct answer the user gains points.
-	\item[Actual Game]  In level 2 we start introducing URL spoofing techniques and the user has to decide whether a given URL is a phishing URL or a valid one.
+	\item[The Actual Game]  In level 2 we start introducing URL spoofing techniques and the user has to decide whether a given URL is a phishing URL or a valid one.
  Similar to level 1, the user can lose and win points as well as lose lives.
  Here again, if the user has no more lives left he has to restart the level.
 \autoref{fig:lose_points_life} illustrates the game flow and consequences of wrong and correct answers from level 2 and upwards.
@@ -145,24 +145,24 @@ For correct answers the user is rewarded with earning points and eventually fini
 \begin{figure}[hHtbp]
 \centering
 \includegraphics[width=1.0\textwidth]{lose_win_points.pdf}
-\caption{Losing points and lives in the game (levels 2-8)}
+\caption{Losing points and lives in the game (levels 2-9). PHISH/NO PHISH refers to whether the displayed URL is a phish or not. In case the terms are not capitalized, i.e. phish/no phish, they refer to the user's decision.}
 \label{fig:lose_points_life}
 \end{figure}
 %===========================================
 \subsection{Leveling Strategy}
 \label{s:leveling}
 %===========================================
-During the app development we tried out several leveling strategies.
- This section is intended to introduce the leveling strategies we considered for the app.
+During the app development we examined several strategies on how to gain points and setting thresholds for unlocking the next level and incrementally improved it.
+ This section is intended to introduce the leveling strategies we considered for the app together with an assessment of their strengths and weaknesses.
 Finally, we describe the strategy we chose to use.
 
 \begin{description}[leftmargin=0cm]
 	\item[Leveling Based on Achieved Points] Our very first leveling strategy was based on the achieved points per level.
- Each level the user had to achieve 100 points to pass the current level and unlock the next one.
+ On each level the user had to achieve 100 points to pass the current level and unlock the next one.
  This approach had a major drawback.
- The fact that achieving a minimum of points to pass the level resulted in very similar points for everybody finishing a level.
- That is to say, everybody who has finished level x, has approximately the same points, which in turn would have meant that the comparison between single users would not be meaningful as the points would only differ very slightly.
- Additionally, users might replay early levels which are easier and gain the same ore even more points compared to users playing later and more difficult levels.
+ The fact that achieving a minimum of points to pass the level results obviously in very similar points for everybody finishing a specific level.
+ That is to say, the comparison between single users would not be meaningful as the points would only differ very slightly.
+ Additionally, users gain points for each run of a level. Therefore, given the fixed amount of points to be achieved, users might replay early levels which are easier and gain the same ore even more points compared to users playing later and more difficult levels.
 	\item[Leveling Based on Detected Phishes] The previously described leveling strategy had the deficit of comparability among the users.
  However, we consider comparability very important  since it serves as an incentive for the user to perform better or play on.
  For this reason, we decided that passing a level should rather depend on the number of phishes the user was able to detect during a level.
@@ -188,7 +188,9 @@ Finally, we describe the strategy we chose to use.
 %===========================================
 \label{s:knowledgetransferperlevel}
 This section summarizes the learning objectives of each level.
- Note that we generally do not use technical terms like URL, domain, subdomain, protocol or the like. \autoref{fig:level_teaching_goals} illustrates and exemplifies the level flow of our app.
+ Note that we generally do not use technical terms like URL, domain, subdomain, protocol, or the like. 
+That way, we avoid overwhelming users who might not be able to cope with these technical terms.
+\autoref{fig:level_teaching_goals} provides an overview of the level flow.
 
 
 \begin{description}[leftmargin=0cm]
@@ -253,7 +255,7 @@ e.
 \begin{figure}[hHtbp]
 \centering
 \includegraphics[width=1.0\textwidth]{graphix/level_teaching_goals.pdf}
-\caption{Teaching goals of the app}
+\caption{Teaching goals per level}
 \label{fig:level_teaching_goals}
 \end{figure}
 
