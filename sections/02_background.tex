@@ -231,7 +231,7 @@ This section deals with different learning techniques used for phishing educatio
  For better readability and comprehensibility we divided the related work into two categories: the \textit{content}, i.e.
  what the user is taught, and the 
 %WHAT WAS THE USER TOLD$ and the 
-\textit{medium}, i.e. how the user is taught.
+\textit{medium}, i.e. how the content is taught.
 These two categories can be further divided into several classes. 
 In the following, we are going to provide an overview of these classes, before we provide specific examples of previous work in the next chapter.
 
@@ -240,32 +240,30 @@ In the following, we are going to provide an overview of these classes, before w
 \subsubsection{Content Classification}
 %============================================
 \label{s:content_classification}
-The content classification deals with the concrete content of learning which is communicated to the user. 
+The content classification deals with the precise content of learning which is communicated to the user. 
 The objective of this section is to introduce the different classes of learning content that we identified in previous work.
 
 \begin{description}[leftmargin=0cm]
 	\item[General Knowledge Transfer] Renowned and targeted websites, such as PayPal, eBay or Microsoft provide general and superficial information about phishing~\cite{generalknowledgemicrosoft, generalknowledgepaypal, generalknowledgeebay}.
-	Usually, they deal with questions like what is phishing, how does phishing happen, what the symptoms of phishing are and how to report phishing attempts.
- Providing the user only with text to the topic of phishing makes it possible to communicate almost any kind of content, so that the learning objectives can get as complex as one wishes.
- However, it is likely that users do not like reading too much, especially when it gets complex and difficult to comprehend.
- Of course the user's willingness to read a lot of complex text about computer security also depends on the user's motivation. 
-	\item[E-Mail Based Knowledge] In this class of content, the user is told about the ``anatomy'' of phishing e-mails~\cite{antiphishingphyllis, sonicwall}. Particularly, they are informed about what kind of hints in an e-mail give indications for a phishing attempt.
- Indications for a phishing e-mail can be potentially malicious  attachments, impersonal salutation, requesting personal and confidential information as well as exerting pressure and threatening the user with, for example, account closure.
+	Usually, they deal with questions like what is phishing, how does phishing happen, what are the symptoms of phishing and how to report phishing attempts.
+	\item[E-Mail Based Knowledge] In this class of content, the users are told about the ``anatomy'' of phishing e-mails~\cite{antiphishingphyllis, sonicwall}. Particularly, they are informed about what kind of hints in an e-mail give indications for a phishing attempt.
+ Indications can be potentially malicious attachments, impersonal salutation, requesting personal and confidential information as well as exerting pressure and threatening the user with, for example, account closure.
  The benefit of detecting phishing attempts before even clicking on a link in an e-mail is that the user would not confirm the existence and active usage of his e-mail address to the phisher.
  More importantly, the user would not unknowingly download malicious software.
- The problem with the e-mail based approach is that detecting phishing e-mails by looking at their content becomes more and more difficult~\cite{microsoftphishing,spamfighter}. Even if today  many phishing e-mails exhibit the obvious characteristic we expect that phishing e-mails will improve and therefore these obvious hints will not remain in future. 
+ The problem with the e-mail based approach is that detecting phishing e-mails by looking at their content becomes more and more difficult~\cite{microsoftphishing,spamfighter}. Even if today  many phishing e-mails exhibit obvious characteristics we expect that phishing e-mails will improve. Therefore, we believe it is likely that these obvious hints will not remain in the future. 
 
 	\item[URL Based Knowledge] Sending spoofed e-mails with links to fake websites is a common trick of phishers.
- On the target website the user is lured to disclosing his credentials.
+ On the target website the user is lured into disclosing his credentials.
  Thus, detecting such fake websites is another possibility to protect oneself against phishing.
- Here the user is taught to distinguish phishing URLs from legitimate ones~\cite{sheng2007antiphishingphil, arachchilage2012designing}. 
+ Here, the user is taught to distinguish phishing URLs from legitimate ones~\cite{sheng2007antiphishingphil, arachchilage2012designing}. 
 Links to phishing websites are not only distributed by phishing e-mails.
  Such links can be spread via any communication channel, such as online social networks or SMS.
  It is even possible to land on a phishing website by just browsing the web.
  In these situations knowing how to distinguish phishing URLs from valid ones will help whereas knowledge about phishing e-mails in general will not.
- The problem with this approach is that as soon as the DNS or host file is attacked even for experts it will get difficult to distinguish a phishing website from the legitimate one (cf.~DNS~Based~Phishing~in \autoref{s:phishing_techs}).
- Also, it is unlikely that the user is checking the URL after each click. So the user must develop a strategy when to check the URL (e.g. before entering personal data) and when not.
-
+ The problem with this approach is that as soon as the DNS or host file is attacked even for experts it will get difficult to distinguish a phishing website from the legitimate one (cf.~DNS~Hijacking~in \autoref{s:phishing_techs}).
+ Also, it is unlikely that the user checks a URL after each click. This is why, the user should develop a strategy when to check a URL (for example, before entering personal data) and when not.
+Despite its downsides, we believe that URL based knowledge gives the most reliable hint regarding its ``origin'', i.e. whether a URL in fact belongs to a legitimate website or not.
+We had a look at the phishing URLs provided by PhishTank~\cite{phishtank}. The majority of these URLs were not or only loosely related to the attacked website. If the users would be aware of the importance of the URL and were able to interpret it the phishers would put more effort in forging valid looking URLs. Obviously, there are enough users falling for primitive attacks. Therefore, we think that it is important to inform the users about the significance of URLs and to teach them how to interpret those.
 \end{description}
 
 
@@ -277,41 +275,41 @@ The learning medium describes how the learning content is communicated to the us
 The objective of this section is to introduce the different classes of learning media that we identified in previous work.
 
 \begin{description}[leftmargin=0cm]
-    \item[Simple Text] One possible media to deliver knowledge is simple text. It can be in written or spoken form. For example most people in Germany learn reading in the elementary school with textbooks. Textbooks and lectures are also commonly used in university education.
-    The main problem is that in modern time there are more interactive alternatives that some people might prefer.
-    Additionally some facts can better be transported with graphics than with text.
+    \item[Simple Text] One possible medium to provide information is simple text. It can be delivered in written or spoken form. For example, most people in Germany learn reading in elementary schools with textbooks. 
+Textbooks and lectures are also commonly used in university education.
+ Providing the user only with text to the topic of phishing makes it possible to communicate almost any kind of content, so that the learning objectives can get as complex as one wishes.
+Yet, a user's willingness to read a lot of complex text about computer security depends on his motivation. 
+ Moreover, some facts can better be transferred with graphics than with text and in modern time there are more interactive alternatives to simple texts that some people might prefer.
     
 	\item[Game Based Learning] Game based learning tries to communicate the learning content vividly and playfully through a game.
  Such a game usually has a ``background story'' and a ``mission'' the user has to accomplish~\cite{sheng2007antiphishingphil,antiphishingphyllis}. The game design is important and depends on the target group.
- Previous work in the area of phishing, for example, has focused on a fish as starring role in their game, cf. \autoref{s:related_work}. This might work well for a target group of young age, but will most likely not be appealing to a larger audience.
- This is also reflected by our phishing survey, cf. \autoref{s:survey}.
-	\item[Quiz Based Learning] The quiz based approach is a type of a game which relies on a question-answer cycle without using a specific background story~\cite{onguardonline}. The advantage of a quiz based approach is that it seems more appropriate for adults and thus will likely be appealing to a larger audience.
+ Previous work in the area of phishing, for example, focused on a fish as starring role in their game (cf. \autoref{s:related_work}). This might work well for a target group of young age, but will most likely not be appealing to a larger audience.
+ This is also reflected by our phishing survey (cf. \autoref{s:survey}).
+	\item[Quiz Based Learning] The quiz based approach is a type of a game which relies on a question-answer cycle without using a specific background story~\cite{onguardonline}. The advantage of a quiz based approach is that it seems to be more appropriate for adults and thus will likely be appealing to a larger audience, which is also reflected by our phishing survey (cf. \autoref{s:survey}).
 
-	\item[Comparison Based Learning] A further way to teach users is to let them compare legitimate websites, URLs, or e-mails, with fake ones.
- Here the user has to decide which of the shown examples are the secure ones~\cite{staysafeonline}. 
+	\item[Comparison Based Learning] A further way to teach users is to let them compare legitimate websites, for example, URLs, or e-mails, with fake ones.
+ Here, the user has to decide which of the shown examples are the secure ones~\cite{staysafeonline}. 
 We believe that this form of learning would increase the user awareness, as with this approach one could visualize to the user how difficult it can be to distinguish an original from a fake, especially when they appear almost identical.
  On the contrary, this way of learning does not reflect the reality, which is a major drawback in our point of view.
- In real life the user does not have the luxury of chosing between two options, he has only one and has to decide whether this option is trustful or not.
+ In real life the user does not have the luxury of choosing between two options, he has only one and has to decide whether this option is trustful or not.
 
 	\item[Emdedded Learning] The aim of embedded learning is to educate the user on the topic of phishing during his every day life.
- For this reason the user is sent simulated phishing e-mails.
+ For this reason, the user is sent simulated phishing e-mails.
  In case the user falls for this simulated phishing attempt he is notified and gets more information regarding phishing and how to protect himself~\cite{embedded2011jansson, kumaraguru2009phishguru}. 
 This approach benefits from the so called ``teachable moment''. 
-The moment the user realizes that he has almost become a victim to a phishing attack, he will be highly motivated to prevent this happening again and thus be highly receptive for input related to this topic.
- The teachable moment itself will not suffice to make the user stay on and consult the educational page, though.
- For example, there was a study in Germany to assess the effectiveness of CMU/APWG's landing page~\cite{TUD-CS-2013-0167}. 
- During the study the authours found that people just closed the window immediately after or shortly after landing on the educational page without reading on,  because they thought they were on the wrong website and were not aware that they landed on an educational site.
- Even if with an effective landing page, the missing positive feedback is a major flaw of this strategy in our opinion.
+In the moment the user realizes that he has almost become a victim to a phishing attack, he will be highly motivated to prevent this happening again and thus be highly receptive for input related to this topic.
+ Yet, a study in Germany revealed that the teachable moment renders superfluous in case the users do not realize what is happening~\cite{TUD-CS-2013-0167}.
+ The authors of this study assessed the effectiveness of CMU/APWG's landing page. 
+They found out that people just closed the window immediately after or shortly after landing on the educational page without reading on,  because they thought they were on the wrong website and were not aware that they landed on an educational site.
+ Even with an effective landing page, the missing positive feedback is a major flaw of this strategy in our opinion.
  The user is only notified in case of a mistake and not in case he has successfully discarded the simulated phishing e-mail.
  A further problem is raised with the implementation of such an approach.
  Legal issues will arise when sending simulated phishing e-mails which claim to come from a reputable vendor, such as an online shop.
-
 \end{description}
-
-Due to the drawbacks of embedded learning (legal issues) and comparison based (unrealistic) approaches we believe that a mixture of the game and quiz based approach containing relevant informative text is the best way to go.
+Due to the drawbacks of embedded learning (legal issues) and comparison based approaches (unrealistic) we believe that a mixture of the game and quiz based approach containing relevant informative text is the best way to go.
 This approach might be more appealing to a larger audience compared to, for example, just offering simple text.
 Yet, testing whether a quiz and game based approach is in fact more appealing and appropriate remains for future work.
-At the very least our phishing survey reveals that potential users tend to vote for quiz based approaches in comparison to simple text or a game with a fish as main character (cf. \autoref{s:survey_results}).
+At the very least our phishing survey reveals that potential users tend to vote for quiz based approaches in comparison to simple text or a game with a fish as a main character (cf. \autoref{s:survey_results}).
 Regarding the content which will be communicated to the user we decided to focus on detecting phishing URLs for the reasons explored in this section.
 A major aspect to consider in further research is the knowledge retainment.
-For this purpose our approach should be tested in long-term studies and possibly compared to alternative approaches.
+For this purpose, our approach should be tested in long-term studies and possibly compared to alternative approaches.
