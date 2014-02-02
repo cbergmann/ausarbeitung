@@ -4,8 +4,11 @@
 %*******************************************
 \label{s:approach}
 This chapter presents our final approach for the app.
- In the following sections we elaborate on the app design in detail.
-
+ In the following sections we elaborate on the app design.
+In detail, we describe how we aspired to achieve our primary goals of increasing the security awareness and providing a service to educate the user on the topic of phishing.
+Subsequently, the course of the game is roughly described followed by the explanation of the specific teaching goals per level.
+Afterwards, we describe what kind of common gaming elements are included in our final app and how we decided to set the thresholds for unlocking the next level.
+Finally, we provide a summary of basic learning principles and game techniques and to what extent these are reflected in our app.
 %===========================================
 \subsection{App Design}
 %===========================================
@@ -19,7 +22,7 @@ We also refer to it as ``awareness part''.
 \begin{enumerate}
 	\item \textit{Awareness Part:} The first part of the education app is intended to increase the user awareness regarding how easy it is to spoof e-mails and mislead users with such fake messages.
  This part is supposed to motivate the user to do something to counter the danger of the Internet and phishing, in particular.
-
+It is covered directly after starting the app for the first time.
 \begin{enumerate}
 		\item \textit{Receive Fake E-Mail:} We want to illustrate to the user how easy it is to spoof the ``from field'' as well as the content of an e-mail.
  For this purpose, the user is displayed a form that allows him to enter a sender (an arbitrary e-mail address), a target e-mail address (user's e-mail address) as well as a text of his choice.
@@ -91,7 +94,7 @@ For correct answers the user is rewarded with earning points and eventually fini
 \begin{figure}[hHtbp]
 \centering
 \includegraphics[width=1.0\textwidth]{lose_win_points.pdf}
-\caption{Losing points and lives in the game (levels 2-9). PHISH/NO PHISH refers to whether the displayed URL is a phish or not. In case the terms are not capitalized, i.e. phish/no phish, they refer to the user's decision.}
+\caption{Losing points and lives in the game (levels 2-8). PHISH/NO PHISH refers to whether the displayed URL is a phish or not. In case the terms are not capitalized, i.e. phish/no phish, they refer to the user's decision.}
 \label{fig:lose_points_life}
 \end{figure}
 
