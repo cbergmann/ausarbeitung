@@ -5,9 +5,9 @@
 \label{s:approach}
 This chapter presents our final approach for the app.
  In the following sections we elaborate on the app design.
-In detail, we describe how we aspired to achieve our primary goals of increasing the security awareness and providing a service to educate the user on the topic of phishing.
-Subsequently, the course of the game is roughly described followed by the explanation of the specific teaching goals per level.
-Afterwards, we describe what kind of common gaming elements are included in our final app and how we decided to set the thresholds for unlocking the next level.
+In detail, we describe how we aspired to achieve our primary goals of increasing the security awareness and providing a service to educate the user on the topic of phishing with the aid of an app.
+Afterwards, we describe what kind of common gaming elements are included in our app and give a rough overview to the course of the game.
+Subsequently, we explain the specific teaching goals per level and how we decided to set the thresholds for unlocking the next level.
 Finally, we provide a summary of basic learning principles and game techniques and to what extent these are reflected in our app.
 %===========================================
 \subsection{App Design}
@@ -57,6 +57,41 @@ Sometimes screenshots or graphics are included.
 
 
 %===========================================
+\subsection{Gamification}
+%===========================================
+There exist several game elements which are widely used in most modern games.
+These game elements are reflected in our app as follows:
+
+\begin{description}[leftmargin=0cm]
+\item[Lives:] An inherent property of a game is the possibility of losing it.
+If a player is not able to lose a game he will get no positive feedback on having won it.
+At the same time, one does not want the player to lose the game directly as the result of one minor mistake.
+Therefore, most games have some kind of ``you have N tries''-element, which is commonly referred to as ``lives''.
+We included such a mechanism in our app.
+The details are layed out in \autoref{s:game_rules}.
+\item[Levels:] Most games have some kind of level system.
+This serves multiple purposes.
+First, it is important for the player to get a feeling for the progress he makes.
+Second, it provides fixed points in the game from where he can restart or pause and continue later on.
+The details of the leveling strategy can be found in \autoref{s:leveling}
+
+\item[Achievements:] There exists a type of player who is willing to invest a lot of time in a specific level in order to finish it perfectly or to find every hidden secret in it.
+To address this type of player modern games offer so called ``achievements''.
+Achievements are special elements of a game that a player can unlock if he, for example, finds a special object or if he plays a given level exceptionally well. 
+We implemented achievements for finding 5, 10, 25, 50, 100 and 500 phishing URLs. 
+
+\item[Leaderboards:] Finally, games often have a leaderboard.
+A leaderboard is an area where a player can compare his progress in the game with the one of other players.
+For many people such a leaderboard have a significant impact on their motivation and engagement resulting in striving for a better performance.
+We introduced two leaderboards:
+\begin{enumerate}
+\item \textit{Total Points:} We have a leaderboard that shows how many points the player gained while playing a level. The details of how the points are calculated are described in \autoref{s:leveling}.
+\item \textit{Detected Phishing URLs:} We also introduced a leaderboard which displays the user who has detected the most phishing URLs in the app. 
+\end{enumerate}
+
+\end{description}
+
+%===========================================
 \subsection{Course of the Game}
 \label{s:game_rules}
 %===========================================
@@ -74,14 +109,14 @@ The first information block and task of the user (introduction part 2) deals wit
  From this level on, the user has three lives upon the start of each level (cf. \autoref{fig:app_url_task_3_lives}).
  In level 1 he has to identify the domain of valid URLs (cf. \autoref{s:knowledgetransferperlevel}).
  In this level wrong answers result in both, losing points and losing a life.
- Generally, the can never get less than 0 points in order to keep him motivated.
+ Generally, the user can never get less than 0 points in order to keep him motivated.
  When the user has no more lives left he has to restart the current level.
  With every correct answer the user gains points.
 	\item[The Actual Game]  In level 2 we start introducing URL spoofing techniques. 
 All exercises which are followed by the introductory blocks are structured as follows from this point: the user is presented a URL.
 The user has to scroll the URL to the very left in order to analyze it completely.
 The scrolling is supposed to simulate the behavior of a browser.
-He has to decide whether the presented URL is a phish or a valid URL, by either clicking on the cross or the check mark respectively.
+The user has to decide whether the presented URL is a phish or a valid URL, by either clicking on the cross or the check mark respectively.
 The user interface of this challenge part is depicted in \autoref{fig:Screenshot_urltask}.
  Similar to level 1, the user can lose and win points, lose lives and might have to restart a level.
 \autoref{fig:lose_points_life} illustrates the game flow and consequences of wrong and correct answers from level 2-8.
@@ -98,7 +133,7 @@ For correct answers the user is rewarded with earning points and eventually fini
 
 \begin{figure}[hHtbp]
 \centering
-\includegraphics[width=1.0\textwidth]{Screenshot_urltask.png}
+\includegraphics[width=0.4\textwidth]{Screenshot_urltask.png}
 \caption{Example challenge view where the user has to decide phish or no phish}
 \label{fig:Screenshot_urltask}
 \end{figure}
@@ -106,7 +141,7 @@ For correct answers the user is rewarded with earning points and eventually fini
 
 \begin{figure}[hHtbp]
 \centering
-\includegraphics[width=1.0\textwidth]{Screenshot_proof.png}
+\includegraphics[width=0.4\textwidth]{Screenshot_proof.png}
 \caption{Example view where the user has to mark the domain}
 \label{fig:Screenshot_proof}
 \end{figure}
@@ -195,40 +230,6 @@ On HTTPS URLs the user has to validate whether they are legitimate or phishes.
 \label{fig:level_teaching_goals}
 \end{figure}
 
-%===========================================
-\subsection{Gamification}
-%===========================================
-There exist several game elements which are widely used in most modern games.
-These game elements are reflected in our app as follows:
-
-\begin{description}[leftmargin=0cm]
-\item[Lives:] An inherent property of a game is the possibility of losing it.
-If a player is not able to lose a game he will get no positive feedback on having won it.
-At the same time, one does not want the player to lose the game directly as the result of one minor mistake.
-Therefore, most games have some kind of ``you have N tries''-element, which is commonly referred to as ``lives''.
-We included such a mechanism in our app.
-The details are layed out in \autoref{s:game_rules}.
-\item[Levels:] Most games have some kind of level system.
-This serves multiple purposes.
-First, it is important for the player to get a feeling for the progress he makes.
-Second, it provides fixed points in the game from where he can restart or pause and continue later on.
-The details of the leveling strategy can be found in \autoref{s:leveling}
-
-\item[Achievements:] There exists a type of player who is willing to invest a lot of time in a specific level in order to finish it perfectly or to find every hidden secret in it.
-To address this type of player modern games offer so called ``achievements''.
-Achievements are special elements of a game that a player can unlock if he, for example, finds a special object or if he plays a given level exceptionally well. 
-We implemented achievements for finding 5, 10, 25, 50, 100 and 500 phishing URLs. 
-
-\item[Leaderboards:] Finally, games often have a leaderboard.
-A leaderboard is an area where a player can compare his progress in the game with the one of other players.
-For many people such a leaderboard have a significant impact on their motivation and engagement resulting in striving for a better performance.
-We introduced two leaderboards:
-\begin{enumerate}
-\item \textit{Total Points:} We have a leaderboard that shows how many points the player gained while playing a level. The details of how the points are calculated are described in \autoref{s:leveling}.
-\item \textit{Detected Phishing URLs:} We also introduced a leaderboard which displays the user who has detected the most phishing URLs in the app. 
-\end{enumerate}
-
-\end{description}
 
 %===========================================
 \subsection{Leveling Strategy}
