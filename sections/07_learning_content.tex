@@ -4,7 +4,7 @@
 
 In this section we describe and elaborate on different teaching and learning contents which can potentially be communicated to the user.
  At the same time we reason our decision whether to communicate the specific content or not.
-In \autoref{s:approach} we then precisely explain how the learning contents are reflected in our app.
+
 
 \subsection{E-Mail Spoofing}
 %...........................................
@@ -53,11 +53,11 @@ Instead we focus on the URL analysis directly in the browser.
 \subsection{Structure of a URL}
 \label{s:url_structure}
 The URL is a complex construct. 
-In order to correctly analyze a URL and decide whether it is spoofed or not it is necessary to understand the structure of it. 
-Therefore, the users must achieve the essential skills of parsing a URL appropriately.
+In order to correctly analyze a URL and decide whether it is spoofed or not it is necessary to understand its structure. 
+Therefore, the users must achieve the essential capability of parsing a URL appropriately.
 An attacker uses brands which are familiar to the user in any part of a URL in order to deceive him. 
 Thus, especially the identification of the domain in a given URL is a key aspect which must be covered extensively within the app. 
-We will teach the user about the most important parts of a URL, the protocol (http vs. https), the host with its domain and the path.
+We will teach the user about the most important parts of a URL, the protocol (HTTP vs. HTTPS), the host with its domain and the path.
 We do not distinguish the directory, filename or query parameters of the URL path because this part is rather irrelevant for the detection of phishing.
 By contracting these elements we can avoid discouraging and overwhelming users with details they do not need.
 
@@ -70,11 +70,11 @@ PhishTank is a free community site where people can submit, verify and view phis
  It provides an API which makes all PhishTank data accessible.
  Organizations such as Yahoo, Kaspersky Lab and Mcafee use the data submitted by PhishTank. A further reason to choose PhishTank as our phishing URL database was that Kaspersky Lab itself recommended to make use of it for our URL analysis.
  For the phishing URL analysis we drew on the URL categories identified by the authors of Anti-Phishing Phil~\cite{sheng2007antiphishingphil} as our baseline.
- To these belong IP address URLs, subdomain URLs as well as similar and deceptive domain URLs.
+ These include IP address URLs, subdomain URLs as well as similar and deceptive domain URLs.
  Subsequently, we went through the PhishTank URLs and tried to assign them to one of these categories.
  When no category suited the URL to be assigned, we generated a new category, to which the URL could then be assigned to.
- In addition we found various categories mentioned in literature, which we also included to our categories, even if we could not find any explicit example URL in the PhishTank database.
- In the following the identified URL categories are explained.
+ In addition, we found various categories mentioned in literature, which we also included to our categories, even if we could not find any explicit example URLs in the PhishTank database.
+ In the following we explain the identified URL categories.
 %...........................................
 \subsubsection{Phishing URL Categorization}
 %...........................................
@@ -94,13 +94,12 @@ URLs are complex and many users do not know how exactly they have to be interpre
  In this case, the host area of the URL contains an IP address.
 
 	\item[Nonsense Domain] We frequently encountered URLs which had registered random names or strings as their domain.
- The domain names ranged from random letters to domain names like ``marketstreetchippy.
-com''. In order to deceive the users some of these URLs contained a well known brand name in other parts of the URL.
+ The domain names ranged from random letters to domain names like ``marketstreetchippy.com''. In order to deceive the users some of these URLs contained a well-known brand name in other parts of the URL.
 Yet, there were a number of examples where this was not the case, i.e. without viewing the content of the website one would have no idea where the URL points to.
 
 	\item[Trustworthy, but Unrelated Domain] Some URLs are very well-crafted.
  When reading them they appear meaningful and trustworthy.
- This is particularly accomplished by registering domain names which sound reliable, for example, ``account-information.com'', ``secure-login.de'', or ``security-update.com''. If the URL additionally contains the brand name of the target institution somewhere in the URL the user is easily deceived.
+ This is particularly accomplished by registering domain names which sound reliable, for example, ``account-information.com'', ``secure-login.de'', or ``security-update.com''. If the URL additionally contains the brand name of the targeted institution somewhere in the URL the user can be easily deceived.
 
 	\item[Similar and Deceptive Domains] Another possibility to fool users with a spoofed URL is to use URLs which look like the original ones, but have a slight difference.
  For example, phishers register domains which resemble the targeted domain, but have a typo.
@@ -109,21 +108,21 @@ Yet, there were a number of examples where this was not the case, i.e. without v
  For example, ``facebook-login.com'' can be registered in order to fake ``facebook.com''. Finally, the attacker can scramble letters of the original domain, which can be very hard to detect at first sight.
 
 	\item[Homograph Attack] The homograph attack exploits character resemblance.
- Here characters are replaced by other characters which look very similar to the replaced one.
+ Here, characters are replaced by other characters which look very similar to the replaced one.
  For example, an attacker might replace a ``w'' within a genuine domain with ``vv'' and register it.
  An even more advanced way is to replace characters of the genuine domain with characters from other character sets, such as Cyrillic languages, where the characters will look almost identical~\cite{gabrilovich2002homograph}. The latter case is indistinguishable for the human eye in many cases and is partially a technical issue.
-Here, browser vendors should be encouraged to indicate when there are international characters.
- For this reason only cases that are distinguishable by the human eye are covered by the educational app.
+Here, browser vendors should be encouraged to indicate when international characters are contained in a URL.
+ For this reason, only cases that are distinguishable by the human eye are covered by the educational app.
 
 % DAS WAS DER USER NICHT SEHEN KANN WIRD NATÜRLICH AUCH NICHT GECOVERED WERDEN KÖNNEN
 	\item[Tiny URLs] A tiny URL service is used to convert a long URL into a short one.
  Due to their shortness tiny URLs are very comfortable to use and easy-to-type.
  There seemed to be a trend of using tiny URLs for phishing in 2009, in particular in instant messaging services~\cite{tinyurlpcworld}.
- Tiny URLs usually do not give a hint about the target website and users do not tend to be suspicious about receiving such links from a ``friend'' what made the use of it for the purpose of phishing quite popular. Tiny URLs redirect the shortened URL to the actual one.
- As we consider the ``analyze URL after-click'' scenario for the user education, there is no need of the cloaked URL to be covered by the app.
+ Tiny URLs usually do not give a hint about the target website and users do not tend to be suspicious about receiving such links from a ``friend'' what made the use of them for the purpose of phishing quite popular. Tiny URLs redirect the shortened URL to the actual one.
+ As we consider the ``analyze URL after click'' scenario for the user education, there is no need of the tiny URL to be covered by the app.
 
-		\item[Cloaked URLs] Other phishers integrate an ``@'' into the URL so that domain names become difficult to understand and the actual destination of a link becomes ``cloaked''~\cite{alnajim2009fighting}. For example, the URL http://paypal.com@google.com/ is redirected to http://google.com. 
-As we consider the ``analyze URL after-click'' scenario for the user education, there is no need of the tiny URL to be covered by the app.
+		\item[Cloaked URLs] Other phishers integrate an ``@'' into the URL so that domain names become difficult to understand and the actual destination of a link becomes ``cloaked''~\cite{alnajim2009fighting}. For example, the URL ``http://paypal.com@google.com/'' is redirected to ``http://google.com''. 
+As we consider the ``analyze URL after click'' scenario for the user education, there is no need of the cloaked URL to be covered by the app.
 
 \end{description}
 
@@ -131,27 +130,28 @@ As we consider the ``analyze URL after-click'' scenario for the user education, 
 \subsubsection{Problems with URLs}
 %...........................................
 \label{s:problems_with_URLs}
-There arise two major problems with the detection of phishing attacks based on the URL which are stated below. 
+There arise two major problems with the detection of phishing attacks based on the URL.
+
 
 \begin{enumerate}
 	\item Some legitimate URLs feature characteristics of phishing URLs.
 	\item We cannot assure that the users know all website vendors of our URLs (whether legitimate or phish).
 \end{enumerate}
+This section elaborates on these problems and outlines how we approach to handle these issues.
 
-The succeeding sections elaborate on these problems and outline how we approach to handle these problems.
 \begin{description}[leftmargin=0cm]
-	\item[Legitimate but Fraudulent Looking URLs] 
+	\item[Legitimate, but Fraudulent Looking URLs] 
 We wanted to find out to what extent our determined phishing URL categories from \autoref{s:url_categories} apply to authentic websites.
-For this purpose we browsed the web and looked at the top 50 banks~\cite{bankrank} and top 50 online shops in Germany~\cite{onlineshoprank}. 
-While surfing on these websites we have recognized that it occasionally happens that a legitimate URL features the characteristic of a phishing URL. 
+For this purpose, we browsed the web and looked at the top 50 banks~\cite{bankrank} and top 50 online shops~\cite{onlineshoprank} in Germany. 
+While surfing on these websites we recognized that it occasionally happens that a legitimate URL features the characteristic of a phishing URL. 
 This is particularly the case for the category of similar and deceptive domains. 
 There exist sites of vendors which make use of similar domains, instead of never changing the domain and using, for example, subdomains. 
 An example is the website of the Commerzbank. 
 When surfing on Commerzbank's website the domain is ``commerzbank.de''. 
-As soon as the user is on the online banking part of the website the domain changes to ``commerzbanking.de''. 
-The same happens on a PayPal website. 
+Once the user is on the online banking part of the website the domain changes to ``commerzbanking.de''. 
+The same happens on the PayPal website. 
 The regular website features the domain ``paypal.com''.
-However, paypal also has a site, where the domain is ``paypal-viewpoints.com''
+However, paypal also has a site, where the domain is ``paypal-viewpoints.com''.
 By our definition, ``commerzbanking.de'' and  ``paypal-viewpoints.com'' contain indications of a phishing website.
 We decided to address this problem by adding a section of final remarks to the app. 
 In this section we tell the user that there might be legitimate domains which are similar to domains they are familiar with and that these not necessarily are phishes. 
@@ -168,9 +168,9 @@ Second, and more importantly, we cannot expect the users to go through a large l
 This kind of configuration would substantially decrease the usability and acceptance of our app. 
 Currently, we have to let the user learn new vendors. 
 By making mistakes and/or giving correct answers to unknown URLs, i.e. domains, the user will likely gain experience and learn whether a given domain is legitimate or not. 
-For future work one might consider to add a ``I don't know'' button to the options a user has during a challenge in a level of the app.
+For future work one might consider to add an ``I don't know'' button to the options a user has during a challenge in a level of the app.
 In this case the user could be explained whether it is a phish or not and why it is so.
-This option should be punished in some way in order to prevent the user from picking only easy URLs.
+This option should be punished in some way in order to prevent the user from picking only easy URLs for his answers.
 \end{description}
 
 
@@ -181,45 +181,45 @@ These aspects are explained in the following.
 
 \begin{description}[leftmargin=0cm]
 	\item[Data Entry Via HTTPS:] 	When the user enters data via HTTP there are basically two problems.
-	First, the user cannot be sure that he actually is communicating with the service provider the website claims to be.
+	First, the user cannot be sure that he actually is communicating with the website it claims to be.
 Second, even if the user actually communicates with the intended communication partner there still might be an attacker wiretapping the communication.
 Therefore, data that is sent via plain HTTP is considered lost. 
 	This teaching content is covered by our app (cf. \autoref{s:knowledgetransferperlevel}).	
 	\item[Do Not Download Attachments] Many users download or even open files that they receive via e-mail rather unchecked.
-	This is related to the problem that they trust the from-field of the e-mail.
+	This is related to the problem that they trust the from field of the e-mail.
 	It is crucial to tell them that downloading or opening an unknown file might infect their system.
 	As discussed in \autoref{s:assumptions} we assume that users are not tricked into downloading malicious software.
-This aspect has to be considered in further research.
+This aspect remains open for further research.
 	\item[Data Economy] The goal of this app is to prevent the users' data from being phished.
 	A further step towards this goal is to teach the user to enter sensitive data as rarely as possible.
-	The idea behind this is that websites, including but not limited to phishing websites, might exploit user data. 
+	The idea behind this is that websites, including but not limited to, phishing websites, might exploit user data. 
 	For now we put our focus on the detection of phishing URLs.
-Therefore, this aspect remains a problem to be targeted in future work.
+The aspect of re-thinking what data to provide to what kind of service remains an issue to be targeted in future work.
 \end{description}
 
 %...........................................
 \subsection{Browser Security Indicators}
 %...........................................
 As a matter of fact, there is a major lack of mobile browser security indicators~\cite{amrutkar2012measuring,trusteer2011}. 
-Yet, there exist some, for example, the padlock for the usage of https.
+Yet, there exist some, for example, the padlock for the usage of HTTPS.
 Such signals have the potential to provide relevant information to the user which we would have liked to inform them about.
 However, besides the lack of such hints there is also the problem of inconsistencies among the mobile as well as desktop browsers.
 Ultimately, our decision was not to tell anything about these security indicators, as the inconsistencies are too significant even among the standard browser, depending on the device and Android version it is installed on.
 \begin{description}[leftmargin=0cm]
-		\item[Https Padlock] All Android standard browsers on various devices we have examined have a padlock on SSL secured pages.
+		\item[HTTPS Padlock] All Android standard browsers on various devices we examined have a padlock on SSL secured pages.
 Also, one should consider that there are illegitimate as well as legitimate websites where a padlock is part of the web content. 
 Therefore, it is important to teach the users to look for the padlock in the browser, not in the content, to verify that the site they visit is SSL secured, when they enter confidential data.
 However, some browsers additionally make use of so called favicons, i.e. small website icons.
 The danger of using such a favicon is that a phisher could use the image of a padlock in order to deceive the user~\cite{trusteer2011}.
 Moreover, the padlock with/without favicon combinations appear in different ways. 
-While a part of the stock browsers installed on various devices and Android versions we have examined only feature a padlock in case of https websites and no favicon at all, others always display favicons. 
-In the latter case, if https is used the padlock is either positioned right next to the favicon or overlaps it.
+While a part of the stock browsers installed on various devices and Android versions we examined only feature a padlock in case of HTTPS websites and no favicon at all, others always display favicons. 
+In the latter case, if HTTPS is used the padlock is either positioned right next to the favicon or overlaps it.
 Due to the variety of possible combinations as well as the deception potential in combination with favicons we decided not to tell the user about the padlock.
 		\item[Touch Padlock] Touching the padlock of an SSL secured website leads to an alert dialog with information about the website. 
 One part of this information is the complete URL of the website the user is currently on.
 In this case, it would become possible to view and analyze the complete URL without tapping the address bar and scrolling to the left and right.
 For \textit{some} browsers which additionally display favicons, the above described feature is always applicable.
-That means, the alert dialog with the complete URL can also be consulted on websites which do not use https.
+That means, the alert dialog with the complete URL can also be consulted on websites which do not use HTTPS.
 Yet, there are also browsers where neither clicking on a padlock nor on a favicon is possible.
 Hence, we will stick to our approach, where the user is explained how to analyze the URL directly in the address bar.
 		\item[Certificate Verification]Tapping on the padlock icon results in an alert dialog where the user can select to view the certificate details (``show certificate'').
@@ -237,6 +237,7 @@ Therefore, this is an aspect which is not covered by our app.
 %...........................................
 
 This section briefly lists the above described learning contents which will be addressed by our app.
+In the following section we precisely explain how the learning contents are reflected in our app and provide further insights to our app design.
 
 \begin{enumerate}
 	\item E-mail spoofing 
