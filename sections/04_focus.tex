@@ -61,7 +61,7 @@ The after click scenario does not exhibit all these drawbacks which is why we ch
 On the other hand, this scenario might suffer from potential malicious downloads and providing information to the phisher (benefits of before click scenario).
 If a user confirms his e-mail address to the phisher by clicking on a link, further attacks towards this e-mail address are likely to follow.
 Also, the pure request and displaying of a phishing website might provide additional information to the phisher or even expose the user to attacks.
-For now, we consider this as future work, as there is no possibility in our target scenario to detect the real target of a link before clicking on it.
+For now, these aspects remain open for further research, as there is no possibility in our target scenario to detect the actual destination of a link before clicking on it.
 
 	\item[Considered Browser:] The user is only taught browser skills which can be transferred to any other browser.
 Nevertheless, when the user gets browser screenshots, for example, we made use of the Android standard browser to be sure that most users are familiar with the pictures they are shown.
@@ -71,16 +71,17 @@ Nevertheless, when the user gets browser screenshots, for example, we made use o
 \subsection{System Requirements}
 %===========================================
 \label{s:sys_requirements}
-In the following we list the system requirements which need to be met to install and play with the final app.
+Several system requirement have to be met in order to be able to install and play with the final app.
+In the following we list these requirements.
 
 
 \begin{description}[leftmargin=0cm]
 	\item[Android:] Currently the mobile phone market is split between two major competitors. Android~(81.0\%) and iOS~(12.9\%)~\cite{androidiosmarketshare}. 
-	We have decided to develop an app for the Android operation system as there are more users and we believe we have greater freedom here compared to an iOS app. 
- 	Additionally, Android is an open operating system and imposes less requirements and barriers that allow us a quick development and publication of our app~\cite{publishios, publishandroid}. 
+	We decided to develop an app for the Android operating system as it has more users. Moreover, we believe we have greater freedom here compared to an iOS app. 
+ 	Android is an open operating system and imposes less requirements and barriers that allow us a quick development and publication of our app~\cite{publishios, publishandroid}. 
 	\item[Version:] Our initial intention was to develop an Android app for version 4.0 and upward.
- However, during the app development we have encountered that about 24\% of all Android users still have Android 2.3.3 to 2.3.7~\cite{versionsandroid}. For this reason we have decided to modify the code so that these users can also install and use our app.
-	\item[Samsung Galaxy S3 or S4:] Actually, it is not necessarily required to install the app on Samsung Galaxy S3 or S4 devices. 
+ However, during the app development we encountered that about 24\% of all Android users still have Android 2.3.3 to 2.3.7~\cite{versionsandroid}. For this reason, we decided to modify the code so that these users can also install and use our app.
+	\item[Samsung Galaxy S3 or S4:] It is not necessarily required to install the app on Samsung Galaxy S3 or S4 devices. 
 Yet, we did not have the possibility to test our app (design and functionality) on different devices.
 The above mentioned devices are those we tested and used for our final user study.
 \end{description}
@@ -91,10 +92,11 @@ The above mentioned devices are those we tested and used for our final user stud
 %===========================================
 We have to make some assumptions about the user's system. 
 If one or more of these do not hold the user might not be able to detect that he is a target of an attack, disregarding of his skills.
+In the following these assumptions are briefly explained.
 \begin{description}[leftmargin=0cm]
 	\item[Secure DNS:] We have to assume that DNS is not under the control of the attacker.
 	Our approach is to show the user how to identify phishing attempts by analyzing the URL of the shown page.
-	In fact, this is of no use if the phisher can control the DNS system of the user.
+	In fact, this is of no use if the phisher can control the DNS of the user.
 	Therefore, we assume local host files and all used DNS servers as untouched by a potential attacker.
 	We are aware that there exist technical approaches to secure DNS (for example, DNSSEC). However, as these are neither mandatory nor used on the majority of domains we cannot take them into consideration.
 	\item[Secure Smartphone:] We imply that the user's system is in a secure state.
@@ -102,9 +104,9 @@ If one or more of these do not hold the user might not be able to detect that he
 	\item[Secure SSL:] 
 	For a man-in-the-middle it is possible to intercept sent or received data and to collect the user data directly without notice.
 	Therefore, we warn the user against entering personal data on non-HTTPS pages.
-	For this reason, we have to assume that the cryptography used by SSL and HTTPS is not broken.
-	\item[Malware:] 
-	Sending e-mails with malicious attachments or links to malicious downloads is a form of deceptive phishing.
+	For this reason, we have to assume that HTTPS or the cryptography used by SSL is not broken.
+\item[No Malware:] 
+	Sending e-mails with malicious attachments or links to malicious downloads is a form of malware based phishing.
 	In our approach we assume that the attacker does not lure the user into downloading such malicious software, which captures the user's confidential data.
 	We focus on attacks where the user is encouraged to actively provide his sensitive data himself.
 	Yet, we believe that preventing users from being lured into downloading malware is an important aspect.
@@ -125,14 +127,11 @@ Therefore, we do not intend to tell the users about possible attacks that only e
 	This is a vulnerability of the attacked webpage and can be prevented by checking user input.
 	Therefore, we think that preventing this attack is in the responsibility of the website owner.
 	\item[URL Hiding Techniques]
-	Most modern mobile phones have small screens.
-	Therefore, most browser hide away the URL bar to increase the viewport when the user browses webpages.
-	The URL bar is shown only when the user scrolls up to the top of the webpage.
-	There is a possible attack where the attacker can prevent the user from scrolling all the way up and instead might display a fake URL bar with a valid looking URL.
-	A problem that the attacker has to face is that mobile browsers look very diffently which must be reflected by the fake URL bar, a tedious and difficult task.
+	As outlined in \autoref{s:antiphishing_on_smartphone} most address bars in smartphones are generally hidden and reappear only in case the user scrolls up to the top of the website.
+	There is a possible attack where the attacker can prevent the user from scrolling all the way up and instead might display a fake address bar with a valid looking URL.
+	A problem that the attacker has to face is that mobile browsers look very diffently which must be reflected by the fake address bar, a tedious and difficult task.
 	We are aware that such techniques can be exported to a phishing toolkit, sold and used by many phishers. However, attackers do not need such sophisticated attacks yet, because enough users fall for the simple ones these days. 
 	We think this is the reason why this kind of attack has not yet been observed in the wild and the reason why we do not consider it as well.
 Also, this is an issue which can be addressed with the user interface with approaches similar to the iOS7 Safari browser (cf. \autoref{s:antiphishing_on_smartphone}).
 \end{description}
-
 We do not teach users regarding these types of phishing. However, we plan to design our app in such a way that these extensions will be easy to realize.
