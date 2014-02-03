@@ -223,8 +223,81 @@ In the following we present our definition of phishing which encompasses our and
 ''}~\cite{jakobsson2006phishing}
 \end{center}
 
+%-------------------------------------------
+\subsection{Consequences of Phishing}
+%-------------------------------------------
+Irrespective of in which way the phisher obtained sensitive data, falling for a phishing attack has consequences for the fooled person as well as for the targeted company or organization.
+In the following some of these consequences are briefly illustrated.
+
+\begin{description}[leftmargin=0cm]
+\item[Identity Theft:] The main goal of the attacker is to impersonate the attacked party by stealing his credentials. That is to say, a possible consequence of falling for a phishing attack is identity theft~\cite{jakobsson2006phishing}. With the obtained information the phisher can, for instance, do online shopping or access the corporate infrastructure on behalf of his victims.
+\item[Data Theft:]
+In a private environment the phisher might collect the user's contacts or all kinds of other sensitive information.
+In case the attacker gains access to corporate systems he might be able to read and copy customer data or other confidential information.
+\item[Reputational Damage:]
+When the phisher gets access to a social network account he might be able to deceive ``friends'' of the victim as well. This might have a negative impact on the victim's reputation.
+Moreover, if a customer falls for an attack he might blame the targeted company for not protecting him and his data appropriately. 
+Ultimately, this customer might lose confidence in eCommerce operations and the Internet in general.
+
+In another scenario an employee might fall for a phishing trap.
+If such news reports are published this might undermine the trust of potential and current customers in the attacked company~\cite{mcafee, redcondor}. 
+\item[Financial Loss:]
+An attacker might be able to plunder private or corporate bank accounts which results in financial loss for each victim. Additionally, organizations have to face increased support expenses caused by the problem of phishing~\cite{rsa2013, mcafee}.
+\end{description}
+
+%-------------------------------------------
+\section{Anti-Phishing Education on the Smartphone}
+%-------------------------------------------
+\label{s:antiphishing_on_smartphone}
+The goal of our work is to increase users' security awareness and offer them a service with which they can learn to protect themselves against phishing attacks.
+We decided to implement both an appealing as well as valuable service that incorporates the beforementioned goals as a smartphone app.
+In the following we reason our decision:
+
+\begin{description}[leftmargin=0cm]
+\item[Mobility and Size:] The main characteristic of a smartphone is that it is mobile and smaller than the well-known desktop computers.
+As a consequence, there is less space on the screen.
+Many browsers, for example, generally hide their address bars due to the lack of space.
+With the address bar, the URL and other potential security indicators are hidden.
+The release of iOS7 features a key step towards better transparency for the user.
+iOS7's Safari browser displays the host instead of the website's title or the URL itself.
+This might make phishing attacks more difficult to succeed, assumed that users look at and assess this area of the browser.
+Additionally, in portrait mode the host is displayed even when scrolling down the page, i.e. this relevant information is always visible.
+An interesting question to ask here is whether, when and how many browsers will follow such an approach.
+Currently, Android does not support such a functionality. 
+Yet, displaying the host instead of the complete URL or the title only facilitates users to detect phishing.
+There is still a need for URL parsing comprehension for these purposes.
+\item[Distraction Caused by Mobility:] Users often use their smartphones while on the move, when walking or during a train or a bus ride, for example.
+These circumstances imply distractions from the environment.
+These distractions obviously will influence the user's attentiveness.
+Hence, smartphone users might be even more vulnerable to phishing attacks than the traditional desktop user.
+This is also indicated by Boodaei's report~\cite{trusteer2011}, which says that mobile users are three times more likely to access phishing websites than desktop users.
+This might also be affected by the fact that mobile e-mail clients effectively provide no way to check the validity of an incoming e-mail.
+The potential distraction raises the question whether it has an impact on the user's education and retentiveness.
+According to the principles of learning (cf.~\autoref{s:learning_principles}) it most likely has an impact on the learning performance.
+Yet, we believe that our exercise and repetition scheme (cf.~\autoref{s:learning_principles}) helps users to internalize the learning content despite potential distractions.
+For further research it would be interesting to test how significantly distractions impact the learning results of our app, though.
+\item[High Number of Smartphone Users:] In addition, given that the majority of the people use a smartphone on a regular basis in Spain, Germany, Italy, France, and the UK~\cite{smartphoneusage}, there is a need for the protection of smartphone users.
+%With the smartphones, apps and app games became popular.
+%Therefore, we believe an interactive game appears to be a good opportunity for education.
+
+\end{description} 
+Overall, educating the user on the smartphone provides two major benefits.
+First, the user can access the app on the move, even outside of his desktop environment.
+The app can be used during train or bus rides, or while bridging the time.
+Moreover, it can be started and continued any time as a sideline.
+Despite the fact that we mainly aim at users who want to do something about their unknowingness (cf.~\autoref{s:target_group}), we hope that an enjoyable app might reach even more users.
+Second, we believe it is easier to transfer knowledge of smartphones to desktop computers regarding several aspects.
+For example, the parsing of a URL can be easily transferred from smartphones to desktop computers, as desktop screens are bigger and a URL is easier to find compared to smartphones.
+Transferring knowledge from desktop computers to smartphones, on the other hand, raises more complicated issues.
+The parsing of a URL on a desktop computer, for example, cannot be easily transferred to smartphones.
+The user needs to know how to access the generally hidden address bar and how to view the complete URL.
+Icons or security warnings are probably not easy to transfer in any direction since those differ significantly among devices, versions and browsers.
+
+In the following we discuss various anti-phishing education approaches that we divided into the content that is delivered to the users by them and how these specific contents are delivered to the users.
+After giving a rough overview of these classes we provide in-depth insight to related work in the next chapter.
+
 %===========================================
-\subsection{Anti-Phishing Education Approaches}
+\subsection{Overview of Anti-Phishing Education Approaches}
 %===========================================
 
 This section deals with different learning techniques used for phishing education in previous work.
