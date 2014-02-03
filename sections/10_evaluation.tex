@@ -2,7 +2,7 @@
 \section{Evaluation}
 %*******************************************
 \label{s:evaluation}
- As a final step the app we have designed and implemented needs to be evaluated which is the goal of this chapter.
+After having designed and implemented the app, the evaluation of our work remains as a final step. This chapter describes our evaluation process.
  The app will be evaluated with the aid of a user study.
  After introducing our study design, we will state our hypotheses and explain how we are going to measure our statements.
  Finally, we will analyze our results and state our conclusion.
@@ -12,31 +12,28 @@
 \subsection{Participant Recruitment}
 %===========================================
 \label{s:participant_recruitment}
-This section deals with the participant recruitment for the study.
-In order to motivate users to attend our user study a 20\euro Amazon gift was raffled among 4 users.
+This section deals with the participant recruitment for the user study.
+As an incentive to attend our user study a gift card was raffled among 4 users.
+A major challenge was not to address close friends in order to receive unbiased and honest feedback. 
 To reach potential participants we proceeded as follows:
 
 \begin{description}[leftmargin=0cm]
 \item[Flyer:]  We prepared a flyer with the most important information. 
 In this flyer we told the user that a learning app about Internet security in general will be tested. 
-We did not mention the specific topic of phishing because we did not want potential participants to read up about it in advance.
-One might question our approach of not telling the user what exactly the study is about.
-However, we do not consider this an issue since the user was told about the exact topic at the beginning of the study.
+We did not mention the specific topic of phishing in advance because we did not want potential participants to read up about it before the study.
 Copies of this flyer were hung on blackboards of student dorms and some other buildings at the university.
-\item[E-Mail to Professors:] We additionally distributed the flyer to a number of professors in our university and asked them to forward it to their students and/or teaching stuff.
-We did not forward the flyer to computer science professors or the like since their students and stuff most likely does not match our target group.
+\item[E-Mail to Professors:] We additionally distributed the flyer to a number of professors in our university and asked them to forward it to their students and/or teaching staff.
+We did not forward the flyer to computer science professors or professors of similar technical majors since their students and staff most likely do not match our target group.
 \item[Online Social Networks:] We contacted our friends in online social networks and asked them to ask friends whether they would be willing to participate in our user study.
 Additionally, we posted the flyer in university groups of online social networks with the hope some people might be interested in participating.
 \item[Further Networks:] Finally, we called friends we could not reach via online social networks and asked them if they knew anybody who would participate.
-Also, we tried to approach random people at the university, however this was rather unsuccessful. 
 \end{description}
-In \autoref{s:participant_recruitment} copies of our e-mails to the professors and of our flyer can be consulted.
-Note that we had to split the user study into groups of 4 participants each due to the lack of available smartphones.
+In \autoref{s:participant_recruitment_texts} copies of our e-mails to the professors and of our flyer can be consulted.
+Note that we had to split the user study into groups of 4 participants due to the lack of available smartphones.
 Moreover, our flyer originally said that the best participant of each group would win the gift certificate.
-However, we recognized that the winning chance might not be equal for every participant, for example, due to varying expertise or other possible technical problems, such as app crashes.
-For this reason we asked the participants at the beginnig of each study whether it was okay for them to raffle the gift certificate instead.
-Here again it is ethically questionable to award only one of the participants with a gift certificate while others might come away empty-handed.
-To address this problem we decided to offer cookies and other kinds of sweets.
+However, we recognized that the winning chance might not be equal for every participant due to varying expertise, for example, or other possible technical problems such as app crashes.
+For this reason we asked the participants at the beginnig of each study whether they agreed to raffle the gift certificate instead.
+To express our appreciation to each participant we decided to offer cookies and other kinds of sweets.
 Additionally, the participant who performed best was awarded with a ``Golden Anti-Phish Certificate'', all other participants received a ``Silver Anti-Phish Certificate'' (cf. \autoref{s:antiphish_certs}).
 
 %===========================================
@@ -45,11 +42,11 @@ Additionally, the participant who performed best was awarded with a ``Golden Ant
 For our user study we chose a within-subject design, i.e. a ``before and after app'' study with the same group of people.
 The advantages of this design can be summarized as follows:
 Within-subject deals better with variability associated with individual differences compared to between-group design, where different groups would be considered who do and do not play the app.
-Furthermore, if we had decided for the between-group design we would have needed twice as many participants which we would have not been able to recruit.
-A major drawback of the withing-subject design, however, is the learning effect.
-We are not able to clearly distinguish whether a behavior change after playing the app is a result of the app intervention or whether the paricipants just have overthought their decisions on questions they had replied to before.
-Yet, our results showed that this learning effect can more or less be ignored (cf. \autoref{s:hypanalysis}).
-\autoref{fig:study_structure} illustrates the structure of our study, which we explain in the following: 
+A major drawback of the within-subject design, however, is the learning effect.
+We are not able to clearly distinguish whether a behavior change after playing the app is a result of the app intervention or of learning effects.
+Yet, our results showed that the learning effects seemed to have only a minor impact (cf. \autoref{s:hypanalysis}).
+
+\autoref{fig:study_structure} illustrates the structure and process of our study. In the following, we dwell on each of the consecutive steps:
 \begin{enumerate}
 	\item \textit{Informed Consent:} Before starting the user study the participants have to sign an informed consent.
 This form briefly explains what the study is about and clarifies that the participant is not obliged to finish the study.
@@ -63,33 +60,33 @@ Optionally, the user can agree with the anonymous publication of the:
 	\item \textit{General-Survey Before:} At the beginning the participants have to fill out a general survey, where they have to judge their own knowledge on the topic of Internet security in general.
  For instance, they are asked whether it is easy for them to distinguish legitimate e-mails and websites from fake ones.
 
-	\item \textit{Website-Survery Before:} In this part of the user study the participants gets a list of screenshots of websites.
+	\item \textit{Website-Survery Before:} In this part of the user study the participants get a list of screenshots of websites.
  The screenshots had been taken with the standard browser of an Android tablet.
  In total, the user is shown 16 screenshots, with 8 phishing and 8 valid URLs.
  The user has to decide whether he would enter confidential data on the shown website.
  Additionally, he has to encircle the part of the screenshot which was the primary reason for his decision.
  Then, the user has to indicate how sure he was about his answers on a Likert scale.
- Finally, the user is asked whether he knows the vendor of the website and whether he has a account there.
+ Finally, the user is asked whether he knows the vendor of the website and whether he has an account there.
 
-	\item \textit{Play App:} After the ``Website-Survey Before'' the users get the smartphones in order to play the app.
- To save time, we skipped the introduction 2 part (access address bar) for the user study.
- The user has half an hour to play the app.
- After half an hour they are asked to put the smartphones aside.
- Then, we collect the smartphones and note the reached points in each level.
+	\item \textit{Play App:} Here, the users get the smartphones in order to play the app.
+ To save time, we skipped the introduction 2 part (how to access the address bar) for the user study.
+ The user has half an hour to play.
+ Afterwards, they are asked to put the smartphones aside.
+ Then, we collect the smartphones and note the reached points for each level.
 
 	\item \textit{Website-Survery After:} After playing the app, the participants get a second website-survey.
  In this, all examples of the previous survey are included.
- Moreover, it contains 8 further website screenshots of which 4 have phishing and the remaining 4 have valid URLs.
+ Moreover, it contains 8 further website screenshots of which 4 represent phishing and the other 4 legitimate URLs.
 
-	\item \textit{General-Survey After:} Here, the participants are asked to fill out a form with questions to their demographics.
- This form does also contain questions related to the SUS and some other questions regarding their impression of the app.
+	\item \textit{General-Survey After:} Here, the participants are asked to complete a form with questions pertaining to their person, for example, their age or course of study.
+ This form does also contain questions related to the System Usability Scale (SUS)~\cite{sus}, which is supposed to assess the usability of our app, and questions regarding the users' impression of the app.
 	
-	\item \textit{Certificates:} At this point the is officially finished.
+	\item \textit{Certificates:} At this point the official part of the study is finished.
 We thank the users for their participation and award a ``Golden Anti-Phish Certicate'' to the best participant of the current group.
-All other users receieve a ``Silver Anti-Phish Certificate''.
+All other attendants receieve a ``Silver Anti-Phish Certificate''.
 Next, the gift certificate is raffled.
 
-	\item \textit{Debrief:} After the official end of the study (after handing out the certificates) we asked the participants if they were willing to stay for an optional debrief, where they could ask questions or provide their remarks in person. In case a participant did not want to stay for this debrief, he was free to go.
+	\item \textit{Debriefing:} After the official end of the study (after handing out the certificates) we asked the participants if they were willing to stay for an optional debriefing, where they could ask questions or provide their remarks in person. In case a participant did not want to stay for this debriefing, he was free to go.
 \end{enumerate}
 
 
@@ -97,37 +94,34 @@ Next, the gift certificate is raffled.
 \begin{figure}[hHtbp]
 \centering
 \includegraphics[height=0.9\textwidth]{study_structure.pdf}%
-\caption{Our study structure}%
+\caption{Structure and process of our final user study}%
 \label{fig:study_structure}%
 \end{figure}
 
 %===========================================
 \subsection{Hypotheses}
 %===========================================
-In order to evaluate the effectiveness and usability of our app we have formulated below mentioned hypotheses and measurements.
-As aforementioned, users are asked to encircle the area of the screenshot which was the primary reason for their decision.
-The coding of these markings, which are relevant for our measurement, can be consulted in \autoref{s:markings}.
+In order to evaluate the effectiveness and usability of our app we formulated the following hypotheses and measurements.
 
 \begin{enumerate}
-	\item \textit{Hypothesis 1 - Mistakes:} After playing the app, the users make significantly less mistakes when deciding whether a website is a phish or not.\newline
+	\item \textit{Hypothesis 1 - Mistakes:} After playing the app, the users make significantly less mistakes when deciding whether a website is a phish or not than before using the app.\newline
 	Measurement: Correctly identified websites in ``Website-Survery After'' (phish or no phish) $>>$ correctly identified websites in ``Website-Survery Before''
-	\item \textit{Hypothesis 2 - URL Based Decision:} After playing the app, the users base their primary decision on whether a website is a phishing website or not significantly more often based on the URL compared to before playing the app.\newline
+	\item \textit{Hypothesis 2 - URL Based Decision:} After playing the app, the users primarily base their decision whether a website is a phishing website or not significantly more often on the URL compared to before playing the app.\newline
 	Measurement: Number of URL markings in ``Website-Survery After'' $>>$ number of URL markings in ``Website-Survery Before''
-	\item \textit{Hypothesis 3 - URL Comprehension:} After playing the app the user understands the importance of the domain of a URL as the only criteria to detect phishing websites\newline
+	\item \textit{Hypothesis 3 - URL Comprehension:} After playing the app the user understands that the domain of a URL is the most important criterion to detect phishing websites\newline
 Measurement: Number of marked URL domains in ``Website-Survery After''  $>>$ number of marked URL domains in ``Website-Survery Before'' 
-	\item \textit{Hypothesis 4 - Good Usability:} The app usability is above average. \newline
-Measurement: According to~\cite{sus}  a System Usability Scale (SUS) $>$ 68 can be considered above average usability.
+	\item \textit{Hypothesis 4 - Good Usability:} The usability of the app is above average. \newline
+Measurement: A System Usability Scale (SUS) $>$ 68 can be considered above average usability~\cite{sus}.
 \end{enumerate}
 
 %===========================================
-\subsection{Markings of Participants}
+\subsection{Classifying Markings}
 %===========================================
 \label{s:markings}
-One part of the study involved the marking of the area on a given website which contributed to the users' decision on whether they thought the website was fraudulent or legitimate.
-In order to assess these markings we needed to define respective codings.
-Here, we provide an overview of our coding for possible markings in the website-surveys.
-These codings are relevant for the measurement of our hypothesis 3.
-Furtheremore, we discuss our marking interpretations and outline some interpretation problems, due to imprecise markings, and how we approached those.
+One part of the study involved marking the area on a given website which contributed to the users' decision on whether they thought the website was fraudulent or legitimate.
+In order to assess these markings, for the measurement of hypothesis 3, we needed to define respective codings.
+Here, we provide an overview of the regions participants marked during the website-surveys and how we coded them internally for the evaluation.
+Furtheremore, we discuss our marking interpretations and outline several interpretation problems, due to imprecise markings, and how we approached those.
 
 %.........................................................................................................
 \subsubsection{Marking Examples}
@@ -142,7 +136,7 @@ The following list summarizes the codings we used for the markings of the partic
 	\item\textit{Host:} Marking the host results in an according coding (cf.~\autoref{fig:m_host}).
 	\item\textit{Domain:} In case a participant marks a domain (cf.~\autoref{fig:m_domain}) or the substring of a domain (cf.~\autoref{fig:m_domain_substring}) this is coded as domain or domain substring accordingly.
 For the measurement of hypothesis 3, domain as well as domain substring markings are considered domains.
-	\item\textit{URL:} All other markings are coded as URL and measured as such (cf.~\autoref{fig:m_url_02}).
+	\item\textit{URL:} All other markings are coded as URL and measured as such. For instance, the subdomain of a URL is coded as URL (cf.~\autoref{fig:m_url_02}).
 \end{enumerate}
 
 %.........................................................................................................
@@ -151,24 +145,24 @@ For the measurement of hypothesis 3, domain as well as domain substring markings
 \label{s:intprobs}
 While assessing and digitalizing our data we had to face some interpretation problems which we exemplify in the following.
 In such cases we had no choice but striving to interpret the samples as objectively as possible.
-\autoref{fig:m_content_or_host}, for instance, shows a marking where the circle includes the content (youtube logo) as well as the host. 
-For this sample, we decided to code this marking as host.
+\autoref{fig:m_content_or_host}, for instance, shows a marking where the circle includes the content (YouTube logo) as well as the host. 
+For this sample, we decided to code the marking as host.
 The next example in \autoref{fig:m_domain_or_not} shows a marking where a subdomain and the domain is marked. 
-When we faced examples like this we decided to code it as domain in case a subdomain is only partially marked, so that there is an indication that the user just did not make his markings clear enough.
+When we faced examples like this we decided to code it as domain in case a subdomain is only partially marked, so that there is an indication that the user just did not make his markings precise enough.
 If the subdomain is obviously marked deliberately, i.e. clearly inside the circle, this kind of sample is coded as URL.
-In this case we see that the subdomain is inside the circle, for this reason we coded this sample as URL.
-A sample we came across often is a participant making two markings, even though we explicitly asked to mark only one area.
+In this case we see that the subdomain is inside the circle and coded this sample as URL accordingly.
+Another frequently occurring sample is one where two areas are marked, even though we explicitly asked to mark only one.
 In these cases we decided as follows: in case a marking is obviously striking due to a thicker circle, for instance, the more emphasized area is chosen for coding.
-Should both markings be kind of equal, we joint the markings and decided based on that.
-In \autoref{fig:m_url} a participant marked the scheme and the host separately. 
+In case both markings were equal, we joined the markings and decided based on that.
+In \autoref{fig:m_url}, for instance, a participant marked the scheme and the host separately. 
 We cannot observe any emphasis on one of the markings.
 Therefore, we chose to code this sample as URL.
 Finally, there were samples where the user correctly identified a phishing website.
-However, instead of marking the domain as reason, what we expected from the participants, some users marked the attacked part instead.
+However, instead of marking the domain as the reason (as it is done in the app), some users marked the attacked part instead.
 \autoref{fig:m_attack_recognized} illustrates such an example.
-In fact, this reason is justified. 
-Yet, we had to code such samples as URL since there is no clear way of defining the code for recognizing the attacked part of a URL.
-
+In fact, marking the attacked part is justified. 
+Yet, we had to code such samples as URL since there is no clearcut way of defining whether an attacked part of a URL was recognized or not.
+In the contrary, the domain of a URL can always be considered as the attacked part. Therefore, users should primarily base their decisions on domains.
 
 \begin{figure}
 \centering
@@ -248,10 +242,8 @@ Yet, we had to code such samples as URL since there is no clear way of defining 
 %===========================================
 This section presents our results and analyzes them. 
 We start with discussing the representativeness of our participants and proceed with illustrating interpretation problems we faced while we assessed the website-surveys.
-Therafter, we analyze and present the results of our measurements to our hypotheses and proceed with some further exploration of our results.
-Finally, this chapter is closed with our discussion and conclusion.
-
-
+Therafter, we evaluate our hypotheses and proceed with further exploration of our results, followed by discussing the limitations of our study.
+Finally, this chapter concludes with a disussion of our results and a corresponding summary. 
 %.........................................................................................................
 \subsubsection{Representativeness of Our Participants}
 %.........................................................................................................
@@ -265,20 +257,20 @@ In the following we discuss the representativeness of our participants with the 
 For example, our flyer asked for non-specialists.
 Yet, we were not able to assure beforehand that we would only have non-specialist participants.
 In such a case we had to rule them out for our analysis afterwards.
-Unlike in our survey to gain some input (cf. \autoref{s:survey}), where we ruled out electrical engineers or computer scientists in general, we did not generally exclude those from our final user study.
-The problem with the phishing survey was that it did not give us enough indication whether a particular participant was too skilled for our target group.
-Therefore, we had to imply that computer scientiests and electrical engineers are too skilled, even if this does not necessarily need to be the case in reality.
+Unlike in our survey to gain some input (cf. \autoref{s:survey}), we did not exclude electrical engineers or computer scientists in general from our final user study.
+The problem with the phishing survey was that it did not give us enough indication whether a particular participant was too familiar with the topic.
+Therefore, we had to imply that computer scientists and electrical engineers are too skilled, even if this does not necessarily need to be the case in reality.
 In fact, there might be computer scientists or electrical engineers who can learn something from our app.
 In contrast to the phishing survey, in our final user study we were able to determine a user's prior knowledge more precisely with the aid of the website-survey before.
 Therefore, we did not primarily consider their course of study or field of work, but rather how well they performed in the website-survey before playing the app (cf. \autoref{s:hypanalysis}).
 This way we assured that the considered participants were potential targets of phishing.
-	\item[Android Users:] Since we provided the required smartphones to the users during the study we had no need to recruit participants who obligatorily own an Android smartphone.
-For the study we considered it important that our participants own a smartphone in general since we did not want them to fail due to geneal operating difficulties.
-	\item[Language:] Participants of our study need to know German, otherwise they will not be able to understand the texts of our app. This was ensured by providing flyers and e-mails in German language so that persons who do not master the German language do not feel to be addressed.
+	\item[Android Users:] For the study we considered it important that our participants own a smartphone in general since we wanted the focus to be on our contents. This way, we minimize failures resulting from general operating difficulties.
+Since we provided the required smartphones during the study we had no need to recruit participants who obligatorily own an Android smartphone.
+	\item[Language:] Participants of our study need to know German because all of the app texts are in German. This was ensured by providing flyers and e-mails in German language so that persons who do not master the German language do not feel to be addressed.
 All of our participants could speak and read German.
 \item[Motivation:] We mainly target users who download our app by choice and thus have a basic motivation to learn something from it.
 For the user study our flyer was supposed to draw interested persons to participate in our study.
-Furthermore, we created a motivation by raffling an Amazon gift certificate so that users had an additional incentive to attend our study.
+Furthermore, we created an additional incentive to attend our study by raffling a gift certificate.
 \end{description}
 Finally, we aspired to recruit participants who are not close friends of ours in order to minimize biases as far as possible.
 %.........................................................................................................
@@ -523,33 +515,27 @@ In \autoref{s:future_work} we elaborate on aspects for further research in more 
 \end{description}
 
 \subsubsection{Limitations}
-We have decided to conduct a study which compares the users' performance before and after playing our educational app.
-Our study design has some limitations we were not able to address for several reasons.
-This section discusses these limitations.
+We decided to conduct a study which compares the users' performance before and after playing our educational app.
+Our study design has some limitations we were not able to address for several reasons that we are going to discuss subsequently.
 
 \begin{description}[leftmargin=0cm]
 	\item[Behavior Change:] In our study the participants were not in their usual environment. 
 	Therefore, they likely behaved differently during our study.
-	An alternative approach was to distribute the app to several participants and ask them to play it remotely.
+	An alternative approach would have been to distribute the app to several participants and ask them to play it remotely.
 	However, this has two major downsides: First, the user would have been remote and thus we would have less control.
-	Second, testing the before and after app skills would have been difficult to realize.
+	Second, testing the before and after app skills would have been difficult to realize in order to ensure a homogenous process among all participants.
 	\item[Increased Attention:] At the beginning of the study the participants were told that the study dealt with phishing.
 	Additionally, for the website-survey before and after they were explicitly asked to indicate whether the websites were phishing or not.
-	That is to say, the user automatically increased his attention towards answering this question.
-	In fact, this is not close to reality.
-	Designing an in situ study, where the participant would have been in their usual environment and would have not known about their participation, was not considered for time reasons and, most importantly, because such a design is ethically and legally questionable. 
-	For these reasons the post influence of the app could also not be tested.
+	That is to say, the user automatically increased his attention towards answering these kinds of questions.
+	Designing an in situ study, where the participant would have been in their usual environment and would have not known about their participation, was not considered because such a design is ethically and legally questionable. 
 	\item[Knowledge Retention:] Our study design focuses on the present.
-	For time reasons we did not have the possibility to repeat the ``after app'' scenario after some time has passed.
-	Consequently, retention is an aspect which is not considered by our study.
+	Given certain time boundaries, it was not possible to study the long-term influences of our app by conducting the after app scenario repeatedly. 
+	Consequently, knowledge retention is an aspect which is not considered by our study.
 	\item[Bias:] For the recruitment we endeavored to ensure that our participants are not close friends of ours. 
-	We rather seeked for friends of friends or even completely unknown persons by, for instance, hanging out our flyers and contacting several professors~(cf. \autoref{s:participant_recruitment}).
-	In order to further avoid biases the study should have been conducted by other persons than us.
-	The fact that the participants were in contact with us, the app designers and developers, during the study might have caused a bias.
-	Yet, we believe that the potential bias is negligible since the participants' feedback was not outstandingly good.
-	Their feedback was generally positive, but some of the participants also criticized several aspects of the app~(cf. \autoref{s:further_exploration}).
+	We rather seeked for friends of friends or even completely unknown persons~(cf. \autoref{s:participant_recruitment}).
+	Certainly, the presence of a minor bias cannot be totally excluded.
 \end{description}
-Despite the limitations of our study we believe that we could get a good insight into the effectiveness of our app.
+Despite the limitations of our study we are confident that we got a good insight into the effectiveness of our app.
 
 %===========================================
 \subsection{Discussion}
