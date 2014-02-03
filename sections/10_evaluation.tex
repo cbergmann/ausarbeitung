@@ -401,12 +401,16 @@ According to the answers that the users gave in the After survey SUS section (\a
 \end{description}
 
 %.........................................................................................................
-\subsubsection{Further Exploration}
+\subsubsection{Further Study Outcomes}
 %.........................................................................................................
 \label{s:further_exploration}
 Besides the results of our hypotheses the study yielded some further interesting outcomes.
-This section further explores these results.
+This section further explores the results we obtained from our survey data and where not part of our hypotheses.
+Afterwards, we summarize the participants' remarks to our app.
 
+%.........................................................................................................
+\subsubsubsection{Further Data Exploration}
+%.........................................................................................................
 \begin{description}[leftmargin=0cm]
 	\item[Correct and Reasoned Answers:] Hypothesis 1 only refers to giving a correct answer to the question whether a website is a phish or not.
 	Our results show that users did not only give more correct answers after playing the app.
@@ -458,6 +462,10 @@ This section further explores these results.
 	This aspect should definitely be covered in future work in our opinion.
 	
 \end{description}
+
+%.........................................................................................................
+\subsubsubsection{Remarks of Participants}
+%.........................................................................................................
 During playing the app, the participants had a slip of paper for notes they wanted to make considering the app.
 In the following we outline the main results of these slips of paper.
 Note that we did not ask the users to write down something specific. 
@@ -465,16 +473,17 @@ We merely asked them to write down what they thought, i.e. there might be more p
 In the following we consider the notes and suggestions of all participants. 
 %TODO: Confidence of answers
 \begin{description}[leftmargin=0cm]	
-	\item[Scrolling of URL:] In addition to deciding whether a URL is a phish or not, the user has to face two more 	challenges. 
+	\item[Scrolling of URL:] In addition to deciding whether a URL is a phish or not, the user has to face two more challenges. 
 First, the font size gets increasingly smaller in higher levels, until it eventually is approximately the same size of the Android standard browser.
-Second, the URL is displayed in a horizontal scrollbar so that he has to scroll the URL to the right in order to view the beginning of it, just like it is the case in browsers.
-4 of our 19 participants (21\%) found this disturbing and said it hindered them from analyzing the URL reasonably. 
-Well, this is exactly what we wanted, since the behavior in the browser is the same, and users should practice it.
-We assume that the users would not have noted this in this extent in case they would have had to complete introduction 2 (access the address bar), because then they would have understood why we do the URL scrolling.
-Yet, we think after a couple of levels the users should have understood that they have to scroll the URL, in the game as well as in the browser, so one might consider to eliminate after some time. 
+Second, the URL is displayed in a horizontal scrollbar so that the has to scroll the URL to the right in order to view the beginning of it, just like it is the case in browsers.
+4 of our 19 participants found this disturbing and said it hindered them from analyzing the URL reasonably. 
+This supports the importance of the introduction part 2 (access address bar) in the app.
+The scrolling is present in order to simulate the behavior in the browser and it is important for a user to practice this.
+We assume that the users would not have noted this in this extent in case they had completed introduction part 2, because then they would have understood why we do the URL scrolling during the exercises.
+Yet, we think after a couple of levels the users should have understood that they have to scroll the URL, in the game as well as in the browser, so one might consider to eliminate it after some time. 
 	\item[Unknown Services:] We have mentioned the problem of unknown services in \autoref{s:problems_with_URLs}.
 As we were afraid there are in fact services which are not familiar to several users.
-4 out of 19 participants (21\%) mentioned this problem.
+4 out of 19 participants mentioned this problem.
 Even if we tried to make use of the most popular services with the aid of Alexa's~\cite{alexa} ranking we cannot assure that all used URLs are known by all users.
 One idea to approach this challenge might be to provide an question mark button in addition to the check mark (no phish) and cross mark (phish) buttons. 
 When a player clicks on this button, he can be told whether the given URL is a phish or not and why.
@@ -482,22 +491,23 @@ From this action the user would neither profit nor would he lose any points or l
 Yet, we do not think that this is a major issue, since the users got at least until level 4 and most of them achieved even higher levels.
 We are confident that the app in its current state is already implicitly able to teach the users about the legitimacy of unknown services.
 After facing unfamiliar URLs and making or not making mistakes they will eventually learn whether to trust a service or not.
-	\item[Question to Data Entry:] Originally, the website-surveys before and after asked the participants whether they thought a given website screenshot was a phishing website or not.
-After our test iteration of our study, however, we decided to change the question towards asking the user whether they would enter their personal data into this website in order to create some context for the user. 
-As we told the user that this study was particularly about phishing and that their task was to detect phishing websites in the website-surveys before and after, we believe that it was clear what we were asking for with this question.
-Yet, 3 participants (15.8\%) noted that the formulation of this question was unclear, i.e. there might have been participants who selected ``no'' even if they did not think it was a phishing website, but they would  generally not enter their data in this website.
+	\item[Question to Data Entry:] 3 participants noted that the formulation of our website-survey question ``Would you enter your sensitive data into this website?'' was ambiguous.
+Thus, there might have been participants who selected ``no'' even if they did not think it was a phishing website, but they would generally not enter their data into this specific website.
+Originally, the website-surveys before and after asked the participants whether they thought a given website screenshot was a phishing website or not.
+After our test iteration of our study, however, we decided to add some context to the question and had to make this trade-off with respect to the new question's ambiguity.
+As we told the user that this study was particularly about phishing and that their task was to detect phishing websites in the website-surveys before and after, we believed that the ambiguity of this question would be negligible.
 	\item[Explanations and Comprehensibility:]
-4 participants (21\%) stated on their slips of paper that they found the explanations of the app very good and easy to understand.
+4 participants stated on their slips of paper that they found the explanations of the app very good and easy to understand.
 1 of these 4 participants, however, added that there is partially much text to read.
 Another participant (not under those 4) noted that there is too much and long text in general.
 	\item[App Structure:]
-We did our best to develop an app which is consistent and well-structured.
-3 of our participants (15.8\%) confirmed our intentions by stating that they found our app well and clearly-structured.
+We generally aimed at developing an app which is consistent and well-structured.
+3 of our participants confirmed our intentions by stating that they found our app well and clearly-structured.
 	\item[Button Positioning:] The positioning of our app buttons during the game are as follows: 
 The left bottom corner has a check mark which represents that the user thinks the displayed URL is not a phish.
 The right bottom corner has a cross mark which means that the user thinks the displayed URL is a phish.
 After clicking on either of these buttons in the write bottom corner another button appears (where the cross mark usually is) which either is the continue or the verify button (depending on whether the user has to select the Who-Section or not).
-2 of our participants (10.5\%) indicated that the positioning of the buttons in the right bottom corner are suboptimal.
+2 of our participants indicated that the positioning of the buttons in the right bottom corner are suboptimal.
 The problem here is that accidentally double clicking, for example, the continue button in the right corner results in rejecting the next URL even if the user might not have intended to.
 Even if only 2 participants explicitly criticized this aspect we believe that this is a legitimate point.
 In fact, the positioning of the two buttons continue and verify should be different from the one of the cross mark.
@@ -506,81 +516,29 @@ This is an aspect which should be targeted in future work.
 Repetition is an important element of our app.
 In every level introduction we briefly repeat the so far learnt parts of a URL (with a graphic) and the different attacks the user has seen until this point.
 We also make use of repetitions during the exercise rounds, every level contains at least one exercise from the previous level.
-2 of our participants (10.5\%) explicitly indicated that our repetitions made them feel more confident and safer.
+2 of our participants explicitly indicated that our repetitions made them feel more confident and safer.
 	\item[External Links:]
 In the main menu of our app we have a button ``More About Phishing'' which leads to a list of external links to various websites about phishing.
-As it is often easier to find websites on a specific topic in English, some of these websites are in English as well.
-2 participants (10.5\%) indicated that they did not like it to be led to an English website and would have expected to be forwarded on a German one.
-This aspect is also a point which is worth to consider for future work, since we cannot expect our audience to have knowledge of the English language.
-An idea to approach this might be to provide in-app additional info.
+Some of these websites are in English.
+2 participants indicated that they did not like it to be led to an English website and would have preferred to be forwarded to a German one.
+This reveals that we cannot expect our audience to have knowledge of the English language.
+Therefore, only German websites should be linked in the future.
+Another idea to approach this might be to provide in-app additional information.
 That is, instead of linking to external websites, the app itself could provide additional categorized information in German.
-This would solve the problem with the language and at the same time the additional information would fit to our app layout and design.
+This would solve the problem with the language of websites and at the same time the additional information would fit to our app layout and design.
 	\item[Amount of Examples:] Our app starts with a small sample of URLs users have to decide on.
-In every level the sample size increases as the number of possible attacks increase.
-2 participants (10.5\%) found that our sample size was to big.
+In every level the sample size increases as the number of possible attacks increases.
+Only 2 participants found that our sample size was too large.
 This might have been the result of the fact that the users had to play the game for half an hour at a time.
-Yet, re-thinking the number of URLs per level might be reasonable, but one has to consider that there have to be enough phishing URLs for the repetition as well as the new attack in each level.
+We believe that the number of examples are reasonable, assumed that a user does finish the app at a stroke.
 	\item[E-Mail Not Received:] The first part of our app includes sending a spoofed e-mail to oneself in order to increase the awareness of how easy faking e-mails is, even for unexperienced users.
 1 participant did not receive the e-mail he tried to send to himself.
 He skipped this part by clicking on the according button we had added for such cases.
 All other participants received the spoofed e-mail.
-	\item[Further Suggestions:] In their notes some users made several suggestions which we found interesting and would like to mention here.
-2 participants stated that the attacks in level 2 are not very challenging and very obvious.
-Phishing URLs are of the following kind in this level: ``http://www.ebay.de.phisher.com/login''.
-We had done this intentionally, however maybe the app could in fact start with for example nonsense attacks or just reduce the number of samples in this level.
-
-Also some users suggested us to visually distinct new learning content from repetition so overflying the information part becomes easier. 
-We had already tried that by displaying a warning sign every time a new attack was introduced.
-However, after this sign there still was some repetition occasionally.
-Therefore, the emphasis of new and relevant learning content in the lesson parts should be improved in future work.
-
-Another participant noted that the repeating sentences ``Very good. You are now a bit safer'', for example, when the user correctly identified a phish, were kind of repetitive and not motivating enough. This is ultimately related to our issue with the Law~of~Effect in \autoref{s:learning_principles}.
-There we stated that the texts and icons of the app should vary according to the user's performance and the degree of difficulty in order to achieve higher and better positive feelings.
-This is an additional point which is worth to consider for future work.
-
-A participant would have wished more ``feedback'' on his progress in general. 
-He missed statistics, highscores or other forms of long-term feedback.
-As we mentioned in \autoref{s:learning_principles} and \autoref{s:game_techniques} feedback is essential for learning as well as games.
-For this reason, this aspect is something which should be enhanced in future.
-
-A further interesting point is that one of our participants noted that he thought our app was appropriate for schools.
-From this we infer that the participant found our app easy to understand and that he thought pupils were capable of understanding and playing our app.
-In fact, this is a very good and important point.
-People might not want to learn about phishing on their own, especially pupils would probably not think about that.
-However, if computer security is a part of the education plan and if pupils have to learn something about, for example, phishing by playing the app, a far larger audience can be reached and educated on this topic.	
-
-Finally, one user indicated that the design of our start menu could be more appealing.
-This is a justified criticism.
-In fact, we did not put our focus in design aspects.
-To make the app's outer appearance more appealing design aspects could be considered for future work.
+	\item[Further Suggestions:] In their notes some users made several suggestions which we found interesting.
+These suggestions include, for example, more text highlighting of new teaching contents, more long-term feedback on a user's progress, and the suitability of our app to be applied in schools.
+In \autorrf{s:future_work} we elaborate on these aspects in more detail.
 \end{description}
-
-%--------------------------------------------------------
-\subsubsection{Legibility Index}
-\label{s:legibility_index}
-%--------------------------------------------------------
-Comprehensibility is of major importance for our app. Each level starts with a lesson on a certain way phishers make use of in order to delude people. These lessons aim to educate the user by describing those phishing attempts. Hence, it is of utter importance that our explanations are both thorough as well as comprehensible. After we had conducted user tests and included their corresponding valuable feedback (cf.\autoref{s:pilot_study}) and also received good feedback from the final study (cf.~\autoref{s:further_exploration}), we now want to assess the comprehensibility of our texts with the aid of a statistical method. Several approaches to assess the readability of a given text exist~\cite{Gun,citeulike:7369187}. These approaches consider, among other details, the average word and sentence length and therefore are language dependent and usually are designed for the English language. However, the Flesch-Reading-Ease~\cite{citeulike:7369187} is a legibility metric that outputs a numeric indication for the readability of the input text and was also adjusted to operate with the German language by Toni Amstad~\cite{amstad1978verstandlich}. The readability of a German text is computed as follows, where $\operatorname{ASL}$ represents the average sentence length and $\operatorname{ASW}$ the average number of syllables per word:
-$$\operatorname{FRE_{German}} = 180-\operatorname{ASL}-(58.5\times\operatorname{ASW})$$
-Several auxiliary tools exist that take a regular text as their input and return a legibility index as their output~\cite{leichtlesbar, stilversprechend,fleschindexde}. All of these tools delivered different scores because they obviously had varying algorithms to determine syllables, sentences and even word boundaries.
-Therefore, we approached as follows: First, we took the explanation part of each level as the input for all of the three tools. Second, we extracted the amount of sentences, words, and syllables from the returned values, as depicted in~\autoref{table:legibillity_index}. We did not rely on the returned legibility indexes, because the tools seemed to use slightly different formulas. Third, with the extracted information we were able to compute the German FRE index ourselves in a consistent way through all of the three tools. Ultimately, we derived a final index value of 62 by averaging the resulting index values of each tool. Given a scale from 0 to 100, where an index of up to 30 indicates an academic level and 90 and above is considered easy to understand, an index of 62 is considered as reasonably comprehensive for teenagers~\cite{amstad1978verstandlich}. Regarding our target group, this is a good result and confirms the comprehensibility of our explanations also statistically.
-
-\begin{table}[hHtbp]
-\centering
-
-    \begin{tabular}{|llll|}
-    \hline
-     &\textbf{Leichtlesbar.ch} &\textbf{Stilversprechend.de} &\textbf{Fleschindex.de}\\ \hline
-    \textbf{\# Sentences}		& 426	& 604	& 400\\
-    \textbf{\# Words}			& 4616	& 4760	& 4762\\
-    \textbf{\# Syllables} 		& 8305	& 8658	& 9235\\
-    \textbf{Legibility Index}	& 64	& 66	& 55\\
-    \hline
-    \end{tabular}
-    \caption{Sentences, words and syllables of our texts outputted by different tools~\cite{leichtlesbar, stilversprechend,fleschindexde}}
-    \label{table:legibillity_index}
-    
-\end{table}
-
 
 \subsubsection{Limitations}
 We have decided to conduct a study which compares the users' performance before and after playing our educational app.

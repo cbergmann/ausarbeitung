@@ -81,6 +81,35 @@ An example of this view is shown in \autoref{fig:Screenshot_intro3}.
 \label{fig:Screenshot_intro3}
 \end{figure}
 
+
+%--------------------------------------------------------
+\subsection{Legibility Index of Our Texts}
+\label{s:legibility_index}
+%--------------------------------------------------------
+Comprehensibility is of major importance for our app. Each level starts with a lesson on a certain way phishers make use of in order to delude people. These lessons aim to educate the user by describing those phishing attempts. Hence, it is of utter importance that our explanations are both thorough as well as comprehensible. After we had conducted user tests and included their corresponding valuable feedback (cf.\autoref{s:pilot_study}) and also received good feedback from the final study (cf.~\autoref{s:further_exploration}), we now want to assess the comprehensibility of our texts with the aid of a statistical method. Several approaches to assess the readability of a given text exist~\cite{Gun,citeulike:7369187}. These approaches consider, among other details, the average word and sentence length and therefore are language dependent and usually are designed for the English language. However, the Flesch-Reading-Ease~\cite{citeulike:7369187} is a legibility metric that outputs a numeric indication for the readability of the input text and was also adjusted to operate with the German language by Toni Amstad~\cite{amstad1978verstandlich}. The readability of a German text is computed as follows, where $\operatorname{ASL}$ represents the average sentence length and $\operatorname{ASW}$ the average number of syllables per word:
+$$\operatorname{FRE_{German}} = 180-\operatorname{ASL}-(58.5\times\operatorname{ASW})$$
+Several auxiliary tools exist that take a regular text as their input and return a legibility index as their output~\cite{leichtlesbar, stilversprechend,fleschindexde}. All of these tools delivered different scores because they obviously had varying algorithms to determine syllables, sentences and even word boundaries.
+Therefore, we approached as follows: First, we took the explanation part of each level as the input for all of the three tools. Second, we extracted the amount of sentences, words, and syllables from the returned values, as depicted in~\autoref{table:legibillity_index}. We did not rely on the returned legibility indexes, because the tools seemed to use slightly different formulas. Third, with the extracted information we were able to compute the German FRE index ourselves in a consistent way through all of the three tools. Ultimately, we derived a final index value of 62 by averaging the resulting index values of each tool. Given a scale from 0 to 100, where an index of up to 30 indicates an academic level and 90 and above is considered easy to understand, an index of 62 is considered as reasonably comprehensive for teenagers~\cite{amstad1978verstandlich}. Regarding our target group, this is a good result and confirms the comprehensibility of our explanations also statistically.
+
+\begin{table}[hHtbp]
+\centering
+
+    \begin{tabular}{|llll|}
+    \hline
+     &\textbf{Leichtlesbar.ch} &\textbf{Stilversprechend.de} &\textbf{Fleschindex.de}\\ \hline
+    \textbf{\# Sentences}		& 426	& 604	& 400\\
+    \textbf{\# Words}			& 4616	& 4760	& 4762\\
+    \textbf{\# Syllables} 		& 8305	& 8658	& 9235\\
+    \textbf{Legibility Index}	& 64	& 66	& 55\\
+    \hline
+    \end{tabular}
+    \caption{Sentences, words and syllables of our texts outputted by different tools~\cite{leichtlesbar, stilversprechend,fleschindexde}}
+    \label{table:legibillity_index}
+    
+\end{table}
+
+
+
 \subsection{Implementation and Testing}
 In parallel to formulating and validating our app texts we developed the basic structure and logic of our app.
 After conducting and assessing the guerilla user tests of our texts and integrating the feedback, we started to include them into our app.
