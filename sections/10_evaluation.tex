@@ -120,93 +120,40 @@ Measurement: According to~\cite{sus}  a System Usability Scale (SUS) $>$ 68 can 
 \end{enumerate}
 
 %===========================================
-\subsection{Coding of Markings}
+\subsection{Markings of Participants}
 %===========================================
 \label{s:markings}
-In the previous section we stated our hypotheses and how we decided to measure them. For Hypothesis 3 it is interesting to specify what marking of what area we consider as separate option.
+One part of the study involved the marking of the area on a given website which contributed to the users' decision on whether they thought the website was fraudulent or legitimate.
+In order to assess these markings we needed to define respective codings.
 Here, we provide an overview of our coding for possible markings in the website-surveys.
 These codings are relevant for the measurement of our hypothesis 3.
+Furtheremore, we discuss our marking interpretations and outline some interpretation problems, due to imprecise markings, and how we approached those.
+
+%.........................................................................................................
+\subsubsection{Marking Examples}
+%.........................................................................................................
+The following list summarizes the codings we used for the markings of the participants.
 
 \begin{enumerate}
-	\item\textit{None:} Occasionally, participants did not mark or encircle anything of the screenshot. In our raw data this is coded as none.
-	\item\textit{Favicon or Padlock:} The marking of a favicon or padlock is trivially coded accordingly.
-	\item\textit{Content:} If anything else than the URL itself, a part of the URL, a favicon, or a padlock is marked then this is coded as content.
-	\item\textit{Scheme:} If the scheme or a part of the scheme in a URL is marked, this is coded as scheme.
-	\item\textit{Host:} Marking the host results in an according coding.
-	\item\textit{Domain:} In case a participant marks a domain or the substring of a domain this is coded as domain or domain substring accordingly.
+	\item\textit{None:} Occasionally, participants did not mark or encircle anything of the screenshot. In our raw data this is coded as none (cf.~\autoref{}).
+	\item\textit{Favicon or Padlock:} The marking of a favicon or padlock is trivially coded accordingly (cf.~\autoref{fig:padlock}).
+	\item\textit{Content:} If anything else than the URL itself, a part of the URL, a favicon, or a padlock is marked then this is coded as content (cf.~\autoref{fig:content}).
+	\item\textit{Scheme:} If the scheme or a part of the scheme in a URL is marked, this is coded as scheme (cf.~\autoref{}).
+	\item\textit{Host:} Marking the host results in an according coding (cf.~\autoref{fig:m_host}).
+	\item\textit{Domain:} In case a participant marks a domain (cf.~\autoref{fig:m_domain}) or the substring of a domain (cf.~\autoref{fig:m_domain_substring}) this is coded as domain or domain substring accordingly.
 For the measurement of hypothesis 3, domain as well as domain substring markings are considered domains.
-	\item\textit{URL:} All other markings are coded as URL and measured as such.
+	\item\textit{URL:} All other markings are coded as URL and measured as such (cf.~\autoref{fig:m_url_02}).
 \end{enumerate}
 
-
-%===========================================
-\subsection{Results and Analysis}
-%===========================================
-This section presents our results and analyzes them. 
-We start with discussing the representativeness of our participants and proceed with illustrating interpretation problems we faced while we assessed the website-surveys.
-Therafter, we analyze and present the results of our measurements to our hypotheses and proceed with some further exploration of our results.
-Finally, this chapter is closed with our discussion and conclusion.
-
-
 %.........................................................................................................
-\subsubsection{Representativeness of Our Participants}
-%.........................................................................................................
-\label{s:representativeness}
-In \autoref{s:target_group_def} we defined preconditions that users have to hold in order to match our target group.
-We aspired to recruit participants who hold these preconditions as far as possible.
-In the following we discuss the representativeness of our participants with the aid of these preconditions.
-
-\begin{description}[leftmargin=0cm]
-	\item[Attackability:] Generally, we took care that the people we recruited do not have extensive prior knowledge on this topic.
-For example, our flyer asked for non-specialists.
-Yet, we were not able to assure beforehand that we would only have non-specialist participants.
-In such a case we had to rule them out for our analysis afterwards.
-Unlike in our survey to gain some input (cf. \autoref{s:survey}), where we ruled out electrical engineers or computer scientists in general, we did not generally exclude those from our final user study.
-The problem with the phishing survey was that it did not give us enough indication whether a particular participant was too skilled for our target group.
-Therefore, we had to imply that computer scientiests and electrical engineers are too skilled, even if this does not necessarily need to be the case in reality.
-In fact, there might be computer scientists or electrical engineers who can learn something from our app.
-In contrast to the phishing survey, in our final user study we were able to determine a user's prior knowledge more precisely with the aid of the website-survey before.
-Therefore, we did not primarily consider their course of study or field of work, but rather how well they performed in the website-survey before playing the app (cf. \autoref{s:hypanalysis}).
-This way we assured that the considered participants were potential targets of phishing.
-	\item[Android Users:] Since we provided the required smartphones to the users during the study we had no need to recruit participants who obligatorily own an Android smartphone.
-For the study we considered it important that our participants own a smartphone in general since we did not want them to fail due to geneal operating difficulties.
-	\item[Language:] Participants of our study need to know German, otherwise they will not be able to understand the texts of our app. This was ensured by providing flyers and e-mails in German language so that persons who do not master the German language do not feel to be addressed.
-All of our participants could speak and read German.
-\item[Motivation:] We mainly target users who download our app by choice and thus have a basic motivation to learn something from it.
-For the user study our flyer was supposed to draw interested persons to participate in our study.
-Furthermore, we created a motivation by raffling an Amazon gift certificate so that users had an additional incentive to attend our study.
-\end{description}
-Finally, we aspired to recruit participants who are not close friends of ours in order to minimize biases as far as possible.
-
-One part of the study involved of marking the areas of a given website which contributed to the users' decision on whether they thought the website was fraudulent or legitimate.
-In order to assess these markings we needed to define codings for them as discussed before in \autoref{s:markings}.
-The codings very precisely map a specific marking into a code.
-Yet, users are not that precise.
-Therefore, we discuss our marking interpretations in the following section and outline some problems we had and how we approached those.
-
-%.........................................................................................................
-\subsubsection{Marking Interpretation}
+\subsubsection{Interpretation Problems}
 %.........................................................................................................
 \label{s:intprobs}
-
-As aforementioned, the study participants were asked to fill out a website-survery before and after playing our app.
-In this survey they had to indicate whether a given screenshot of a website is a phish or not.
-Furthermore, they were asked to encircle the area of the screenshot which was the primary reason for their decision.
-This section first shows some examples for the marking codes depicted in \autoref{s:markings}.
-Afterwards, we illustrate you the challenges we had to face when interpreting the users' markings, as they were not always clear.
-
-\begin{description}[leftmargin=0cm]
-	\item[Marking Interpretation Examples:] As aforementioned, we categorized the possible markings of users into favicon, padlock, content, scheme, host, domain (substring), and URL in general.
-\autoref{fig:content} and \autoref{fig:padlock}, for example, illustrate samples where the content or the padlock of a website was marked.
-\autoref{fig:m_domain} and \autoref{fig:m_domain_substring} depict examples where the markings were interpreted as domain and domain substring.
-A sample where the host is marked is illustrated in \autoref{fig:m_host}.
-And finally, \autoref{fig:m_url_02} shows an example of a marking (subdomain) which is coded as URL in general. 
-
-	\item[Interpretation Problem Examples:] While assessing and digitalizing our data we had to face some interpretation problems which we exemplify in the following.
-In such cases we had no choice but trying to interpret the samples as objectively as possible.
+While assessing and digitalizing our data we had to face some interpretation problems which we exemplify in the following.
+In such cases we had no choice but striving to interpret the samples as objectively as possible.
 \autoref{fig:m_content_or_host}, for instance, shows a marking where the circle includes the content (youtube logo) as well as the host. 
 For this sample, we decided to code this marking as host.
-The next examples in \autoref{fig:m_domain_or_not} shows a marking where a subdomain and the domain is marked. 
+The next example in \autoref{fig:m_domain_or_not} shows a marking where a subdomain and the domain is marked. 
 When we faced examples like this we decided to code it as domain in case a subdomain is only partially marked, so that there is an indication that the user just did not make his markings clear enough.
 If the subdomain is obviously marked deliberately, i.e. clearly inside the circle, this kind of sample is coded as URL.
 In this case we see that the subdomain is inside the circle, for this reason we coded this sample as URL.
@@ -221,7 +168,7 @@ However, instead of marking the domain as reason, what we expected from the part
 \autoref{fig:m_attack_recognized} illustrates such an example.
 In fact, this reason is justified. 
 Yet, we had to code such samples as URL since there is no clear way of defining the code for recognizing the attacked part of a URL.
-\end{description}
+
 
 \begin{figure}
 \centering
@@ -295,6 +242,45 @@ Yet, we had to code such samples as URL since there is no clear way of defining 
 \end{figure}
 
 
+
+%===========================================
+\subsection{Results and Analysis}
+%===========================================
+This section presents our results and analyzes them. 
+We start with discussing the representativeness of our participants and proceed with illustrating interpretation problems we faced while we assessed the website-surveys.
+Therafter, we analyze and present the results of our measurements to our hypotheses and proceed with some further exploration of our results.
+Finally, this chapter is closed with our discussion and conclusion.
+
+
+%.........................................................................................................
+\subsubsection{Representativeness of Our Participants}
+%.........................................................................................................
+\label{s:representativeness}
+In \autoref{s:target_group_def} we defined preconditions that users have to hold in order to match our target group.
+We aspired to recruit participants who hold these preconditions as far as possible.
+In the following we discuss the representativeness of our participants with the aid of these preconditions.
+
+\begin{description}[leftmargin=0cm]
+	\item[Attackability:] Generally, we took care that the people we recruited do not have extensive prior knowledge on this topic.
+For example, our flyer asked for non-specialists.
+Yet, we were not able to assure beforehand that we would only have non-specialist participants.
+In such a case we had to rule them out for our analysis afterwards.
+Unlike in our survey to gain some input (cf. \autoref{s:survey}), where we ruled out electrical engineers or computer scientists in general, we did not generally exclude those from our final user study.
+The problem with the phishing survey was that it did not give us enough indication whether a particular participant was too skilled for our target group.
+Therefore, we had to imply that computer scientiests and electrical engineers are too skilled, even if this does not necessarily need to be the case in reality.
+In fact, there might be computer scientists or electrical engineers who can learn something from our app.
+In contrast to the phishing survey, in our final user study we were able to determine a user's prior knowledge more precisely with the aid of the website-survey before.
+Therefore, we did not primarily consider their course of study or field of work, but rather how well they performed in the website-survey before playing the app (cf. \autoref{s:hypanalysis}).
+This way we assured that the considered participants were potential targets of phishing.
+	\item[Android Users:] Since we provided the required smartphones to the users during the study we had no need to recruit participants who obligatorily own an Android smartphone.
+For the study we considered it important that our participants own a smartphone in general since we did not want them to fail due to geneal operating difficulties.
+	\item[Language:] Participants of our study need to know German, otherwise they will not be able to understand the texts of our app. This was ensured by providing flyers and e-mails in German language so that persons who do not master the German language do not feel to be addressed.
+All of our participants could speak and read German.
+\item[Motivation:] We mainly target users who download our app by choice and thus have a basic motivation to learn something from it.
+For the user study our flyer was supposed to draw interested persons to participate in our study.
+Furthermore, we created a motivation by raffling an Amazon gift certificate so that users had an additional incentive to attend our study.
+\end{description}
+Finally, we aspired to recruit participants who are not close friends of ours in order to minimize biases as far as possible.
 %.........................................................................................................
 \subsubsection{Analysis of Our Hypotheses}
 %.........................................................................................................
