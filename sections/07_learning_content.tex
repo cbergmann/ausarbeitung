@@ -205,7 +205,7 @@ Such signals have the potential to provide relevant information to the user whic
 However, besides the lack of such hints there is also the problem of inconsistencies among the mobile as well as desktop browsers.
 Ultimately, our decision was not to tell anything about these security indicators, as the inconsistencies are too significant even among the standard browser, depending on the device and Android version it is installed on.
 \begin{description}[leftmargin=0cm]
-		\item[HTTPS Padlock] All Android standard browsers on various devices we examined have a padlock on SSL secured pages.
+		\item[HTTPS Padlock] All Android standard browsers on various devices we examined have a padlock in the address bar on SSL secured pages.
 Also, one should consider that there are illegitimate as well as legitimate websites where a padlock is part of the web content. 
 Therefore, it is important to teach the users to look for the padlock in the browser, not in the content, to verify that the site they visit is SSL secured, when they enter confidential data.
 However, some browsers additionally make use of so called favicons, i.e. small website icons.
@@ -214,14 +214,14 @@ Moreover, the padlock with/without favicon combinations appear in different ways
 While a part of the stock browsers installed on various devices and Android versions we examined only feature a padlock in case of HTTPS websites and no favicon at all, others always display favicons. 
 In the latter case, if HTTPS is used the padlock is either positioned right next to the favicon or overlaps it.
 Due to the variety of possible combinations as well as the deception potential in combination with favicons we decided not to tell the user about the padlock.
-		\item[Touch Padlock] Touching the padlock of an SSL secured website leads to an alert dialog with information about the website. 
+		\item[Touch Padlock] Touching the padlock of an SSL secured website on some browsers leads to an alert dialog with information about the website. 
 One part of this information is the complete URL of the website the user is currently on.
 In this case, it would become possible to view and analyze the complete URL without tapping the address bar and scrolling to the left and right.
 For \textit{some} browsers which additionally display favicons, the above described feature is always applicable.
 That means, the alert dialog with the complete URL can also be consulted on websites which do not use HTTPS.
 Yet, there are also browsers where neither clicking on a padlock nor on a favicon is possible.
 Hence, we will stick to our approach, where the user is explained how to analyze the URL directly in the address bar.
-		\item[Certificate Verification]Tapping on the padlock icon results in an alert dialog where the user can select to view the certificate details (``show certificate'').
+		\item[Certificate Verification]Tapping on the padlock icon in some browsers results in an alert dialog where the user can select to view the certificate details (``show certificate'').
 As already stated, the padlock feature is not consistent over the various devices and browser versions.
 Hence, in these cases a validation of the certificate is not possible as well.
 Therefore, this is an aspect which is not covered by our app.
