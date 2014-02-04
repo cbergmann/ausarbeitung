@@ -29,9 +29,9 @@ We decided against a fixed set of examples for the URLs because depending on the
 We believe it is essential for the user to be faced with as many different URL examples as possible.
 Therefore, we decided to generate the URLs rather than composing a fixed list.
 Next, we lay out the URL generation process and cover further interesting aspects of the URL generation in the subsequent sections.
-\subsection{Derive Phishing URLs from Valid Example URLs}
+\subsection{Derive Phishing URLs from Legitimate Example URLs}
 To present attacked URLs to the user we found it most realistic to take valid URLs and apply the covered attacks to them.
-For this purpose, we needed a set of valid URLs.
+For this purpose, we needed a set of legitimate URLs.
 To build this set we used Alexa~\cite{alexa} to select various domains from the top 100 website vendors of Germany.
 Then, we visited each of these websites, navigated through them and picked about 3-6 URLs for each domain we had previously selected.
 We strived to balance the number of short and long URLs.
@@ -75,7 +75,7 @@ None of them is a phish.
 
 %The generated list of attacks also contains a special attack that does no real attack. This is to %simplify the URL generation. When we generated the list of attacks we save it for later reference.
 
-\subsection{Modify Valid URLs with a Generator}
+\subsection{Modify Legitimate URLs with a Generator}
 \label{s:apply_generator}
 We were unsure whether we had collected sufficient valid URLs.
  For this reasons, we prepared a way to automatically modify the URLs in such a way that they remained valid URLs. 
