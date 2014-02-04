@@ -41,10 +41,10 @@ Ultimately, he is told that this will be the focus of the following exercises.
 
 \end{enumerate}
 	\item \textit{Educational Part:} The second part of the app covers the actual educational part.
- Here, the user is learning about various spoofing techniques of the attacker.
+ Here, the user is learning about various spoofing techniques of the attacker. The second part of the app is divided into levels of increasing difficulty.
 
 \begin{enumerate}
-	\item \textit{Learning Part:} The second part of the app is divided into levels of increasing difficulty.
+	\item \textit{Learning Part:} 
 The users are first introduced to the lessons to be learned for the current level.
 These lessons are generally delivered with simple text.
 Sometimes screenshots or graphics are included.
@@ -78,7 +78,7 @@ The details of the leveling strategy can be found in \autoref{s:leveling}
 \item[Achievements:] There exists a type of player who is willing to invest a lot of time in a specific level in order to finish it perfectly or to find every hidden secret in it.
 To address this type of player modern games offer so called ``achievements''.
 Achievements are special elements of a game that a player can unlock if he, for example, finds a special object or if he plays a given level exceptionally well. 
-We implemented achievements for finding 5, 10, 25, 50, 100 and 500 phishing URLs. 
+We implemented achievements for logging in with google+, completing each introductory level and finding 5, 10, 25, 50, 100 and 500 phishing URLs. 
 
 \item[Leaderboards:] Finally, games often have a leaderboard.
 A leaderboard is an area where a player can compare his progress in the game with the one of other players.
@@ -204,7 +204,7 @@ The task of level 1 is to identify the domains, i.e. the ``Who-Section'', of som
 	\item[Level 8:] In this level the user is introduced to an attack where the brand name of the visited website or even the whole legitimate URL is placed in the path of a fake URL, cf. \autoref{s:url_categories}.
 	\item[Level 9:] Here we introduce the difference between HTTP and HTTPS. In particular, the user is told that the usage of HTTPS means that his conversation with the website is encrypted and that the communication partner indicated in the ``Who-Section'' is authenticated.
  As an analogy we say that the HTTPS represents the higher security level of the conversation.
- This means, the conversation cannot be eavesdroppbed by a third party and the communication partner indictated in the ``Who-Section'' has proved his identity to a trusted third party.
+ This means, the conversation cannot be eavesdroppbed by an attacker and the communication partner indictated in the ``Who-Section'' has proved his identity to a trusted third party.
  With HTTP this security level is not established.
 In this level the user is generally required to reject HTTP URLs.
 On HTTPS URLs the user has to validate whether they are legitimate or phishes.
@@ -245,7 +245,7 @@ Finally, we describe the strategy we chose to use.
  This approach had a major drawback.
  The fact that achieving a minimum of points to pass the level results obviously in very similar points for everybody finishing a specific level.
  That is to say, the comparison between single users would not be meaningful as the points would only differ very slightly.
- Additionally, users gain points for each run of a level. Therefore, given the fixed amount of points to be achieved, users might replay early levels which are easier and gain the same ore even more points compared to users playing later and more difficult levels.
+ Additionally, users gain points for each run of a level. Therefore, given the fixed amount of points to be achieved, users might replay early levels which are easier and gain the same or even more points compared to users playing later and more difficult levels.
 	\item[Leveling Based on Detected Phishes:] The previously described leveling strategy had the deficit of comparability among the users.
  However, we consider comparability very important  since it serves as an incentive for the user to perform better or play on.
  For this reason, we decided that passing a level should rather depend on the number of phishes the user was able to detect during a level.
