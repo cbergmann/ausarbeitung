@@ -129,55 +129,54 @@ These participants were considered for the evaluation.
 The study yielded interesting results which should be considered when designing an anti-phishing education app, either for this as well as for future work.
  This section outlines the results of the study.
 
-
 \begin{description}[leftmargin=0cm]
 	\item[General Information:] The gender ratio of our survey participants was more or less balanced.
- 40.83\% of the users were female and 56.80\% of them were male.
- The remaining 2.37\% did not indicate any gender.
+ 69 (41\%) of the users were male and 96 (57\%) of them were female.
+ The remaining 4 (2\%) did not indicate any gender.
  The average age of our participants was 27.59, the youngest participants were 19 years old, the oldest were 63 years old.
- Most of the survey participators, 48.52\%, obtained a university degree.
- 24.85\% of them did not have any professional qualification (yet). 17.75\% did an apprenticeship and the remaining participants had a master craftsman certificate or did not indicate any professional qualification in the survey.
+ Most of the survey participators, 82 (49\%), obtained a university degree.
+ 42 (25\%) of them did not have any professional qualification (yet). 30 (18\%) did an apprenticeship and the remaining participants had a master craftsman certificate or did not indicate any professional qualification in the survey.
 	
-	\item[High Rate of Android Users:] The majority of the participants were Android users.
- In total about 60\% of the study participants used an Android smartphone.
- The remaining 40\% were iOS users.
- This result roughly relates to the general market share for these platforms and additionally supports our decision for the implementation of an Android application (cf. \autoref{s:sys_requirements}).
+	\item[High Rate of Android Users:] The majority of the filtered participants were Android users.
+ In total about 101 (60\%) of the study participants used an Android smartphone.
+ The remaining 68 (40\%) were iOS users.
+ This result roughly relates to the general market share for these platforms and additionally supports our decision for the implementation of an Android application (cf. \autoref{s:sys_requirements}). Overall 202 (81\%) of the unfiltered participants where smartphone users.
 
-	\item[High Internet Usage Frequency:] 51.48\% of the users indicated that they were online several times a day.
- Another 30.18\% indicated that they were online even constantly.
+	\item[High Internet Usage Frequency:] 87 (51\%) of the users indicated that they were online several times a day.
+ Another 51 (30\%) indicated that they were online even constantly.
  As a consequence, over 80\% of the survey participants are frequently online.
  This is depicted in \autoref{fig:internet_usage}. Being online is always related with being attackable and vulnerable to dangers of the Internet, such as phishing attacks (cf. Attackability in \autoref{s:target_group_def}), while the extent of the vulnerability of course also depends on other factors, such as the expertise of the person being online.
 	
 	\item[Usage Distribution of Internet Applications:] \autoref{fig:desktop_apps} and \autoref{fig:smartphone_apps} summarize the usage distribution of Internet applications on a desktop computer and on smartphones.
- Almost all participants, 99.41\%, make use of e-mails on their desktop computer.
- 88.76\% of the smartphone owners use their e-mail application on the smartphone, which is still a high percentage.
+ Almost all participants, 168 (99\%), make use of e-mails on their desktop computer.
+ 150 (89\%) of the smartphone owners use their e-mail application on the smartphone, which is still a high percentage.
  As we previously mentioned in \autoref{s:attack_channels}, e-mail is a common attack channel for phishing attempts.
  Consequently, all users of e-mail applications, including webmail, are potentially endangered by phishing attacks.
  The same threat of phishing applies to participants using browsers for surfing.
 % A common way to trick users to disclose their confidential information is the use of fake websites.
 % These websites can be reached by clicking on a link in an e-mail, SMS, in online social network, or instant messaging systems as well as by simply surfing on the Internet.
- About 80\% of all considered participants make use of desktop or smartphone browsers.
+ Over 130 (80\%) of all considered participants make use of desktop or smartphone browsers.
  Furthermore, it is conspicuous that banking is far less used on smartphones compared to desktop computers.
- While about 74.56\% of the participants make use of online banking on the desktop computer, only 26.63\% use it on their smartphones, which is still a quarter of the participants.
+ While about 126 (75\%) of the participants make use of online banking on the desktop computer, only 45 (27\%) use it on their smartphones, which is still a quarter of the participants.
 	The question to ask here is if these users utilize the browser for online banking or if they use dedicated apps provided by their bank which would be safer.
  Whether these users make use of apps or apply their online banking with a regular browser, they might be more likely to react to phishing e-mails on their smartphone, which claim to come from their bank, compared to other users who manage their financial arrangements on a desktop computer and thus are less likely to access a phishing website over their smartphone (cf. \autoref{s:antiphishing_on_smartphone}). To sum it up, all the listed categories of applications are used by the participants, on their smartphones as well as on their desktop computers.
  For this reason, we decided to use a broad range of URL examples of different website categories for the final app.
  For future research, one could consider to put the main focus on URLs from specific categories which are mainly targeted by phishing attacks and depend on the usage distribution.
 
-	\item[Self-Assessment - Knowledge to avoid dangers of Internet:] 18.34\% of the participants strongly agree that they have enough knowledge to avoid the dangers of the Internet. Further 45.56\% agree with the statement and only about 13\% disagree or strongly disagree with this statement.
+	\item[Self-Assessment - Knowledge to avoid dangers of Internet:] 31 (18\%) of the participants strongly agree that they have enough knowledge to avoid the dangers of the Internet. Further 77 (46\%) agree with the statement and only about 22 (13\%) disagree or strongly disagree with this statement.
  As a consequence the majority of the participants are quite confident that they can avoid the security related risks raised by the Internet.
 The general question to ask in these self-assessing statements is how well they reflect the reality.
-In this case it is questionable whether 63.9\% of the participants are in fact capable of protecting themselves against the threats of the Internet.
+In this case it is questionable whether 64\% of the participants are in fact capable of protecting themselves against the threats of the Internet.
 	
-	\item[Self-Assessment - Distinguish legitimate from illegitimate e-mails:] 87.23\% of the participants think that they can easily distinguish legitimate e-mails from fake ones (they agree or strongly agree).
- Only about 8\% of the participants did not agree or strongly disagreed with this statement.
+	\item[Self-Assessment - Distinguish legitimate from illegitimate e-mails:] 149 (87\%) of the participants think that they can easily distinguish legitimate e-mails from fake ones (they agree or strongly agree).
+ Only about 13 (8\%) of the participants did not agree or strongly disagreed with this statement.
  This arouses the suspicion that the users are not aware of how easy it is to spoof the ``from field'' of an e-mail, or to create credible message contents which in fact may persuade the receiver that the e-mail is trustworthy.
 Therefore, we believe that the user should be made aware of this misconception.
 For this reason, the part of the app which is supposed to increase a user's security awareness addresses this issue (cf. \autoref{s:app_design}).
 	
 	\item[Self-Assessment - Trust in e-mails from known parties:] The majority of the participants trust e-mails which come from persons they know.
- Approximately 20\% strongly agreed and 57\% agreed with this statement.
- Only about 2\% strongly disagreed and about 5\% of the participants disagreed with this statement.
+ Approximately 33 (20\%) strongly agreed and 96 (57\%) agreed with this statement.
+ Only about 3 (2\%) strongly disagreed and about 9 (5\%) of the participants disagreed with this statement.
  This again shows that most of the participants are not aware that spoofing the ``from field'' of an e-mail is easy to achieve.
  These users are likely to react to e-mails which claim to be, for example, from friends.
  Such e-mails may actually contain links to the download of malware or malicious websites.
@@ -185,8 +184,8 @@ We address the misconception of believing that e-mails can be trusted, whether t
 
 
 	\item[Self-Assessment - Internet security is only related to financial applications:] The answers to this statement showed that the majority of the participants are aware that security related issues on the Internet do not solely concern financial applications.
- 49.7\% of the users strongly disagreed with this statement and another 24.26\% disagreed.
- Only about 10\% of the participators agreed or strongly agreed with this statement and about 14\% indicated ``neither nor'' as an answer.
+ 84 (50\%) of the users strongly disagreed with this statement and another 41 (24\%) disagreed.
+ Only about 17 (10\%) of the participators agreed or strongly agreed with this statement and about 24 (14\%) indicated ``neither nor'' as an answer.
  Even though most users seem to be aware that Internet risks do not only concern financial applications, the ones who are not aware that phishing, for example, can also occur in online social networks, should be enlightened about this.
  In order to address this issue our initial plan was to display the consequences of falling for a certain phishing website, i.e. phishing URLs. In this way, the user could have learned what his loss could have been, projected to a real-life scenario.
  This would have contributed to his awareness, in particular that Internet security issues, in our case phishing, are not necessarily related to financial loss only.
@@ -195,23 +194,23 @@ We address the misconception of believing that e-mails can be trusted, whether t
 
 	\item[Services Endangered by Phishing:] \autoref{fig:endangered_services} summarizes the results for this question.
  All in all, we can observe that the participants agree that phishing can actually occur in association to any service.
- The users agree (97.04\%) that especially the e-mail service is endangered by phishing.
- Also they see the browser (70.41\%), online banking (83.43\%) as well as social networks (74.56\%) as endangered.
- Still about 40\% consider various media (audio and video) services as well as online games as endangered.
+ 164 users (97\%) agree that especially the e-mail service is endangered by phishing.
+ Also 119 (70\%) see the browser, 141 (83\%) online banking and 126 (74.56\%) social networks as endangered.
+ Still about 68 (40\%) consider various media (audio and video) services as well as online games as endangered.
  These services are in fact not targeted as often as other services on the Internet, however they are potential targets and should be communicated to the user with the aid of the choice of the URLs to decide on, for example.
 Because of that, we chose to cover URLs that are related to a wide range of website categories.
 
 	\item[Data Endangered by Phishing:] \autoref{fig:endangered_data} outlines the results of this question and illustrates that the participants agree that any of the listed kinds of data is potentially endangered by phishing attacks.
- 90.53\% of the participants expressed that login data is endangered by phishing.
- About 89\% agree that credit card information as well as personal data is endangered, too.
- Ultimately, 76.33\% of the participants consider PINs and TANs endangered.
+ 153 (91\%) of the participants expressed that login data is endangered by phishing.
+ About 151 (89\%) agree that credit card information as well as personal data is endangered, too.
+ Ultimately, 129 (76\%) of the participants consider PINs and TANs endangered.
  Consequently, there does not seem to be a major necessity in enlightening users in this area.
 
 	\item[Preferences for an Education App:] In this section there are three results which support our decision of the app design. 
-	First, most of the users (50.8\%) stated clearly against an app that uses a fish as a main character. 
-	Second, most of the users either voted for a quiz based game (51.5\%) or did not care (33.1\%).
+	First, most of the users (51\%) stated clearly against an app that uses a fish as a main character. 
+	Second, most of the users either voted for a quiz based game (52\%) or did not care (33\%).
 	The minority of the participants voted against a quiz based game (13\%).
-	Finally, 40.8\% of the users were neutral regarding text based learning programs.
+	Finally, 41\% of the users were neutral regarding text based learning programs.
 	For these reasons, we could confirm our desired approach of a quiz based game, with introductory parts that also contain text (cf. \autoref{s:approach}).
 	%\item[VERGLEICHE?]
 \end{description}
