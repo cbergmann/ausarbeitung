@@ -400,6 +400,7 @@ Afterwards, we summarize the participants' remarks to our app.
 	By our definition this was also not accepted as correct reasoning.
 	Hence, if we had expanded our definition of reasoning even more users would have correctly reasoned their decisions.
 	However, there is the question whether expanding the accepted answers might also result in an increase of the correct answers and markings in the before survey.
+	\item[False Negatives and Positives:] Additionally we considered separately whether the user falsely  accepted phishes or rejected legitimate websites. Our outcomes show that before in average the user rejected 4.9 legitimate websites and accepted 2.1 phishing websites. After using the app the user rejected 1.8 legitimate websites and accepted 1.3 phishing websites. One must however note that we increased the users' attention by telling them to look for phishing websites. Additionally usually users tend to behave oversafely in lab situations \cite{TODO:cite}. Therefore we assume that in this situation, especially before playing the app, users tended to reject URLs in general for safety's sake. This is also reflected by the high rate of falsely rejected legitimate URLs. In reality however the users contrarily have a interest in entering their personal data otherwise they would have not opened the website. Nevertheless the results show that the users make less mistakes after playing the app and seem to better know why the reject or accept websites (cf. \autoref{s:hypanalysis}). In future this should be tested in a more realistic scenario where the users attention is less increased towards looking for phishes.
 	\item[User Opinions to App:] A part of our surveys tried to understand the users' opinions to our app.
 	Section 3 of our survey-after (cf.~\autoref{s:after_survey}) contains the statements which the users had to assess with the aid of a Likert scale.
 	Our worst, but still decent, score referred to whether the user was motivated by the spoofed e-mail to continue playing the app (average of 3.56) and whether the amount of texts was appropriate (3.53).
@@ -426,6 +427,14 @@ Afterwards, we summarize the participants' remarks to our app.
 	The user who has achieved level 9 however was explained the difference of HTTP and HTTPS, additionally, he was asked to reject HTTP sites in general for this level.
 	Hence, this user responded to the website-survey after respectively: the participant generally rejected HTTP sites whether they were phishing or not and thus the user performed worse afterwards by the terms of our definition of correct.
 	All other users performed better after playing the app.
+	\item[relation between achieved level and identified websites] 
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.85\textwidth]{correct_per_level.pdf}
+			\caption{Correct answers related to achieved level}
+			\label{fig:correct_per_level}
+			\end{figure}
+	\autoref{fig:correct_per_level} shows the relation between the levels a user achieved and his performance after playing the app. The drop with users that played level 9 or even 10 is explained in the previous paragraph therefore we ignore these examples in this paragraph. The figure shows that playing level 5 already helped users to correctly identify URLs. We can not be sure that the users play the app completely. Therefore it is good that the first levels already help them in taking more correct decisions. Nevertheless we think that the succeeding levels help protect the users from more advanced attacks and are therefore important. This effect could however not be seen in such a small sample size. Some examples support our opinion: 
 	\item[HTTPS and Padlock:] Our results show that some participants were aware that they should look for either HTTPS or a padlock before playing our app~\autoref{fig:markings}.
 	For instance, one participant marked the scheme or the padlock as reason for his decision 11 out of 16 times in the website-survey before. 
 	Another participant marked the scheme or the padlock of 8 examples.
