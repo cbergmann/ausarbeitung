@@ -270,7 +270,7 @@ Finally, we aspired to recruit participants who are not close friends of ours in
 %.........................................................................................................
 \label{s:hypanalysis}
 In total 19 participants attended our study.
-As discussed in \autoref{s:representativeness} we did not rule out any participant beforehand because by means of the website-survey before we were able to precisely determine the prior knowledge of the participants.
+As discussed in \autoref{s:representativeness} we did not exclude any participant beforehand because by means of the website-survey before we were able to precisely determine the prior knowledge of the participants.
 Ultimately, we had to sort out two participants for the results and analyses of our study:
 
 \begin{enumerate}
@@ -278,20 +278,21 @@ Ultimately, we had to sort out two participants for the results and analyses of 
 	It illustrates how many URLs were correctly identified by how many users.
 	Evidently, there is an outlier among our participants. 
 	One user gave 15 correct answers to 16 questions.
-	Thich means that he has too much prior knowledge on this topic and thus does not match our target audience.
+	This means that he has too much prior knowledge on this topic and thus does not match our target audience.
 	Therefore, this participant is not considered for our further elaborations.
 	\item\textit{Seriousness:} Another participant obviously did not engage himself to play our app.
 	During the 30 minutes of playing the app the user managed to complete the awareness part and level 1 (identify domain) only.
-	More importantly, we saw the user playing around with the Samsung device instead.
+	More importantly, we saw the user playing around with the smartphone instead.
 	Since this user did not seem to take our study and app seriously we decided to sort him out for further considerations.
 \end{enumerate}
+In the following we present the results of our study corresponding to our hypotheses.
 
 \begin{figure}
 \centering
-\subfigure[Before]{\includegraphics[width=0.45\textwidth]{hyp1b.pdf}}
-\subfigure[After (all URLs)]{\label{fig:hyp1resultsaall}\includegraphics[width=0.45\textwidth]{hyp1a.pdf}}
-\subfigure[After (New URLs)]{\label{fig:hyp1resultsanew}\includegraphics[width=0.45\textwidth]{hyp1anew.pdf}}
-\subfigure[After (Repeated URLs)]{\label{fig:hyp1resultsarepeat}\includegraphics[width=0.45\textwidth]{hyp1arepeat.pdf}}
+\subfigure[Before]{\label{fig:hyp1resultsbefore}\includegraphics[width=0.45\textwidth]{hyp1b.pdf}}
+\subfigure[After (Including All URLs)]{\label{fig:hyp1resultsaall}\includegraphics[width=0.45\textwidth]{hyp1a.pdf}}
+\subfigure[After (New URLs Only)]{\label{fig:hyp1resultsanew}\includegraphics[width=0.45\textwidth]{hyp1anew.pdf}}
+\subfigure[After (Repeated URLs Only)]{\label{fig:hyp1resultsarepeat}\includegraphics[width=0.45\textwidth]{hyp1arepeat.pdf}}
 \caption{Correct Answers}
 \label{fig:hyp1results}
 \end{figure}
@@ -314,7 +315,7 @@ Ultimately, we had to sort out two participants for the results and analyses of 
 
 \begin{description}[leftmargin=0cm]
 \item[Hypothesis 1:]
-\autoref{fig:hyp1results} shows the results of our study according to hypothesis 1. One can clearly see that the majority of the users identified more URLs correctly after using the app than before. While most participants correctly identified 8 out of 16, i.e. 50\%, websites before they played the app, the majority gave correct answers to 22 out of 24 websites afterwards, i.e. 91.67\%. One could argue that this increase is based on the fact that the examples are mainly the same in the website-survey after, i.e. the reason for their better performance is based on learning effects. \autoref{fig:hyp1resultsanew} however shows that the user also gave correct answers to most of the new URLs. Therefore, we assume the learning effects are negligible.
+\autoref{fig:hyp1results} shows the results of our study according to hypothesis 1. One can clearly see that the majority of the users identified more URLs correctly after using the app than before. While most participants correctly identified 8 out of 16 (50\%) websites before they played the app, almost everyone gave correct answers to at least 22 out of 24 websites afterwards (cf. \autoref{fig:hyp1resultsbefore} and \autoref{fig:hyp1resultsaall}). One could argue that this increase is based on the fact that the examples are mainly the same in the website-survey after, i.e. the reason for their better performance is based on learning effects. \autoref{fig:hyp1resultsanew} however shows that the users also performed well for the new URLs. Therefore, we assume the learning effects are negligible.
 In order to affirm our hypothesis we decided to apply the onesided Wilcoxon signed-rank test~\cite{wilcoxon1945individual} with our 16 samples from the website-survey before and the same 16 samples from the website-survey after.
 Since we consider the learning effects negligible, we do not apply an alternative test against the 24 after URLs.
 Our null hypothesis is $H_{0}: x_{1} >= x_{2}$ and the alternative hypothesis $H_{1}: x_{1} < x_{2}$, where x$_{1}$ represents the number of URLs which were correctly answered before playing the app and x$_{2}$ represents the number of URLs which were correctly identified after playing the app.
@@ -323,8 +324,7 @@ The test statistic $w$ is the minimum of $W_{+}$ and $W_{-}$, hence $w = 11.5$.
 As we chose $\alpha = 5\%$ as significance level and had 17 participants this results in a critical value of $41$.
 As our test value $w = 11.5 < 41$ the null hypothesis can be rejected and thus the alternative $H_{1}$ is accepted.
 Consequently, after playing the app the participants gave more correct answers than before.
-We are aware that we cannot fully rule out the possibility that there might be kind of learning effect.
-Yet, we are confident that these results cannot entirely be reduced to learning effects.
+We are confident that these results cannot entirely be reduced to learning effects.
 Therefore, we believe that our app helped users to make improved decisions about the legitimacy of URLs.
 \item[Hypothesis 2:]
 \autoref{fig:hyp2results} shows how many users marked the URL as their main source of decision.
@@ -431,7 +431,7 @@ Afterwards, we summarize the participants' remarks to our app.
 \end{description}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{https_phish.png}
+	\includegraphics[width=0.85\textwidth]{https_phish.png}
 	\caption{Phishing website using HTTPS~\cite{phishtank}}
 	\label{fig:https_phish}
 	\end{figure}
