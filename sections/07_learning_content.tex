@@ -32,12 +32,12 @@ More particularly, we will briefly explain in which ways URLs can be checked wit
 Based on this we decide whether to communicate this kind of URL checking to the user or not.
 
 \begin{description}[leftmargin=0cm]
-	\item[Invisible Address Bar:] As discussed in \autoref{s:antiphishing_on_smartphone}, due to the lack of space most of the smartphone browsers hide the address bar, i.e. the URL,~\cite{amrutkar2012measuring} and use this expanded space for the web content. This is an issue which can and should be solved on a technical basis. In fact, some versions of the Android browser already fix this by always displaying the address bar. As long as this is not applied to a majority of active Android systems, this must be communicated to the user because the address bar contains the important information of a website's URL.
+	\item[Invisible Address Bar:] As discussed in \autoref{s:antiphishing_on_smartphone}, due to the lack of space most of the smartphone browsers hide the address bar, i.e. the URL,~\cite{amrutkar2012measuring} and use this expanded space for the web content (cf. \autoref{fig:screenshot_inv_addr_bar}). This is an issue which can and should be solved on a technical basis. In fact, some versions of the Android browser already fix this by always displaying the address bar. As long as this is not applied to a majority of active Android systems, this must be communicated to the user because the address bar contains the important information of a website's URL.
 Most of the users will probably know how they can access the address bar of their browser.
 However, for those who might not know how to deal with that an introduction is inevitable.
 
 	\item[Analyze Complete URL Via Address Bar:] Finding the address bar will not suffice for a reasonable URL analysis. 
-Here again, the small screen size makes it is impossible to view the complete URL without any further action.
+Here again, the small screen size makes it is impossible to view the complete URL without any further action (cf. \autoref{fig:screenshot_url_in_addr_bar})).
 Specifically, it is necessary to first tap the URL address text and then scroll the pointer to the left and right for the URL analysis.
 Without learning these steps a reliable URL checking is not possible. 
 Therefore, these steps have to be communicated to the user.
@@ -204,7 +204,7 @@ Such signals have the potential to provide relevant information to the user whic
 However, besides the lack of such hints there is also the problem of inconsistencies among the mobile as well as desktop browsers.
 Ultimately, our decision was not to tell anything about these security indicators, as the inconsistencies are too significant even among the standard browser, depending on the device and Android version it is installed on.
 \begin{description}[leftmargin=0cm]
-		\item[HTTPS Padlock] All Android standard browsers on various devices we examined have a padlock in the address bar on SSL secured pages.
+		\item[HTTPS Padlock] All Android standard browsers on various devices we examined have a padlock in the address bar on SSL secured pages (cf. \autoref{fig:screenshot_padlock}).
 Also, one should consider that there are illegitimate as well as legitimate websites where a padlock is part of the web content. 
 Therefore, it is important to teach the users to look for the padlock in the browser, not in the content, to verify that the site they visit is SSL secured, when they enter confidential data.
 However, some browsers additionally make use of so called favicons, i.e. small website icons.
