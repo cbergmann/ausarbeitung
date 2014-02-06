@@ -337,7 +337,7 @@ In the following we present the results of our study corresponding to our hypoth
 \begin{figure}
 \centering
 \subfigure[Before]{\label{fig:domain_before}\includegraphics[width=0.45\textwidth]{hyp3b.pdf}}
-\subfigure[After]{\includegraphics[width=0.45\textwidth]{hyp3a.pdf}}
+\subfigure[After]{\label{fig:domain_after}\includegraphics[width=0.45\textwidth]{hyp3a.pdf}}
 \caption{Domain marked}
 \label{fig:hyp3results}
 \end{figure}
@@ -358,49 +358,49 @@ Therefore, we believe that our app helped users to make improved decisions about
 \item[Hypothesis 2:]
 \autoref{fig:hyp2results} shows how many users marked the URL as their main source of decision.
 Most of the users already based most of their decisions on the URL before.
-Occasionally users marked the content or the padlock (37 markings).
-Afterwards, only 1 content was marked.
+Occasionally, users marked the content or the padlock (37 markings).
+Afer playing the app website content was marked only once.
 Only 3 users (17.65\%) always marked the URL before.
-Afterwards, 14 users (82.35\%) always based their decision on the URL and only 3 users made one or two mistakes.
-Therefore, we believe that our app emphasized their belief in basing their decision on the URL.
+Afterwards, 14 users (82.35\%) always based their decision on the URLs and only 3 users made an exception once or twice.
+Therefore, we believe that our app convinced the users to consider the URL primarily.
 We decided against applying a statistical test to this hypothesis since there is obviously no significant difference before and after playing the app.
 \item[Hypothesis 3:]
 There is a general problem with one question in the websites-surveys.
-In the website-before survey we were not able to clearly ask the user to mark the domain when it was the base of his decision because we would have then primed them towards looking at the URL or even at the domain.
+In the website-before survey we were not able to clearly ask the user to mark the domain when it was the base of his decision because we would have then pointed them towards looking at the URL or even at the domain.
 This would have influenced the results of hypothesis 2.
-Since we could not formulate this question clearly, a user might have marked the whole URL even if his decision was based only on a small part (for example, the domain) of the URL.
+Since we could not formulate this question clearly, a user might have marked the whole URL even if his decision was based only on a part of it (for example, the domain) of the URL.
 Consequently, we were not able to clearly identify what the users' main source of decision was in the website-before survey.
 We were aware of this problem beforehand but saw no other option than formulating the question in such an open form.
 Afterwards, the user knew that they were expected to mark the domain.
-This can be interpreted as a change of question even if the literal question did not change.
+This can be interpreted as a change of the question even if the question did not change literally.
 Therefore, we cannot apply any statistical tests on this hypothesis.
 Yet, we want to have a look at the results.
-None of the users marked the domain in most cases beforehand, in particular, 7 domains out of 16 URLs where marked at most by only one user, cf. \autoref{fig:domain_before}.
+\autoref{fig:domain_before} and \autoref{fig:domain_after} indicate a shift of the users' focus.
+\autoref{fig:domain_before} shows that the domain was not marked in the majority of cases beforehand. In particular, 7 domains out of 16 URLs were marked at most by only one user.
 \begin{figure}
 \centering
 \includegraphics[width=0.65\textwidth]{markings.pdf}
 \caption{Marked parts of the screenshot before and after}
 \label{fig:markings}
 \end{figure}
-
 \begin{figure}
 \centering
 \includegraphics[width=0.65\textwidth]{legitimate_markings_after.pdf}
 \caption{Marked URL parts of legitimate URLs}
 \label{fig:legitimate_markings_after}
 \end{figure}
-\autoref{fig:markings} shows the distribution of the marked areas before and after playing our app. Obviously, afterwards most of the users marked the domain. However we are not able to compare that to the before values because of the changed question.
-Another interesting observation is that quite a number of participants marked the complete host (instead of the domain) in case of legitimate URLs, cf.~\autoref{fig:legitimate_markings_after}. One explanation for this might be that we did not ask the user to mark the domain of legitimate URLs except in level 1.
+On the other hand, \autoref{fig:markings} shows the distribution of the marked areas before and after playing our app. Obviously, afterwards most of the users marked the domain. However, we are not able to compare that to the before values because of the changed question.
+Another interesting observation is that quite a number of participants marked the complete host (instead of the domain) in case of legitimate URLs (cf.~\autoref{fig:legitimate_markings_after}). One explanation for this might be that we did not ask the user to mark the domain of legitimate URLs except in level 1.
 \item[Hypothesis 4:]
-According to the answers that the users gave in the After survey SUS section (\autoref{s:after_survey}) we calculated a SUS of 83.1. This is above 68 which means that we can consider our app above average usable.
+According to the answers that the users gave in the  SUS section of the general-survey after (\autoref{s:after_survey}) we calculated a SUS score of 83.1. This is considerably above 68 which means that we can consider our app usable.
 \end{description}
 
 %.........................................................................................................
 \subsubsection{Further Study Outcomes}
 %.........................................................................................................
 \label{s:further_exploration}
-Besides the results of our hypotheses the study yielded some further interesting outcomes.
-This section further explores the results we obtained from our survey data and where not part of our hypotheses.
+Besides the results of our hypotheses the study yielded some further valuable outcomes.
+This section further explores the results we obtained from our survey data and were not part of our hypotheses.
 Afterwards, we summarize the participants' remarks to our app.
 
 %.........................................................................................................
@@ -411,43 +411,43 @@ Afterwards, we summarize the participants' remarks to our app.
 	In addition to their correct answer they reasoned their answer appropriately (i.e. marked the domain).
 	In the website-survey before 37.5\% of the URLs were answered and reasoned correctly.
 	After playing the app 75\% of the URLs were correctly identified and reasoned. 
-	Note, that reasoned means by our definition that the domain was marked in addition to giving a correct answer.
+	Note that reasoned means by our definition that the domain was marked in addition to giving a correct answer.
 	However, a reasoning must not always rely on the domain itself. 
-	As discussed in \autoref{s:hypanalysis}, for example, there were numerous participants who often marked the host of legitimate URLs.
+	As discussed in \autoref{s:hypanalysis} there were numerous participants who often marked the host of legitimate URLs, for example.
 	This is a correct reasoning for their decision, however by our definition it was not considered as such.
 	Also, there were plenty of users who detected a phish and marked the attacked part instead (cf. \autoref{fig:m_attack_recognized}).
 	By our definition this was also not accepted as correct reasoning.
 	Hence, if we had expanded our definition of reasoning even more users would have correctly reasoned their decisions.
 	However, there is the question whether expanding the accepted answers might also result in an increase of the correct answers and markings in the before survey.
-	\item[False Negatives and Positives:] Additionally we considered separately whether the user falsely  accepted phishes or rejected legitimate websites. Our outcomes show that before in average the user rejected 4.9 legitimate websites and accepted 2.1 phishing websites.
+	\item[False Negatives and Positives:] Additionally, we considered separately whether the user falsely accepted phishes or rejected legitimate websites. Our outcomes show that before in average the user rejected 4.9 legitimate websites and accepted 2.1 phishing websites.
 	After using the app the user rejected 1.8 legitimate websites and accepted 1.3 phishing websites.
-	One must however note that we increased the users' attention by telling them to look for phishing websites.
-	This means that they actively searched for traps and looked for reasons why they should not enter their data.
-	In reality however the users contrarily have an interest in entering their personal data otherwise they would have not opened the website.
+	When examining these numbers one should note that we increased the users' attention by telling them to look for phishing websites.
+	This means that they actively searched for traps and looked for reasons why they should not enter their data on a given website.
+	In reality the users contrarily have an interest in entering their personal data otherwise they probably would have not opened the website.
 	Additionally, usually users tend to behave oversafely in lab situations \cite{wu2006security, egelman2007security}.
-	Therefore we assume that in this situation, especially before playing the app, users tended to reject URLs in general for safety's sake.
+	Therefore, we assume that in this situation, especially before playing the app, users tended to reject URLs in general for safety's sake.
 	This is also reflected by the high rate of falsely rejected legitimate URLs.
-	Nevertheless the results show that the users make less mistakes after playing the app and seem to better know why they reject or accept websites (cf. \autoref{s:hypanalysis}).
-	In future this should be tested in a more realistic scenario where the users' attention is less increased towards looking for phishes and the users are not in lab situations.
+	Nevertheless, the results show that the users make less mistakes after playing the app and seem to better know why they reject or accept websites (cf. \autoref{s:hypanalysis}).
+	In future this should be tested in a more realistic scenario where the users' attention is less increased towards looking for phishes and where the users are not in lab situations.
 	\item[User Opinions to App:] A part of our surveys aspired to understand the users' opinions to our app.
 	Section 3 of our general-survey after (cf.~\autoref{s:after_survey}) contains the statements which the users had to assess with the aid of a 5 point Likert scale.
 	Our worst, but still decent, score referred to whether the user was motivated by the spoofed e-mail to continue playing the app (median of 4) and whether the amount of texts was appropriate (median of 4).
-	All other statements were strongly agreed (median of 5) with in median.
+	All other statements of the questionnaire were strongly agreed (median of 5) with in median.
 	The text legibility of our app texts received a median score of 5.
 	Our study participants strongly agreed (median of 5) that our app helped them to identify phishing websites in the future.
 	Finally, the users intuitively understood our three lives scheme per level (median of 5).
-	Thus, the outcomes of the user opinions reveal that our app was very well received by the participants regarding these questions.
+	Thus, the results of the user opinions reveal that our app was very well received by the participants regarding these questions.
 	\item[Achieved Levels:] In average the participants reached level 7, which is higher than we had expected.
-	We assume that some users started to roughly scan our texts for relevant information (for example, mainly looking at the examples) after they understood the importance of the domain.
+	We assume that some users started to roughly skim our texts for relevant information (for example, mainly looking at the examples) after they understood the importance of the domain.
 	One user even played through the app in 30 minutes.
 	In fact, this user has performed worse by the terms of our definition of correctness.
 	The user had correctly identified 9 (75\%) of the URLs before playing the app.
 	Afterwards, he only had a score of 13 (54.17\%).
-	The problem was that level 9 deals with the difference of HTTP and HTTPS websites.
-	Pretests had shown that most users would not get beyond level 6. Therefore, we had not considered level 9 in our assessment strategy and regarding its impact on the question.
+	The problem was that level 9 introduces the difference of HTTP and HTTPS websites.
+	Pretests had shown that most users would not get beyond level 6. Therefore, we had not considered level 9 in our assessment strategy and regarding its impact on our question.
 	Users were expected to decide whether a website is a phish or not disregarding the usage of HTTPS.
-	The user who has achieved level 9 however was explained the difference of HTTP and HTTPS, additionally, he was asked to reject HTTP sites in general for this level.
-	Hence, this user responded to the website-survey after respectively: the participant generally rejected HTTP sites whether they were phishing or not and thus the user performed worse afterwards by the terms of our definition of correct.
+	The user who achieved level 9, however, was explained the difference of HTTP and HTTPS and he was asked to reject HTTP sites in general for this level.
+	Hence, this user responded to the website-survey after accordingly: the participant generally rejected HTTP sites whether they were phishing sites or not. As we did not consider HTTP and HTTPS in our assessment, the user performed worse afterwards by the terms of our definition of correct.
 	All other users performed better after playing the app.
 	\item[Relation Between Achieved Level and Identified Websites] 
 		\begin{figure}
@@ -456,21 +456,21 @@ Afterwards, we summarize the participants' remarks to our app.
 			\caption{Correct answers related to achieved level}
 			\label{fig:correct_per_level}
 			\end{figure}
-	\autoref{fig:correct_per_level} shows the relation between the levels a user achieved and his performance after playing the app. The performance decline of the users that played level 9 or even 10 is explained in the previous paragraph. These examples are not considered in the following. The Figure shows that playing level 5 already helped users to correctly identify URLs.
+	\autoref{fig:correct_per_level} shows the relation between the levels a user achieved and his performance after playing the app. The performance decline of the users that played level 9 or even 10 is explained in the previous paragraph. These examples are not considered in the following. The Figure shows that playing level 5 already helped users identify URLs correctly.
 As we cannot ensure that all users will play our app through, we think it is good that the first levels already provide them the most important input which helps them make more correct decisions on the legitimacy of URLs. 
-Nevertheless, we are confident that the succeeding levels help users detect more advanced attacks and thus are important. There are examples of users that fell for attacks in the website-survey after which they were not confronted with during the game.
+Nevertheless, we are confident that the succeeding levels help users detect more advanced attacks and thus are important. There are examples of users that fell for attacks in the website-survey after which they were not confronted with during the game yet.
 
 We found 3 of these examples:
 \begin{enumerate}
 \item One participant who achieved level 5 in the game fell for an attack that was introduced in level 6 (paypal-sicher.de).
-\item 11 participants fell for a phish with scrambled letters (mircosoft.com) which was introduced in level 6. These included users who achieved level 6 or higher as well as those who did not achieve this level. In the contrary, those participants who did not fall for this phishing URL at least achieved level 6, i.e. nobody of the users who did not play level 6 recognized this attack. 
+\item 11 participants fell for a phish with scrambled letters (mircosoft.com) which was introduced in level 6. These included users who achieved level 6 or higher as well as users who did not achieve this level. In the contrary, those participants who did not fall for this phishing URL at least achieved level 6, i.e. nobody of the users who did not play level 6 recognized this attack. 
 \item 4 participants fell for an attack which was introduced in level 8. Three of these participants did not play level 8.
 \end{enumerate}
 	Note that all of the services presented by the URLs were known to the users, i.e. it is likely that they fell for the actual attack and did not just assume that the URLs might be legitimate.
 	These aspects indicate that the later levels and training are important to achieve higher expertise.
 	Due to the small sample size, with at most 1-2 examples per attack, it is possible that the above mentioned examples were slightly suppressed in \autoref{fig:correct_per_level}.
 	An examination of the relation between the achieved level and the recognized attacks could be done in further research with a larger data set.
-	\item[HTTPS and Padlock:] Our results show that some participants were aware that they should look for either HTTPS or a padlock before playing our app~\autoref{fig:markings}.
+	\item[HTTPS and Padlock:] Our results show that some participants were aware that they should look for either HTTPS or a padlock before playing our app (cf. ~\autoref{fig:markings}).
 	For instance, one participant marked the scheme or the padlock as reason for his decision 11 out of 16 times in the website-survey before. 
 	Another participant marked the scheme or the padlock of 8 examples.
 	These participants trusted the padlock resp. HTTPS websites and distrusted HTTP.
@@ -501,49 +501,49 @@ Their actual performace in the website-survey before is likewise (56\% correctly
 \label{s:remarks_of_participants}
 During playing the app, the participants had a slip of paper for notes they wanted to make considering the app.
 In the following we outline the main results of these slips of paper.
-Note that we did not ask the users to write down something specific. 
+Note that we did not ask the users to write down anything specific. 
 We merely asked them to write down what they thought, i.e. there might be more participants who agreed with some of these points below but just have not explicitly written it down.
 In the following we consider the notes and suggestions of all participants. 
 \begin{description}[leftmargin=0cm]	
 	\item[Scrolling of URL:] In addition to deciding whether a URL is a phish or not, the user has to face two more challenges. 
-First, the font size gets increasingly smaller in higher levels, until it eventually is approximately the same size of the Android standard browser.
-Second, the URL is displayed in a horizontal scrollbar so that the has to scroll the URL to the right in order to view the beginning of it, just like it is the case in browsers.
+First, the font size gets steadily smaller in higher levels, until it eventually is approximately the same size of the Android standard browser.
+Second, the URL is displayed in a horizontal scrollbar so that the user has to scroll the URL to the right in order to view the beginning of it, just like it is the case in browsers.
 4 participants found this disturbing and said it hindered them from analyzing the URL reasonably. 
 This supports the importance of the introduction part 2 (access address bar) in the app.
 The scrolling is present in order to simulate the behavior in the browser and it is important for a user to practice this.
-We assume that the users would not have noted this in this extent in case they had completed introduction part 2, because then they probably would have understood why we do the URL scrolling during the exercises.
+We assume that the users would not have noted this to this extent in case they had completed introduction part 2, because then they probably would have understood why we do the URL scrolling during the exercises.
 Yet, we think after a couple of levels the users should have understood that they have to scroll the URL, in the game as well as in the browser, so one might consider to reduce or eliminate it after some time. 
 	\item[Unknown Services:] We have mentioned the problem of unknown services in \autoref{s:problems_with_URLs}.
 As we were afraid there are in fact services which are not familiar to several users.
 Several participants mentioned this problem.
 Even if we tried to make use of the most popular services with the aid of Alexa's~\cite{alexa} ranking we cannot assure that all used URLs are known by all users.
-One idea to approach this challenge might be to provide an question mark button in addition to the check mark (no phish) and cross mark (phish) buttons. 
+One idea to approach this challenge might be to provide a question mark button in addition to the check mark (no phish) and cross mark (phish) buttons. 
 When a player clicks on this button, he can be told whether the given URL is a phish or not and why.
-From this action the user would neither profit nor would he lose any points or lives.
-Yet, we do not think that this is a major issue, since the users got at least until level 4 and most of them achieved even higher levels.
+However, this function would require some more logic to prevent users from simply skip each and every URL when they are not absolutely sure about their answer.
+In addition, we do not think that this is a major issue, since the participants reached at least level 4 and most of them achieved even higher levels.
 We are confident that the app in its current state is already implicitly able to teach the users about the legitimacy of unknown services.
 After facing unfamiliar URLs and making or not making mistakes they will eventually learn whether to trust a service or not.
 	\item[Question to Data Entry:] Some participants noted that the formulation of our website-survey question ``Would you enter your sensitive data into this website?'' was ambiguous.
 Thus, there might have been participants who selected ``no'' even if they did not think it was a phishing website, but they would generally not enter their data into this specific website.
 Originally, the website-surveys before and after asked the participants whether they thought a given website screenshot was a phishing website or not.
-After our test iteration of our study, however, we decided to add some context to the question and had to make this trade-off with respect to the new question's ambiguity.
+After a test run of our study, however, we decided to add some context to the question and had to make this trade-off with respect to the new question's ambiguity.
 As we told the user that this study was particularly about phishing and that their task was to detect phishing websites in the website-surveys before and after, we believed that the ambiguity of this question would be negligible.
 	\item[Explanations and Comprehensibility:]
 4 participants stated on their slips of paper that they found the explanations of the app very good and easy to understand.
 1 of these 4 participants, however, added that there is partially much text to read.
-Another participant (not under those 4) noted that there is too much and long text in general.
-	\item[Button Positioning:] The positioning of our app buttons during the game are as follows: 
+Another participant noted that there is too much and long text in general.
+	\item[Button Positioning:] The positioning of our app buttons during the game is as follows: 
 The left bottom corner has a check mark which represents that the user thinks the displayed URL is not a phish.
-The right bottom corner has a cross mark which means that the user thinks the displayed URL is a phish.
-After clicking on either of these buttons in the write bottom corner another button appears (where the cross mark usually is) which either is the continue or the verify button (depending on whether the user has to select the Who-Section or not).
-Some participants indicated that the positioning of the buttons in the right bottom corner are suboptimal.
-The problem is that accidentally double clicking, for example, the continue button in the right corner results in rejecting the next URL even if the user might not have intended to.
+The right bottom corner has a cross mark which means that the user thinks the displayed URL is a phish (cf. \autoref{fig:Screenshot_urltask} for check and cross mark).
+After clicking on either of these buttons in the right bottom corner another button appears (where the cross mark usually is) which either is the continue or the verify button (depending on whether the user has to select the Who-Section or not).
+Some participants indicated that the positioning of the buttons in the right bottom corner is suboptimal.
+The problem is that accidentally double clicking the continue button in the right corner, for example, results in rejecting the next URL even if the user might not have intended to.
 Even if not many participants explicitly criticized this aspect we believe that this is a justified point.
 In fact, the positioning of the two buttons continue and verify should be different from the one of the cross mark.
 This is an aspect which should be targeted in future work. 
 	\item[Repetition:]
 Repetition is an important element of our app.
-In every level introduction we briefly repeat the so far learned parts of a URL (with a graphic) and the different attacks the user has seen until this point.
+In every level introduction we briefly repeat the so far learned parts of a URL (with a graphic) and the different attacks the user has seen until this point (cf. \autoref{fig:Screenshot_intro2}).
 We also make use of repetitions during the exercise rounds, every level contains at least one exercise from the previous level.
 Some of our participants explicitly indicated that our repetitions made them feel more confident and safer.
 	\item[External Links:]
@@ -552,8 +552,7 @@ Some of these websites are in English.
 Some participants indicated that they did not like it to be led to an English website and would have preferred to be forwarded to a German one.
 This reveals that we cannot expect our audience to have knowledge of the English language.
 Therefore, only German websites should be linked in the future.
-Another idea to approach this might be to provide in-app additional information.
-That is, instead of linking to external websites, the app itself could provide additional categorized information in German.
+Another idea to approach this might be to provide extra information in German in the app itself instead of linking to external websites.
 This would solve the problem with the language of websites and at the same time the additional information would fit to our app layout and design.
 	\item[Amount of Examples:] Our app starts with a small sample of URLs users have to decide on.
 In every level the sample size increases as the number of possible attacks increases.
@@ -592,36 +591,35 @@ Despite the limitations of our study we are confident that we got a good insight
 \subsection{Discussion}
 %===========================================
 Our hypotheses stated that our app can increase three major skills of the user.
-First, we wanted to give the user the ability to distinguish phishing webpages from legitimate ones.
-This goal can be considered achieved as we could disproof that the increase is not insignificant.
+First, we wanted to help the user distinguish phishing websites from legitimate ones.
+This goal can be considered achieved as we could disprove that the increase of correct answers after playing the app is not insignificant.
 Even though there might be some learning effect we are confident that this increase is not mainly attributable to that.
 The second and third hypotheses focused on the reasoning behind the user's decision.
 We wanted to show that the user is aware of the fact that the content is no source of evidence against a phishing attack.
-Our results suggest that most of the users already feel that the URL is important beforehand but some additionally consider the content.
+Our results suggest that most of the users already felt that the URL is important beforehand although some additionally considered the content.
 Thus, the change in user response was not high enough to measure our hypothesis 2. 
-The third hypothesis said that the users understand the structure of URLs better after playing our app.
+The third hypothesis stated that the users understand the structure of URLs better after playing our app.
 As we discussed above, we had concerns about the design of the question that was intended to test this hypothesis.
 The question has to be regarded as changed after playing the app.
 Due to this, we could not consider the before-markings and could not argue on any findings about this hypothesis.
 
-In addition to testing the hypotheses we got overall positive feedback from the users.
+In addition to testing the hypotheses we received generally positive feedback from the users.
 Most of them had the feeling they learned something from the app.
 Some participants even contacted us asking about the release date of the app because they wanted to give it to their relatives.
 
-Yet, there are still some improvements that should be considered when someone develops a next version of the app.
+Yet, there are still some improvements that should be considered when someone develops for a next version of the app.
 First of all, we think that the part talking about HTTP and HTTPS should be moved to an earlier level.
 We saw many users that marked the scheme or the padlock in the URLs in the website-survey before.
-This seems to be more important for the user than the URL itself because we had several users who fell for a phish and marked the scheme or padlock as reasoning.
-As we cannot assume that users finish our app within one day, or even finish it at all, we think that it is important to clear that misunderstanding earlier.
-The second improvement that a following developer should include is to restructure the app texts in such a way that the user can clearly identify repeating and new parts.
-We think this aspect is not as important in real life compared to study situations because the app is not designed to be played a long time in a row.
-This would increase the importance of the repetitions and make such a separation less important but this can be improved.
-Last, it might be a good improvement to modify the app behavior depending on the user skill and performance.
+This seems to be more important for the user than the URL itself because we had several users who fell for a phish and marked the scheme or padlock as their reasoning.
+As we cannot assume that users finish our app within one day, or even finish it at all, we think that it is important to resolve that misunderstanding earlier.
+The second improvement that a followup version should include is to restructure the app texts in such a way that the user can clearly identify repeating and new parts.
+We think this aspect is not as important in real life as compared to study situations because the app is not designed to be played a long time in a row.
+Finally, it might be a good improvement to modify the app behavior depending on the user skill and performance.
 This might prevent the user from getting bored.
-This includes, for instance, vary feedback texts and icons depending on the user's performance as well as the degree of difficulty.
+This includes, for instance, varying feedback texts and icons depending on the user's performance as well as the degree of difficulty.
 Another example is that the app could skip the proof part (identify Who-Section after detection of a phish) in case there is an indication that the user understood how to do it.
 A simple form of that is already implemented.
 The proof is shown up to a predefined level.
 Yet, we think it is more reasonable to base the skipping and other possible extensions on the user performance. 
 
-To conclude our findings despite some possibilities for improvement we can say that the app helped most of the users detect phishing URLs. This means we overall achieved the goal of the app.
+In conclusion, our evaluation shows that our app is beneficial to educate users on phishing. More precisely, the app helped most of the participants make better decisions regarding the legitimacy of  URLs. The users appreciated the app and also provided valuable comments for possible improvements. All in all, we can say that we achieved the main goal of our app.
