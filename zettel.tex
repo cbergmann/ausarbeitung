@@ -1,0 +1,87 @@
+\documentclass[paper=a4,accentcolor=tud2d]{tudposter}
+\usepackage{ngerman}
+\usepackage[american,ngerman]{babel}
+\usepackage{tabularx} % better tables
+\usepackage{colortbl}
+\usepackage[hyphens]{url}
+\usepackage[ngerman]{hyperref}	% urls
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage{listings}	% nicer lists
+%setup special characters in listing
+\lstset{literate=
+  {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {ù}{{\`u}}1
+  {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+  {à}{{\`a}}1 {è}{{\'e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ò}{{\`o}}1
+  {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ò}{{\`O}}1
+  {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+  {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+  {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+  {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+  {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+  {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+  {€}{{\EUR}}1 {£}{{\pounds}}1
+}
+\lstset{breaklines=true}
+\lstset{numbers=left}
+\lstset{tabsize=2}
+\usepackage{cleveref}
+\usepackage{lineno}
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage{subfigure}
+\usepackage{pdfpages}
+\usepackage{titlesec}
+\usepackage{float}
+\lstset{numbers=none}
+\usepackage{amsmath}
+\newcommand{\sectionbreak}{\clearpage}
+
+\addto\extrasamerican{%  
+  \def\subfigureautorefname{\figureautorefname}
+  \def\subsectionautorefname{\sectionautorefname}
+  \def\subsubsectionautorefname{\sectionautorefname}
+  \def\subsubsubsectionautorefname{\sectionautorefname}
+}
+
+
+
+
+\graphicspath{{graphix/}}
+
+\newcounter{dummy} % necessary for correct hyperlinks (to index, bib, etc.)
+
+\linespread{1.2}\selectfont
+
+\newcommand{\getmydate}{%
+  \ifcase\month%
+    \or Januar\or Februar\or M\"arz%
+    \or April\or Mai\or Juni\or Juli%
+    \or August\or September\or Oktober%
+    \or November\or Dezember%
+  \fi\ \number\year%
+}
+
+%\definecolor{rowColorHead}{rgb}{0.7,0.7,0.7}
+%\definecolor{rowColor1}{rgb}{0.9,0.9,0.9}
+%\definecolor{rowColor2}{rgb}{255,255,255}
+
+\hypersetup{%
+  pdftitle={Digital Data Missing?},
+  pdfauthor={Clemens Bergmann und Gamze Canova},
+  pdfview=FitH,
+  pdfstartview=FitV
+}
+\setinstitutionlogo[height]{graphix/secuso.jpg}
+
+\begin{document}
+\selectlanguage{american}
+\pagenumbering{arabic}
+  \title{\Huge Digital Data Missing?}
+  \maketitle
+  \huge
+  %\birthplace{Darmstadt}
+  This pocket normally contains a data storage medium with the digital data and results that were produced during writing this thesis.
+  Since this data is partially user data it is not part of the publicly available thesis.
+  If you are interested in this data please contact the thesis supervisor.
+\end{document}
