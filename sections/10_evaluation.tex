@@ -68,17 +68,21 @@ Optionally, the user can agree with the anonymous publication of the:
  Then, the user has to indicate how sure he was about his answers on a Likert scale.
  Finally, the user is asked whether he knows the vendor of the website and whether he has an account there.
  The list of the used URLs can be found in \autoref{example_urls_before}.
+Note that we used the same order for every participant's survey, i.e. everybody was confronted with these URLs in the same order.
 
 	\item \textit{Play App:} Here, the users get the smartphones in order to play the app.
  To save time, we skipped the introduction 2 part (how to access the address bar) for the user study.
  The user has half an hour to play.
  Afterwards, they are asked to put the smartphones aside.
  Then, we collect the smartphones and note the reached points for each level.
+Note that the selection of URLs in our app is randomized.
+This means that the users were confronted with random and thus possibly different URLs.
 
 	\item \textit{Website-Survery After:} After playing the app, the participants get a second website-survey.
  In this, all examples of the previous survey are included.
  Moreover, it contains 8 further website screenshots of which 4 represent phishing and the other 4 legitimate URLs.
   The list of the used URLs can be found in \autoref{example_urls_after}.
+Note that we used the same order for every participant's survey, i.e. everybody was confronted with these URLs in the same order.
 
 	\item \textit{General-Survey After:} Here, the participants are asked to complete a form with questions pertaining to their person, for example, their age or course of study.
  This form does also contain questions related to the System Usability Scale (SUS)~\cite{sus}, which is supposed to assess the usability of our app, and questions regarding the users' impression of the app.
@@ -274,6 +278,7 @@ Therefore, we did not primarily consider their course of study or field of work,
 This way we assured that the considered participants were potential targets of phishing.
 	\item[Android Users:] For the study we considered it important that our participants own a smartphone in general since we wanted the focus to be on our contents. This way, we minimize failures resulting from general operating difficulties.
 Since we provided the required smartphones during the study we had no need to recruit participants who obligatorily own an Android smartphone.
+Overall, 7 of 17 participants owned an Android and 10 of them owned an iOS smartphone, i.e. every attendant was a smartphone owner.
 	\item[Language:] Participants of our study need to know German because all of the app texts are in German. This was ensured by providing flyers and e-mails in German language so that persons who do not master the German language do not feel to be addressed.
 All of our participants could speak and read German.
 \item[Motivation:] We mainly target users who download our app by choice and thus have a basic motivation to learn something from it.
@@ -448,6 +453,8 @@ Some examples support our opinion: One participant who achieved level 5 fell for
 	Finally, there are 4 participants who fell for an attack which was introduced in level 8. Three of these participants did not play level 8.
 	Note that all of the services presented by the URLs were known to the users, i.e. it is likely that they fell for the actual attack and did not just assume that the URLs might be legitimate.
 	These aspects indicate that the later levels and training are important to achieve higher expertise.
+	Due to the small sample size, with at most 1-2 examples per attack, it is likely that the above mentioned examples were slightly suppressed in \autoref{fig:correct_per_level}.
+	An examination of the relation between the achieved level and the recognized attacks could be done in further research with a larger data set.
 	\item[HTTPS and Padlock:] Our results show that some participants were aware that they should look for either HTTPS or a padlock before playing our app~\autoref{fig:markings}.
 	For instance, one participant marked the scheme or the padlock as reason for his decision 11 out of 16 times in the website-survey before. 
 	Another participant marked the scheme or the padlock of 8 examples.
@@ -456,8 +463,7 @@ Some examples support our opinion: One participant who achieved level 5 fell for
 	Thus, the users who based their decisions on these indicators did not seem to be aware of the fact that the use of HTTPS does not necessarily mean that the website is trustworthy in general.
 	In fact, there are phishing websites using HTTPS (cf. \autoref{fig:https_phish}). 
 	Since we cannot assure that an app user of ours plays until level 9, we believe it is important to introduce the level dealing with HTTPS earlier.
-	This aspect should definitely be covered in future work in our opinion.
-	Due to the small sample size, with at most 1-2 examples per attack, it is likely that the above mentioned examples were slightly suppressed in \autoref{fig:correct_per_level}.
+	This aspect should definitely be considered in future work in our opinion.
 	\item[User Self-Assessment:] Contrary to our expectations, users assessed themselves rather correctly. When asked for their ability of distinguishing legitimate from fraudulent websites at the beginning of the study they rated themselves with 3 on a 5 point Likert scale.
 Their actual performace in the website-survey before is likewise (56\% correctly identified URLs). After using the app they were asked whether the app helped them identify phishing websites in the future. They rated 5 out of 5 and their performance was accordingly good (87\% correctly identifies URLs).
 	\item[Confidence:] We asked the users how confident they were about their answers on the website-surveys on a 5 point Likert scale. In median before using the app 3 users stated a confidence of 5. Afterwards, there were 11 users that stated 5 in median. \autoref{fig:confidence} visualizes the overall increase of the users' confidence.
@@ -477,6 +483,7 @@ Their actual performace in the website-survey before is likewise (56\% correctly
 	
 %.........................................................................................................
 \paragraph{Remarks of Participants}
+\label{s:remarks_of_participants}
 During playing the app, the participants had a slip of paper for notes they wanted to make considering the app.
 In the following we outline the main results of these slips of paper.
 Note that we did not ask the users to write down something specific. 
@@ -486,14 +493,14 @@ In the following we consider the notes and suggestions of all participants.
 	\item[Scrolling of URL:] In addition to deciding whether a URL is a phish or not, the user has to face two more challenges. 
 First, the font size gets increasingly smaller in higher levels, until it eventually is approximately the same size of the Android standard browser.
 Second, the URL is displayed in a horizontal scrollbar so that the has to scroll the URL to the right in order to view the beginning of it, just like it is the case in browsers.
-4 of our 19 participants found this disturbing and said it hindered them from analyzing the URL reasonably. 
+4 participants found this disturbing and said it hindered them from analyzing the URL reasonably. 
 This supports the importance of the introduction part 2 (access address bar) in the app.
 The scrolling is present in order to simulate the behavior in the browser and it is important for a user to practice this.
-We assume that the users would not have noted this in this extent in case they had completed introduction part 2, because then they would have understood why we do the URL scrolling during the exercises.
-Yet, we think after a couple of levels the users should have understood that they have to scroll the URL, in the game as well as in the browser, so one might consider to eliminate it after some time. 
+We assume that the users would not have noted this in this extent in case they had completed introduction part 2, because then they probably would have understood why we do the URL scrolling during the exercises.
+Yet, we think after a couple of levels the users should have understood that they have to scroll the URL, in the game as well as in the browser, so one might consider to reduce or eliminate it after some time. 
 	\item[Unknown Services:] We have mentioned the problem of unknown services in \autoref{s:problems_with_URLs}.
 As we were afraid there are in fact services which are not familiar to several users.
-4 participants mentioned this problem.
+Several participants mentioned this problem.
 Even if we tried to make use of the most popular services with the aid of Alexa's~\cite{alexa} ranking we cannot assure that all used URLs are known by all users.
 One idea to approach this challenge might be to provide an question mark button in addition to the check mark (no phish) and cross mark (phish) buttons. 
 When a player clicks on this button, he can be told whether the given URL is a phish or not and why.
@@ -501,7 +508,7 @@ From this action the user would neither profit nor would he lose any points or l
 Yet, we do not think that this is a major issue, since the users got at least until level 4 and most of them achieved even higher levels.
 We are confident that the app in its current state is already implicitly able to teach the users about the legitimacy of unknown services.
 After facing unfamiliar URLs and making or not making mistakes they will eventually learn whether to trust a service or not.
-	\item[Question to Data Entry:] 3 participants noted that the formulation of our website-survey question ``Would you enter your sensitive data into this website?'' was ambiguous.
+	\item[Question to Data Entry:] Some participants noted that the formulation of our website-survey question ``Would you enter your sensitive data into this website?'' was ambiguous.
 Thus, there might have been participants who selected ``no'' even if they did not think it was a phishing website, but they would generally not enter their data into this specific website.
 Originally, the website-surveys before and after asked the participants whether they thought a given website screenshot was a phishing website or not.
 After our test iteration of our study, however, we decided to add some context to the question and had to make this trade-off with respect to the new question's ambiguity.
@@ -514,20 +521,20 @@ Another participant (not under those 4) noted that there is too much and long te
 The left bottom corner has a check mark which represents that the user thinks the displayed URL is not a phish.
 The right bottom corner has a cross mark which means that the user thinks the displayed URL is a phish.
 After clicking on either of these buttons in the write bottom corner another button appears (where the cross mark usually is) which either is the continue or the verify button (depending on whether the user has to select the Who-Section or not).
-2 of our participants indicated that the positioning of the buttons in the right bottom corner are suboptimal.
+Some participants indicated that the positioning of the buttons in the right bottom corner are suboptimal.
 The problem is that accidentally double clicking, for example, the continue button in the right corner results in rejecting the next URL even if the user might not have intended to.
-Even if only 2 participants explicitly criticized this aspect we believe that this is a legitimate point.
+Even if not many participants explicitly criticized this aspect we believe that this is a justified point.
 In fact, the positioning of the two buttons continue and verify should be different from the one of the cross mark.
 This is an aspect which should be targeted in future work. 
 	\item[Repetition:]
 Repetition is an important element of our app.
 In every level introduction we briefly repeat the so far learned parts of a URL (with a graphic) and the different attacks the user has seen until this point.
 We also make use of repetitions during the exercise rounds, every level contains at least one exercise from the previous level.
-2 of our participants explicitly indicated that our repetitions made them feel more confident and safer.
+Some of our participants explicitly indicated that our repetitions made them feel more confident and safer.
 	\item[External Links:]
 In the main menu of our app we have a button ``More About Phishing'' which leads to a list of external links to various websites about phishing.
 Some of these websites are in English.
-2 participants indicated that they did not like it to be led to an English website and would have preferred to be forwarded to a German one.
+Some participants indicated that they did not like it to be led to an English website and would have preferred to be forwarded to a German one.
 This reveals that we cannot expect our audience to have knowledge of the English language.
 Therefore, only German websites should be linked in the future.
 Another idea to approach this might be to provide in-app additional information.
