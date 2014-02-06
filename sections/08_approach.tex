@@ -76,7 +76,7 @@ If a player is not able to lose a game he will get no positive feedback on havin
 At the same time, one does not want the player to lose the game directly as the result of one minor mistake.
 Therefore, most games have some kind of ``you have N tries''-element, which is commonly referred to as ``lives''.
 We included such a mechanism in our app.
-The details are layed out in \autoref{s:game_rules}.
+The details are presented in \autoref{s:game_rules}.
 \item[Levels:] Most games have some kind of level system.
 This serves multiple purposes.
 First, it is important for the player to get a feeling for the progress he makes.
@@ -86,7 +86,7 @@ The details of the leveling strategy can be found in \autoref{s:leveling}
 \item[Achievements:] There exists a type of player who is willing to invest a lot of time in a specific level in order to finish it perfectly or to find every hidden secret in it.
 To address this type of player modern games offer so called ``achievements''.
 Achievements are special elements of a game that a player can unlock if he, for example, finds a special object or if he plays a given level exceptionally well. 
-We implemented achievements for logging in with google+, completing each introductory level and finding 5, 10, 25, 50, 100 and 500 phishing URLs. 
+We implemented achievements for logging in with Google+, completing each introductory level and finding 5, 10, 25, 50, 100 and 500 phishing URLs. 
 
 \item[Leaderboards:] Finally, games often have a leaderboard.
 A leaderboard is an area where a player can compare his progress in the game with the one of other players.
@@ -112,7 +112,7 @@ The first and second information blocks (introduction part 2 and level 1) as wel
 
 \begin{description}[leftmargin=0cm]
 	\item[Obtaining Basic Knowledge:]  
-The first information block and task of the user (introduction part 2) deals with accessing the address bar of a webbrowser and viewing its URL completely (cf. \autoref{s:knowledgetransferperlevel}).
+The first information block and task of the user (introduction part 2) deals with accessing the address bar of a browser and viewing its URL completely (cf. \autoref{s:knowledgetransferperlevel}).
  After successful completion the user is linked back to the app and level 1 begins.
  From this level on, the user has three lives upon the start of each level (cf. \autoref{fig:Screenshot_urltask}).
  In level 1 he has to identify the domain of valid URLs (cf. \autoref{s:knowledgetransferperlevel}).
@@ -192,9 +192,9 @@ After successful completion of the tasks, the user is linked back to the app.
  Furthermore, the user is told that the section between ``http(s)://'' and the third slash ``/'', i.e. the hostname, reveals information about his communication partner.
  In particular, we explain that he has to read this part from right to left.
  The domain of a URL is introduced as ``Who-Section'' (company + location of the company), from which the user knows who he is actually talking to.
- All other parts in the host area are to be considered as ``departments'' of the company of ther user's comminication partner.
+ All other parts in the host area are to be considered as ``departments'' of the company of the user's communication partner.
  The protocol part is introduced as ``Security Level'' of the conversation with the partner and the path part of a URL, i.e. the part after the third slash ``/'', is introduced as the topic of the conversation with the communication partner.
- When marking parts of a URL we consistently used the according colours of \autoref{fig:url_components}. 
+ When marking parts of a URL we consistently used the according colors of \autoref{fig:url_components}. 
 The task of level 1 is to identify the domains, i.e. the ``Who-Section'', of some valid URLs.
 
 	\item[Level 2:] With level two we start introducing the spoofing tricks of a phisher.
@@ -212,7 +212,7 @@ The task of level 1 is to identify the domains, i.e. the ``Who-Section'', of som
 	\item[Level 8:] In this level the user is introduced to an attack where the brand name of the visited website or even the whole legitimate URL is placed in the path of a fake URL, cf. \autoref{s:url_categories}.
 	\item[Level 9:] Here we introduce the difference between HTTP and HTTPS. In particular, the user is told that the usage of HTTPS means that his conversation with the website is encrypted and that the communication partner indicated in the ``Who-Section'' is authenticated.
  As an analogy we say that the HTTPS represents the higher security level of the conversation.
- This means, the conversation cannot be eavesdroppbed by an attacker and the communication partner indictated in the ``Who-Section'' has proved his identity to a trusted third party.
+ This means, the conversation cannot be eavesdropped by an attacker and the communication partner indicated in the ``Who-Section'' has proved his identity to a trusted third party.
  With HTTP this security level is not established.
 In this level the user is generally required to reject HTTP URLs.
 On HTTPS URLs the user has to validate whether they are legitimate or phishes.
@@ -269,7 +269,7 @@ Finally, we describe the strategy we chose to use.
  To additionally incentivize the users we included three lives per level.
  The lives are supposed to prevent a user from playing eternally, without ever passing the current level.
  In case the user loses all of his lives, cf. \autoref{fig:lose_points_life}, this indicates that he did not understand what the level was about.
- Therefore, he has to restart the level. He is returnt to the introductory block of the level he just lost.
+ Therefore, he has to restart the level. He is returned to the introductory block of the level he just lost.
  The points are assigned exactly as before.
  This is our final leveling strategy for the app.
 \end{description}
@@ -307,7 +307,7 @@ This is happening in the awareness part, where the user is told what exactly phi
 First, training and repetition help increase learning. 
 Second, feedback is crucial for good learning performance.
 For best learning results, these two parts must be applied together.
-In a nutshell, the learning connection is strengthened by practice, and weakend by disuse~\cite{handbook2008us}.
+In a nutshell, the learning connection is strengthened by practice, and weakened by disuse~\cite{handbook2008us}.
 After finishing the awareness part, we start with the user education and provide exercises for all of our learning goals (except for the last level), cf. \autoref{s:knowledgetransferperlevel}.
 The learning content is also permanently repeated. 
 For example, in the introduction 2, cf. \autoref{s:knowledgetransferperlevel} the user learns to scroll up to make the address bar re-appear and analyze the URL by right and left scrolling it. 
@@ -438,7 +438,7 @@ Still, the user has to make decisions and is consequently involved in the game.
 	\item[Practice:] This technique is directly related to the learning principle of exercise, cf. \autoref{s:learning_principles}. 
 Users practice and repeat several steps of games extensively so that they eventually gain mastery and the difficulty of their challenges can increase\~cite{murphy2011games,schell2008art}. 
 Our app offers practices as well as repetition, cf. \autoref{s:learning_principles}.
-	\item[Fun:] Fun is an important aspect of game design and yet the definition of it is not clearcut in literature~\cite{murphy2011games, schell2008art,koster2010theory}.
+	\item[Fun:] Fun is an important aspect of game design and yet the definition of it is not clear-cut in literature~\cite{murphy2011games, schell2008art,koster2010theory}.
 Based on several definitions found in literature Curtiss Murphy introduced the following definition of fun: \textit{``Fun is the positive feelings that occur before, during, and after a compelling flow experience''}~\cite{murphy2011games}.
 Positive feelings include, but are not limited to, engagement, enjoyment, pleasure, entertainment, satisfaction, control and triumph. 
 Fun is related to the learning principle of effect and its positive feelings.

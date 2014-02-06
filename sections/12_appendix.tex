@@ -48,8 +48,8 @@ In the following we discuss how this is accomplished in our implementation.
 \subsection{Number of Phishes and Repetitions per Level}
 %\textbf{Was zur historie?}
 The types of spoofed URLs the user is faced with depends on the level.
-Each level introduces one ore more attacks.
-The introduced attacks of each level are layed out in \autoref{s:knowledgetransferperlevel}.
+Each level introduces one or more attacks.
+The introduced attacks of each level are presented in \autoref{s:knowledgetransferperlevel}.
 In general, the URLs of each level $n$ are distributed as follows:
 \begin{table}[hHtbp]
 \centering
@@ -65,7 +65,7 @@ In general, the URLs of each level $n$ are distributed as follows:
 \label{t:levelurls}
 \end{table}
 Repetitions are also included into the list of attacks to be applied which is created upon start of each level.
-The list of repetitions is filled up as follows: every level has exact one attack repetetion for each previous level. The rest of the repetitions is filled up randomly. This way, we assure that at least one example of each previous level is represented by the attack repetitions. All remaining phishes are new attacks.
+The list of repetitions is filled up as follows: every level has exact one attack repetition for each previous level. The rest of the repetitions is filled up randomly. This way, we assure that at least one example of each previous level is represented by the attack repetitions. All remaining phishes are new attacks.
 There are two main exception to these rules:
 \begin{description}[leftmargin=0cm]
 \item[Level 1:] In level 1 the user is only confronted with valid URLs and has to select the domain.
@@ -84,7 +84,7 @@ Some ideas were to add subdomains or path strings to the URL. Queries or fragmen
 Later we found out that it was currently not required to implement such generators since our set contained enough URL examples. 
 Yet, if we should realize in future that these URLs are not enough we have this scheme in place.
 \subsection{Re-Apply an Attack in Case of Wrong User Answer}
-After generating a valid URL we choose a random attack from the previously built set of attacks and apply it to the URL. We also store which attack we currently apply. This is important in case  the user fails to give a correct answer to the current URL. In this situation we will simply readd this attack to the set of attacks.
+After generating a valid URL we choose a random attack from the previously built set of attacks and apply it to the URL. We also store which attack we currently apply. This is important in case  the user fails to give a correct answer to the current URL. In this situation we will simply re-add this attack to the set of attacks.
 This way, we assure that the attack, which the user failed to identify, is repeated later in this level.
 %\subsection{Repeat in Case Attack was not Possible}
 %There are combinations of base-URL and attack where the attack doe's not alter the URL.
@@ -143,7 +143,7 @@ Alles klar, super. Dann kanns weiter gehen.
 \newline
 In der Studie soll eine App getestet werden, die in Form eines Spiels Benutzern beibringen soll, wie sie sich besser vor Betrug im Internet sch{\"u}tzen k{\"o}nnen. Um das Ganze ein bisschen spannend zu gestalten, wird am Ende die Person ermittelt, die hierbei am besten abgeschnitten hat.
 Ziel der Studie ist, die Wirksamkeit der App zu Testen. Hierzu haben wir folgenden Ablauf geplant:
-Keine Angst, ihr m{\"u}sst euch nicht die einzelnen Schritte merken, wir erkl{\"a}ren jedes mal was als n{\"a}chstes kommt.
+Keine Angst, ihr m{\"u}sst euch nicht die einzelnen Schritte merken, wir erkl{\"a}ren jedes Mal was als n{\"a}chstes kommt.
 \newline
 \newline
 Als erstes bekommt ihr zwei Frageb{\"o}gen ausgeteilt.
@@ -175,7 +175,7 @@ Hier sind erst einmal die Einverst{\"a}ndniserkl{\"a}rungen. Wenn ihr damit fert
 
 \subsubsection{Introduction to Website-Survey Before}
 Nachdem wir nun wissen was ihr vor dieser Studie {\"u}ber Internetsicherheit wusstet, k{\"o}nnen wir nun etwas konkreter werden.
-Bei der App handelt es sich um ein Spiel welches euch speziell Tips zum Thema Phishing gibt.
+Bei der App handelt es sich um ein Spiel welches euch speziell Tipps zum Thema Phishing gibt.
 Phishing ist ein Betrugsversuch. Hierbei spielt der Betr{\"u}ger dem Benutzer vor jemand anderes zu sein. Das Ziel des Betr{\"u}gers ist, dem Benutzer pers{\"o}nliche Informationen zu entlocken. Meistens macht er das {\"u}ber gef{\"a}lschte Webseiten.
 \newline
 \newline
@@ -192,22 +192,22 @@ Diesen k{\"o}nnt ihr bis zum Ende behalten und weiterhin Notizen darauf machen. 
 Jedes Telefon ist mit der Nummer eures Sitzplatzes beschriftet. Bitte verwendet nur euer Telefon.
 Auf dem Starbildschirm der Handys befindet sich die App. Sie hei{\ss}t ``NoPhish''.
 Wenn wir euch sagen, dass es losgeht, startet die App durch Antippen und w{\"a}hlt im Startmen{\"u} auf den gr{\"u}nen Button, um das Spiel zu starten.
-Ihr habt zum Spielen 30 Minuten zeit.
+Ihr habt zum Spielen 30 Minuten Zeit.
 \newline
 \newline
 Im Laufe der App, werdet ihr nach eurer E-Mail Adresse gefragt. Dazu sind auf den Smartphones speziell f{\"u}r die Studie E-Mail Adressen angelegt worden. Diese werden euch bei der Eingabe in das Feld vorgeschlagen. Bitte w{\"a}hlt diese aus. Bei der Absender-Adresse d{\"u}rft ihr eingeben, was ihr wollt.
 \newline
 \newline
-Es ist nicht m{\"o}glich die App in der Zeit vollst{\"a}ndig durchzuspielen. Spielt einfach so weit ihr kommt.
-Wenn wir euch am Ende bescheid geben h{\"o}rt bitte einfach auf die App zu spielen und lasst sie so wie sie ist. Nur so k{\"o}nnen wir eure Punktzahl korrekt ablesen.
-Jetzt geht's los. Viel erfolg.
+Es ist nicht m{\"o}glich die App in der Zeit vollst{\"a}ndig durchzuspielen. Spielt einfach soweit ihr kommt.
+Wenn wir euch am Ende Bescheid geben h{\"o}rt bitte einfach auf die App zu spielen und lasst sie so wie sie ist. Nur so k{\"o}nnen wir eure Punktzahl korrekt ablesen.
+Jetzt geht's los. Viel Erfolg.
 
 
 \subsubsection{Introduction to Website-Survey After and Further App Exploration}
 Die Zeit ist um. Bitte legt jetzt die Smartphones weg. Wir sammeln sie jetzt ein.
 \newline
 \newline
-Jetz kommt nochmal ein Fragebogen mit Webseiten. Wie vorher sollt ihr darauf entscheiden ob eine Webseite gef{\"a}lscht oder legitim ist. Wenn ihr damit fertig seid gebt den Fragebogen uns wieder zur{\"u}ck.
+Jetzt kommt nochmal ein Fragebogen mit Webseiten. Wie vorher sollt ihr darauf entscheiden ob eine Webseite gef{\"a}lscht oder legitim ist. Wenn ihr damit fertig seid gebt den Fragebogen uns wieder zur{\"u}ck.
 \newline
 \newline
 Jetzt teilen wir wieder die Smartphones aus. Wir bitten euch diesmal die anderen Funktionen der App auszutesten. Daf{\"u}r habt ihr dann nochmal 5 Minuten.
@@ -223,12 +223,12 @@ Haben sich bei euch noch Fragen ergeben?
 \newline
 \newline
 Alles klar, dann kommen wir zur Bekanntgabe des Gewinners vom Spiel.
-Gewonnen hat <gewinnername/>, mit <gewinnerpunkte/> Punkten.
+Gewonnen hat <Gewinnername/>, mit <Gewinnerpunkte/> Punkten.
 Herzlichen Gl{\"u}ckwunsch, du hast am besten abgeschnitten. 
 \newline
 \newline
 Nun kommen wir zur Verlosung des Amazon-Gutscheins. 
-<name/> hat den Amazon-Gutschein gewonnen, herzlichen Gl{\"u}ckwunsch. \newline
+<Name/> hat den Amazon-Gutschein gewonnen, herzlichen Gl{\"u}ckwunsch. \newline
 <Erhaltbest{\"a}tigung unterschreiben lassen/>
 \newline
 \newline
