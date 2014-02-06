@@ -28,20 +28,20 @@ We did not forward the flyer to computer science professors or professors of sim
 Additionally, we posted the flyer in university groups of online social networks with the hope some people might be interested in participating.
 \item[Further Networks:] Finally, we called friends we could not reach via online social networks and asked them if they knew anybody who would participate.
 \end{description}
-In \autoref{s:participant_recruitment_texts} copies of our e-mails to the professors and of our flyer can be consulted.
+In \autoref{s:final_study_materials} copies of our e-mails to the professors and of our flyer can be consulted.
 Note that we had to split the user study into groups of 4 participants due to the lack of available smartphones.
 Moreover, our flyer originally said that the best participant of each group would win the gift certificate.
 However, we recognized that the winning chance might not be equal for every participant due to varying expertise, for example, or other possible technical problems such as app crashes.
-For this reason we asked the participants at the beginning of each study whether they agreed to raffle the gift certificate instead.
+For this reason, we asked the participants at the beginning of each study whether they agreed to raffle the gift certificate instead.
 To express our appreciation to each participant we decided to offer cookies and other kinds of sweets.
-Additionally, the participant who performed best was awarded with a ``Golden Anti-Phish Certificate'', all other participants received a ``Silver Anti-Phish Certificate'' (cf. \autoref{s:antiphish_certs}).
+Additionally, the participant who performed best was awarded with a ``Golden Anti-Phish Certificate'', all other participants received a ``Silver Anti-Phish Certificate'' (cf. \autoref{s:final_study_materials}).
 
 %===========================================
 \subsection{Study Design}
 %===========================================
 For our user study we chose a within-subject design, i.e. a ``before and after app'' study with the same group of people.
 The advantages of this design can be summarized as follows:
-Within-subject deals better with variability associated with individual differences compared to between-group design, where different groups would be considered who do and do not play the app.
+within-subject deals better with variability associated with individual differences compared to between-group design, where different groups would be considered who do and do not play the app.
 A major drawback of the within-subject design, however, is the learning effect.
 We are not able to clearly distinguish whether a behavior change after playing the app is a result of the app intervention or of learning effects.
 Yet, our results showed that the learning effects seemed to have only a minor impact (cf. \autoref{s:hypanalysis}).
@@ -59,6 +59,7 @@ Optionally, the user can agree with the anonymous publication of the:
 
 	\item \textit{General-Survey Before:} At the beginning the participants have to fill out a general survey, where they have to judge their own knowledge on the topic of Internet security in general.
  For instance, they are asked whether it is easy for them to distinguish legitimate e-mails and websites from fake ones.
+The survey can be consulted in \autoref{s:final_study_materials}.
 
 	\item \textit{Website-Survey Before:} In this part of the user study the participants get a list of screenshots of websites.
  The screenshots had been taken with the standard browser of an Android tablet.
@@ -67,21 +68,21 @@ Optionally, the user can agree with the anonymous publication of the:
  Additionally, he has to encircle the part of the screenshot which was the primary reason for his decision.
  Then, the user has to indicate how sure he was about his answers on a Likert scale.
  Finally, the user is asked whether he knows the vendor of the website and whether he has an account there.
- The list of the used URLs can be found in \autoref{example_urls_before}.
+ The list of the used URLs can be found in \autoref{s:final_study_materials}.
 Note that we used the same order for every participant's survey, i.e. everybody was confronted with these URLs in the same order.
 
 	\item \textit{Play App:} Here, the users get the smartphones in order to play the app.
- To save time, we skipped the introduction 2 part (how to access the address bar) for the user study.
+ To save time, we skipped the introduction part~2  (how to access the address bar) for the user study.
  The user has half an hour to play.
  Afterwards, they are asked to put the smartphones aside.
- Then, we collect the smartphones and note the reached points for each level.
+ Then, we collect the smartphones and note the achieved points for each level.
 Note that the selection of URLs in our app is randomized.
 This means that the users were confronted with random and thus possibly different URLs.
 
 	\item \textit{Website-Survey After:} After playing the app, the participants get a second website-survey.
  In this, all examples of the previous survey are included.
  Moreover, it contains 8 further website screenshots of which 4 represent phishing and the other 4 legitimate URLs.
-  The list of the used URLs can be found in \autoref{example_urls_after}.
+  The list of the used URLs can be found in \autoref{s:final_study_materials}.
 Note that we used the same order for every participant's survey, i.e. everybody was confronted with these URLs in the same order.
 
 	\item \textit{General-Survey After:} Here, the participants are asked to complete a form with questions pertaining to their person, for example, their age or course of study.
@@ -127,7 +128,7 @@ Measurement: A System Usability Scale (SUS) $>$ 68 can be considered above avera
 One part of the study involved marking the area on a given website which contributed to the users' decision on whether they thought the website was fraudulent or legitimate.
 In order to assess these markings, for the measurement of hypothesis 3, we needed to define respective codings.
 To digitize the markings of the participants we proceeded as follows:
-One of us read out the markings and the other wrote them down. Occasionally the writing person checked whether he had the same impression. When the reading person was uncertain he also asked the writer. In some very uncertain cases we consulted a third party.
+One of us read out the markings and the other wrote them down. Occasionally, the writing person checked whether he had the same impression. When the reading person was uncertain he also asked the writer. In some very uncertain cases we consulted a third party.
 Here, we provide an overview of the regions participants marked during the website-surveys and how we coded them internally for the evaluation.
 Furthermore, we discuss our marking interpretations and outline several interpretation problems, due to imprecise markings, and how we approached those.
 
@@ -207,7 +208,7 @@ For this sample, we decided to code the marking as host.
 The next example in \autoref{fig:m_domain_or_not} shows a marking where a subdomain and the domain is marked. 
 When we faced examples like this we decided to code it as domain in case a subdomain is only partially marked, so that there is an indication that the user just did not make his markings precise enough.
 If the subdomain is obviously marked deliberately, i.e. clearly inside the circle, this kind of sample is coded as URL.
-In this case we see that the subdomain is inside the circle and coded this sample as URL accordingly.
+In this case one can see that the subdomain is inside the circle. We coded this sample as URL accordingly.
 Another frequently occurring sample is one where two areas are marked, even though we explicitly asked to mark only one.
 In these cases we decided as follows: in case a marking is obviously striking due to a thicker circle, for instance, the more emphasized area is chosen for coding.
 In case both markings were equal, we joined the markings and decided based on that.
@@ -253,8 +254,8 @@ In the contrary, the domain of a URL can always be considered as the attacked pa
 \subsection{Results and Analysis}
 %===========================================
 This section presents our results and analyzes them. 
-We start with discussing the representativeness of our participants and proceed with illustrating interpretation problems we faced while we assessed the website-surveys.
-Thereafter, we evaluate our hypotheses and proceed with further exploration of our results, followed by discussing the limitations of our study.
+We start with discussing the representativeness of our participants and proceed with the evaluation of our hypotheses. 
+Subsequently, we continue with further exploration of our results, followed by discussing the limitations of our study.
 Finally, this chapter concludes with a discussion of our results and a corresponding summary. 
 %.........................................................................................................
 \subsubsection{Representativeness of Our Participants}
@@ -265,12 +266,12 @@ We aspired to recruit participants who hold these preconditions as far as possib
 In the following we discuss the representativeness of our participants with the aid of these preconditions.
 
 \begin{description}[leftmargin=0cm]
-	\item[Attackability:] Generally, we took care that the people we recruited do not have extensive prior knowledge on this topic.
+	\item[Attackability:] Generally, we took care that the people we recruited do not have extensive prior knowledge on the topic of phishing.
 For example, our flyer asked for non-specialists.
 Yet, we were not able to assure beforehand that we would only have non-specialist participants.
 In such a case we had to rule them out for our analysis afterwards.
 Unlike in our initial survey (cf. \autoref{s:survey}), we did not exclude electrical engineers or computer scientists in general from our final user study.
-The problem with the phishing survey was that it did not give us enough indication whether a particular participant was too familiar with the topic.
+The problem with the phishing survey was that it did not give us enough indications whether a particular participant was too familiar with the topic.
 Therefore, we had to imply that computer scientists and electrical engineers are too skilled, even if this does not necessarily need to be the case in reality.
 In fact, there might be computer scientists or electrical engineers who can learn something from our app.
 In contrast to the phishing survey, in our final user study we were able to determine a user's prior knowledge more precisely with the aid of the website-survey before.
@@ -282,7 +283,7 @@ Overall, 7 of 17 participants owned an Android and 10 of them owned an iOS smart
 	\item[Language:] Participants of our study need to know German because all of the app texts are in German. This was ensured by providing flyers and e-mails in German language so that persons who do not master the German language do not feel to be addressed.
 All of our participants could speak and read German.
 \item[Motivation:] We mainly target users who download our app by choice and thus have a basic motivation to learn something from it.
-For the user study our flyer was supposed to draw interested persons to participate in our study.
+For the user study our flyer was supposed to draw interested persons to participate.
 Furthermore, we created an additional incentive to attend our study by raffling a gift certificate.
 \end{description}
 Finally, we aspired to recruit participants who are not close friends of ours in order to minimize biases as far as possible.
@@ -344,10 +345,11 @@ In the following we present the results of our study corresponding to our hypoth
 
 \begin{description}[leftmargin=0cm]
 \item[Hypothesis 1:]
-\autoref{fig:hyp1results} shows the results of our study according to hypothesis 1. One can clearly see that the majority of the users identified more URLs correctly after using the app than before. While most participants correctly identified 8 out of 16 (50\%) websites before they played the app, almost everyone gave correct answers to at least 22 out of 24 websites afterwards (cf. \autoref{fig:hyp1resultsbefore} and \autoref{fig:hyp1resultsaall}). One could argue that this increase is based on the fact that the examples are mainly the same in the website-survey after, i.e. the reason for their better performance is based on learning effects. \autoref{fig:hyp1resultsanew} however shows that the users also performed well for the new URLs. Therefore, we assume the learning effects are negligible.
+\autoref{fig:hyp1results} shows the results of our study according to hypothesis 1. One can clearly see that the majority of the users identified more URLs correctly after using the app than before. While most participants correctly identified 8 out of 16 (50\%) websites before they played the app, almost everyone gave correct answers to at least 22 out of 24 websites afterwards (cf. \autoref{fig:hyp1resultsbefore} and \autoref{fig:hyp1resultsaall}).
+One could argue that this increase is based on the fact that the examples are mainly the same in the website-survey after, i.e. the reason for the users' improved performance is based on learning effects. \autoref{fig:hyp1resultsanew} however shows that the users also performed well for the new URLs. Therefore, we assume the learning effects are negligible.
 In order to affirm our hypothesis we decided to apply the onesided Wilcoxon signed-rank test~\cite{wilcoxon1945individual} with our 16 samples from the website-survey before and the same 16 samples from the website-survey after.
 Since we consider the learning effects negligible, we do not apply an alternative test against the 24 after URLs.
-Our null hypothesis is $H_{0}: x_{1} >= x_{2}$ and the alternative hypothesis $H_{1}: x_{1} < x_{2}$, where x$_{1}$ represents the number of URLs which were correctly answered before playing the app and x$_{2}$ represents the number of URLs which were correctly identified after playing the app.
+Our null hypothesis is $H_{0}: x_{1} >= x_{2}$ and the alternative hypothesis is $H_{1}: x_{1} < x_{2}$, where x$_{1}$ represents the number of URLs which were correctly answered before playing the app and x$_{2}$ represents the number of URLs which were correctly identified after playing the app.
 We computed the positive and negative rank-sums of $W_{+} = 141.5$ and $W_{-} = 11.5$.
 The test statistic $w$ is the minimum of $W_{+}$ and $W_{-}$, hence $w = 11.5$.
 As we chose $\alpha = 5\%$ as significance level and had 17 participants this results in a critical value of $41$.
@@ -360,18 +362,18 @@ Therefore, we believe that our app helped users to make improved decisions about
 Most of the users already based most of their decisions on the URL before.
 Occasionally, users marked the content or the padlock (37 markings).
 Afer playing the app website content was marked only once.
-Only 3 users (17.65\%) always marked the URL before.
+Interesting is that only 3 users (17.65\%) \textit{always} marked the URL before playing the app.
 Afterwards, 14 users (82.35\%) always based their decision on the URLs and only 3 users made an exception once or twice.
 Therefore, we believe that our app convinced the users to consider the URL primarily.
 We decided against applying a statistical test to this hypothesis since there is obviously no significant difference before and after playing the app.
 \item[Hypothesis 3:]
 There is a general problem with one question in the websites-surveys.
-In the website-before survey we were not able to clearly ask the user to mark the domain when it was the base of his decision because we would have then pointed them towards looking at the URL or even at the domain.
-This would have influenced the results of hypothesis 2.
-Since we could not formulate this question clearly, a user might have marked the whole URL even if his decision was based only on a part of it (for example, the domain) of the URL.
-Consequently, we were not able to clearly identify what the users' main source of decision was in the website-before survey.
+In the website-before survey we were not able to clearly ask the users to mark the domain when it was the base of their decision because we would have then pointed them towards looking at the URL or even at the domain.
+This would have influenced the results of hypothesis~2.
+Since we could not formulate this question clearly, a user might have marked the whole URL even if his decision was based only on a part of it (for example, the domain).
+Consequently, we were not able to clearly identify what the users' main source of decision was in the website-survey before.
 We were aware of this problem beforehand but saw no other option than formulating the question in such an open form.
-Afterwards, the user knew that they were expected to mark the domain.
+After playing the app the user knew that they were expected to mark the domain.
 This can be interpreted as a change of the question even if the question did not change literally.
 Therefore, we cannot apply any statistical tests on this hypothesis.
 Yet, we want to have a look at the results.
@@ -392,7 +394,7 @@ Yet, we want to have a look at the results.
 On the other hand, \autoref{fig:markings} shows the distribution of the marked areas before and after playing our app. Obviously, afterwards most of the users marked the domain. However, we are not able to compare that to the before values because of the changed question.
 Another interesting observation is that quite a number of participants marked the complete host (instead of the domain) in case of legitimate URLs (cf.~\autoref{fig:legitimate_markings_after}). One explanation for this might be that we did not ask the user to mark the domain of legitimate URLs except in level 1.
 \item[Hypothesis 4:]
-According to the answers that the users gave in the  SUS section of the general-survey after (\autoref{s:after_survey}) we calculated a SUS score of 83.1. This is considerably above 68 which means that we can consider our app usable.
+According to the answers that the users gave in the  SUS section of the general-survey after (\autoref{s:final_study_materials}) we calculated a SUS score of 83.1. This is considerably higher than 68 which means that we can consider our app usable.
 \end{description}
 
 %.........................................................................................................
@@ -412,33 +414,33 @@ Afterwards, we summarize the participants' remarks to our app.
 	In the website-survey before 37.5\% of the URLs were answered and reasoned correctly.
 	After playing the app 75\% of the URLs were correctly identified and reasoned. 
 	Note that reasoned means by our definition that the domain was marked in addition to giving a correct answer.
-	However, a reasoning must not always rely on the domain itself. 
+	However, a reasoning does not always have to rely on the domain itself. 
 	As discussed in \autoref{s:hypanalysis} there were numerous participants who often marked the host of legitimate URLs, for example.
 	This is a correct reasoning for their decision, however by our definition it was not considered as such.
-	Also, there were plenty of users who detected a phish and marked the attacked part instead (cf. \autoref{fig:m_attack_recognized}).
+	Also, there were plenty of users who detected a phish and marked the attacked part instead of the domain (cf. \autoref{fig:m_attack_recognized}).
 	By our definition this was also not accepted as correct reasoning.
 	Hence, if we had expanded our definition of reasoning even more users would have correctly reasoned their decisions.
-	However, there is the question whether expanding the accepted answers might also result in an increase of the correct answers and markings in the before survey.
-	\item[False Negatives and Positives:] Additionally, we considered separately whether the user falsely accepted phishes or rejected legitimate websites. Our outcomes show that before in average the user rejected 4.9 legitimate websites and accepted 2.1 phishing websites.
+
+	\item[False Negatives and Positives:] Additionally, we separately considered whether the user falsely accepted fraudulent or rejected legitimate websites. Our outcomes show that before in average the user rejected 4.9 legitimate websites and accepted 2.1 phishing websites.
 	After using the app the user rejected 1.8 legitimate websites and accepted 1.3 phishing websites.
 	When examining these numbers one should note that we increased the users' attention by telling them to look for phishing websites.
 	This means that they actively searched for traps and looked for reasons why they should not enter their data on a given website.
 	In reality the users contrarily have an interest in entering their personal data otherwise they probably would have not opened the website.
-	Additionally, usually users tend to behave overcautiously in lab situations \cite{wu2006security, egelman2007security}.
+	Additionally, usually users tend to behave overcautiously in lab situations~\cite{wu2006security, egelman2007security}.
 	Therefore, we assume that in this situation, especially before playing the app, users tended to reject URLs in general for safety's sake.
 	This is also reflected by the high rate of falsely rejected legitimate URLs.
 	Nevertheless, the results show that the users make less mistakes after playing the app and seem to better know why they reject or accept websites (cf. \autoref{s:hypanalysis}).
-	In future this should be tested in a more realistic scenario where the users' attention is less increased towards looking for phishes and where the users are not in lab situations.
+	In future this should be tested in a more realistic scenario where the users' attention is less increased towards looking for phishing websites and where the users are not in lab situations.
 	\item[User Opinions to App:] A part of our surveys aspired to understand the users' opinions to our app.
-	Section 3 of our general-survey after (cf.~\autoref{s:after_survey}) contains the statements which the users had to assess with the aid of a 5 point Likert scale.
+	Section 3 of our general-survey after (cf.~\autoref{s:final_study_materials}) contains statements which the users had to assess with the aid of a 5 point Likert scale.
 	Our worst, but still decent, score referred to whether the user was motivated by the spoofed e-mail to continue playing the app (median of 4) and whether the amount of texts was appropriate (median of 4).
-	All other statements of the questionnaire were strongly agreed (median of 5) with in median.
+	All other statements of the questionnaire were strongly agreed with in median (median of 5).
 	The text legibility of our app texts received a median score of 5.
-	Our study participants strongly agreed (median of 5) that our app helped them to identify phishing websites in the future.
+	Our study participants strongly agreed (median of 5) that our app helped them identify phishing websites in the future.
 	Finally, the users intuitively understood our three lives scheme per level (median of 5).
 	Thus, the results of the user opinions reveal that our app was very well received by the participants regarding these questions.
 	\item[Achieved Levels:] In average the participants reached level 7, which is higher than we had expected.
-	We assume that some users started to roughly skim our texts for relevant information (for example, mainly looking at the examples) after they understood the importance of the domain.
+	We assume that some users started to roughly skim our texts for relevant information (for example, by mainly looking at the examples) after they understood the importance of the domain.
 	One user even played through the app in 30 minutes.
 	In fact, this user has performed worse by the terms of our definition of correctness.
 	The user had correctly identified 9 (75\%) of the URLs before playing the app.
@@ -478,9 +480,9 @@ We found 3 of these examples:
 	Thus, the users who based their decisions on these indicators did not seem to be aware of the fact that the use of HTTPS does not necessarily mean that the website is trustworthy in general.
 	In fact, there are phishing websites using HTTPS (cf. \autoref{fig:https_phish}). 
 	Since we cannot assure that an app user of ours plays until level 9, we believe it is important to introduce the level dealing with HTTPS earlier.
-	This aspect should definitely be considered in future work in our opinion.
-	\item[User Self-Assessment:] Contrary to our expectations, users assessed themselves rather correctly. When asked for their ability of distinguishing legitimate from fraudulent websites at the beginning of the study they rated themselves with 3 on a 5 point Likert scale.
-Their actual performance in the website-survey before is likewise (56\% correctly identified URLs). After using the app they were asked whether the app helped them identify phishing websites in the future. They rated 5 out of 5 and their performance was accordingly good (87\% correctly identifies URLs).
+	This aspect should definitely be considered in future work.
+	\item[User Self-Assessment:] Contrary to our expectations, users assessed themselves rather correctly. When asked for their ability of distinguishing legitimate from fraudulent websites at the beginning of the study they rated themselves with a median of 3 on a 5 point Likert scale.
+Their actual performance in the website-survey before was likewise (56\% correctly identified URLs). After using the app they were asked whether the app helped them identify phishing websites. They rated 5 out of 5 and their performance was accordingly good (87\% correctly identified URLs).
 	\item[Confidence:] We asked the users how confident they were about their answers on the website-surveys on a 5 point Likert scale. In median before using the app 3 users stated a confidence of 5. Afterwards, there were 11 users that stated 5 in median. \autoref{fig:confidence} visualizes the overall increase of the users' confidence.
 	\begin{figure}
 		\centering
@@ -515,9 +517,8 @@ We assume that the users would not have noted this to this extent in case they h
 Yet, we think after a couple of levels the users should have understood that they have to scroll the URL, in the game as well as in the browser, so one might consider to reduce or eliminate it after some time. 
 	\item[Unknown Services:] We have mentioned the problem of unknown services in \autoref{s:problems_with_URLs}.
 As we were afraid there are in fact services which are not familiar to several users.
-Several participants mentioned this problem.
 Even if we tried to make use of the most popular services with the aid of Alexa's~\cite{alexa} ranking we cannot assure that all used URLs are known by all users.
-One idea to approach this challenge might be to provide a question mark button in addition to the check mark (no phish) and cross mark (phish) buttons. 
+One idea to approach this challenge might be to provide a ``I don't know'' button in addition to the check mark (no phish) and cross mark (phish) buttons. 
 When a player clicks on this button, he can be told whether the given URL is a phish or not and why.
 However, this function would require some more logic to prevent users from simply skip each and every URL when they are not absolutely sure about their answer.
 In addition, we do not think that this is a major issue, since the participants reached at least level 4 and most of them achieved even higher levels.
@@ -529,7 +530,7 @@ Originally, the website-surveys before and after asked the participants whether 
 After a test run of our study, however, we decided to add some context to the question and had to make this trade-off with respect to the new question's ambiguity.
 As we told the user that this study was particularly about phishing and that their task was to detect phishing websites in the website-surveys before and after, we believed that the ambiguity of this question would be negligible.
 	\item[Explanations and Comprehensibility:]
-4 participants stated on their slips of paper that they found the explanations of the app very good and easy to understand.
+4 participants stated that they found the explanations of the app very good and easy to understand.
 1 of these 4 participants, however, added that there is partially much text to read.
 Another participant noted that there is too much and long text in general.
 	\item[Button Positioning:] The positioning of our app buttons during the game is as follows: 
@@ -558,7 +559,7 @@ This would solve the problem with the language of websites and at the same time 
 In every level the sample size increases as the number of possible attacks increases.
 Only 2 participants found that our sample size was too large.
 This might have been the result of the fact that the users had to play the game for half an hour at a time.
-We believe that the number of examples are reasonable, assumed that a user does finish the app at a stroke.
+We believe that the number of examples are reasonable, assumed that a user does not finish the app at a stroke.
 	\item[Further Suggestions:] In their notes some users made several suggestions which we found interesting.
 These suggestions include, for example, more text highlighting of new teaching contents or the suitability of our app to be applied in schools.
 In \autoref{s:future_work} we elaborate on aspects for further research in more detail.
@@ -570,14 +571,14 @@ Our study design has some limitations we were not able to address for several re
 
 \begin{description}[leftmargin=0cm]
 	\item[Behavior Change:] In our study the participants were not in their usual environment. 
-	Therefore, they likely behaved differently during our study.
+	Therefore, they likely behaved differently during our study~\cite{wu2006security, egelman2007security}..
 	An alternative approach would have been to distribute the app to several participants and ask them to play it remotely.
 	However, this has two major downsides: First, the user would have been remote and thus we would have less control.
 	Second, testing the before and after app skills would have been difficult to realize in order to ensure a homogenous process among all participants.
 	\item[Increased Attention:] At the beginning of the study the participants were told that the study dealt with phishing.
-	Additionally, for the website-survey before and after they were explicitly asked to indicate whether the websites were phishing or not.
+	Additionally, for the website-survey before and after they were explicitly asked to indicate whether the websites were phishing websites or not.
 	That is to say, the user automatically increased his attention towards answering these kinds of questions.
-	Designing an in situ study, where the participant would have been in their usual environment and would have not known about their participation, was not considered because such a design is ethically and legally questionable. 
+	Designing an in situ study, where the participants would have been in their usual environment and would have not known about their participation, was not considered because such a design is ethically and legally questionable. 
 	\item[Knowledge Retention:] Our study design focuses on the present.
 	Given certain time boundaries, it was not possible to study the long-term influences of our app by conducting the after app scenario repeatedly. 
 	Consequently, knowledge retention is an aspect which is not considered by our study.
@@ -585,7 +586,7 @@ Our study design has some limitations we were not able to address for several re
 	We rather looked out for friends of friends or even completely unknown persons~(cf. \autoref{s:participant_recruitment}).
 	Certainly, the presence of a minor bias cannot be totally excluded.
 \end{description}
-Despite the limitations of our study we are confident that we got a good insight into the effectiveness of our app.
+Despite the limitations of our study we are confident that we obtained a good insight into the effectiveness of our app.
 
 %===========================================
 \subsection{Discussion}
@@ -593,33 +594,33 @@ Despite the limitations of our study we are confident that we got a good insight
 Our hypotheses stated that our app can increase three major skills of the user.
 First, we wanted to help the user distinguish phishing websites from legitimate ones.
 This goal can be considered achieved as we could disprove that the increase of correct answers after playing the app is not insignificant.
-Even though there might be some learning effect we are confident that this increase is not mainly attributable to that.
+Even though there might be some learning effects we are confident that this increase is not mainly attributable to that.
 The second and third hypotheses focused on the reasoning behind the user's decision.
 We wanted to show that the user is aware of the fact that the content is no source of evidence against a phishing attack.
-Our results suggest that most of the users already felt that the URL is important beforehand although some additionally considered the content.
+Our results suggest that most of the users already felt that the URL is important beforehand, although some additionally considered the content.
 Thus, the change in user response was not high enough to measure our hypothesis 2. 
+Yet, it was striking that after playing the app the majority of the participants, in total 14, \textit{always} based their decision on the URL compared to before playing the app, where only 3 users did.
 The third hypothesis stated that the users understand the structure of URLs better after playing our app.
-As we discussed above, we had concerns about the design of the question that was intended to test this hypothesis.
+As discussed above, we had concerns about the design of the question that was intended to test this hypothesis.
 The question has to be regarded as changed after playing the app.
 Due to this, we could not consider the before-markings and could not argue on any findings about this hypothesis.
+Nevertheless, the results show that after playing the app there was a shift in the users' focus towards marking the domain.
+Our last hypothesis stated that our app is usable above average.
+With a SUS score of 83.1, which is considerably higher than 68, we can consider our app usable.
 
 In addition to testing the hypotheses we received generally positive feedback from the users.
-Most of them had the feeling they learned something from the app.
+Most of them had the feeling they learned something from our app.
 Some participants even contacted us asking about the release date of the app because they wanted to give it to their relatives.
 
 Yet, there are still some improvements that should be considered when someone develops for a next version of the app.
-First of all, we think that the part talking about HTTP and HTTPS should be moved to an earlier level.
-We saw many users that marked the scheme or the padlock in the URLs in the website-survey before.
-This seems to be more important for the user than the URL itself because we had several users who fell for a phish and marked the scheme or padlock as their reasoning.
+First of all, we think that the part talking about HTTP and HTTPS should be introduced earlier.
+Some users mainly marked the scheme or the padlock in the website-survey before and fell for phishing websites making use of HTTPS.
 As we cannot assume that users finish our app within one day, or even finish it at all, we think that it is important to resolve that misunderstanding earlier.
-The second improvement that a followup version should include is to restructure the app texts in such a way that the user can clearly identify repeating and new parts.
-We think this aspect is not as important in real life as compared to study situations because the app is not designed to be played a long time in a row.
-Finally, it might be a good improvement to modify the app behavior depending on the user skill and performance.
+Furthermore, it might be reasonable to modify the app behavior depending on the user skills and performance.
 This might prevent the user from getting bored.
 This includes, for instance, varying feedback texts and icons depending on the user's performance as well as the degree of difficulty.
-Another example is that the app could skip the proof part (identify Who-Section after detection of a phish) in case there is an indication that the user understood how to do it.
-A simple form of that is already implemented.
-The proof is shown up to a predefined level.
-Yet, we think it is more reasonable to base the skipping and other possible extensions on the user performance. 
+Another example is that the app could skip the proof part (identify domain after detecting a phish) in case there is an indication that the user understood how to identify the domain.
+A simple form of that is already implemented where the proof is shown up to a predefined level.
+We think it is more reasonable to base the skipping and other possible extensions on the user performance. 
 
-In conclusion, our evaluation shows that our app is beneficial to educate users on phishing. More precisely, the app helped most of the participants make better decisions regarding the legitimacy of  URLs. The users appreciated the app and also provided valuable comments for possible improvements. All in all, we can say that we achieved the main goal of our app.
+In conclusion, our evaluation shows that our app is beneficial to educate users on phishing. More precisely, the app helped most of the participants make improved decisions regarding the legitimacy of  URLs. The users appreciated the app and also provided valuable comments for possible improvements. All in all, we can say that we achieved the main goal of our app.
