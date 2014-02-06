@@ -6,58 +6,51 @@
 
 This chapter provides a short summary of what we achieved within the scope of this thesis and some further concluding remarks.
 We also present a short list of recommendations regarding the design of security education games based on the lessons we have learned.
-Finally, we have a short outlook on future work.
+Finally, we provide an outlook on future work.
 %===========================================
 \subsection{Conclusion}
 %===========================================
 The objectives of this thesis were twofold.
-First, we aimed at increasing users' security awareness so this may hopefully result in a change in their security related behavior.
+First, we aimed at increasing users' security awareness hoping to provoke a change in their security related behavior.
 Second, we focused on the education of users with regard to the detection of phishing URLs. 
 Our app is supposed train the user to achieve the required capability of correctly parsing URLs and thus identifying phishing websites.
-This capability will hopefully help him to defend himself against phishing attacks.
+This new knowledge will eventually help them defend themselves against the steadily increasing phishing attempts.
 
 To achieve these goals we developed an anti-phishing education quiz based game.
-Our app targets the awareness increase by actively let the user spoof an e-mail and exemplifying him that a link does not necessarily lead to the target that it displays.
-By letting the users practically experience this, we hope to increase the intensity of their learning experience (cf.~Principle~of~Intensity in \autoref{s:learning_principles}) resulting in a better and higher learning performance and motivation. We are aware that this part of the app might not be interesting and motivating for some users.
-This is especially reflected by the answers to our question in the survey-after, where we ask whether this part motivated them to continue playing the app. 
-The answers to this question are rather dispersed and thus result in a median value of 4 out of maximal 5 which would indicate that the user absolutely agrees.
-
-After motivating the user with practical examples and increasing his security awareness the actual game starts.
+Our app targets the increase of security awareness by actively let the user spoof an e-mail and by exemplifying him that a link does not necessarily lead to the target that it displays.
+By letting the users practically experience this, we hoped to increase the intensity of their learning experience (cf.~Principle~of~Intensity in \autoref{s:learning_principles}) resulting in a better and higher learning performance and motivation. In fact, in median the users rated 4 out of 5 (strongly agree) that this part of the app motivated them to continue.
+After motivating the user with the practical example and increasing his security awareness the actual game starts.
 The game itself consists of levels with introductory parts followed by practical exercises the user has to solve in order to show he has understood the learning content.
-Initially, in introduction 2 (access address bar and view complete URL) and level 1 (URL basics and domain identificationzich), basic knowledge is covered which is required for the succeeding levels and especially for the detection of phishing URLs on the smartphone in general.
+Initially, in introduction 2 (access address bar and view complete URL) and level 1 (URL basics and domain identification), basic knowledge is covered which is required for the succeeding levels and especially for the detection of phishing URLs on the smartphone in general.
 In particular, introduction 2 might be not challenging enough for some users as they might be already well-skilled regarding smartphone functionalities.
-Yet, this introduction and exercise is indispensable as there might be users who do not know this.
-
+Yet, this introduction and exercise is indispensable as there can be users who do not know how to approach this.
 In levels 2-9 the user is introduced to various attacks a phisher might apply.
 These attacks get increasingly sophisticated and harder to detect with higher levels.
-Finally, in level 10 the user gets further final remarks, such as the discussion about legitimate URLs which might appear fraudulent but in fact are not, or some input to extended validation certificates and a link for further information.
+Finally, in level 10 the user gets further final remarks, such as the discussion about legitimate URLs which may appear fraudulent but in fact are not, or input to extended validation certificates and a link for further information.
+
 We generally aimed at using introductory texts that are simple and easy to comprehend.
-We think we achieved this goal as our participants agreed to this (cf.~\autoref{s:further_exploration}) and the legibility index further confirms it~(cf.~\autoref{s:legibility_index}).
-
-The study outcomes suggest that there is a possitive effect which is likely resulting from our app.
-Our participants clearly gave more correct answers (is a given website a phish or not) after playing the app compared to before.
-Before playing the app most users identified 50\% of the 16 websites correctly.
-After playing the app the majority of the participants gave correct answers to 91.67\% of the 24 websites.
+We evaluated this by directly asking our participants in one of the study surveys (cf.~\autoref{s:further_exploration}) and by computing the legibility index of our texts (cf.~\autoref{s:legibility_index}). Both results confirmed the achievement of our goal in this regard: in median the users rated 5 out of 5 that our texts are easy to understand. Furthermore, our final legibility index of 62 is considered as reasonably comprehensive for teenagers~\cite{amstad1978verstandlich}.
+The study outcomes suggest that there is a positive effect resulting from our app.
+Our participants clearly gave more correct answers, to the question whether a given website is a phish or not, after playing the app compared to before.
+Before playing the app most users identified 8 (50\%) of the 16 websites correctly.
+After playing the app the majority of the participants gave correct answers to at least 22 (91.67\%) of the 24 websites.
 We assume the learning effects are negligible as the distribution of the correctly answered new URLs is almost identical to the old one (cf. \autoref{fig:hyp1resultsanew} and \autoref{fig:hyp1resultsarepeat}).
-
 The results of our second hypothesis exposed that the users already knew it was important to look at the URL before playing the app.
 Yet, they obviously did not know where exactly too look at as their result in correct identifcations show.
 Even if there were many participants who looked at the URL already before playing the app there is a significant difference in the following aspect:
 Before playing the app only 3 (17.65\%) users always marked the URL.
 In contrast to that, after playing the app most, i.e. 14 of 16 users (82.35\%), always marked the URL.
-Evidently, our app was able to emphasize their believe in basing their decision on the URL rather than the content or anything else.
-
+Evidently, our app was able justify and further emphasize their belief in basing their decision on the URL rather than the content or anything else.
 The measurement of our third hypothesis was questionable.
-The problem is the following: after playing the app we virtually changed the question when asking the user to mark the area of their primary reason for their decision.
-With the app we primed them to mark the domain clearly.
-Before using the app the users might have meant the domain, but just did not clearly mark it because they did not know what exactly they were expected to mark.
+The participants were asked to mark the reason for their decision whether a given website was a phishing attempt or not, before and after playing the app. 
+Here, the problem is that we could not formulate the question without implicitly pointing them towards marking (parts of) URLs instead of any other indicators of the browser or website itself after playing the app (because the app asked them to mark the domain). That is, before using the app the users might have meant the domain, but just did not clearly mark it and marked the entire URL instead, because they did not know what exactly they were expected to mark. 
+After playing the app they knew what they were expected to mark and thus might have marked more precisely.
 Still, we analyzed our results on this question and found out that more people base their decision on the domain after playing the app.
 
-All in all, we can say that our app has a positive effect on users and that it helps them to better identify phishing URLs.
-However, the question to ask here is will this app actually help users change their behavior in the Internet and make them look at the URL even if it is only occasionally.
-This is an aspect, which we were not able to address within the scope of this work
-Finally, the study conducted cannot show how the users, for example, retain the lessons learned from our app.
-Such considerations remain open for future work.
+Our study outcomes support that our app helped users make better decisions on the legitimacy of URLs.
+A further analysis of long-term effects would be valuable. The question to ask here is will this app actually help users change their behavior in the Internet persistently and make them look at the URL even if it is only occasionally. This is an aspect, which we were not able to address within the scope of this work. 
+Furthermore, our final conducted user study cannot show how the users, for example, retain the lessons learned from our app. Such considerations remain open for future work.
+All in all, we implemented a valuable complementary approach to technical solutions, an approach that encourages the user to protect himself by using our app that educates him on this topic.
 
 %===========================================
 \subsection{Lessons Learned}
@@ -68,26 +61,26 @@ Based on our gained experience, we present a brief summary of our lessons learne
 These lessons might be helpful for further research in the area of security education.
 
 \begin{description}[leftmargin=0cm]
-	\item[Principles of Learning:] Since education games do not primarily aim at entertaining the user, but simultanously at educating him, it is important to take the priciniples of learning into account.
+	\item[Principles of Learning:] Since education games do not primarily aim at entertaining the users, but simultanously at educating him, it is important to take the principles of learning into account.
 These principles state under which conditions learning performance is increased~(cf.~\autoref{s:learning_principles}).
 We consider it especially important to rely on the principle of exercise, which states that training, repetition and feedback is crucial for good learning performance.
-	\item[Game Techniques:]  If the education is supposed to follow with the aid of a game it is relevant to regard essential game techniques~(cf.~\autoref{s:game_techniques}).
+	\item[Game Techniques:]  If education is supposed to follow with the aid of a game it is relevant to regard essential game techniques~(cf.~\autoref{s:game_techniques}).
 In fact, game techniques are closely connected to learning principles.
-They provide in-depth elaboration on how basic learning principles are achieved with games.
+They provide in-depth elaborations on how basic learning principles are achieved with games.
 	\item[Simple and Short Text:] Education implies that some sort of text is present in some way.
 The users to be educated may come from different fields.
 While some users might be more skilled and might be able to handle complex texts on security-related topics others would probably get discouraged by such.
 Skilled users are likely capable of acquiring knowledge on security topics without problems.
 Security education should mainly address those users who are overwhelmed by such texts and information.
 For these users it is important to provide simple texts which are easy to follow and not too long.
-The longer texts are the more likely it is that the users will skip text parts which might be important or even stop reading it.
+The longer texts are the more likely it is that the users will skip text parts, which might be important, or even stop reading it.
 \item[Precise Phrasing:] The texts should be formulated precisely. 
 If a text is not precise this might lead to misinterpretations and thus to mistakes. 
 One should take care that there is as less room left for misinterpretation as possible.
 \item[General Validity:] There is a range of potential learning content which might be important to communicate to the users.
 Yet, there is the problem of general validity.
 It is important to consider that, for example, aspects that apply to system A, for example an Android device, do not apply to system B, for example another version of the same Android device.
-Therefore, in some cases it might not be easy to transfer knowledge about A to B (for example the browser functionality).
+Therefore, in some cases it might not be easy to transfer knowledge about A to B (such as the browser functionality).
 For this reason it is relevant to consider whether one wants to educate the users about aspects which are generally valid among several systems or whether the education focuses on specific systems which ultimately would result in restricting the target audience to those who use that specific system.
 \end{description}
 
@@ -101,78 +94,77 @@ This section deals with a prospect on future work for our anti-phishing educatio
 
 \subsubsection{Conduct Further Studies}
 \begin{description}[leftmargin=0cm]
-	\item[Comparative Study:] A comparative study might be interesting, as the authors of Anti-Phishing Phil~\cite{sheng2007antiphishingphil} did it.
-	They conducted a study with three different conditions,  a group that consulted general tutorials from the Internet, a  group who learned from tutorials based on Anti-Phishing Phil and another group who played Anti-Phishing Phil itself.
-	An interesting comparison to consider might be our app with Anti-Phishing Phil or any other anti-phishing app and general tutorials.
+	\item[Comparative Study:] A comparative study, as the authors of Anti-Phishing Phil~\cite{sheng2007antiphishingphil} did, might be interesting.
+	They conducted a study with three different conditions, a group that consulted general tutorials from the Internet, a  group who learned from tutorials based on Anti-Phishing Phil and another group who played Anti-Phishing Phil itself.
+	An interesting comparison would be our app with Anti-Phishing Phil or any other anti-phishing app and general tutorials.
+For example, the impact of the various approaches on the users' performance could be compared.
+Additionally, one could test whether some approaches are better received by users than others.
 	\item[Study on Retention:] For time reasons knowledge retention is an aspect we could not address in our study.
 	Yet, we think it is important to consider this in future work.
 	The question to ask here is how well users retain the knowledge they obtain from our app compared to other sources, for instance.
-	\item[In-App Statistics:] If the app is published on google play and gains a big user group it might be interesting to use that group for a in-app study. This means the app can be changed so it collects statistical data from the playing users and reports them back to the working group. Based on this data further exploration could be done. When implementing such a function however one must consider the ethical and legal implications of such an approach. Also it might influence the users acceptance if it is not stated clearly enough. Also such a big collection of user data might be misused by a potential attacker. Therefore also technical security considerations should be applied.
+	\item[In-App Statistics:] If the app is published on google play and gains a large user group it might be interesting to use that group for an in-app study. This means the app could be changed in such a way that it collects statistical data from the playing users and reports them back to the working group. Based on this data further exploration could be done. When implementing such a logging function, one should consider the ethical and legal implications that are posed. Such a functionality can also influence the users' acceptance of the app. Furthermore, such a large collection of user data might be misused by a potential attacker. Therefore, technical security considerations would be of relevance as well.
 \end{description}
 
 \subsubsection{Extend Teaching Content of App}
 \begin{description}[leftmargin=0cm]
-\item[Malicious Downloads:] With our app we did not target the possibility of downloading malicious software when a user clicks on such a link.
-	However, we think this is an aspect which should also be targeted in future work since malicious software can also cause harm.
+\item[Malicious Downloads:] With our app we did not target the possibility of downloading malicious software when a user clicks on a link.
+	However, we think this is an aspect which should be targeted in future work since malicious software can also cause harm.
 	For example, the user could be told at some point that he should never open downloaded files he did not intend to download.
 	Instead he should immediately delete them.
-	\item[Certificate Validation:] We do not address the validation of certificates with our app. We also do not tell the user, for example, that he should at least not do banking in case a certificate is broken.
-	Such general suggestions might also be considered for future work.
-	\item[Data Economy:] Another relevant aspect we did not cover in our app is data economy.
+	\item[Certificate Validation:] We do not address the validation of certificates with our app. We also do not tell the user, for example, that he should not do online banking or online payments in general in case a certificate is broken.
+	Such general suggestions might also be considered in future work.
+	\item[Data Economy:] Another interesting aspect we did not cover in our app is data economy.
 	We tell the user to type in their data only into websites they are sure about their legitimacy.
 	However, we do not tell the user to think about the specific data they are asked to enter.
 	Users should re-think whether the required information is actually needed.
 	This should also be trained by for example asking the user ``A lottery site is asking for your data. Which data would you provide?''. As this approach would require a complete different UI this type of learning content remains for future work.
-	\item[Consequences:] Initially, our idea was to display the consequences for falling to a specific phishing URL (matching a certain website category). For time reasons, we had to delay this.
-	We still think that this kind of information is relevant for the user as it illustrates him on which websites he should especially take care, for example, on banking websites. Therefore this should be considered in future versions.
-	\item[Top-Level Domain Attacks:] It might be reasonable to explicitly tell the user, that he should not only look whether the second-level domain is exactly as he expects but also the top-level domain. The app only implicitly states to look at the top- and second-level domain together.
+	\item[Consequences:] Another idea is to to display the consequences for falling for a specific phishing URL (matching a certain website category).
+We believe that this kind of information is relevant for the user as it illustrates him on which websites he should especially take care, for example, on banking websites. Therefore, this should be considered in future versions.
+	\item[Top-Level Domain Attacks:] It might be reasonable to explicitly tell the user that he should not only look whether the second-level domain is exactly as he expects but also the top-level domain. The app only implicitly states to look at the top- and second-level domain together.
 We recognized that users might misinterpret this (problem of precision).
 Therefore, this addition should be realized for future versions.
-	\item[HTTPS should be introduced earlier:] In \autoref{s:further_exploration} we showed that it is important to introduce the teaching content related to HTTPS in an earlier level in order to assure that users do not fall for phishes using HTTPS.
-	\item[Text improvements:] After conducting guerrilla user study on our app texts the contents of levels 9 and 10 where changed. These changes where not thoroughly tested with users. This should be done and the texts should be modified accordingly. 
-	\item[Add context:] Currently the app does not display any context for process of how the user reached the URL or what is displayed on the webpage. We think that this will influence the decision of the user whether to enter personal data or not. Therefore to make the app more realistic some kind of context can be added.
+	\item[Introduce HTTPS Earlier] In \autoref{s:further_exploration} we showed that it is important to introduce the teaching content related to HTTPS to an earlier level in order to assure that users do not fall for phishes using HTTPS.
+	\item[Text Improvements:] After conducting a guerilla user study on our app texts the contents of levels 9 and 10 were changed. These changes have not been thoroughly tested by users yet.  This needs to be done and the texts should be modified accordingly. 
+	\item[Add context:] Currently, the app does not display any context regarding the process of how the user reached the URL or regarding what is displayed on the website. We believe that the context of a situation should have an impact on a user's decision of whether to enter personal data or not. To address this, some kind of context could be added.
 \end{description}
 
 \subsubsection{Improve Game Experience of App}
 \begin{description}[leftmargin=0cm]
 	\item[Increase Immersion:] Immersion is an important game element (cf. \autoref{s:game_techniques}).
-	We believe our app has space for more immersion. 
-	For example, an appealing story around our quiz game could be added in order to additionally mesmerize the user. One example story could be that the user is hired by a big company to detect find phishing websites and put them on a black list so that employees of that company don't fall for it. If the user does a bad job he might suffer degraded reputation and might ultimately loose his job. If he does a good job he might climb up the career.
-	\item[Increase Effect:] In \autoref{s:learning_principles} we have introduced the Principle of Effect, specifically, the law of positive feelings. 
+	We believe our app has space for more immersion beyond our analogy which considers a website as a user's communication partner.
+	For example, an appealing story around our quiz game could be added in order to further mesmerize the user. One example story could be that the user is hired by a big company to detect find phishing websites and put them on a black list so that employees of that company don't fall for it. If the user does a bad job he might suffer degraded reputation and might ultimately loose his job. If he does a good job he might climb up the career.
+	\item[Increase Effect:] In \autoref{s:learning_principles} we have introduced the Principle of Effect, and more specifically, the law of positive feelings. 
 	We believe the user's positive feelings can be increased by providing more varying feedback, instead of saying the same sentence for the same outcomes.
 	For example, the praises and compliments when a user does well could vary depending on the degree of difficulty.
-	Also, the final screens for finishing a level can vary respectively in order to achieve higher and better positive feelings.
-	\item[Performance Dependent App Behavior:] Currently, the app is quite static.
-More dynamic behavior could be added in future versions.
+	Also, the final screens for finishing a level can vary respectively depending on the achieved score in order to address higher and better positive feelings.
+	\item[Performance Dependent App Behavior:] More dynamic behavior could be added in future versions of the app.
 For example, the part where the user has to show the domain in case he found a phish might get tedious after some time.
-To approach this problem the app could stop asking for the domain after the user identified the domain correctly 10 times in a row, for example.
+To approach this problem the app could stop asking for the domain after the user identified the domain correctly $n$ times in a row, for example.
 After this point the app could occasionally ask the user to identify the domain and depending on his performance re-introduce it. 
 \item[Text Highlighting]
-Also some users suggested us to visually distinct new learning content from repetition so overflying the information part becomes easier. 
-We had already tried that by displaying a warning sign every time a new attack was introduced.
-However, after this sign there still was some repetition occasionally.
-Therefore, the emphasis of new and relevant learning content in the lesson parts should be improved in future work.
+Some users suggested to visually separate new learning content from repetition so that skimming over the information part becomes easier. 
+This is partially done already. Yet, the emphasis and separation of new and relevant learning content in the lesson parts could be improved in future work.
 \end{description}
 
 
 \subsubsection{Miscellaneous}
 \begin{description}[leftmargin=0cm]
-\item[Embedded Training:] In \autoref{s:related_work} we argued that exploiting the teachable moment might result in good motivation for a user to do something about his lack of knowledge regarding phishing and possibly result in better retention.
-	Yet, a drawback of embedded training is that its landing pages are not able to provide detailed and extensive information on the topic since users would be discouraged and leave the page.
+\item[Combination of Embedded Training and Education Application:] In \autoref{s:related_work} we argued that exploiting the teachable moment might motivate a user to do something about his lack of knowledge regarding phishing and possibly result in better retention.
+	Yet, a drawback of embedded training is that its landing pages should not provide too detailed and extensive information on the topic since users may get discouraged and leave the page.
 	Providing detailed and extensive information can be addressed by a game playfully.
 	Therefore, an idea is to combine embedded learning with an educational game.
-	Here the user would be forwarded to the landing page with the most important information in case he falls for a simulated phishing attack.
-	On this page the user can be provided with the most important information and a link to an educational app, for example ours, where he can optionally get more detailed information.
-	With the game the knowledge can be obtained step by step by playing the game.
-However, there remains the problem of raised legal issues.
+	Here, if a user fell for a simulated phishing attack he would be forwarded to the landing page.
+	This page could provide the user with the most important information and a link to an educational app, for example ours, where he can optionally get more detailed information.
+	With the game extensive knowledge can be obtained step by step by playing the it.
+However, there remains the problem of the legal issues raised by sending out simulated phishing e-mails on behalf of a well-known vendor.
 
 \item[Integration of App into School Education]
 Further research could address the integration of our app into school education.
 People might not want to learn about phishing by their own choice, especially pupils would probably not think about that.
-However, if computer security is a part of the education plan and if pupils have to learn something about, for example, phishing by playing the app, a far larger audience could be addressed and educated on this topic.
+However, if computer security is a part of the education plan and if pupils have to learn something about phishing by playing the app, for example, a far larger audience could be addressed and educated on this topic.
 
 \item[More Appealing Outer Appearance]
-We did not put our focus on design aspects regarding the app's outer appearance.
-Yet, we believe a more appealing outer appearance might help attract more potential users.
+Even though we considered the user interface design and some icons to enhance the outer appearance of our app, we did not focus on design aspects.
+Yet, we believe a more vivid outer appearance might help us draw more potential users.
 \end{description}
 

@@ -354,13 +354,10 @@ Therefore, we believe that our app helped users to make improved decisions about
 \autoref{fig:hyp2results} shows how many users marked the URL as their main source of decision.
 Most of the users already based most of their decisions on the URL before.
 Occasionally users marked the content or the padlock.
-However only 3 Users (17.65\%) always marked the URL.
-Afterwards we see that 14 users (82.35\%) always based the decision on the URL and only 3 Users made on or two mistakes.
-Therefore we think that our app emphasized their believe in basing their decision on the URL.
-We however think it is important to tell the user this to get uncertain or unknowing users to the same level as most of our participants.
-Also our app empathizes the importance of the URL by putting the main focus on it.
-We have decided against doing statistical test on this hypothesis.
-We believe it will most likely be rejected because the change from before to after is not very high.
+However, only 3 users (17.65\%) always marked the URL.
+Afterwards, 14 users (82.35\%) always based their decision on the URL and only 3 users made one or two mistakes.
+Therefore, we believe that our app emphasized their belief in basing their decision on the URL.
+We decided against applying a statistical test to this hypothesis since there is obviously no signficant difference before and after playing the app.
 \item[Hypothesis 3:]
 There is a general problem with one question in the websites-surveys.
 In the before survey we were not able to clearly ask the user to mark the domain when it was the base of his decision because we would have then primed them towards looking at the URL or even at the domain.
@@ -417,13 +414,12 @@ Afterwards, we summarize the participants' remarks to our app.
 	Hence, if we had expanded our definition of reasoning even more users would have correctly reasoned their decisions.
 	However, there is the question whether expanding the accepted answers might also result in an increase of the correct answers and markings in the before survey.
 	\item[False Negatives and Positives:] Additionally we considered separately whether the user falsely  accepted phishes or rejected legitimate websites. Our outcomes show that before in average the user rejected 4.9 legitimate websites and accepted 2.1 phishing websites. After using the app the user rejected 1.8 legitimate websites and accepted 1.3 phishing websites. One must however note that we increased the users' attention by telling them to look for phishing websites. Additionally usually users tend to behave oversafely in lab situations \cite{TODO:cite}. Therefore we assume that in this situation, especially before playing the app, users tended to reject URLs in general for safety's sake. This is also reflected by the high rate of falsely rejected legitimate URLs. In reality however the users contrarily have a interest in entering their personal data otherwise they would have not opened the website. Nevertheless the results show that the users make less mistakes after playing the app and seem to better know why the reject or accept websites (cf. \autoref{s:hypanalysis}). In future this should be tested in a more realistic scenario where the users attention is less increased towards looking for phishes.
-	\item[User Opinions to App:] A part of our surveys tried to understand the users' opinions to our app.
-	Section 3 of our survey-after (cf.~\autoref{s:after_survey}) contains the statements which the users had to assess with the aid of a 5 point Likert scale.
+	\item[User Opinions to App:] A part of our surveys aspired to understand the users' opinions to our app.
+	Section 3 of our general-survey after (cf.~\autoref{s:after_survey}) contains the statements which the users had to assess with the aid of a 5 point Likert scale.
 	Our worst, but still decent, score referred to whether the user was motivated by the spoofed e-mail to continue playing the app (median of 4) and whether the amount of texts was appropriate (median of 4).
-	All other statements were strongly agreed (5) with in median.
-	The text legibility of our app texts received an median score of 5.
-	Our study participants strongly agreed (median of 5) that our app helped them to identify phishing websites in future.
-	%Yet, this requires a change in their behavior (checking the correct part of a URL) and retaining the obtained knowledge what we cannot check.
+	All other statements were strongly agreed (median of 5) with in median.
+	The text legibility of our app texts received a median score of 5.
+	Our study participants strongly agreed (median of 5) that our app helped them to identify phishing websites in the future.
 	Finally, the users intuitively understood our three lives scheme per level (median of 5).
 	Thus, the outcomes of the user opinions reveal that our app was very well received by the participants regarding these questions.
 	\item[Achieved Levels:] In average the participants reached level 7, which is higher than we had expected.
@@ -433,7 +429,7 @@ Afterwards, we summarize the participants' remarks to our app.
 	The user had correctly identified 9 (75\%) of the URLs before playing the app.
 	Afterwards, he only had a score of 13 (54.17\%).
 	The problem was that level 9 deals with the difference of HTTP and HTTPS websites.
-	Pretests had shown that most users would not get beyond level 6. Therefore we did not consider level 9 regarding it's influence on the question and in our assessment.
+	Pretests had shown that most users would not get beyond level 6. Therefore, we had not considered level 9 in our assessment strategy and regarding its impact on the question.
 	Users were expected to decide whether a website is a phish or not disregarding the usage of HTTPS.
 	The user who has achieved level 9 however was explained the difference of HTTP and HTTPS, additionally, he was asked to reject HTTP sites in general for this level.
 	Hence, this user responded to the website-survey after respectively: the participant generally rejected HTTP sites whether they were phishing or not and thus the user performed worse afterwards by the terms of our definition of correct.
@@ -445,9 +441,12 @@ Afterwards, we summarize the participants' remarks to our app.
 			\caption{Correct answers related to achieved level}
 			\label{fig:correct_per_level}
 			\end{figure}
-	\autoref{fig:correct_per_level} shows the relation between the levels a user achieved and his performance after playing the app. The drop with users that played level 9 or even 10 is explained in the previous paragraph. We ignore these examples in this paragraph. The figure shows that playing level 5 already helped users to correctly identify URLs. We can not be sure that the users play the app completely. Therefore it is good that the first levels already help them in taking more correct decisions. Nevertheless we think that the succeeding levels help protect the users from more advanced attacks and are therefore important. This effect could however not be seen in such a small sample size. Some examples support our opinion: One participant who achieved level 5 fell for an Attack that was introduced in level 6 (paypal-sicher.de). Furthermore 11 participants fell for a phish with scrambled letters (mircosoft.com). These included users who achieved level 6 or higher as well as those who did not achieve this level. In the contrary, those participants who did not fall for this phishing URL at least achieved level 6, i.e. nobody of lower levels recognized this attack. 
+	\autoref{fig:correct_per_level} shows the relation between the levels a user achieved and his performance after playing the app. The performance decline of the users that played level 9 or even 10 is explained in the previous paragraph. These examples are not considered in the following. The Figure shows that playing level 5 already helped users to correctly identify URLs.
+As we cannot ensure that all users will play our app through, we think it is good that the first levels already provide them the most important input which helps them make more correct decisions on the legitimacy of URLs. 
+Nevertheless, we are confident that the succeeding levels help users detect more advanced attacks and thus are important. 
+Some examples support our opinion: One participant who achieved level 5 fell for an attack that was introduced in level 6 (paypal-sicher.de). Furthermore, 11 participants fell for a phish with scrambled letters (mircosoft.com). These included users who achieved level 6 or higher as well as those who did not achieve this level. In the contrary, those participants who did not fall for this phishing URL at least achieved level 6, i.e. nobody of lower levels recognized this attack. 
 	Finally, there are 4 participants who fell for an attack which was introduced in level 8. Three of these participants did not play level 8.
-	Note that all of the services presented by the URLs were known to the users, i.e. they fell for the actual attack and did not just assume that the URLs might be legitimate.
+	Note that all of the services presented by the URLs were known to the users, i.e. it is likely that they fell for the actual attack and did not just assume that the URLs might be legitimate.
 	These aspects indicate that the later levels and training are important to achieve higher expertise.
 	\item[HTTPS and Padlock:] Our results show that some participants were aware that they should look for either HTTPS or a padlock before playing our app~\autoref{fig:markings}.
 	For instance, one participant marked the scheme or the padlock as reason for his decision 11 out of 16 times in the website-survey before. 
@@ -458,8 +457,10 @@ Afterwards, we summarize the participants' remarks to our app.
 	In fact, there are phishing websites using HTTPS (cf. \autoref{fig:https_phish}). 
 	Since we cannot assure that an app user of ours plays until level 9, we believe it is important to introduce the level dealing with HTTPS earlier.
 	This aspect should definitely be covered in future work in our opinion.
-	\item[User Self-Assessment:] Contrary to our expectations, users assessed themselves rather correctly. When asked for their ability to distinguish legitimate from faked websites before they in median rated themselves 3 on a 5 point likert scale. Their actual performace in the before survey are likewise (56\%). After using the app they stated 5 out of 5 that the app helped them identify phishes in the future and could identify 87\% URLs correctly.
-	\item[Confidence:] We asked the users how confident they where with their answer on the URL survey form on a 5 point likert scale. Before using the app 3 users stated in median a confidence of 5. Afterwards there where 11 users that stated 5 in median. \autoref{fig:confidence} visualizes the increase of the users confidence.
+	Due to the small sample size, with at most 1-2 examples per attack, it is likely that the above mentioned examples were slightly suppressed in \autoref{fig:correct_per_level}.
+	\item[User Self-Assessment:] Contrary to our expectations, users assessed themselves rather correctly. When asked for their ability of distinguishing legitimate from fraudulent websites at the beginning of the study they rated themselves with 3 on a 5 point Likert scale.
+Their actual performace in the website-survey before is likewise (56\% correctly identified URLs). After using the app they were asked whether the app helped them identify phishing websites in the future. They rated 5 out of 5 and their performance was accordingly good (87\% correctly identifies URLs).
+	\item[Confidence:] We asked the users how confident they were about their answers on the website-surveys on a 5 point Likert scale. In median before using the app 3 users stated a confidence of 5. Afterwards, there were 11 users that stated 5 in median. \autoref{fig:confidence} visualizes the overall increase of the users' confidence.
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.85\textwidth]{confidence.pdf}
