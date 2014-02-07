@@ -74,22 +74,16 @@ None of them is a phish.
 \item[Level 1+2:] The first level that contains repetitions is level 3 because level 2 introduces the very first spoofing attack. Consequently, level 1 and level 2 do not have repetitions.
 \end{description}
 
-%The generated list of attacks also contains a special attack that does no real attack. This is to %simplify the URL generation. When we generated the list of attacks we save it for later reference.
-
 \subsection{Modify Legitimate URLs with a Generator}
 \label{s:apply_generator}
 We were unsure whether we had collected sufficient valid URLs.
- For this reasons, we prepared a way to automatically modify the URLs in such a way that they remained valid URLs. 
+For this reason, we prepared a way to automatically modify the URLs in such a way that they remained valid URLs. 
 Some ideas were to add subdomains or path strings to the URL. Queries or fragments would also  be possible. 
 Later we found out that it was currently not required to implement such generators since our set contained enough URL examples. 
 Yet, if we should realize in future that these URLs are not enough we have this scheme in place.
 \subsection{Re-Apply an Attack in Case of Wrong User Answer}
 After generating a valid URL we choose a random attack from the previously built set of attacks and apply it to the URL. We also store which attack we currently apply. This is important in case  the user fails to give a correct answer to the current URL. In this situation we will simply re-add this attack to the set of attacks.
 This way, we assure that the attack, which the user failed to identify, is repeated later in this level.
-%\subsection{Repeat in Case Attack was not Possible}
-%There are combinations of base-URL and attack where the attack doe's not alter the URL.
-%Therefore it would be impossible for the user to detect the Attack and he will be confused and %might stop using the app.
-%In this situation we repeat the whole URL generation process until we find a matching URL.
 
 \section{Questionnaire of Study for Input}
 \label{s:presurvey_form}
@@ -322,7 +316,7 @@ The following pages contain the forms as we used them in the user study. We did 
 
 \section{Thesis Contributions}
 We (Gamze Canova and Clemens Bergmann) worked on this thesis together.
-Therefore we list in the following sections who contributed to what part of the thesis and what we did together.
+Therefore, we list in the following sections who contributed to what part of the thesis and what we did together.
 
 \subsection*{Together}
 \begin{tabular}{ll}

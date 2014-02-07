@@ -11,7 +11,7 @@ These consequences are briefly illustrated in the second part of this section.
 As argued in the previous section our intention is to develop a complementary approach to technical solutions which raises security awareness and offers the user an educational service to train him detecting phishing attempts.
 We decided to offer this service as a smartphone app which is reasoned in the third part of this section.
 In the last part we provide a brief overview of anti-phishing education approaches.
-For better readability and comprehensibility we divided the available approaches into their content, i.e. what specific content is the user told, and the used media, i.e. how is this content communicated to the user. Specific examples of previous work are provided in \autoref{s:related_work}.
+For better readability and comprehensibility we divided the available approaches into their content, i.e. what specific content the user is provided with, and the used media, i.e. how this content is provided. Specific examples of previous work are provided in \autoref{s:related_work}.
 
 %===========================================
 \subsection{Phishing in General}
@@ -22,13 +22,12 @@ Phishing is a term which is referred to for various scenarios and techniques.
 Consequently, there are different definitions of phishing found in literature.
 Therefore, we start with a definition that entails all types of phishing.
 Subsequently, we introduce different phishing techniques, used attack channels and variations of phishing.
-Finally, we state our scope with respect to the term of phishing and provide our own definition of it which we consider in this work.
+Finally, we state our scope with respect to the term of phishing and provide our own definition which we consider in this work.
 %............................................................................................................
 \subsubsection{Abstract Definition of Phishing}
 %............................................................................................................
 \label{s:phishing_def}
-The goal of this work is to help users distinguish phishing websites from legitimate ones. 
- Since phishing is important within the scope of this work, we define the term first. In fact, phishing is a term that is used by many people in different contexts. Therefore, the following definition is deliberately kept abstract in order to cover all possible scenarios of phishing. At the end of this chapter we will state our definition of phishing which we consider in this work.
+Phishing is a term that is used by many people in different contexts. Therefore, the following definition is deliberately kept abstract in order to cover all possible scenarios of phishing.
 
 \begin{center}
 \textit{Phishing is the practice of obtaining confidential information from users and describes a form of identity theft.
@@ -59,7 +58,7 @@ There are various possibilities how phishers can obtain users' confidential info
  Another possibility is to exploit security vulnerabilities.
  Once the malware resides on the target, various technologies can be utilized to get at the users' data.
  Keyloggers and screenloggers, for example, track users' data input and send relevant information to a phishing server.
- Recent research has shown that mobile phone operating systems are as vulnerable to such attacks as desktop systems.
+ Recent research has shown that mobile phone operating systems are as vulnerable to such attacks as desktop systems~\cite{zhou2012dissecting}.
  Another way is to make use of so-called web trojans, which appear when users intend to log in.
  While the user thinks he is logging into a website of his trust, the entered information is actually transmitted to the phisher.
 
@@ -90,28 +89,6 @@ XSS vulnerabilities result from a web application's usage of content from extern
 	
 \end{description}
 
-%Besides the different kinds of techniques of phishing, there also exist a number of attack channels a phisher can exploit.
- %The following section deals with these attack channels.
-
-%(eventuell liste oder aufzählung) 
-%EXAMPLE TABLE WHICH MIGHT BE USEFUL :D
-%\begin{table}
-%	\centering
-%	\begin{tabularx}{.9\textwidth}{m{2.6cm} m{3.8cm} m{4.0cm} m{4.12cm}}
-%	\hline	
-%	\rowcolor{rowColorHead}
-%										& Spalte 1 												& Spalte 2 			& Spalte 3\\
-%	\hline
-%	\rowcolor{rowColor1}
-%	Zeile 1 					& Inhalte, \newline Inhalte			&	Inhalt			 		&	Inhalt \\		
-%	\rowcolor{rowColor2}
-%	Zeile 2 			& Inhalt, \newline Inhalt			&	Inhalt					&	Inhalt, \newline Inhalt	\\	
-%	\hline
-%	\end{tabularx}
-%	\caption{Description}
-%	\label{table:label}
-%\end{table}
-
 %............................................................................................................
 \subsubsection{Phishing Attack Channels}
 %............................................................................................................
@@ -130,7 +107,7 @@ For this purpose, psychological manipulation techniques are used, including, but
  Finally, sometimes users are even asked to directly send back their confidential data.
 
 	\item[SMS:] An alternative to acquire confidential user data is making use of cell phone text messages.
- As with e-mails, the text message may contain a link to a fake website, where the user is induced into divulging sensitive information.
+ As with e-mails, the text message may contain a link to a fake website, where the user is enticed into divulging sensitive information.
  The user may also be asked to send back the information directly.
  Another possibility is being asked to call back a fraudulent or expensive telephone number.
  This number usually leads to an automated voice response system which is intended to gain the confidential information from the calling user.
@@ -152,18 +129,17 @@ For example, with the aid of a social network the phisher might find out that a 
  It makes them easy to execute and inexpensive.
  Voice phishing is also referred to as vishing.
  
-	\item[Physical letters:] The phisher might even send out real letters to a number of users. However, we believe that this is unlikely because in contrast to the digital channels, this channel is associated with expenses and more effort.
+	\item[Physical letters:] The phisher might even send out real letters to a number of users. We believe that this is unlikely for mass phishing because in contrast to the digital channels, this channel is associated with expenses and more effort. Yet, for spear phishing this attack channel appears especially reasonable because potential targets might not expect it (cf. \autoref{s:phishing_variations}).
 
 \end{description}
 
 %............................................................................................................
 \subsubsection{Variations of Phishing}
+\label{s:phishing_variations}
 %............................................................................................................
 There exist two major variations of phishing which can be distinguished, mass phishing and spear phishing.
 As the names reveal, mass phishing involves targeting a large number of users, while spear phishing rather refers to targeting a specific user or group of users.
 In this section we discusses these two variations.
-
-\label{s:phishing_variations}
 
 \begin{description}[leftmargin=0cm]
 	\item[Mass Phishing:] In the case of mass phishing the attacker sends out a tremendous amount of spoofed e-mails to random users.
@@ -175,7 +151,7 @@ In this section we discusses these two variations.
  For example, there exist estimations of 156 million phishing e-mails being sent out daily.
  Only 16 million of these e-mails win the fight against spam filters.
  The half of these are opened.
- 800,000 users of these 8 million e-mail recipients actually click on the contained link and still 80,000 users take the bait according to the estimations~\cite{takethebait}. As discussed in \autoref{s:introduction} the reliability of phishing statistics is questionable. Yet, these number indicate a rough overview of the problem.
+ 800,000 users of these 8 million e-mail recipients actually click on the contained link and still 80,000 users take the bait according to the estimations~\cite{takethebait}. As discussed in \autoref{s:introduction} the reliability of phishing statistics is questionable. Yet, these numbers indicate a rough overview of the problem.
 	\item[Spear Phishing:] Unlike mass phishing attacks, spear phishing mainly aims at sensitive information like business secrets, intellectual property or even military secrets.
  While in mass phishing attacks, spoofed e-mails are sent to millions of random users, spear phishing targets specific individuals resp.
  groups within organizations to acquire sensitive information.
@@ -279,8 +255,6 @@ According to the principles of learning (cf.~\autoref{s:learning_principles}) it
 Yet, we believe that our exercise and repetition scheme (cf.~\autoref{s:learning_principles}) helps users to internalize the learning content despite potential distractions.
 For further research it would be interesting to test how significantly distractions impact the learning results of our app, though.
 \item[High Number of Smartphone Users:] In addition, given that the majority of the people use a smartphone on a regular basis in Spain, Germany, Italy, France, and the UK~\cite{smartphoneusage}, there is a need for the protection of smartphone users.
-%With the smartphones, apps and app games became popular.
-%Therefore, we believe an interactive game appears to be a good opportunity for education.
 
 \end{description} 
 Overall, educating the user on the smartphone provides two major benefits.
